@@ -1,7 +1,9 @@
 {
-  "name": "notre-histoire-styleguide",
-  "version": "0.0.0",
-  "main": "index.html",
+  "name": "NHdesign",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Antistatique <hello@antistatique.net>",
+  "repository": "fonsart/NHdesign",
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "fabricator": "fbrctr/fabricator",
