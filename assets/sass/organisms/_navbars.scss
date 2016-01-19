@@ -1,6 +1,16 @@
 @charset "UTF-8";
 
 .navbar-toggle {
+  background: $monza;
   display: block;
   float: left;
+  margin: 0;
+  height: $navbar-height;
+  width: $navbar-height;
+  padding: ($navbar-height - 16px) / 2;
+  transition: background 0.3s;
+  > .icon-bar {
+    width: 16px;
+    & + .icon-bar {margin-top: 5px;}
+  }
 }
