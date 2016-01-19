@@ -2,7 +2,24 @@
 
 .navbar {
   font-size: $font-size-large;
-  .form-control {font-size: $font-size-large;}
+  .form-control {
+    font-size: $font-size-large;
+    border-color: transparent;
+    box-shadow: none;
+    padding: 6px 0;
+    max-width: 105px;
+    &:focus {
+      border-bottom-color: $nobel;
+    }
+  }
+  form .btn {
+    border-color: transparent;
+    padding: 6px 0;
+    &:hover {
+      background: transparent;
+      color: $monza;
+    }
+  }
 }
 
 .navbar-toggle {
