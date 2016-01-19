@@ -375,7 +375,7 @@ $navbar-default-border:            transparent !default;
 
 // Navbar links
 $navbar-default-link-color:                $tundora !default;
-$navbar-default-link-hover-color:          #333 !default;
+$navbar-default-link-hover-color:          $monza !default;
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         #555 !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
@@ -388,7 +388,7 @@ $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 1
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           darken($monza, 10%) !default;
+$navbar-default-toggle-hover-bg:           darken($monza, 5%) !default;
 $navbar-default-toggle-icon-bar-bg:        $white !default;
 $navbar-default-toggle-border-color:       transparent !default;
 

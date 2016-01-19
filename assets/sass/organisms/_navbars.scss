@@ -2,6 +2,9 @@
 
 .navbar {
   font-size: $font-size-large;
+  padding-right: $grid-gutter-width / 2;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
+  border: none;
   .form-control {
     font-size: $font-size-large;
     border-color: transparent;
