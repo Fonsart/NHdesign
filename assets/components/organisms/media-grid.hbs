@@ -8,7 +8,7 @@ notes: |
   {{#each medias }}
     <div class="media-item" data-w="{{this.width}}" data-h="{{this.height}}">
       {{#ifnotarticle this.type}}
-        <img src="https://unsplash.it/{{this.width}}/{{this.height}}?image={{this.picture}}" alt="{{this.title}}">
+        <img src="https://unsplash.it/{{this.width}}/{{this.height}}?image={{this.picture}}" alt="{{this.title}}" class="img-responsive">
       {{/ifnotarticle}}
 
     </div>
