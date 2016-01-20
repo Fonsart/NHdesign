@@ -3,7 +3,7 @@ Notre Histoire styleguide provided as a npm package. The project is based on [Fr
 
 ## Install and run the project
 
-You'll need [npm](http://npmjs.org), [Bower](http://bower.io) and [GulpJS](http://gulpjs.com/) installed on global.
+You'll need [npm](http://npmjs.org) and [GulpJS](http://gulpjs.com/) installed on global.
 
 First, you need to install the dependencies :
 

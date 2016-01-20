@@ -1,0 +1,44 @@
+---
+notes: |
+  ##### Introduced : 0.0.2
+  ##### Updated : -
+  ##### Usage : `{{> navbar }}`
+---
+<nav class="navbar navbar-default">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#"><h1 class="h4">Notre histoire</h1></a>
+  </div>
+
+  <form id="search-form" class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Rechercher">
+    </div>
+    <button type="submit" class="btn btn-default">
+      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    </button>
+  </form>
+
+  <ul class="nav navbar-nav navbar-right">
+    <li>
+      <a href="#">
+        <span class="hidden-xs">Connexion</span>
+        <span class="visible-xs glyphicon glyphicon-user"></span>
+      </a>
+    </li>
+  </ul>
+
+  <a href="#" class="btn btn-default navbar-btn navbar-right">
+    <span class="hidden-xs">Ajouter un média</span>
+    <span class="visible-xs glyphicon glyphicon-plus"></span>
+  </a>
+
+  <button id="search-mobile" type="button" class="btn btn-default navbar-btn navbar-right visible-xs">
+    <span class="visible-xs glyphicon glyphicon-search"></span>
+  </button>
+</nav>

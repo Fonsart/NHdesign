@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+.navbar {
+  font-size: $font-size-large;
+  padding-right: $grid-gutter-width / 2;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
+  border: none;
+  .form-control {
+    font-size: $font-size-large;
+    border-color: transparent;
+    box-shadow: none;
+    padding: 6px 0;
+    max-width: 105px;
+    &:focus {
+      border-bottom-color: $nobel;
+    }
+  }
+  form .btn {
+    border-color: transparent;
+    padding: 6px 0;
+    &:hover {
+      background: transparent;
+      color: $monza;
+    }
+  }
+  @media screen and (max-width: $screen-xs-max) {
+    padding-right: 0;
+    height: $navbar-height;
+    background: $white;
+    form {
+      position: absolute;
+      top: $navbar-height * -1;
+      margin-top: 0;
+      left: $grid-gutter-width / 2;
+      width: 100%;
+      background: $gallery;
+      z-index: -1;
+      transition: top 0.3s;
+      &.open {
+        top: $navbar-height - 4px;
+      }
+    }
+    .form-control {
+      max-width: none;
+      width: 78%;
+      float: left;
+      margin-top: 4px;
+      padding: 6px;
+    }
+    form .btn {
+      width: 20%;
+      float: right;
+      border: none;
+    }
+    .navbar-nav {margin: 0;}
+    .navbar-header {display: inline-block;}
+    .navbar-right {float: right;}
+    li > a {
+      padding: 12px 10px;
+      height: $navbar-height;
+      border-bottom: 2px solid $monza;
+    }
+  }
+}
+
+.navbar-toggle {
+  background: $monza;
+  display: block;
+  float: left;
+  margin: 0;
+  height: $navbar-height;
+  width: $navbar-height;
+  padding: ($navbar-height - 16px) / 2;
+  transition: background 0.3s;
+  > .icon-bar {
+    width: 16px;
+    & + .icon-bar {margin-top: 5px;}
+  }
+}
+
+.navbar-brand {
+  h4, .h4 {margin: 0;}
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 13px 5px;
+  }
+}
+
+.navbar-btn {
+  border-color: transparent;
+  font-family: $font-family-sans-serif;
+  font-weight: 700;
+  font-size: $font-size-large;
+  position: relative;
+  margin-bottom: 0;
+  background: $white;
+  &:before {
+    content: '\00a0';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: -4px;
+    left: 50%;
+    max-width: 32px;
+    width: 100%;
+    height: 4px;
+    margin-left: -16px;
+    background: $lima;
+    transition: left 0.15s linear 0s,
+                height 0.15s linear 0.15s;
+    @media screen and (max-width: $screen-xs-max) {
+      display: none !important;
+    }
+  }
+  &:hover, &:focus, &:active {
+    border-color: transparent;
+    background: $white !important;
+    box-shadow: none;
+    &:before {
+      height: $navbar-height / 2;
+      left: 12px;
+    }
+  }
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 12px 10px;
+    margin: 0;
+    height: $navbar-height;
+    border-bottom: 2px solid $lima;
+    &:hover {border-bottom: 2px solid $lima;}
+    &.visible-xs, &.visible-xs:hover {
+      border-bottom: 2px solid $tundora;
+      padding: 12px 8px;
+    }
+  }
+}

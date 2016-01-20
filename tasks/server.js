@@ -18,6 +18,7 @@ module.exports = function() {
       server: {
         baseDir: [config.app.basedir],
       },
+      notify: false,
       open: false
     });
     gulp.watch([config.assets + 'sass/**/*.scss'], function() {
