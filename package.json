@@ -1,6 +1,6 @@
 {
-  "name": "NHdesign",
-  "version": "0.0.2",
+  "name": "nhdesign",
+  "version": "0.0.3",
   "license": "MIT",
   "author": "Antistatique <hello@antistatique.net>",
   "repository": "fonsart/NHdesign",
@@ -52,6 +52,7 @@
     "jshint-stylish": "^2.1.0",
     "lodash": "^3.8.0",
     "mocha": "^2.2.5",
+    "napa": "^2.2.0",
     "phantomcss": "^0.11.1",
     "run-sequence": "~1.1.0",
     "sinon": "^1.14.1",
@@ -59,5 +60,11 @@
     "slug": "^0.9.1",
     "toolbox-utils": "0.0.1",
     "yargs": "^3.8.0"
+  },
+  "scripts": {
+    "install": "napa"
+  },
+  "napa": {
+    "jquery-fleximages": "Pixabay/jQuery-flexImages"
   }
 }

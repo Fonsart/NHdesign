@@ -23,7 +23,32 @@ module.exports = function() {
       indent_with_tabs: true
     },
     helpers: {
-        markdown: require('helper-markdown')
+        markdown: require('helper-markdown'),
+        ifaudio: function(type, block) {
+          if(type === 'audio'){
+            return block.fn(this);
+          }
+        },
+        ifvideo: function(type, block) {
+          if(type === 'video'){
+            return block.fn(this);
+          }
+        },
+        ifarticle: function(type, block) {
+          if(type === 'article'){
+            return block.fn(this);
+          }
+        },
+        ifnotarticle: function(type, block) {
+          if(type !== 'article'){
+            return block.fn(this);
+          }
+        },
+        ifphoto: function(type, block) {
+          if(type === 'photo'){
+            return block.fn(this);
+          }
+        },
     }
   };
 

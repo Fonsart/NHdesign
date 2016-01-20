@@ -1,0 +1,24 @@
+---
+notes: |
+  ##### Introduced : 0.0.3
+  ##### Updated : -
+  ##### Usage : `{{> media-grid }}`
+---
+<div class="media-grid">
+  {{#each medias }}
+    <a href="#" class="media-item" data-w="{{this.width}}" data-h="{{this.height}}">
+      {{#ifnotarticle this.type}}
+        <img src="https://unsplash.it/{{this.width}}/{{this.height}}?image={{this.picture}}" alt="{{this.title}}" class="img-responsive">
+      {{/ifnotarticle}}
+      {{#ifarticle this.type}}
+        <div class="media-article">
+          {{#ifarticle this.type}}{{this.description}}{{/ifarticle}}
+        </div>
+      {{/ifarticle}}
+      <div class="media-caption">
+        <h5>{{this.title}}</h5>
+        <span class="media-icon glyphicon glyphicon-{{#ifaudio this.type}}headphones{{/ifaudio}}{{#ifarticle this.type}}list-alt{{/ifarticle}}{{#ifvideo this.type}}film{{/ifvideo}}{{#ifphoto this.type}}picture{{/ifphoto}}"></span>
+      </div>
+    </a>
+  {{/each}}
+</div>
