@@ -1,0 +1,29 @@
+---
+notes: |
+  ##### Introduced : 0.0.4
+  ##### Updated : -
+  ##### Usage : `{{> login-form }}`
+---
+<h3 class="text-center">Connexion</h3>
+<div class="spacer spacer-xs"></div>
+<form>
+  {{> input
+        input-id="email"
+        input-type="email"
+        input-label="Adresse email"
+        input-help="C'est le moment où vous rentrez votre adresse email"
+  }}
+  {{> input
+        input-id="password"
+        input-type="password"
+        input-label="Votre mot de passe"
+        input-help="N'aillez crainte, je détourne le regard."
+  }}
+  {{> checkbox }}
+  <div class="spacer spacer-xs"></div>
+  <button type="submit" class="btn btn-primary btn-block">Je me connecte</button>
+</form>
+<div class="spacer spacer-sm"></div>
+<div class="text-center">
+  <a href="#">J'ai oublié mon mot de passe</a>
+</div>
