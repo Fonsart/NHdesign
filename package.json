@@ -60,7 +60,7 @@
     "yargs": "^3.8.0"
   },
   "scripts": {
-    "build": "npm install && napa && gulp -- --production"
+    "build": "npm install && napa && gulp --production"
   },
   "napa": {
     "jquery-fleximages": "Pixabay/jQuery-flexImages"
