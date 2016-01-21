@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.container-wide {
+  width: 100%;
+  padding: 0 6%;
+  @media screen and (max-width: $screen-xs-max) {
+    padding: 0 $grid-gutter-width/2;
+  }
+}
