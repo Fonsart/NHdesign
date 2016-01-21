@@ -1,0 +1,11 @@
+---
+notes: |
+  ##### Introduced : 0.0.4
+  ##### Updated : -
+  ##### Usage : `{{> input }}`
+---
+<div class="form-group{{#if input-variant}} {{input-variant}}{{/if}}">
+  <label for="email" class="hidden">Email address</label>
+  <input type="email" class="form-control" id="email" placeholder="Adresse email" value="">
+  <p class="help-block">Example block-level help text here.</p>
+</div>
