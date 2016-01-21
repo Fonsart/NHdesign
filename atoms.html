@@ -82,11 +82,37 @@
               <li>
                 <a href="atoms.html#button">Button</a>
               </li>
+              <li>
+                <a href="atoms.html#checkbox">Checkbox</a>
+              </li>
+              <li>
+                <a href="atoms.html#input">Input</a>
+              </li>
+              <li>
+                <a href="atoms.html#input-error">Input Error</a>
+              </li>
+              <li>
+                <a href="atoms.html#input-success">Input Success</a>
+              </li>
+              <li>
+                <a href="atoms.html#spacer">Spacer</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="molecules.html" class="f-menu__heading">Molecules</a>
+            <ul>
+              <li>
+                <a href="molecules.html#login-form">Login Form</a>
+              </li>
             </ul>
           </li>
           <li>
             <a href="organisms.html" class="f-menu__heading">Organisms</a>
             <ul>
+              <li>
+                <a href="organisms.html#container-wide">Container Wide</a>
+              </li>
               <li>
                 <a href="organisms.html#media-grid">Media Grid</a>
               </li>
@@ -140,18 +166,221 @@
 			</span>
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
-	<h5>Usage : <code>{{&gt; button }}</code></h5>
+	<h5>Introduced : 0.0.4</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; button }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<a href="#" class="btn btn-primary">.btn-primary</a>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;.btn-primary&lt;/a&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="checkbox">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Checkbox</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.0.4</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; checkbox }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<div class="checkbox">
+	<label>
+		<input type="checkbox"> Resté connecté
+	</label>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;label&gt;
+		&lt;input type=&quot;checkbox&quot;&gt; Resté connecté
+	&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="input">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Input</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.0.4</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; input }}</code></h5>
 <h5>Options :</h5>
 <ul>
-<li><strong>option</strong> - Type</li>
+<li><strong>input-id</strong> - String</li>
+<li><strong>input-type</strong> - String (<code>email</code>, <code>text</code>, <code>password</code>,...)</li>
+<li><strong>input-variant</strong> - String (<code>has-error</code> or <code>has-success</code>)</li>
+<li><strong>input-label</strong> - String</li>
+<li><strong>input-help</strong> - String</li>
 </ul>
 
 </div>
 <div class="f-item-preview">
-	
+	<div class="form-group">
+	<label for="email" class="hidden">Email address</label>
+	<input type="email" class="form-control" id="email" placeholder="Adresse email" value="">
+	<p class="help-block">Example block-level help text here.</p>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup"></code></pre>
+	<pre><code class="language-markup">&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label for=&quot;email&quot; class=&quot;hidden&quot;&gt;Email address&lt;/label&gt;
+	&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Adresse email&quot; value=&quot;&quot;&gt;
+	&lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="input-error">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Input Error</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.0.4</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; input-error }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<div class="form-group has-error">
+	<label for="email" class="hidden">Email address</label>
+	<input type="email" class="form-control" id="email" placeholder="Adresse email" value="">
+	<p class="help-block">Example block-level help text here.</p>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;form-group has-error&quot;&gt;
+	&lt;label for=&quot;email&quot; class=&quot;hidden&quot;&gt;Email address&lt;/label&gt;
+	&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Adresse email&quot; value=&quot;&quot;&gt;
+	&lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="input-success">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Input Success</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.0.4</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; input-success }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<div class="form-group has-success">
+	<label for="email" class="hidden">Email address</label>
+	<input type="email" class="form-control" id="email" placeholder="Adresse email" value="">
+	<p class="help-block">Example block-level help text here.</p>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;form-group has-success&quot;&gt;
+	&lt;label for=&quot;email&quot; class=&quot;hidden&quot;&gt;Email address&lt;/label&gt;
+	&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Adresse email&quot; value=&quot;&quot;&gt;
+	&lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="spacer">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Spacer</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.0.4</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; spacer }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<div class="spacer"></div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;</code></pre>
 </div>
 
 
