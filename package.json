@@ -1,17 +1,15 @@
 {
   "name": "nhdesign",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "author": "Antistatique <hello@antistatique.net>",
   "repository": "fonsart/NHdesign",
-  "dependencies": {
+  "devDependencies": {
     "bootstrap-sass": "~3.3.5",
     "fabricator": "fbrctr/fabricator",
     "html5shiv": "^3.7.3",
     "jquery": "^2.1.4",
-    "respond.js": "^1.4.2"
-  },
-  "devDependencies": {
+    "respond.js": "^1.4.2",
     "async": "^1.3.0",
     "autoprefixer": "^6.2.3",
     "babel-core": "6.3.26",
@@ -62,7 +60,7 @@
     "yargs": "^3.8.0"
   },
   "scripts": {
-    "install": "napa"
+    "build": "npm install && napa && gulp --production"
   },
   "napa": {
     "jquery-fleximages": "Pixabay/jQuery-flexImages"

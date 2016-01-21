@@ -1,0 +1,9 @@
+node_modules
+.sass-cache
+*.DS_Store
+.publish
+
+/tests
+/styleguide
+/tasks
+

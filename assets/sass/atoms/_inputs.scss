@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.form-control {
+  border: 2px solid $nobel;
+  box-shadow: none !important;
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  &:focus + .help-block {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+.help-block {
+  opacity: 0;
+  position: relative;
+  left: 10px;
+  padding-left: $padding-base-horizontal + 2;
+  margin: 2px 0;
+  font-size: floor(($font-size-base * 0.7));
+  transition: opacity 0.3s ease-out,
+              left 0.15s ease-out;
+}

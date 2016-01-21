@@ -1,4 +1,7 @@
 # Notre Histoire Styleguide
+
+[![npm version](https://badge.fury.io/js/nhdesign.svg)](https://www.npmjs.com/package/nhdesign)
+
 Notre Histoire styleguide provided as a npm package. The project is based on [Frontend Toolbox](https://github.com/frontend/toolbox)
 
 ## Install and run the project

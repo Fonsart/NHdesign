@@ -1,0 +1,18 @@
+---
+notes: |
+  ##### Introduced : 0.0.4
+  ##### Updated : -
+  ##### Usage : `{{> input }}`
+  ##### Options :
+  - **input-id** - String
+  - **input-type** - String (`email`, `text`, `password`,...)
+  - **input-variant** - String (`has-error` or `has-success`)
+  - **input-label** - String
+  - **input-help** - String
+---
+
+<div class="form-group{{#if input-variant}} {{input-variant}}{{/if}}">
+  <label for="{{#if input-id}}{{input-id}}{{^}}email{{/if}}" class="hidden">{{#if input-label}}{{input-label}}{{^}}Email address{{/if}}</label>
+  <input type="{{#if input-type}}{{input-type}}{{^}}email{{/if}}" class="form-control" id="{{#if input-id}}{{input-id}}{{^}}email{{/if}}" placeholder="{{#if input-label}}{{input-label}}{{^}}Adresse email{{/if}}" value="">
+  <p class="help-block">{{#if input-help}}{{input-help}}{{^}}Example block-level help text here.{{/if}}</p>
+</div>

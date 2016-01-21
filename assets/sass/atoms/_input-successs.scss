@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.form-group.has-success {
+  .help-block {
+    opacity: 1;
+    left: 0;
+    color: darken($lima, 8%);
+  }
+}

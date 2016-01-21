@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
 .navbar {
-  font-size: $font-size-large;
   padding-right: $grid-gutter-width / 2;
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
   border: none;
+  a {text-decoration: none;}
   .form-control {
-    font-size: $font-size-large;
-    border-color: transparent;
+      border-color: transparent;
     box-shadow: none;
     padding: 6px 0;
     max-width: 105px;
@@ -89,10 +88,11 @@
   border-color: transparent;
   font-family: $font-family-sans-serif;
   font-weight: 700;
-  font-size: $font-size-large;
   position: relative;
   margin-bottom: 0;
   background: $white;
+  border-radius: 0;
+  height: $navbar-height - 3px;
   &:before {
     content: '\00a0';
     display: block;
