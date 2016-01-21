@@ -1,6 +1,6 @@
 {
   "name": "nhdesign",
-  "version": "0.0.3",
+  "version": "0.0.3.1",
   "license": "MIT",
   "author": "Antistatique <hello@antistatique.net>",
   "repository": "fonsart/NHdesign",
@@ -62,7 +62,7 @@
     "yargs": "^3.8.0"
   },
   "scripts": {
-    "install": "napa"
+    "build": "npm install && napa && gulp --production"
   },
   "napa": {
     "jquery-fleximages": "Pixabay/jQuery-flexImages"
