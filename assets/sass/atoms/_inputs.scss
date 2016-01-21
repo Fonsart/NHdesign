@@ -2,7 +2,7 @@
 
 .form-control {
   border: 2px solid $nobel;
-  box-shadow: none;
+  box-shadow: none !important;
   &:focus {
     outline: none !important;
     box-shadow: none !important;
