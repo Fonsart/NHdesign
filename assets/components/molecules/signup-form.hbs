@@ -1,0 +1,47 @@
+---
+notes: |
+  ##### Introduced : 0.0.6
+  ##### Updated : -
+  ##### Usage : `{{> signup-form }}`
+---
+<h3 class="text-center">Iscription</h3>
+<div class="spacer spacer-xs"></div>
+<form>
+  {{> input
+        input-id="nom"
+        input-type="text"
+        input-label="Nom Prénom"
+        input-help="À qui avons-nous l'honneur ?"
+  }}
+  {{> input
+        input-id="email"
+        input-type="email"
+        input-label="Adresse email"
+        input-help="C'est le moment où vous rentrez votre adresse email."
+  }}
+  {{> input
+        input-id="password"
+        input-type="password"
+        input-label="Mot de passe"
+        input-help="N'aillez crainte, je détourne le regard."
+  }}
+  {{> input
+        input-id="password"
+        input-type="password"
+        input-label="Confirmation du mot de passe"
+        input-help="Juste pour être sûr que vous vous en souvenez."
+  }}
+  {{> select
+        select-id="canton"
+        select-label="Votre canton"
+        select-help="T'as où les vaches ?"
+  }}
+  {{> textarea
+        textarea-id="message"
+        textarea-type="message"
+        textarea-label="Des commentaires à chaud ?"
+        textarea-help="Ne soyez pas timide, nous sommes tout ouïe."
+  }}
+  <div class="spacer spacer-xs"></div>
+  <button type="submit" class="btn btn-primary btn-block">Je m'inscris</button>
+</form>
