@@ -104,6 +104,11 @@ $media-caption-height: 48px;
   overflow: hidden;
   transition: background 0.3s;
   box-sizing: border-box;
+  h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .media-icon {
     position: absolute;
     transition: color 0.3s;
@@ -120,14 +125,13 @@ $media-caption-height: 48px;
       line-height: $media-caption-height;
       margin: 0;
       font-weight: 400;
+      max-width: 75%;
+      max-width: calc(100% - 50px);
     }
     .media-icon {
       top: 0;
       right: 0;
       padding: 16px;
-      padding-left: 32px;
-      background: $concrete;
-      background: linear-gradient(to right, transparent 0%, $concrete 16px);
     }
   }
   .media-list & {
@@ -137,8 +141,6 @@ $media-caption-height: 48px;
       white-space: nowrap;
       margin-top: 0.35em;
       padding-left: $grid-gutter-width/1.2;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
     .media-icon {
       top: 0.4em;
