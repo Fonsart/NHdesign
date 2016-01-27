@@ -1,78 +1,7 @@
 @charset "UTF-8";
 
-$media-caption-height: 48px;
-
 .media-grid {
   margin-left: -8px;
   margin-right: -8px;
-}
-
-.media-item {
-  float: left;
-  margin: 8px 8px ($media-caption-height + 8px) 8px;
-  box-sizing: border-box;
-  position: relative;
-  color: $tundora;
-  img {min-width: 100%;}
-  &:hover {
-    color: $tundora;
-    .media-article {background: darken($tundora, 8%);}
-    .media-caption {background: darken($concrete, 8%);}
-  }
-}
-
-.media-article {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow: hidde;
-  background: $tundora;
-  transition: background 0.3s;
-  color: $white;
-  padding: 26px;
-  padding-top: 12px;
-  font-family: $font-family-serif;
-  font-size: floor(($font-size-base * 2.25));
-  font-weight: 700;
-  line-height: 1.15em;
-  &:after {
-    content: '\00a0';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1.25em;
-    background: $tundora;
-    background: linear-gradient(to bottom, transparent 0%,$tundora 70%);
-  }
-}
-
-.media-caption {
-  position: absolute;
-  bottom: $media-caption-height * -1;
-  left: 0;
-  width: 100%;
-  height: $media-caption-height;
-  overflow: hidden;
-  background: $concrete;
-  transition: background 0.3s;
-  padding: 0 16px;
-  box-sizing: border-box;
-  h5 {
-    line-height: $media-caption-height;
-    margin: 0;
-    font-weight: 400;
-  }
-  .media-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 16px;
-    padding-left: 32px;
-    background: $concrete;
-    background: linear-gradient(to right, transparent 0%, $concrete 16px);
-  }
 }
 
