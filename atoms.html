@@ -95,7 +95,13 @@
                 <a href="atoms.html#input-success">Input Success</a>
               </li>
               <li>
+                <a href="atoms.html#select">Select</a>
+              </li>
+              <li>
                 <a href="atoms.html#spacer">Spacer</a>
+              </li>
+              <li>
+                <a href="atoms.html#textarea">Textarea</a>
               </li>
             </ul>
           </li>
@@ -107,6 +113,9 @@
               </li>
               <li>
                 <a href="molecules.html#media-item">Media Item</a>
+              </li>
+              <li>
+                <a href="molecules.html#signup-form">Signup Form</a>
               </li>
             </ul>
           </li>
@@ -363,6 +372,114 @@
 </div>
 
 
+<div class="f-item-group" id="select">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Select</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.0.6</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; select }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>select-id</strong> - String</li>
+<li><strong>select-variant</strong> - String (<code>has-error</code> or <code>has-success</code>)</li>
+<li><strong>select-label</strong> - String</li>
+<li><strong>select-help</strong> - String</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<div class="form-group">
+	<label for="email" class="hidden">Votre canton</label>
+	<select class="form-control">
+		<option disabled selected>Votre canton</option>
+		<optgroup>
+			<option vale="ag">Argovie</option>
+			<option vale="ai">Appenzell Rhodes intérieures</option>
+			<option vale="ar">Appenzell Rhodes extérieures</option>
+			<option vale="be">Berne</option>
+			<option vale="bl">Bâle Campagne</option>
+			<option vale="bs">Bâle Ville</option>
+			<option vale="fr">Fribourg</option>
+			<option vale="ge">Genève</option>
+			<option vale="gl">Glaris</option>
+			<option vale="gr">Grisons</option>
+			<option vale="ju">Jura</option>
+			<option vale="lu">Lucerne -Luzern</option>
+			<option vale="ne">Neuchâtel</option>
+			<option vale="nw">Nidwald</option>
+			<option vale="ow">Obwald</option>
+			<option vale="sg">Saint-Gall</option>
+			<option vale="sh">Schaffhouse</option>
+			<option vale="so">Soleure</option>
+			<option vale="sz">Schwyz</option>
+			<option vale="tg">Thurgovie</option>
+			<option vale="ti">Ticino</option>
+			<option vale="ur">Uri</option>
+			<option vale="vd">Vaud</option>
+			<option vale="vs">Valais</option>
+			<option vale="zg">Zug</option>
+			<option vale="zh">Zurich</option>
+		</optgroup>
+	</select>
+	<p class="help-block">Example block-level help text here.</p>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label for=&quot;email&quot; class=&quot;hidden&quot;&gt;Votre canton&lt;/label&gt;
+	&lt;select class=&quot;form-control&quot;&gt;
+		&lt;option disabled selected&gt;Votre canton&lt;/option&gt;
+		&lt;optgroup&gt;
+			&lt;option vale=&quot;ag&quot;&gt;Argovie&lt;/option&gt;
+			&lt;option vale=&quot;ai&quot;&gt;Appenzell Rhodes intérieures&lt;/option&gt;
+			&lt;option vale=&quot;ar&quot;&gt;Appenzell Rhodes extérieures&lt;/option&gt;
+			&lt;option vale=&quot;be&quot;&gt;Berne&lt;/option&gt;
+			&lt;option vale=&quot;bl&quot;&gt;Bâle Campagne&lt;/option&gt;
+			&lt;option vale=&quot;bs&quot;&gt;Bâle Ville&lt;/option&gt;
+			&lt;option vale=&quot;fr&quot;&gt;Fribourg&lt;/option&gt;
+			&lt;option vale=&quot;ge&quot;&gt;Genève&lt;/option&gt;
+			&lt;option vale=&quot;gl&quot;&gt;Glaris&lt;/option&gt;
+			&lt;option vale=&quot;gr&quot;&gt;Grisons&lt;/option&gt;
+			&lt;option vale=&quot;ju&quot;&gt;Jura&lt;/option&gt;
+			&lt;option vale=&quot;lu&quot;&gt;Lucerne -Luzern&lt;/option&gt;
+			&lt;option vale=&quot;ne&quot;&gt;Neuchâtel&lt;/option&gt;
+			&lt;option vale=&quot;nw&quot;&gt;Nidwald&lt;/option&gt;
+			&lt;option vale=&quot;ow&quot;&gt;Obwald&lt;/option&gt;
+			&lt;option vale=&quot;sg&quot;&gt;Saint-Gall&lt;/option&gt;
+			&lt;option vale=&quot;sh&quot;&gt;Schaffhouse&lt;/option&gt;
+			&lt;option vale=&quot;so&quot;&gt;Soleure&lt;/option&gt;
+			&lt;option vale=&quot;sz&quot;&gt;Schwyz&lt;/option&gt;
+			&lt;option vale=&quot;tg&quot;&gt;Thurgovie&lt;/option&gt;
+			&lt;option vale=&quot;ti&quot;&gt;Ticino&lt;/option&gt;
+			&lt;option vale=&quot;ur&quot;&gt;Uri&lt;/option&gt;
+			&lt;option vale=&quot;vd&quot;&gt;Vaud&lt;/option&gt;
+			&lt;option vale=&quot;vs&quot;&gt;Valais&lt;/option&gt;
+			&lt;option vale=&quot;zg&quot;&gt;Zug&lt;/option&gt;
+			&lt;option vale=&quot;zh&quot;&gt;Zurich&lt;/option&gt;
+		&lt;/optgroup&gt;
+	&lt;/select&gt;
+	&lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="spacer">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -390,6 +507,55 @@
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;spacer&quot;&gt;&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="textarea">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Textarea</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.0.6</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; textarea }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>textarea-id</strong> - String</li>
+<li><strong>textarea-type</strong> - String (<code>email</code>, <code>text</code>, <code>password</code>,...)</li>
+<li><strong>textarea-variant</strong> - String (<code>has-error</code> or <code>has-success</code>)</li>
+<li><strong>textarea-label</strong> - String</li>
+<li><strong>textarea-help</strong> - String</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<div class="form-group">
+	<label for="email" class="hidden">Message</label>
+	<textarea type="email" class="form-control" id="email" rows="3">Votre message</textarea>
+	<p class="help-block">Example block-level help text here.</p>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label for=&quot;email&quot; class=&quot;hidden&quot;&gt;Message&lt;/label&gt;
+	&lt;textarea type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; rows=&quot;3&quot;&gt;Votre message&lt;/textarea&gt;
+	&lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 

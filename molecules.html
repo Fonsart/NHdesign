@@ -95,7 +95,13 @@
                 <a href="atoms.html#input-success">Input Success</a>
               </li>
               <li>
+                <a href="atoms.html#select">Select</a>
+              </li>
+              <li>
                 <a href="atoms.html#spacer">Spacer</a>
+              </li>
+              <li>
+                <a href="atoms.html#textarea">Textarea</a>
               </li>
             </ul>
           </li>
@@ -107,6 +113,9 @@
               </li>
               <li>
                 <a href="molecules.html#media-item">Media Item</a>
+              </li>
+              <li>
+                <a href="molecules.html#signup-form">Signup Form</a>
               </li>
             </ul>
           </li>
@@ -290,6 +299,169 @@
 		&lt;span class=&quot;media-icon glyphicon glyphicon-&quot;&gt;&lt;/span&gt;
 	&lt;/div&gt;
 &lt;/a&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="signup-form">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Signup Form</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.0.6</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; signup-form }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<h3 class="text-center">Inscription</h3>
+<div class="spacer spacer-xs"></div>
+<form>
+	<div class="form-group">
+		<label for="nom" class="hidden">Nom Prénom</label>
+		<input type="text" class="form-control" id="nom" placeholder="Nom Prénom" value="">
+		<p class="help-block">À qui avons-nous l&#x27;honneur ?</p>
+	</div>
+	<div class="form-group">
+		<label for="email" class="hidden">Adresse email</label>
+		<input type="email" class="form-control" id="email" placeholder="Adresse email" value="">
+		<p class="help-block">C&#x27;est le moment où vous rentrez votre adresse email.</p>
+	</div>
+	<div class="form-group">
+		<label for="password" class="hidden">Mot de passe</label>
+		<input type="password" class="form-control" id="password" placeholder="Mot de passe" value="">
+		<p class="help-block">N&#x27;aillez crainte, je détourne le regard.</p>
+	</div>
+	<div class="form-group">
+		<label for="password" class="hidden">Confirmation du mot de passe</label>
+		<input type="password" class="form-control" id="password" placeholder="Confirmation du mot de passe" value="">
+		<p class="help-block">Juste pour être sûr que vous vous en souvenez.</p>
+	</div>
+	<div class="form-group">
+		<label for="canton" class="hidden">Votre canton</label>
+		<select class="form-control">
+			<option disabled selected>Votre canton</option>
+			<optgroup>
+				<option vale="ag">Argovie</option>
+				<option vale="ai">Appenzell Rhodes intérieures</option>
+				<option vale="ar">Appenzell Rhodes extérieures</option>
+				<option vale="be">Berne</option>
+				<option vale="bl">Bâle Campagne</option>
+				<option vale="bs">Bâle Ville</option>
+				<option vale="fr">Fribourg</option>
+				<option vale="ge">Genève</option>
+				<option vale="gl">Glaris</option>
+				<option vale="gr">Grisons</option>
+				<option vale="ju">Jura</option>
+				<option vale="lu">Lucerne -Luzern</option>
+				<option vale="ne">Neuchâtel</option>
+				<option vale="nw">Nidwald</option>
+				<option vale="ow">Obwald</option>
+				<option vale="sg">Saint-Gall</option>
+				<option vale="sh">Schaffhouse</option>
+				<option vale="so">Soleure</option>
+				<option vale="sz">Schwyz</option>
+				<option vale="tg">Thurgovie</option>
+				<option vale="ti">Ticino</option>
+				<option vale="ur">Uri</option>
+				<option vale="vd">Vaud</option>
+				<option vale="vs">Valais</option>
+				<option vale="zg">Zug</option>
+				<option vale="zh">Zurich</option>
+			</optgroup>
+		</select>
+		<p class="help-block">T&#x27;as où les vaches ?</p>
+	</div>
+	<div class="form-group">
+		<label for="message" class="hidden">Des commentaires à chaud ?</label>
+		<textarea type="message" class="form-control" id="message" rows="3">Des commentaires à chaud ?</textarea>
+		<p class="help-block">Ne soyez pas timide, nous sommes tout ouïe.</p>
+	</div>
+	<div class="spacer spacer-xs"></div>
+	<button type="submit" class="btn btn-primary btn-block">Je m'inscris</button>
+</form>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;h3 class=&quot;text-center&quot;&gt;Inscription&lt;/h3&gt;
+&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
+&lt;form&gt;
+	&lt;div class=&quot;form-group&quot;&gt;
+		&lt;label for=&quot;nom&quot; class=&quot;hidden&quot;&gt;Nom Prénom&lt;/label&gt;
+		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;nom&quot; placeholder=&quot;Nom Prénom&quot; value=&quot;&quot;&gt;
+		&lt;p class=&quot;help-block&quot;&gt;À qui avons-nous l&amp;#x27;honneur ?&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;form-group&quot;&gt;
+		&lt;label for=&quot;email&quot; class=&quot;hidden&quot;&gt;Adresse email&lt;/label&gt;
+		&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Adresse email&quot; value=&quot;&quot;&gt;
+		&lt;p class=&quot;help-block&quot;&gt;C&amp;#x27;est le moment où vous rentrez votre adresse email.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;form-group&quot;&gt;
+		&lt;label for=&quot;password&quot; class=&quot;hidden&quot;&gt;Mot de passe&lt;/label&gt;
+		&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;password&quot; placeholder=&quot;Mot de passe&quot; value=&quot;&quot;&gt;
+		&lt;p class=&quot;help-block&quot;&gt;N&amp;#x27;aillez crainte, je détourne le regard.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;form-group&quot;&gt;
+		&lt;label for=&quot;password&quot; class=&quot;hidden&quot;&gt;Confirmation du mot de passe&lt;/label&gt;
+		&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;password&quot; placeholder=&quot;Confirmation du mot de passe&quot; value=&quot;&quot;&gt;
+		&lt;p class=&quot;help-block&quot;&gt;Juste pour être sûr que vous vous en souvenez.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;form-group&quot;&gt;
+		&lt;label for=&quot;canton&quot; class=&quot;hidden&quot;&gt;Votre canton&lt;/label&gt;
+		&lt;select class=&quot;form-control&quot;&gt;
+			&lt;option disabled selected&gt;Votre canton&lt;/option&gt;
+			&lt;optgroup&gt;
+				&lt;option vale=&quot;ag&quot;&gt;Argovie&lt;/option&gt;
+				&lt;option vale=&quot;ai&quot;&gt;Appenzell Rhodes intérieures&lt;/option&gt;
+				&lt;option vale=&quot;ar&quot;&gt;Appenzell Rhodes extérieures&lt;/option&gt;
+				&lt;option vale=&quot;be&quot;&gt;Berne&lt;/option&gt;
+				&lt;option vale=&quot;bl&quot;&gt;Bâle Campagne&lt;/option&gt;
+				&lt;option vale=&quot;bs&quot;&gt;Bâle Ville&lt;/option&gt;
+				&lt;option vale=&quot;fr&quot;&gt;Fribourg&lt;/option&gt;
+				&lt;option vale=&quot;ge&quot;&gt;Genève&lt;/option&gt;
+				&lt;option vale=&quot;gl&quot;&gt;Glaris&lt;/option&gt;
+				&lt;option vale=&quot;gr&quot;&gt;Grisons&lt;/option&gt;
+				&lt;option vale=&quot;ju&quot;&gt;Jura&lt;/option&gt;
+				&lt;option vale=&quot;lu&quot;&gt;Lucerne -Luzern&lt;/option&gt;
+				&lt;option vale=&quot;ne&quot;&gt;Neuchâtel&lt;/option&gt;
+				&lt;option vale=&quot;nw&quot;&gt;Nidwald&lt;/option&gt;
+				&lt;option vale=&quot;ow&quot;&gt;Obwald&lt;/option&gt;
+				&lt;option vale=&quot;sg&quot;&gt;Saint-Gall&lt;/option&gt;
+				&lt;option vale=&quot;sh&quot;&gt;Schaffhouse&lt;/option&gt;
+				&lt;option vale=&quot;so&quot;&gt;Soleure&lt;/option&gt;
+				&lt;option vale=&quot;sz&quot;&gt;Schwyz&lt;/option&gt;
+				&lt;option vale=&quot;tg&quot;&gt;Thurgovie&lt;/option&gt;
+				&lt;option vale=&quot;ti&quot;&gt;Ticino&lt;/option&gt;
+				&lt;option vale=&quot;ur&quot;&gt;Uri&lt;/option&gt;
+				&lt;option vale=&quot;vd&quot;&gt;Vaud&lt;/option&gt;
+				&lt;option vale=&quot;vs&quot;&gt;Valais&lt;/option&gt;
+				&lt;option vale=&quot;zg&quot;&gt;Zug&lt;/option&gt;
+				&lt;option vale=&quot;zh&quot;&gt;Zurich&lt;/option&gt;
+			&lt;/optgroup&gt;
+		&lt;/select&gt;
+		&lt;p class=&quot;help-block&quot;&gt;T&amp;#x27;as où les vaches ?&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;form-group&quot;&gt;
+		&lt;label for=&quot;message&quot; class=&quot;hidden&quot;&gt;Des commentaires à chaud ?&lt;/label&gt;
+		&lt;textarea type=&quot;message&quot; class=&quot;form-control&quot; id=&quot;message&quot; rows=&quot;3&quot;&gt;Des commentaires à chaud ?&lt;/textarea&gt;
+		&lt;p class=&quot;help-block&quot;&gt;Ne soyez pas timide, nous sommes tout ouïe.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
+	&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary btn-block&quot;&gt;Je m&#x27;inscris&lt;/button&gt;
+&lt;/form&gt;</code></pre>
 </div>
 
 
