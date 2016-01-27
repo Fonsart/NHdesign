@@ -53,5 +53,80 @@
         "results": 42
       }
     ]
+  },
+  "types": {
+    "title": "Types",
+    "values": [
+      {
+        "title": "Toutes",
+        "value": "all",
+        "results": 1109
+      },
+      {
+        "title": "Photographies",
+        "value": "picture",
+        "results": 456
+      },
+      {
+        "title": "Bande sonore",
+        "value": "sound",
+        "results": 145
+      },
+      {
+        "title": "Vidéos",
+        "value": "video",
+        "results": 98
+      },
+      {
+        "title": "Articles",
+        "value": "articles",
+        "results": 410
+      }
+    ]
+  },
+  "categories": {
+    "title": "Catégories",
+    "values": [
+      {
+        "title": "lectus pede,",
+        "value": "dui,",
+        "results": 24
+      },
+      {
+        "title": "ac turpis egestas.",
+        "value": "sit amet, consectetuer",
+        "results": 480
+      },
+      {
+        "title": "Morbi quis",
+        "value": "montes, nascetur ridiculus",
+        "results": 221
+      },
+      {
+        "title": "a mi",
+        "value": "blandit",
+        "results": 347
+      },
+      {
+        "title": "metus sit",
+        "value": "vitae aliquam eros",
+        "results": 358
+      },
+      {
+        "title": "tempus",
+        "value": "malesuada",
+        "results": 115
+      },
+      {
+        "title": "vitae semper egestas,",
+        "value": "aliquet. Phasellus",
+        "results": 285
+      },
+      {
+        "title": "sed",
+        "value": "nec tellus.",
+        "results": 493
+      }
+    ]
   }
 }

@@ -4,19 +4,32 @@ notes: |
   ##### Updated : -
   ##### Usage : `{{> facet-group }}`
   *Add/remove `open` class to change height*
+  ##### Options :
+    - **facet-object** - Object
 ---
 <div class="facet-group open">
   <div class="facet-title">
-    <span class="caret"></span> {{ facets.periods.title }}
+    <span class="caret"></span> {{#if facet-object}}{{facet-object.title}}{{^}}{{ facets.periods.title }}{{/if}}
   </div>
   <ul>
-    {{#each facets.periods.values }}
-      <li>
-        <div class="checkbox">
-          <label><input type="checkbox" value="{{this.value}}"> {{this.title}}</label>
-          <span class="text-clear pull-right">{{this.results}}</span>
-        </div>
-      </li>
-    {{/each}}
+    {{#if facet-object}}
+      {{#each facet-object.values }}
+        <li>
+          <div class="checkbox">
+            <label><input type="checkbox" value="{{this.value}}"> {{this.title}}</label>
+            <span class="text-clear pull-right">{{this.results}}</span>
+          </div>
+        </li>
+      {{/each}}
+    {{^}}
+      {{#each facets.periods.values }}
+        <li>
+          <div class="checkbox">
+            <label><input type="checkbox" value="{{this.value}}"> {{this.title}}</label>
+            <span class="text-clear pull-right">{{this.results}}</span>
+          </div>
+        </li>
+      {{/each}}
+    {{/if}}
   </ul>
 </div>
