@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+#media-container {
+  margin-top: $grid-gutter-width/2;
+}
+
 .media-grid {
   margin-left: -8px;
   margin-right: -8px;

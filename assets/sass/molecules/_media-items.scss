@@ -7,6 +7,8 @@ $media-caption-height: 48px;
   position: relative;
   color: $tundora;
   text-decoration: none;
+  outline: $grid-gutter-width/2 solid $white;
+  background: $white;
   .media-grid & {
     float: left;
     margin: 8px 8px ($media-caption-height + 8px) 8px;
@@ -19,15 +21,14 @@ $media-caption-height: 48px;
     .media-description {display: none;}
   }
   .media-list & {
-    display: block;
-    width: 100%;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
     margin-bottom: $grid-gutter-width;
     padding-top: $grid-gutter-width/2;
     max-height: 200px;
     overflow: hidden;
     border-top: 1px solid $nobel;
-    background: $white;
-    outline: $grid-gutter-width/2 solid $white;
     transition: background 0.3s,
                 outline 0.3s;
     &:first-child {border-top: none;}
