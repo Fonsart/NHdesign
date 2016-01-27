@@ -17,9 +17,12 @@
 @import 'atoms/buttons';
 
 // molecules:
+@import 'molecules/media-items';
 @import 'molecules/login-forms';
 
 // organisms:
+@import 'organisms/media-headers';
+@import 'organisms/media-lists';
 @import 'organisms/container-wides';
 @import 'organisms/media-grids';
 @import 'organisms/navbars';
