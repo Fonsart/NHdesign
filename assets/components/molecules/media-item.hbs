@@ -1,5 +1,7 @@
 ---
 notes: |
+  ##### Introduced : 0.0.5
+  ##### Updated : -
   ##### Usage : `{{> media-item }}`
   ##### Options :
   - **mediaobject** - Object
@@ -15,6 +17,10 @@ notes: |
   {{/ifarticle}}
   <div class="media-caption">
     <h5>{{mediaobject.title}}</h5>
+    <p class="media-description">
+      {{mediaobject.tags}}<br>
+      <small class="text-clear">{{mediaobject.comments}} comments</small>
+    </p>
     <span class="media-icon glyphicon glyphicon-{{#ifaudio mediaobject.type}}headphones{{/ifaudio}}{{#ifarticle mediaobject.type}}list-alt{{/ifarticle}}{{#ifvideo mediaobject.type}}film{{/ifvideo}}{{#ifphoto mediaobject.type}}picture{{/ifphoto}}"></span>
   </div>
 </a>
