@@ -3,6 +3,22 @@
 /* global jQuery */
 
 (function($){
+
+  $(document).ready(function () {
+
+    $('.facet-title').click(function(){
+      $(this).parents('.facet-group').toggleClass('open');
+    });
+
+  });
+
+}(jQuery));
+
+'use strict';
+
+/* global jQuery */
+
+(function($){
   $(document).ready(function () {
     var initGrid = function () {
       $('.media-grid').flexImages({
