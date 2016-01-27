@@ -1,0 +1,11 @@
+---
+notes: |
+  ##### Introduced : 0.1.0
+  ##### Updated : -
+  ##### Usage : `{{> facet-sidebar }}`
+---
+<div class="facet-sidebar">
+  {{#each facets }}
+    {{> facet-group facet-object=this }}
+  {{/each}}
+</div>
