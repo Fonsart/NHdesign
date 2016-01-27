@@ -1,0 +1,57 @@
+{
+  "periods": {
+    "title": "Périodes",
+    "values": [
+      {
+        "title": "Toute",
+        "value": "all",
+        "results": 587
+      },
+      {
+        "title": "Avant 1900",
+        "value": "before_1900",
+        "results": 94
+      },
+      {
+        "title": "1900 - 1914",
+        "value": "1900-1914",
+        "results": 41
+      },
+      {
+        "title": "1914 - 1918",
+        "value": "1914-1918",
+        "results": 89
+      },
+      {
+        "title": "1918 - 1939",
+        "value": "1918-1939",
+        "results": 40
+      },
+      {
+        "title": "1939 - 1945",
+        "value": "1939-1945",
+        "results": 64
+      },
+      {
+        "title": "1945 - 1960",
+        "value": "1945-1960",
+        "results": 89
+      },
+      {
+        "title": "1960 - 1980",
+        "value": "1960-1980",
+        "results": 87
+      },
+      {
+        "title": "1980 - 2000",
+        "value": "1980-2000",
+        "results": 83
+      },
+      {
+        "title": "2000 - 2016",
+        "value": "2000-2016",
+        "results": 42
+      }
+    ]
+  }
+}

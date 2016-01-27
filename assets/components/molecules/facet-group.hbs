@@ -1,0 +1,22 @@
+---
+notes: |
+  ##### Introduced : 0.1.0
+  ##### Updated : -
+  ##### Usage : `{{> facet-group }}`
+  *Add/remove `open` class to change height*
+---
+<div class="facet-group open">
+  <div class="facet-title">
+    <span class="caret"></span> {{ facets.periods.title }}
+  </div>
+  <ul>
+    {{#each facets.periods.values }}
+      <li>
+        <div class="checkbox">
+          <label><input type="checkbox" value="{{this.value}}"> {{this.title}}</label>
+          <span class="text-clear pull-right">{{this.results}}</span>
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+</div>

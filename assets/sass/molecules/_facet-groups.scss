@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.facet-group {
+  background: $concrete;
+  padding: $grid-gutter-width/2;
+  ul {
+    overflow: hidden;
+    padding: 0;
+    max-height: 0px;
+    transition: max-height 0.3s;
+    margin-bottom: 0;
+  }
+  li {
+    display: block;
+    list-style-type: none;
+    padding: 2px 0;
+    font-size: $font-size-small;
+    &:first-child {padding-top: 0.8em;}
+  }
+  .checkbox {margin-bottom: 0;}
+  input {
+    position: relative;
+    top: 2px;
+  }
+  &.open {
+    ul {max-height: 500px;}
+  }
+}
+
+.facet-title {
+  font-weight: 700;
+  &:hover {cursor: pointer;}
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 8px;
+  border-color: transparent transparent transparent $mine-shaft;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+  position: relative;
+  top: -2px;
+  .open & {
+    transform: rotate(90deg);
+  }
+}
