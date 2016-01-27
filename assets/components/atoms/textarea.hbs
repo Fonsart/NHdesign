@@ -1,0 +1,18 @@
+---
+notes: |
+  ##### Introduced : 0.0.6
+  ##### Updated : -
+  ##### Usage : `{{> textarea }}`
+  ##### Options :
+  - **textarea-id** - String
+  - **textarea-type** - String (`email`, `text`, `password`,...)
+  - **textarea-variant** - String (`has-error` or `has-success`)
+  - **textarea-label** - String
+  - **textarea-help** - String
+---
+
+<div class="form-group{{#if textarea-variant}} {{textarea-variant}}{{/if}}">
+  <label for="{{#if textarea-id}}{{textarea-id}}{{^}}email{{/if}}" class="hidden">{{#if textarea-label}}{{textarea-label}}{{^}}Message{{/if}}</label>
+  <textarea type="{{#if textarea-type}}{{textarea-type}}{{^}}email{{/if}}" class="form-control" id="{{#if textarea-id}}{{textarea-id}}{{^}}email{{/if}}" rows="3">{{#if textarea-label}}{{textarea-label}}{{^}}Votre message{{/if}}</textarea>
+  <p class="help-block">{{#if textarea-help}}{{textarea-help}}{{^}}Example block-level help text here.{{/if}}</p>
+</div>

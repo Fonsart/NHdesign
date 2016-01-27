@@ -1,0 +1,46 @@
+---
+notes: |
+  ##### Introduced : 0.0.6
+  ##### Updated : -
+  ##### Usage : `{{> select }}`
+  ##### Options :
+  - **select-id** - String
+  - **select-variant** - String (`has-error` or `has-success`)
+  - **select-label** - String
+  - **select-help** - String
+---
+<div class="form-group{{#if select-variant}} {{select-variant}}{{/if}}">
+  <label for="{{#if select-id}}{{select-id}}{{^}}email{{/if}}" class="hidden">{{#if select-label}}{{select-label}}{{^}}Votre canton{{/if}}</label>
+  <select class="form-control">
+    <option disabled selected>{{#if select-label}}{{select-label}}{{^}}Votre canton{{/if}}</option>
+    <optgroup>
+      <option vale="ag">Argovie</option>
+      <option vale="ai">Appenzell Rhodes intérieures</option>
+      <option vale="ar">Appenzell Rhodes extérieures</option>
+      <option vale="be">Berne</option>
+      <option vale="bl">Bâle Campagne</option>
+      <option vale="bs">Bâle Ville</option>
+      <option vale="fr">Fribourg</option>
+      <option vale="ge">Genève</option>
+      <option vale="gl">Glaris</option>
+      <option vale="gr">Grisons</option>
+      <option vale="ju">Jura</option>
+      <option vale="lu">Lucerne -Luzern</option>
+      <option vale="ne">Neuchâtel</option>
+      <option vale="nw">Nidwald</option>
+      <option vale="ow">Obwald</option>
+      <option vale="sg">Saint-Gall</option>
+      <option vale="sh">Schaffhouse</option>
+      <option vale="so">Soleure</option>
+      <option vale="sz">Schwyz</option>
+      <option vale="tg">Thurgovie</option>
+      <option vale="ti">Ticino</option>
+      <option vale="ur">Uri</option>
+      <option vale="vd">Vaud</option>
+      <option vale="vs">Valais</option>
+      <option vale="zg">Zug</option>
+      <option vale="zh">Zurich</option>
+    </optgroup>
+  </select>
+  <p class="help-block">{{#if select-help}}{{select-help}}{{^}}Example block-level help text here.{{/if}}</p>
+</div>
