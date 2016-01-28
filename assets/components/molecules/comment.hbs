@@ -1,0 +1,30 @@
+---
+notes: |
+  ##### Introduced : 0.1.1
+  ##### Updated : -
+  ##### Usage : `{{> comment }}`
+  ##### Options :
+  - **comment-object** - Object
+---
+<div class="comment">
+  <div class="row">
+    <div class="col-xs-4 col-sm-2">
+      <a href="#">
+        <img src="{{#if comment-object}}{{comment-object.avatar}}{{^}}http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/08/876988c033485ccc_jpg_168x168_crop_q85.jpg{{/if}}" alt="{{#if comment-object}}{{comment-object.author}}{{^}}Martine Desarzens{{/if}}" class="img-responsive img-circle">
+      </a>
+    </div>
+    <div class="col-xs-8 col-sm-10">
+      <h4>
+        <a href="#">{{#if comment-object}}{{comment-object.author}}{{^}}Martine Desarzens{{/if}}</a>
+        <small class="text-clear pull-right">5 mars 2013</small>
+      </h4>
+      <p>
+        {{#if comment-object}}
+          {{comment-object.comment}}
+        {{^}}
+          Avez-vous connu, Nicolas, les si jolis petits cartons dans lesquels nous placions délicatement les fleurs de mai que nous envoyions par la poste à notre famille.
+        {{/if}}
+      </p>
+    </div>
+  </div>
+</div>

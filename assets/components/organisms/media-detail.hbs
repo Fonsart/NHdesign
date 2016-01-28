@@ -28,4 +28,36 @@ notes: |
     {{> media-infobar }}
   </div>
 </div>
-<div class="spacer"></div>
+<div class="spacer spacer-xs"></div>
+<hr>
+
+<div class="row">
+  <div class="col-sm-6">
+    <h3>Commentaires</h3>
+    <div class="spacer spacer-xs"></div>
+    {{#each media.comments }}
+      {{> comment comment-object=this }}
+    {{/each}}
+    <div class="spacer spacer-xs"></div>
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-2">
+        <a href="#" class="btn btn-default">Ajouter un commentaire</a>
+      </div>
+    </div>
+    <div class="spacer spacer-sm"></div>
+  </div>
+  <div class="col-sm-5 col-sm-offset-1">
+    <h3>Tags</h3>
+    <div class="spacer spacer-xs"></div>
+    {{#each media.tags }}
+      <a href="#" class="btn btn-primary btn-sm">{{this}}</a>
+    {{/each}}
+    <h3>Groupes</h3>
+    <div class="spacer spacer-xs"></div>
+    {{#each media.groups }}
+      <a href="#" class="btn btn-primary btn-sm">{{this}}</a>
+    {{/each}}
+  </div>
+</div>
+
+<div class="spacer spacer-sm"></div>
