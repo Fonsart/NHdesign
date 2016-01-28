@@ -11,7 +11,7 @@ body {
   left: 0;
   width: 100%;
   background: $white;
-  padding-right: $grid-gutter-width / 2;
+  padding-right: ($grid-gutter-width / 2) + 123px;
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
   border: none;
   font-family: $font-family-sans-serif;
@@ -76,7 +76,6 @@ body {
 .navbar-toggle {
   background: $monza;
   display: block;
-  float: left;
   margin: 0;
   height: $navbar-height;
   width: $navbar-height;
@@ -84,11 +83,16 @@ body {
   transition: background 0.3s;
   > .icon-bar {
     width: 16px;
+    background: $white;
     & + .icon-bar {margin-top: 5px;}
+  }
+  .navbar & {
+    float: left;
   }
 }
 
 .navbar-brand {
+  padding-left: $navbar-height + 15px;
   h4, .h4 {margin: 0;}
   @media screen and (max-width: $screen-xs-max) {
     padding: 13px 5px;
