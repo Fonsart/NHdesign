@@ -4,6 +4,7 @@
   background: $concrete;
   padding: $grid-gutter-width/2;
   margin-bottom: $grid-gutter-width/2;
+  font-family: $font-family-sans-serif;
   ul {
     overflow: hidden;
     padding: 0;
@@ -18,7 +19,9 @@
     font-size: $font-size-small;
     &:first-child {padding-top: 0.8em;}
   }
-  .checkbox {margin-bottom: 0;}
+  .checkbox {
+    margin-bottom: 0;
+  }
   input {
     position: relative;
     top: 2px;

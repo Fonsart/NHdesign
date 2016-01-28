@@ -1,8 +1,20 @@
 @charset "UTF-8";
 
 .btn {
+  font-family: $font-family-sans-serif;
   font-weight: 700;
+  text-decoration: none;
   transition: color 0.3s,
-              background 0.3s;
+              background 0.3s,
+              border 0.3s;
+  margin-bottom: 0.2em;
   &:active {box-shadow: none;}
+}
+
+.btn-primary:hover, .btn-primary:active {
+  background: darken($monza, 20%);
+}
+
+.btn-default:hover, .btn-default:active {
+  border-color: $white;
 }
