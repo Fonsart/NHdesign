@@ -19,7 +19,9 @@
     font-size: $font-size-small;
     &:first-child {padding-top: 0.8em;}
   }
-  .checkbox {margin-bottom: 0;}
+  .checkbox {
+    margin-bottom: 0;
+  }
   input {
     position: relative;
     top: 2px;
