@@ -42,6 +42,7 @@
     transform: translateX(-100%);
     border: none;
     font-weight: 400;
+    height: $navbar-height;
     &:hover, &:active {
       border-color: $white;
       background: $white;

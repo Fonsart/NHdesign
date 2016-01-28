@@ -17,7 +17,7 @@ body {
   font-family: $font-family-sans-serif;
   a {text-decoration: none;}
   .form-control {
-      border-color: transparent;
+    border-color: transparent;
     box-shadow: none;
     padding: 6px 0;
     max-width: 105px;
@@ -34,28 +34,35 @@ body {
     }
   }
   @media screen and (max-width: $screen-xs-max) {
-    padding-right: 0;
+    padding-right: 45px;
     height: $navbar-height;
     background: $white;
     form {
+      display: block;
       position: absolute;
-      top: $navbar-height * -1;
-      margin-top: 0;
+      top: $navbar-height;
       left: $grid-gutter-width / 2;
       width: 100%;
+      height: 0px;
+      padding: 0 $grid-gutter-width/2;
+      overflow: hidden;
+      margin-top: 0;
       background: $gallery;
-      z-index: -1;
-      transition: top 0.3s;
+      z-index: 600;
+      transition: height 0.3s,
+                  padding 0.3s;
       &.open {
-        top: $navbar-height - 4px;
+        height: $navbar-height + 12px;
+        padding: 5px $grid-gutter-width/2;
       }
     }
     .form-control {
       max-width: none;
       width: 78%;
+      height: $navbar-height - 8px;
       float: left;
-      margin-top: 4px;
       padding: 6px;
+      margin-top: 4px;
     }
     form .btn {
       width: 20%;
@@ -96,6 +103,11 @@ body {
   h4, .h4 {margin: 0;}
   @media screen and (max-width: $screen-xs-max) {
     padding: 13px 5px;
+    padding-left: $navbar-height + 10px;
+    h4, .h4 {
+      font-size: $font-size-small;
+      margin: 0.25em 0;
+    }
   }
 }
 
