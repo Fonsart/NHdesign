@@ -1,6 +1,16 @@
 @charset "UTF-8";
 
+body {
+  padding-top: $navbar-height;
+}
+
 .navbar {
+  position: fixed;
+  z-index: 600;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $white;
   padding-right: $grid-gutter-width / 2;
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
   border: none;
