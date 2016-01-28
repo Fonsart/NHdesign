@@ -6,7 +6,7 @@
 
   $(document).ready(function () {
 
-    $('#panel-toggle').click(function(){
+    $('.panel-button').click(function(){
       console.log('toggle');
       $(this)
         .parents('.panel')
