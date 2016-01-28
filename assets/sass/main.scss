@@ -9,6 +9,7 @@
 
 
 // atoms:
+@import 'atoms/separators';
 @import 'atoms/textareas';
 @import 'atoms/selects';
 @import 'atoms/spacers';
@@ -19,12 +20,14 @@
 @import 'atoms/buttons';
 
 // molecules:
+@import 'molecules/media-infobars';
 @import 'molecules/facet-groups';
 @import 'molecules/signup-forms';
 @import 'molecules/media-items';
 @import 'molecules/login-forms';
 
 // organisms:
+@import 'organisms/media-details';
 @import 'organisms/facet-sidebars';
 @import 'organisms/media-headers';
 @import 'organisms/media-lists';

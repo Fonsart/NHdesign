@@ -1,0 +1,62 @@
+---
+notes: |
+  ##### Introduced : 0.1.1
+  ##### Updated : -
+  ##### Usage : `{{> media-infobar }}`
+---
+<div class="media-infobar">
+  <h5>Informations</h5>
+  <hr>
+  <table>
+    <tbody>
+      <tr>
+        <td class="text-clear">Date</td>
+        <td>{{media.date}}</td>
+      </tr>
+      <tr>
+        <td class="text-clear">Lieu</td>
+        <td>
+          {{media.location}}<br>
+          <a href="http://maps.google.com/">Voir sur la carte</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-clear">Auteur</td>
+        <td>
+          {{#each media.authors }}
+            <a href="#">{{this}}</a>
+          {{/each}}
+        </td>
+      </tr>
+      <tr>
+        <td class="text-clear">Albums</td>
+        <td>
+          {{#each media.ablums }}
+            <a href="#">{{this}}</a>
+          {{/each}}
+        </td>
+      </tr>
+      <tr>
+        <td class="text-clear">Groupes</td>
+        <td>
+          {{#each media.groups }}
+            <a href="#">{{this}}</a>
+          {{/each}}
+        </td>
+      </tr>
+      <tr>
+        <td class="text-clear">License</td>
+        <td>{{media.license}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h5>Partagé par</h5>
+  <div class="text-center">
+    <a href="#">
+      <img src="{{media.shared_by_avatar}}" class="img-circle" alt="{{media.shared_by}}">
+      {{media.shared_by}}
+    </a>
+  </div>
+  <div class="spacer spacer-sm"></div>
+</div>

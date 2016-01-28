@@ -1,0 +1,31 @@
+---
+notes: |
+  ##### Introduced : 0.1.1
+  ##### Updated : -
+  ##### Usage : `{{> media-detail }}`
+---
+<div class="spacer spacer-sm"></div>
+<h1 class="text-center">{{media.title}}</h1>
+<h5 class="text-center">
+  {{media.views}}&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small>
+  |
+  {{media.favorites}}&thinsp;<small><i class="glyphicon glyphicon-star"></i></small>
+  -
+  <a href="#">Ajouter au favoris</a>
+  -
+  <a href="#">Partager</a>
+</h5>
+
+<div class="spacer spacer-sm"></div>
+<img src="{{media.source}}" alt="{{media.title}}" class="img-responsive">
+<div class="spacer spacer-md"></div>
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-1 media-description">
+    {{{media.description}}}
+  </div>
+  <div class="col-sm-3 col-sm-offset-1 media-infobar-wrapper">
+    {{> media-infobar }}
+  </div>
+</div>
+<div class="spacer"></div>
