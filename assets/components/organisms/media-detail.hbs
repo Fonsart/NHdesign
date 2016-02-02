@@ -23,16 +23,9 @@ notes: |
 <div class="row">
   <div class="col-sm-6 col-sm-offset-1 media-description">
     {{{media.description}}}
-  </div>
-  <div class="col-sm-3 col-sm-offset-1 media-infobar-wrapper">
-    {{> media-infobar }}
-  </div>
-</div>
-<div class="spacer spacer-xs"></div>
-<hr>
 
-<div class="row">
-  <div class="col-sm-6">
+    <div class="spacer spacer-xs"></div>
+    <hr>
     <h3>Commentaires</h3>
     <div class="spacer spacer-xs"></div>
     {{#each media.comments }}
@@ -46,16 +39,23 @@ notes: |
     </div>
     <div class="spacer spacer-sm"></div>
   </div>
-  <div class="col-sm-5 col-sm-offset-1">
+  <div class="col-sm-3 col-sm-offset-1">
+    {{> media-infobar }}
+
     <h3>Tags</h3>
     <div class="spacer spacer-xs"></div>
     {{#each media.tags }}
-      <a href="#" class="btn btn-primary btn-sm">{{this}}</a>
+      <a href="#" class="btn btn-default btn-sm">{{this}}</a>
     {{/each}}
     <h3>Groupes</h3>
     <div class="spacer spacer-xs"></div>
     {{#each media.groups }}
       <a href="#" class="btn btn-primary btn-sm">{{this}}</a>
+    {{/each}}
+    <h3>Albums</h3>
+    <div class="spacer spacer-xs"></div>
+    {{#each media.albums }}
+      <a href="#" class="btn btn-primary btn-sm">Groupe {{@key}} &rsaquo; {{this}}</a>
     {{/each}}
   </div>
 </div>
