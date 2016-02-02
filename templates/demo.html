@@ -23,12 +23,6 @@
 
     <nav class="navbar navbar-default">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
         <a class="navbar-brand" href="#"><h1 class="h4">Notre histoire</h1></a>
       </div>
     
@@ -41,15 +35,6 @@
         </button>
       </form>
     
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="#">
-            <span class="hidden-xs">Connexion</span>
-            <span class="visible-xs glyphicon glyphicon-user"></span>
-          </a>
-        </li>
-      </ul>
-    
       <a href="#" class="btn btn-default navbar-btn navbar-right">
         <span class="hidden-xs">Ajouter un média</span>
         <span class="visible-xs glyphicon glyphicon-plus"></span>
@@ -59,22 +44,59 @@
         <span class="visible-xs glyphicon glyphicon-search"></span>
       </button>
     </nav>
-<div class="spacer spacer-xs"></div>
+<div class="panel panel-left panel-animate panel-leave panel-leaving bg-mine-shaft">
+  <button type="button" class="navbar-toggle panel-button">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <div class="panel-content">
 
-<div class="media-header text-right">
-  <h1 class="pull-left h3">1114 résultats pour “train”</h1>
-  <button id="display-grid" class="btn btn-default">
-    <i class="glyphicon glyphicon-th"></i>
+  </div>
+</div><div class="panel panel-right panel-animate panel-leave panel-leaving bg-mine-shaft">
+  <button type="button" class="btn btn-default panel-button">
+    <span class="hidden-xs">Connexion</span>
+    <span class="visible-xs glyphicon glyphicon-user"></span>
   </button>
-  <button id="display-list" class="btn btn-default">
-    <i class="glyphicon glyphicon-th-list"></i>
-  </button>
-  <button id="display-map" class="btn btn-default">
-    <i class="glyphicon glyphicon-map-marker"></i>
-  </button>
+  <div class="panel-content">
+    <h3 class="text-center">Connexion</h3>
+    <div class="spacer spacer-xs"></div>
+    <form>
+      <div class="form-group">
+        <label for="email" class="hidden">Adresse email</label>
+        <input type="email" class="form-control" id="email" placeholder="Adresse email" value="">
+        <p class="help-block">C&#x27;est le moment où vous rentrez votre adresse email</p>
+      </div>  <div class="form-group">
+        <label for="password" class="hidden">Votre mot de passe</label>
+        <input type="password" class="form-control" id="password" placeholder="Votre mot de passe" value="">
+        <p class="help-block">N&#x27;aillez crainte, je détourne le regard.</p>
+      </div>  <div class="checkbox">
+        <label>
+          <input type="checkbox"> Resté connecté
+        </label>
+      </div>  <div class="spacer spacer-xs"></div>
+      <button type="submit" class="btn btn-primary btn-block">Je me connecte</button>
+    </form>
+    <div class="spacer spacer-sm"></div>
+    <div class="text-center">
+      <a href="#">J'ai oublié mon mot de passe</a>
+    </div>  </div>
 </div>
 <div class="container-wide">
-  <div class="row">
+  <div class="spacer spacer-sm"></div>
+  <div class="media-header text-right">
+    <h1 class="pull-left h2">1114 résultats pour “train”</h1>
+    <button id="display-grid" class="btn btn-default">
+      <i class="glyphicon glyphicon-th"></i>
+    </button>
+    <button id="display-list" class="btn btn-default">
+      <i class="glyphicon glyphicon-th-list"></i>
+    </button>
+    <button id="display-map" class="btn btn-default">
+      <i class="glyphicon glyphicon-map-marker"></i>
+    </button>
+  </div>  <div class="row">
     <div class="col-sm-3">
       <div class="facet-sidebar">
           <div class="facet-group open">
