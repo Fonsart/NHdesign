@@ -1,13 +1,11 @@
 @charset "UTF-8";
 
-.media-infobar-wrapper {
+.media-infobar {
   background: $concrete;
   margin-top: 10px;
-}
-
-.media-infobar {
   font-size: $font-size-small;
   font-family: $font-family-sans-serif;
+  padding: 1px $grid-gutter-width/2;
   hr {margin: 0.6em auto;}
   td {
     vertical-align: top;
