@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+.panel {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  overflow: visible;
+  width: 400px;
+  max-width: 90%;
+  z-index: 700;
+  &.panel-animate {
+    transition: transform 0.3s;
+  }
+  .panel-button {
+    position: absolute;
+    top: 0px;
+    border: none;
+    border-radius: 0;
+  }
+  &.panel-entering .panel-button,
+  &.panel-enter .panel-button {
+    background: inherit;
+    color: $white;
+    &:hover, &:active, &:focus {
+      color: $white;
+      background: inherit;
+    }
+  }
+}
+
+.panel-left {
+  left: 0px;
+  transform: translateX(-400px);
+  &.panel-entering {transform: translateX(0px);}
+  &.panel-enter {transform: translateX(0px);}
+  &.panel-leaving {transform: translateX(-100%);}
+  &.panel-leave {transform: translateX(-100%);}
+  .panel-button {
+    right: $navbar-height * -1;
+  }
+}
+
+.panel-right {
+  right: 0px;
+  transform: translateX(400px);
+  &.panel-entering {transform: translateX(0px);}
+  &.panel-enter {transform: translateX(0px);}
+  &.panel-leaving {transform: translateX(100%);}
+  &.panel-leave {transform: translateX(100%);}
+  .panel-button {
+    left: 0px;
+    transform: translateX(-100%);
+    font-weight: 400;
+    height: $navbar-height;
+    &:hover, &:active {
+      border-color: $white;
+      background: $white;
+    }
+  }
+}
+
+.panel-content {
+  bottom: 0px;
+  overflow: auto;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  padding: 0 $grid-gutter-width;
+  box-sizing: border-box;
+}

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.bg-mine-shaft {
+  background: $mine-shaft;
+  color: $white;
+  a {
+    color: $gallery;
+    &:hover, &:active, &:focus {color: $white;}
+  }
+  .btn-primary {
+    background: $gallery;
+    color: $black;
+    &:hover, &:active, &:focus {
+      color: $black;
+      background: $white;
+    }
+  }
+}

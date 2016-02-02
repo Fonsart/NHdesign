@@ -6,6 +6,7 @@
 @import 'main-variables';
 @import 'bootstrap';
 @import 'typography';
+@import 'helpers';
 
 
 // atoms:
@@ -28,6 +29,7 @@
 @import 'molecules/login-forms';
 
 // organisms:
+@import 'organisms/panels';
 @import 'organisms/media-details';
 @import 'organisms/facet-sidebars';
 @import 'organisms/media-headers';
