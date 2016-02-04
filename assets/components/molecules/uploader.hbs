@@ -4,18 +4,18 @@ notes: |
   ##### Updated : -
   ##### Usage : `{{> uploader }}`
 ---
-<form class="uploader" action="/upload/metadata.html" method="get" enctype="multipart/form-data">
+<form class="uploader" action="metadata.html" method="get" enctype="multipart/form-data">
   <input type="file" name="files[]" id="filer_input" multiple="multiple">
 
   <h5>Choisissez la privacité du ou des documents</h5>
   <div class="radio">
-    <label>
+    <label class="text-sans">
       <input type="radio" name="optionsRadios" id="private" value="private">
       Privé
     </label>
   </div>
   <div class="radio">
-    <label>
+    <label class="text-sans">
       <input type="radio" name="optionsRadios" id="public" value="public" checked>
       Public
     </label>
