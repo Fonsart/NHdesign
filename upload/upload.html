@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="./../build/css/vendors.min.css">
+    <link rel="stylesheet" href="./../build/css/main.css">
+
+    <!--[if lt IE 9]>
+      <script src="./../build/js/polyfills.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="demo.html"><h1 class="h4">Notre histoire</h1></a>
+      </div>
+    
+      <form id="search-form" class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Rechercher">
+        </div>
+        <button type="submit" class="btn btn-default">
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        </button>
+      </form>
+    
+      <a href="upload.html" class="btn btn-default navbar-btn navbar-right">
+        <span class="hidden-xs">Ajouter un média</span>
+        <span class="visible-xs glyphicon glyphicon-plus"></span>
+      </a>
+    
+      <button id="search-mobile" type="button" class="btn btn-default navbar-btn navbar-right visible-xs">
+        <span class="visible-xs glyphicon glyphicon-search"></span>
+      </button>
+    </nav>
+<div class="panel panel-left panel-animate panel-leave panel-leaving bg-mine-shaft">
+  <button type="button" class="navbar-toggle panel-button">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <div class="panel-content">
+
+  </div>
+</div><div class="panel panel-right panel-animate panel-leave panel-leaving bg-mine-shaft">
+  <button type="button" class="btn btn-default panel-button">
+    <span class="hidden-xs">Connexion</span>
+    <span class="visible-xs glyphicon glyphicon-user"></span>
+  </button>
+  <div class="panel-content">
+    <h3 class="text-center">Connexion</h3>
+    <div class="spacer spacer-xs"></div>
+    <form>
+      <div class="form-group">
+        <label for="email" class="hidden">Adresse email</label>
+        <input type="email" class="form-control" id="email" placeholder="Adresse email" value="">
+        <p class="help-block">C&#x27;est le moment où vous rentrez votre adresse email</p>
+      </div>  <div class="form-group">
+        <label for="password" class="hidden">Votre mot de passe</label>
+        <input type="password" class="form-control" id="password" placeholder="Votre mot de passe" value="">
+        <p class="help-block">N&#x27;aillez crainte, je détourne le regard.</p>
+      </div>  <div class="checkbox">
+        <label>
+          <input type="checkbox"> Resté connecté
+        </label>
+      </div>  <div class="spacer spacer-xs"></div>
+      <button type="submit" class="btn btn-primary btn-block">Je me connecte</button>
+    </form>
+    <div class="spacer spacer-sm"></div>
+    <div class="text-center">
+      <a href="#">J'ai oublié mon mot de passe</a>
+    </div>  </div>
+</div>
+<div class="container">
+  <h1>Télécharger des photos</h1>
+  <div class="spacer spacer-sm"></div>
+  <form class="uploader" action="metadata.html" method="get" enctype="multipart/form-data">
+    <input type="file" name="files[]" id="filer_input" multiple="multiple">
+  
+    <h5>Choisissez la privacité du ou des documents</h5>
+    <div class="radio">
+      <label class="text-sans">
+        <input type="radio" name="optionsRadios" id="private" value="private">
+        Privé
+      </label>
+    </div>
+    <div class="radio">
+      <label class="text-sans">
+        <input type="radio" name="optionsRadios" id="public" value="public" checked>
+        Public
+      </label>
+    </div>
+  
+    <div class="spacer spacer-sm"></div>
+  
+    <input type="submit" class="btn btn-primary" value="Suivant">
+  </form>  <div class="spacer spacer-md"></div>
+</div>
+
+
+    <script src="./../build/js/vendors.min.js"></script>
+    <script src="./../build/js/main.js"></script>
+  </body>
+</html>
