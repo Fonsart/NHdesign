@@ -3,7 +3,7 @@
 {{> panel-left }}
 {{> panel-right }}
 
-<div class="container-wide">
+<div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
       <h1>Éditer la photo</h1>
@@ -28,7 +28,7 @@
         <div class="form-group">
           <label class="h5" for="day">Date originale</label>
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <select name="day" id="day" class="form-control">
                 <option value="" selected="selected">-</option>
                 <option value="1">1</option>
@@ -64,7 +64,7 @@
                 <option value="31">31</option>
               </select>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <select name="month" class="form-control">
                 <option value="" selected="selected">-</option>
                 <option value="1">janvier</option>
@@ -81,7 +81,7 @@
                 <option value="12">décembre</option>
               </select>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               {{> input
                     input-id="year"
                     input-type="text"
@@ -91,6 +91,17 @@
             </div>
           </div>
           <small class="text-clear text-sans"><em>Si vous ne connaissez pas le jour ou le mois, veuillez essayer d'estimer l'année</em></small>
+        </div>
+
+        <div class="spacer spacer-xs"></div>
+
+        <div class="form-group">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              M'aider à dater la photographie
+            </label>
+          </div>
         </div>
 
         <div class="form-group">
