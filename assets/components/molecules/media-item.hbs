@@ -1,14 +1,14 @@
 ---
 notes: |
   ##### Introduced : 0.0.5
-  ##### Updated : -
+  ##### Updated : 1.1.5
   ##### Usage : `{{> media-item }}`
   ##### Options :
   - **mediaobject** - Object
 ---
 <a href="#" class="media-item" data-w="{{mediaobject.width}}" data-h="{{mediaobject.height}}">
   {{#ifnotarticle mediaobject.type}}
-    <img src="https://unsplash.it/{{mediaobject.width}}/{{mediaobject.height}}?image={{mediaobject.picture}}" alt="{{mediaobject.title}}" class="img-responsive">
+    <img src="{{mediaobject.thumbnail}}" alt="{{mediaobject.title}}" class="img-responsive">
   {{/ifnotarticle}}
   {{#ifarticle mediaobject.type}}
     <div class="media-article">
@@ -18,9 +18,15 @@ notes: |
   <div class="media-caption">
     <h5>{{mediaobject.title}}</h5>
     <p class="media-description">
-      {{mediaobject.tags}}<br>
-      <small class="text-clear">{{mediaobject.comments}} comments</small>
+      {{#each mediaobject.tags }}
+        {{this.name}},
+      {{/each}}<br>
     </p>
+    <div class="text-clear">
+      {{mediaobject.views_count}}&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
+      {{mediaobject.bookmarks_count}}&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
+      {{mediaobject.comments.length}}&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+    </div>
     <span class="media-icon glyphicon glyphicon-{{#ifaudio mediaobject.type}}headphones{{/ifaudio}}{{#ifarticle mediaobject.type}}list-alt{{/ifarticle}}{{#ifvideo mediaobject.type}}film{{/ifvideo}}{{#ifphoto mediaobject.type}}picture{{/ifphoto}}"></span>
   </div>
 </a>
