@@ -1,6 +1,6 @@
 {
   "name": "nhdesign",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "license": "MIT",
   "author": "Antistatique <hello@antistatique.net>",
   "repository": "fonsart/NHdesign",
@@ -64,5 +64,8 @@
   },
   "napa": {
     "jquery-fleximages": "Pixabay/jQuery-flexImages"
+  },
+  "dependencies": {
+    "jquery.filer": "^1.0.4"
   }
 }

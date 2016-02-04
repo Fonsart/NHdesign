@@ -6,11 +6,13 @@
   },
   "vendors": {
     "css": [
-      ""
+      "node_modules/jquery.filer/css/jquery.filer.css",
+      "node_modules/jquery.filer/css/themes/jquery.filer-dragdropbox-theme.css"
     ],
     "js": [
       "node_modules/jquery/dist/jquery.js",
-      "node_modules/jquery-fleximages/jquery.flex-images.js"
+      "node_modules/jquery-fleximages/jquery.flex-images.js",
+      "node_modules/jquery.filer/js/jquery.filer.js"
     ],
     "fonts": [
       "node_modules/bootstrap-sass/assets/fonts/bootstrap/*",

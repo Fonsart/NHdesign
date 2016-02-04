@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.uploader {
+  a, a:hover {text-decoration: none !important;}
+}
+
+.jFiler-input-dragDrop {
+  width: auto;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.jFiler-items-grid .jFiler-item .jFiler-item-container {
+  padding: 0;
+  padding-bottom: 0.4em;
+  background: #ededed;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.icon-jfi-folder:before,
+.icon-jfi-trash:before {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  text-shadow: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-jfi-folder:before {@extend .glyphicon-folder-open:before;}
+.icon-jfi-trash:before {@extend .glyphicon-trash:before;}
+
+.jFiler-input-choose-btn.blue {
+  @extend .btn;
+  @extend .btn-default;
+}
