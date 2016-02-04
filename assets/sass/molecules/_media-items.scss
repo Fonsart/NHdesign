@@ -7,7 +7,6 @@ $media-caption-height: 48px;
   position: relative;
   color: $tundora;
   text-decoration: none;
-  outline: $grid-gutter-width/2 solid $white;
   background: $white;
   font-family: $font-family-sans-serif;
   .media-grid & {
@@ -30,14 +29,11 @@ $media-caption-height: 48px;
     max-height: 200px;
     overflow: hidden;
     border-top: 1px solid $nobel;
-    transition: background 0.3s,
-                outline 0.3s;
+    transition: background 0.3s;
     &:first-child {border-top: none;}
     &:hover {
       color: $tundora;
       text-decoration: none;
-      background: $concrete;
-      outline: $grid-gutter-width/2 solid $concrete;
       .media-icon {color: $monza;}
       .media-caption h5:after {background: linear-gradient(to right, transparent 0%, $concrete 90%);}
     }
