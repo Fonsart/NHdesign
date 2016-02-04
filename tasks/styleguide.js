@@ -48,7 +48,7 @@ module.exports = function() {
           if(type === 'photo'){
             return block.fn(this);
           }
-        },
+        }
     }
   };
 
