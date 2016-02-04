@@ -1,7 +1,7 @@
 ---
 notes: |
   ##### Introduced : 0.1.0
-  ##### Updated : -
+  ##### Updated : 1.1.4
   ##### Usage : `{{> facet-group }}`
   *Add/remove `open` class to change height*
   ##### Options :
@@ -9,7 +9,7 @@ notes: |
 ---
 <div class="facet-group open">
   <div class="facet-title">
-    <span class="caret"></span> {{#if facet-object}}{{facet-object.title}}{{^}}{{ facets.periods.title }}{{/if}}
+    {{#if facet-object}}{{facet-object.title}}{{^}}{{ facets.periods.title }}{{/if}}<span class="chevron pull-right text-danger"></span>
   </div>
   <ul>
     {{#if facet-object}}
