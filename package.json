@@ -64,5 +64,8 @@
   },
   "napa": {
     "jquery-fleximages": "Pixabay/jQuery-flexImages"
+  },
+  "dependencies": {
+    "jquery.filer": "^1.0.4"
   }
 }
