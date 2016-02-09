@@ -16,6 +16,11 @@
     opacity: 1;
     left: 0px;
   }
+  &[type="file"] {
+    border: none;
+    padding: 0;
+    height: auto;
+  }
 }
 
 .help-block {

@@ -12,6 +12,6 @@ notes: |
 
 <div class="form-group{{#if textarea-variant}} {{textarea-variant}}{{/if}}">
   <label for="{{#if textarea-id}}{{textarea-id}}{{^}}email{{/if}}" class="hidden">{{#if textarea-label}}{{textarea-label}}{{^}}Message{{/if}}</label>
-  <textarea class="form-control" id="{{#if textarea-id}}{{textarea-id}}{{^}}email{{/if}}" rows="3">{{#if textarea-label}}{{textarea-label}}{{^}}Votre message{{/if}}</textarea>
+  <textarea class="form-control" id="{{#if textarea-id}}{{textarea-id}}{{^}}email{{/if}}" rows="3">{{#if textarea-label}}{{{textarea-label}}}{{^}}Votre message{{/if}}</textarea>
   <p class="help-block">{{#if textarea-help}}{{textarea-help}}{{^}}Example block-level help text here.{{/if}}</p>
 </div>
