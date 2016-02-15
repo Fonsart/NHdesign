@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url(https://fonts.googleapis.com/css?family=Neuton:400,700|Work+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Neuton:400,700|Work+Sans:400,500,700);
 
 // init:
 @import 'main-variables';
@@ -10,6 +10,7 @@
 
 
 // atoms:
+@import 'atoms/thumbnails';
 @import 'atoms/separators';
 @import 'atoms/textareas';
 @import 'atoms/selects';
@@ -21,6 +22,7 @@
 @import 'atoms/buttons';
 
 // molecules:
+@import 'molecules/group-teasers';
 @import 'molecules/date-fields';
 @import 'molecules/uploaders';
 @import 'molecules/comments';

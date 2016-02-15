@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.thumbnail {
+  background-size: cover;
+  background-position: center center;
+  img {opacity: 0;}
+  .media-grid & {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .media-list & {
+    width: 15%;
+    height: 0px;
+    padding-top: 15%;
+    float: left;
+    overflow: hidden;
+    margin-right: $grid-gutter-width/2;
+  }
+}

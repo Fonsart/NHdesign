@@ -1,14 +1,16 @@
 ---
 notes: |
   ##### Introduced : 0.0.5
-  ##### Updated : 1.1.5
+  ##### Updated : 0.3.0 (*From `0.3.0`, the `thumbnail` component replace the simple `<img>` and the component is not a link any more*)
   ##### Usage : `{{> media-item }}`
   ##### Options :
   - **mediaobject** - Object
 ---
-<a href="detail.html" class="media-item" data-w="{{mediaobject.width}}" data-h="{{mediaobject.height}}">
+<div class="media-item" data-w="{{mediaobject.width}}" data-h="{{mediaobject.height}}">
   {{#ifnotarticle mediaobject.type}}
-    <img src="{{mediaobject.thumbnail}}" alt="{{mediaobject.title}}" class="img-responsive">
+    <a href="detail.html">
+      {{> thumbnail thumbnail-object=mediaobject }}
+    </a>
   {{/ifnotarticle}}
   {{#ifarticle mediaobject.type}}
     <div class="media-article">
@@ -16,10 +18,12 @@ notes: |
     </div>
   {{/ifarticle}}
   <div class="media-caption">
-    <h5>{{mediaobject.title}}</h5>
+    <h5>
+      <a href="detail.html">{{mediaobject.title}}</a>
+    </h5>
     <p class="media-description">
       {{#each mediaobject.tags }}
-        {{this.name}},
+        <a href="#">{{this.name}}</a>,
       {{/each}}<br>
     </p>
     <div class="text-clear">
@@ -29,4 +33,4 @@ notes: |
     </div>
     <span class="media-icon glyphicon glyphicon-{{#ifaudio mediaobject.type}}headphones{{/ifaudio}}{{#ifarticle mediaobject.type}}list-alt{{/ifarticle}}{{#ifvideo mediaobject.type}}film{{/ifvideo}}{{#ifphoto mediaobject.type}}picture{{/ifphoto}}"></span>
   </div>
-</a>
+</div>
