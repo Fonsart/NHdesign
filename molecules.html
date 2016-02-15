@@ -106,6 +106,9 @@
               <li>
                 <a href="atoms.html#textarea">Textarea</a>
               </li>
+              <li>
+                <a href="atoms.html#thumbnail">Thumbnail</a>
+              </li>
             </ul>
           </li>
           <li>
@@ -119,6 +122,9 @@
               </li>
               <li>
                 <a href="molecules.html#facet-group">Facet Group</a>
+              </li>
+              <li>
+                <a href="molecules.html#group-teaser">Group Teaser</a>
               </li>
               <li>
                 <a href="molecules.html#login-form">Login Form</a>
@@ -1559,6 +1565,81 @@
 </div>
 
 
+<div class="f-item-group" id="group-teaser">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Group Teaser</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.3.0</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; group-teaser }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>group-object</strong> - Object</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<div class="group-teaser" data-w="" data-h="">
+	<a href="detail.html">
+		<div class="thumbnail" style="background-image: url('');">
+			<img src="" alt="" class="img-responsive">
+		</div>
+	</a>
+	<div class="group-caption">
+		<h5>
+      <a href="detail.html"></a>
+    </h5>
+	</div>
+	<div class="group-counter">
+		<h6>Groupe</h6>
+		<small><i class="glyphicon glyphicon-user"></i></small>&thinsp;
+		<small><i class="glyphicon glyphicon-file"></i></small>&thinsp;
+	</div>
+	<div class="group-metadata">
+		<a href="#">Vie quotidienne</a> <span class="text-clear">&rsaquo;</span> <a href="#">Loisirs</a> <span class="text-clear">&bull; Crée par</span> <a href="#">Sylvie Bazzanella</a>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;group-teaser&quot; data-w=&quot;&quot; data-h=&quot;&quot;&gt;
+	&lt;a href=&quot;detail.html&quot;&gt;
+		&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;&#x27;);&quot;&gt;
+			&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;img-responsive&quot;&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+	&lt;div class=&quot;group-caption&quot;&gt;
+		&lt;h5&gt;
+      &lt;a href=&quot;detail.html&quot;&gt;&lt;/a&gt;
+    &lt;/h5&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;group-counter&quot;&gt;
+		&lt;h6&gt;Groupe&lt;/h6&gt;
+		&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt;&lt;/small&gt;&amp;thinsp;
+		&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-file&quot;&gt;&lt;/i&gt;&lt;/small&gt;&amp;thinsp;
+	&lt;/div&gt;
+	&lt;div class=&quot;group-metadata&quot;&gt;
+		&lt;a href=&quot;#&quot;&gt;Vie quotidienne&lt;/a&gt; &lt;span class=&quot;text-clear&quot;&gt;&amp;rsaquo;&lt;/span&gt; &lt;a href=&quot;#&quot;&gt;Loisirs&lt;/a&gt; &lt;span class=&quot;text-clear&quot;&gt;&amp;bull; Crée par&lt;/span&gt; &lt;a href=&quot;#&quot;&gt;Sylvie Bazzanella&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="login-form">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -1769,7 +1850,7 @@
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<h5>Introduced : 0.0.5</h5>
-<h5>Updated : 1.1.5</h5>
+<h5>Updated : 0.3.0 (<em>From <code>0.3.0</code>, the <code>thumbnail</code> component replace the simple <code>&lt;img&gt;</code> and the component is not a link any more</em>)</h5>
 <h5>Usage : <code>{{&gt; media-item }}</code></h5>
 <h5>Options :</h5>
 <ul>
@@ -1778,10 +1859,16 @@
 
 </div>
 <div class="f-item-preview">
-	<a href="detail.html" class="media-item" data-w="" data-h="">
-	<img src="" alt="" class="img-responsive">
+	<div class="media-item" data-w="" data-h="">
+	<a href="detail.html">
+		<div class="thumbnail" style="background-image: url('');">
+			<img src="" alt="" class="img-responsive">
+		</div>
+	</a>
 	<div class="media-caption">
-		<h5></h5>
+		<h5>
+      <a href="detail.html"></a>
+    </h5>
 		<p class="media-description">
 			<br>
 		</p>
@@ -1792,13 +1879,19 @@
 		</div>
 		<span class="media-icon glyphicon glyphicon-"></span>
 	</div>
-</a>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;&quot; data-h=&quot;&quot;&gt;
-	&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;img-responsive&quot;&gt;
+	<pre><code class="language-markup">&lt;div class=&quot;media-item&quot; data-w=&quot;&quot; data-h=&quot;&quot;&gt;
+	&lt;a href=&quot;detail.html&quot;&gt;
+		&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;&#x27;);&quot;&gt;
+			&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;img-responsive&quot;&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
 	&lt;div class=&quot;media-caption&quot;&gt;
-		&lt;h5&gt;&lt;/h5&gt;
+		&lt;h5&gt;
+      &lt;a href=&quot;detail.html&quot;&gt;&lt;/a&gt;
+    &lt;/h5&gt;
 		&lt;p class=&quot;media-description&quot;&gt;
 			&lt;br&gt;
 		&lt;/p&gt;
@@ -1809,7 +1902,7 @@
 		&lt;/div&gt;
 		&lt;span class=&quot;media-icon glyphicon glyphicon-&quot;&gt;&lt;/span&gt;
 	&lt;/div&gt;
-&lt;/a&gt;</code></pre>
+&lt;/div&gt;</code></pre>
 </div>
 
 

@@ -106,6 +106,9 @@
               <li>
                 <a href="atoms.html#textarea">Textarea</a>
               </li>
+              <li>
+                <a href="atoms.html#thumbnail">Thumbnail</a>
+              </li>
             </ul>
           </li>
           <li>
@@ -119,6 +122,9 @@
               </li>
               <li>
                 <a href="molecules.html#facet-group">Facet Group</a>
+              </li>
+              <li>
+                <a href="molecules.html#group-teaser">Group Teaser</a>
               </li>
               <li>
                 <a href="molecules.html#login-form">Login Form</a>
@@ -1010,16 +1016,22 @@
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<h5>Introduced : 0.0.3</h5>
-<h5>Updated : 0.0.5</h5>
+<h5>Updated : 0.3.0</h5>
 <h5>Usage : <code>{{&gt; media-grid }}</code></h5>
 
 </div>
 <div class="f-item-preview">
 	<div id="media-container" class="media-grid">
-	<a href="detail.html" class="media-item" data-w="3072" data-h="2304">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2015/07/626529120c3befc7_JPG_200x200_upscale_q85.jpg" alt="Villarimboud." class="img-responsive">
+	<div class="media-item" data-w="3072" data-h="2304">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2015/07/626529120c3befc7_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2015/07/626529120c3befc7_JPG_200x200_upscale_q85.jpg" alt="Villarimboud." class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villarimboud.</h5>
+			<h5>
+            <a href="detail.html">Villarimboud.</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1030,13 +1042,22 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="2272" data-h="1704">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/58b1031254c69074_JPG_200x200_upscale_q85.jpg" alt="Villette " class="img-responsive">
+	</div>
+	<div class="media-item" data-w="2272" data-h="1704">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/58b1031254c69074_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/58b1031254c69074_JPG_200x200_upscale_q85.jpg" alt="Villette " class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villette </h5>
+			<h5>
+            <a href="detail.html">Villette </a>
+          </h5>
 			<p class="media-description">
-				vendanges, raisin, lavaux, villette,
+				<a href="#">vendanges</a>,
+				<a href="#">raisin</a>,
+				<a href="#">lavaux</a>,
+				<a href="#">villette</a>,
 				<br>
 			</p>
 			<div class="text-clear">
@@ -1046,13 +1067,22 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="1704" data-h="2272">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/7f5c6e4c8893ce93_JPG_200x200_upscale_q85.jpg" alt="Villette " class="img-responsive">
+	</div>
+	<div class="media-item" data-w="1704" data-h="2272">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/7f5c6e4c8893ce93_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/7f5c6e4c8893ce93_JPG_200x200_upscale_q85.jpg" alt="Villette " class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villette </h5>
+			<h5>
+            <a href="detail.html">Villette </a>
+          </h5>
 			<p class="media-description">
-				vendanges, raisin, lavaux, villette,
+				<a href="#">vendanges</a>,
+				<a href="#">raisin</a>,
+				<a href="#">lavaux</a>,
+				<a href="#">villette</a>,
 				<br>
 			</p>
 			<div class="text-clear">
@@ -1062,11 +1092,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="845" data-h="634">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/6d4b2b0611cf531f_jpg_200x200_upscale_q85.jpg" alt="Villette" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="845" data-h="634">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/6d4b2b0611cf531f_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/6d4b2b0611cf531f_jpg_200x200_upscale_q85.jpg" alt="Villette" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villette</h5>
+			<h5>
+            <a href="detail.html">Villette</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1077,26 +1113,37 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="399" data-h="258">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/08/7bc6ace257cc85c8_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
-		<div class="media-caption">
-			<h5>Villeneuve</h5>
-			<p class="media-description">
-				<br>
-			</p>
-			<div class="text-clear">
-				39&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+	</div>
+	<div class="group-teaser" data-w="399" data-h="258">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/08/7bc6ace257cc85c8_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/08/7bc6ace257cc85c8_jpg_200x200_upscale_q85.jpg" alt="Barques du Léman" class="img-responsive">
 			</div>
-			<span class="media-icon glyphicon glyphicon-picture"></span>
+		</a>
+		<div class="group-caption">
+			<h5>
+            <a href="detail.html">Barques du Léman</a>
+          </h5>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="480" data-h="325">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/d1c4ef0fdb3ba38a_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+		<div class="group-counter">
+			<h6>Groupe</h6>
+			<small><i class="glyphicon glyphicon-user"></i></small>&thinsp;34
+			<small><i class="glyphicon glyphicon-file"></i></small>&thinsp;183
+		</div>
+		<div class="group-metadata">
+			<a href="#">Vie quotidienne</a> <span class="text-clear">&rsaquo;</span> <a href="#">Loisirs</a> <span class="text-clear">&bull; Crée par</span> <a href="#">Sylvie Bazzanella</a>
+		</div>
+	</div>
+	<div class="media-item" data-w="480" data-h="325">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/d1c4ef0fdb3ba38a_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/d1c4ef0fdb3ba38a_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1107,11 +1154,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="2362" data-h="1682">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/1e51cd2ffb0760df_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="2362" data-h="1682">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/1e51cd2ffb0760df_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/1e51cd2ffb0760df_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1122,11 +1175,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="2362" data-h="1569">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="2362" data-h="1569">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1137,13 +1196,19 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="5184" data-h="3456">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="5184" data-h="3456">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villa</h5>
+			<h5>
+            <a href="detail.html">Villa</a>
+          </h5>
 			<p class="media-description">
-				les images égarées,
+				<a href="#">les images égarées</a>,
 				<br>
 			</p>
 			<div class="text-clear">
@@ -1153,13 +1218,22 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="650" data-h="972">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="650" data-h="972">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
-				villeneuve, baud, léaman, église,
+				<a href="#">villeneuve</a>,
+				<a href="#">baud</a>,
+				<a href="#">léaman</a>,
+				<a href="#">église</a>,
 				<br>
 			</p>
 			<div class="text-clear">
@@ -1169,11 +1243,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="518" data-h="352">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/f8c683e16b3f1a13_tif_200x200_upscale_q85.jpg" alt="Ville" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="518" data-h="352">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/f8c683e16b3f1a13_tif_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/f8c683e16b3f1a13_tif_200x200_upscale_q85.jpg" alt="Ville" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Ville</h5>
+			<h5>
+            <a href="detail.html">Ville</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1184,11 +1264,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="3056" data-h="1750">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/15a6919c49254f19_jpg_200x200_upscale_q85.jpg" alt="Villette" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="3056" data-h="1750">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/15a6919c49254f19_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/15a6919c49254f19_jpg_200x200_upscale_q85.jpg" alt="Villette" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villette</h5>
+			<h5>
+            <a href="detail.html">Villette</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1199,11 +1285,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="1600" data-h="1067">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/ff200d8ba3e9427a_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="1600" data-h="1067">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/ff200d8ba3e9427a_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/ff200d8ba3e9427a_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villa</h5>
+			<h5>
+            <a href="detail.html">Villa</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1214,11 +1306,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="1066" data-h="1600">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/4e658d8b2ae3a870_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="1066" data-h="1600">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/4e658d8b2ae3a870_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/4e658d8b2ae3a870_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villa</h5>
+			<h5>
+            <a href="detail.html">Villa</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1229,11 +1327,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="1066" data-h="1600">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/a4381e499c9e37ed_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="1066" data-h="1600">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/a4381e499c9e37ed_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/a4381e499c9e37ed_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villa</h5>
+			<h5>
+            <a href="detail.html">Villa</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1244,11 +1348,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="414" data-h="604">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/a8f2dde632675211_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="414" data-h="604">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/a8f2dde632675211_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/a8f2dde632675211_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1259,11 +1369,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="604" data-h="414">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/e5858993f2f71ddc_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="604" data-h="414">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/e5858993f2f71ddc_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/e5858993f2f71ddc_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1274,11 +1390,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="2362" data-h="1602">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/43d520681a58bcba_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="2362" data-h="1602">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/43d520681a58bcba_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/43d520681a58bcba_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1289,11 +1411,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="2362" data-h="1510">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/ab7432a6512c6096_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="2362" data-h="1510">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/ab7432a6512c6096_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/ab7432a6512c6096_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1304,11 +1432,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="1772" data-h="1633">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/3c7082b569bd4dff_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="1772" data-h="1633">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/3c7082b569bd4dff_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/3c7082b569bd4dff_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1319,15 +1453,21 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
+	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div id=&quot;media-container&quot; class=&quot;media-grid&quot;&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;3072&quot; data-h=&quot;2304&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2015/07/626529120c3befc7_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villarimboud.&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;3072&quot; data-h=&quot;2304&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2015/07/626529120c3befc7_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2015/07/626529120c3befc7_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villarimboud.&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villarimboud.&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villarimboud.&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1338,13 +1478,22 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;2272&quot; data-h=&quot;1704&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/58b1031254c69074_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villette &quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;2272&quot; data-h=&quot;1704&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/58b1031254c69074_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/58b1031254c69074_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villette &quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villette &lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villette &lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
-				vendanges, raisin, lavaux, villette,
+				&lt;a href=&quot;#&quot;&gt;vendanges&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;raisin&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;lavaux&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;villette&lt;/a&gt;,
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
@@ -1354,13 +1503,22 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;1704&quot; data-h=&quot;2272&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/7f5c6e4c8893ce93_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villette &quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;1704&quot; data-h=&quot;2272&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/7f5c6e4c8893ce93_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/7f5c6e4c8893ce93_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villette &quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villette &lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villette &lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
-				vendanges, raisin, lavaux, villette,
+				&lt;a href=&quot;#&quot;&gt;vendanges&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;raisin&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;lavaux&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;villette&lt;/a&gt;,
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
@@ -1370,11 +1528,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;845&quot; data-h=&quot;634&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/6d4b2b0611cf531f_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villette&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;845&quot; data-h=&quot;634&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/6d4b2b0611cf531f_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/6d4b2b0611cf531f_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villette&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villette&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villette&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1385,26 +1549,37 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;399&quot; data-h=&quot;258&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/08/7bc6ace257cc85c8_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
-		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
-			&lt;p class=&quot;media-description&quot;&gt;
-				&lt;br&gt;
-			&lt;/p&gt;
-			&lt;div class=&quot;text-clear&quot;&gt;
-				39&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;group-teaser&quot; data-w=&quot;399&quot; data-h=&quot;258&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/08/7bc6ace257cc85c8_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/08/7bc6ace257cc85c8_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Barques du Léman&quot; class=&quot;img-responsive&quot;&gt;
 			&lt;/div&gt;
-			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
+		&lt;/a&gt;
+		&lt;div class=&quot;group-caption&quot;&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Barques du Léman&lt;/a&gt;
+          &lt;/h5&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;480&quot; data-h=&quot;325&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/d1c4ef0fdb3ba38a_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+		&lt;div class=&quot;group-counter&quot;&gt;
+			&lt;h6&gt;Groupe&lt;/h6&gt;
+			&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt;&lt;/small&gt;&amp;thinsp;34
+			&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-file&quot;&gt;&lt;/i&gt;&lt;/small&gt;&amp;thinsp;183
+		&lt;/div&gt;
+		&lt;div class=&quot;group-metadata&quot;&gt;
+			&lt;a href=&quot;#&quot;&gt;Vie quotidienne&lt;/a&gt; &lt;span class=&quot;text-clear&quot;&gt;&amp;rsaquo;&lt;/span&gt; &lt;a href=&quot;#&quot;&gt;Loisirs&lt;/a&gt; &lt;span class=&quot;text-clear&quot;&gt;&amp;bull; Crée par&lt;/span&gt; &lt;a href=&quot;#&quot;&gt;Sylvie Bazzanella&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;480&quot; data-h=&quot;325&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/d1c4ef0fdb3ba38a_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/d1c4ef0fdb3ba38a_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1415,11 +1590,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1682&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/1e51cd2ffb0760df_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1682&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/1e51cd2ffb0760df_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/1e51cd2ffb0760df_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1430,11 +1611,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1569&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1569&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1445,13 +1632,19 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;5184&quot; data-h=&quot;3456&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;5184&quot; data-h=&quot;3456&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villa&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villa&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
-				les images égarées,
+				&lt;a href=&quot;#&quot;&gt;les images égarées&lt;/a&gt;,
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
@@ -1461,13 +1654,22 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;650&quot; data-h=&quot;972&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;650&quot; data-h=&quot;972&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
-				villeneuve, baud, léaman, église,
+				&lt;a href=&quot;#&quot;&gt;villeneuve&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;baud&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;léaman&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;église&lt;/a&gt;,
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
@@ -1477,11 +1679,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;518&quot; data-h=&quot;352&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/f8c683e16b3f1a13_tif_200x200_upscale_q85.jpg&quot; alt=&quot;Ville&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;518&quot; data-h=&quot;352&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/f8c683e16b3f1a13_tif_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/f8c683e16b3f1a13_tif_200x200_upscale_q85.jpg&quot; alt=&quot;Ville&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Ville&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Ville&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1492,11 +1700,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;3056&quot; data-h=&quot;1750&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/15a6919c49254f19_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villette&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;3056&quot; data-h=&quot;1750&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/15a6919c49254f19_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/15a6919c49254f19_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villette&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villette&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villette&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1507,11 +1721,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;1600&quot; data-h=&quot;1067&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/ff200d8ba3e9427a_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;1600&quot; data-h=&quot;1067&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/ff200d8ba3e9427a_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/ff200d8ba3e9427a_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villa&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villa&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1522,11 +1742,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;1066&quot; data-h=&quot;1600&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/4e658d8b2ae3a870_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;1066&quot; data-h=&quot;1600&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/4e658d8b2ae3a870_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/4e658d8b2ae3a870_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villa&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villa&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1537,11 +1763,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;1066&quot; data-h=&quot;1600&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/a4381e499c9e37ed_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;1066&quot; data-h=&quot;1600&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/a4381e499c9e37ed_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/a4381e499c9e37ed_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villa&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villa&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1552,11 +1784,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;414&quot; data-h=&quot;604&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/a8f2dde632675211_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;414&quot; data-h=&quot;604&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/a8f2dde632675211_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/a8f2dde632675211_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1567,11 +1805,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;604&quot; data-h=&quot;414&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/e5858993f2f71ddc_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;604&quot; data-h=&quot;414&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/e5858993f2f71ddc_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/e5858993f2f71ddc_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1582,11 +1826,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1602&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/43d520681a58bcba_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1602&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/43d520681a58bcba_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/43d520681a58bcba_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1597,11 +1847,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1510&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/ab7432a6512c6096_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1510&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/ab7432a6512c6096_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/ab7432a6512c6096_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1612,11 +1868,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;1772&quot; data-h=&quot;1633&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/3c7082b569bd4dff_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;1772&quot; data-h=&quot;1633&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/3c7082b569bd4dff_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/3c7082b569bd4dff_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -1627,7 +1889,7 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -1708,16 +1970,22 @@
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<h5>Introduced : 0.0.5</h5>
-<h5>Updated : -</h5>
+<h5>Updated : 0.3.0</h5>
 <h5>Usage : <code>{{&gt; media-list }}</code></h5>
 
 </div>
 <div class="f-item-preview">
 	<div id="media-container" class="media-list">
-	<a href="detail.html" class="media-item" data-w="3072" data-h="2304">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2015/07/626529120c3befc7_JPG_200x200_upscale_q85.jpg" alt="Villarimboud." class="img-responsive">
+	<div class="media-item" data-w="3072" data-h="2304">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2015/07/626529120c3befc7_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2015/07/626529120c3befc7_JPG_200x200_upscale_q85.jpg" alt="Villarimboud." class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villarimboud.</h5>
+			<h5>
+            <a href="detail.html">Villarimboud.</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1728,13 +1996,22 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="2272" data-h="1704">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/58b1031254c69074_JPG_200x200_upscale_q85.jpg" alt="Villette " class="img-responsive">
+	</div>
+	<div class="media-item" data-w="2272" data-h="1704">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/58b1031254c69074_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/58b1031254c69074_JPG_200x200_upscale_q85.jpg" alt="Villette " class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villette </h5>
+			<h5>
+            <a href="detail.html">Villette </a>
+          </h5>
 			<p class="media-description">
-				vendanges, raisin, lavaux, villette,
+				<a href="#">vendanges</a>,
+				<a href="#">raisin</a>,
+				<a href="#">lavaux</a>,
+				<a href="#">villette</a>,
 				<br>
 			</p>
 			<div class="text-clear">
@@ -1744,13 +2021,22 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="1704" data-h="2272">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/7f5c6e4c8893ce93_JPG_200x200_upscale_q85.jpg" alt="Villette " class="img-responsive">
+	</div>
+	<div class="media-item" data-w="1704" data-h="2272">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/7f5c6e4c8893ce93_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/7f5c6e4c8893ce93_JPG_200x200_upscale_q85.jpg" alt="Villette " class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villette </h5>
+			<h5>
+            <a href="detail.html">Villette </a>
+          </h5>
 			<p class="media-description">
-				vendanges, raisin, lavaux, villette,
+				<a href="#">vendanges</a>,
+				<a href="#">raisin</a>,
+				<a href="#">lavaux</a>,
+				<a href="#">villette</a>,
 				<br>
 			</p>
 			<div class="text-clear">
@@ -1760,11 +2046,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="845" data-h="634">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/6d4b2b0611cf531f_jpg_200x200_upscale_q85.jpg" alt="Villette" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="845" data-h="634">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/6d4b2b0611cf531f_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/6d4b2b0611cf531f_jpg_200x200_upscale_q85.jpg" alt="Villette" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villette</h5>
+			<h5>
+            <a href="detail.html">Villette</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1775,26 +2067,37 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="399" data-h="258">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/08/7bc6ace257cc85c8_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
-		<div class="media-caption">
-			<h5>Villeneuve</h5>
-			<p class="media-description">
-				<br>
-			</p>
-			<div class="text-clear">
-				39&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+	</div>
+	<div class="group-teaser" data-w="399" data-h="258">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/08/7bc6ace257cc85c8_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/08/7bc6ace257cc85c8_jpg_200x200_upscale_q85.jpg" alt="Barques du Léman" class="img-responsive">
 			</div>
-			<span class="media-icon glyphicon glyphicon-picture"></span>
+		</a>
+		<div class="group-caption">
+			<h5>
+            <a href="detail.html">Barques du Léman</a>
+          </h5>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="480" data-h="325">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/d1c4ef0fdb3ba38a_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+		<div class="group-counter">
+			<h6>Groupe</h6>
+			<small><i class="glyphicon glyphicon-user"></i></small>&thinsp;34
+			<small><i class="glyphicon glyphicon-file"></i></small>&thinsp;183
+		</div>
+		<div class="group-metadata">
+			<a href="#">Vie quotidienne</a> <span class="text-clear">&rsaquo;</span> <a href="#">Loisirs</a> <span class="text-clear">&bull; Crée par</span> <a href="#">Sylvie Bazzanella</a>
+		</div>
+	</div>
+	<div class="media-item" data-w="480" data-h="325">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/d1c4ef0fdb3ba38a_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/d1c4ef0fdb3ba38a_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1805,11 +2108,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="2362" data-h="1682">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/1e51cd2ffb0760df_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="2362" data-h="1682">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/1e51cd2ffb0760df_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/1e51cd2ffb0760df_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1820,11 +2129,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="2362" data-h="1569">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="2362" data-h="1569">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1835,13 +2150,19 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="5184" data-h="3456">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="5184" data-h="3456">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villa</h5>
+			<h5>
+            <a href="detail.html">Villa</a>
+          </h5>
 			<p class="media-description">
-				les images égarées,
+				<a href="#">les images égarées</a>,
 				<br>
 			</p>
 			<div class="text-clear">
@@ -1851,13 +2172,22 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="650" data-h="972">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="650" data-h="972">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
-				villeneuve, baud, léaman, église,
+				<a href="#">villeneuve</a>,
+				<a href="#">baud</a>,
+				<a href="#">léaman</a>,
+				<a href="#">église</a>,
 				<br>
 			</p>
 			<div class="text-clear">
@@ -1867,11 +2197,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="518" data-h="352">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/f8c683e16b3f1a13_tif_200x200_upscale_q85.jpg" alt="Ville" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="518" data-h="352">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/f8c683e16b3f1a13_tif_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/f8c683e16b3f1a13_tif_200x200_upscale_q85.jpg" alt="Ville" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Ville</h5>
+			<h5>
+            <a href="detail.html">Ville</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1882,11 +2218,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="3056" data-h="1750">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/15a6919c49254f19_jpg_200x200_upscale_q85.jpg" alt="Villette" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="3056" data-h="1750">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/15a6919c49254f19_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/15a6919c49254f19_jpg_200x200_upscale_q85.jpg" alt="Villette" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villette</h5>
+			<h5>
+            <a href="detail.html">Villette</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1897,11 +2239,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="1600" data-h="1067">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/ff200d8ba3e9427a_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="1600" data-h="1067">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/ff200d8ba3e9427a_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/ff200d8ba3e9427a_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villa</h5>
+			<h5>
+            <a href="detail.html">Villa</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1912,11 +2260,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="1066" data-h="1600">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/4e658d8b2ae3a870_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="1066" data-h="1600">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/4e658d8b2ae3a870_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/4e658d8b2ae3a870_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villa</h5>
+			<h5>
+            <a href="detail.html">Villa</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1927,11 +2281,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="1066" data-h="1600">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/a4381e499c9e37ed_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="1066" data-h="1600">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/a4381e499c9e37ed_JPG_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/a4381e499c9e37ed_JPG_200x200_upscale_q85.jpg" alt="Villa" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villa</h5>
+			<h5>
+            <a href="detail.html">Villa</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1942,11 +2302,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="414" data-h="604">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/a8f2dde632675211_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="414" data-h="604">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/a8f2dde632675211_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/a8f2dde632675211_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1957,11 +2323,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="604" data-h="414">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/e5858993f2f71ddc_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="604" data-h="414">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/e5858993f2f71ddc_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/e5858993f2f71ddc_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1972,11 +2344,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="2362" data-h="1602">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/43d520681a58bcba_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="2362" data-h="1602">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/43d520681a58bcba_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/43d520681a58bcba_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -1987,11 +2365,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="2362" data-h="1510">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/ab7432a6512c6096_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="2362" data-h="1510">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/ab7432a6512c6096_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/ab7432a6512c6096_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -2002,11 +2386,17 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
-	<a href="detail.html" class="media-item" data-w="1772" data-h="1633">
-		<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/3c7082b569bd4dff_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+	</div>
+	<div class="media-item" data-w="1772" data-h="1633">
+		<a href="detail.html">
+			<div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/3c7082b569bd4dff_jpg_200x200_upscale_q85.jpg');">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/3c7082b569bd4dff_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive">
+			</div>
+		</a>
 		<div class="media-caption">
-			<h5>Villeneuve</h5>
+			<h5>
+            <a href="detail.html">Villeneuve</a>
+          </h5>
 			<p class="media-description">
 				<br>
 			</p>
@@ -2017,15 +2407,21 @@
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
-	</a>
+	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div id=&quot;media-container&quot; class=&quot;media-list&quot;&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;3072&quot; data-h=&quot;2304&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2015/07/626529120c3befc7_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villarimboud.&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;3072&quot; data-h=&quot;2304&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2015/07/626529120c3befc7_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2015/07/626529120c3befc7_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villarimboud.&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villarimboud.&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villarimboud.&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2036,13 +2432,22 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;2272&quot; data-h=&quot;1704&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/58b1031254c69074_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villette &quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;2272&quot; data-h=&quot;1704&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/58b1031254c69074_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/58b1031254c69074_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villette &quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villette &lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villette &lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
-				vendanges, raisin, lavaux, villette,
+				&lt;a href=&quot;#&quot;&gt;vendanges&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;raisin&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;lavaux&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;villette&lt;/a&gt;,
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
@@ -2052,13 +2457,22 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;1704&quot; data-h=&quot;2272&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/7f5c6e4c8893ce93_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villette &quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;1704&quot; data-h=&quot;2272&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/7f5c6e4c8893ce93_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/09/7f5c6e4c8893ce93_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villette &quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villette &lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villette &lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
-				vendanges, raisin, lavaux, villette,
+				&lt;a href=&quot;#&quot;&gt;vendanges&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;raisin&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;lavaux&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;villette&lt;/a&gt;,
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
@@ -2068,11 +2482,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;845&quot; data-h=&quot;634&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/6d4b2b0611cf531f_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villette&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;845&quot; data-h=&quot;634&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/6d4b2b0611cf531f_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/6d4b2b0611cf531f_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villette&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villette&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villette&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2083,26 +2503,37 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;399&quot; data-h=&quot;258&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/08/7bc6ace257cc85c8_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
-		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
-			&lt;p class=&quot;media-description&quot;&gt;
-				&lt;br&gt;
-			&lt;/p&gt;
-			&lt;div class=&quot;text-clear&quot;&gt;
-				39&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;group-teaser&quot; data-w=&quot;399&quot; data-h=&quot;258&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/08/7bc6ace257cc85c8_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/08/7bc6ace257cc85c8_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Barques du Léman&quot; class=&quot;img-responsive&quot;&gt;
 			&lt;/div&gt;
-			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
+		&lt;/a&gt;
+		&lt;div class=&quot;group-caption&quot;&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Barques du Léman&lt;/a&gt;
+          &lt;/h5&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;480&quot; data-h=&quot;325&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/d1c4ef0fdb3ba38a_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+		&lt;div class=&quot;group-counter&quot;&gt;
+			&lt;h6&gt;Groupe&lt;/h6&gt;
+			&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt;&lt;/small&gt;&amp;thinsp;34
+			&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-file&quot;&gt;&lt;/i&gt;&lt;/small&gt;&amp;thinsp;183
+		&lt;/div&gt;
+		&lt;div class=&quot;group-metadata&quot;&gt;
+			&lt;a href=&quot;#&quot;&gt;Vie quotidienne&lt;/a&gt; &lt;span class=&quot;text-clear&quot;&gt;&amp;rsaquo;&lt;/span&gt; &lt;a href=&quot;#&quot;&gt;Loisirs&lt;/a&gt; &lt;span class=&quot;text-clear&quot;&gt;&amp;bull; Crée par&lt;/span&gt; &lt;a href=&quot;#&quot;&gt;Sylvie Bazzanella&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;480&quot; data-h=&quot;325&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/d1c4ef0fdb3ba38a_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/d1c4ef0fdb3ba38a_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2113,11 +2544,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1682&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/1e51cd2ffb0760df_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1682&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/1e51cd2ffb0760df_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/1e51cd2ffb0760df_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2128,11 +2565,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1569&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1569&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2143,13 +2586,19 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;5184&quot; data-h=&quot;3456&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;5184&quot; data-h=&quot;3456&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villa&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villa&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
-				les images égarées,
+				&lt;a href=&quot;#&quot;&gt;les images égarées&lt;/a&gt;,
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
@@ -2159,13 +2608,22 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;650&quot; data-h=&quot;972&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;650&quot; data-h=&quot;972&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
-				villeneuve, baud, léaman, église,
+				&lt;a href=&quot;#&quot;&gt;villeneuve&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;baud&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;léaman&lt;/a&gt;,
+				&lt;a href=&quot;#&quot;&gt;église&lt;/a&gt;,
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
@@ -2175,11 +2633,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;518&quot; data-h=&quot;352&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/f8c683e16b3f1a13_tif_200x200_upscale_q85.jpg&quot; alt=&quot;Ville&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;518&quot; data-h=&quot;352&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/f8c683e16b3f1a13_tif_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/f8c683e16b3f1a13_tif_200x200_upscale_q85.jpg&quot; alt=&quot;Ville&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Ville&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Ville&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2190,11 +2654,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;3056&quot; data-h=&quot;1750&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/15a6919c49254f19_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villette&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;3056&quot; data-h=&quot;1750&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/15a6919c49254f19_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/01/15a6919c49254f19_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villette&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villette&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villette&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2205,11 +2675,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;1600&quot; data-h=&quot;1067&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/ff200d8ba3e9427a_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;1600&quot; data-h=&quot;1067&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/ff200d8ba3e9427a_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/ff200d8ba3e9427a_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villa&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villa&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2220,11 +2696,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;1066&quot; data-h=&quot;1600&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/4e658d8b2ae3a870_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;1066&quot; data-h=&quot;1600&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/4e658d8b2ae3a870_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/4e658d8b2ae3a870_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villa&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villa&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2235,11 +2717,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;1066&quot; data-h=&quot;1600&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/a4381e499c9e37ed_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;1066&quot; data-h=&quot;1600&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/a4381e499c9e37ed_JPG_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/a4381e499c9e37ed_JPG_200x200_upscale_q85.jpg&quot; alt=&quot;Villa&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villa&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villa&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2250,11 +2738,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;414&quot; data-h=&quot;604&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/a8f2dde632675211_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;414&quot; data-h=&quot;604&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/a8f2dde632675211_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/a8f2dde632675211_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2265,11 +2759,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;604&quot; data-h=&quot;414&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/e5858993f2f71ddc_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;604&quot; data-h=&quot;414&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/e5858993f2f71ddc_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/e5858993f2f71ddc_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2280,11 +2780,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1602&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/43d520681a58bcba_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1602&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/43d520681a58bcba_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/43d520681a58bcba_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2295,11 +2801,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1510&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/ab7432a6512c6096_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;2362&quot; data-h=&quot;1510&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/ab7432a6512c6096_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/ab7432a6512c6096_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2310,11 +2822,17 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
-	&lt;a href=&quot;detail.html&quot; class=&quot;media-item&quot; data-w=&quot;1772&quot; data-h=&quot;1633&quot;&gt;
-		&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/3c7082b569bd4dff_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-item&quot; data-w=&quot;1772&quot; data-h=&quot;1633&quot;&gt;
+		&lt;a href=&quot;detail.html&quot;&gt;
+			&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/3c7082b569bd4dff_jpg_200x200_upscale_q85.jpg&#x27;);&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/3c7082b569bd4dff_jpg_200x200_upscale_q85.jpg&quot; alt=&quot;Villeneuve&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
 		&lt;div class=&quot;media-caption&quot;&gt;
-			&lt;h5&gt;Villeneuve&lt;/h5&gt;
+			&lt;h5&gt;
+            &lt;a href=&quot;detail.html&quot;&gt;Villeneuve&lt;/a&gt;
+          &lt;/h5&gt;
 			&lt;p class=&quot;media-description&quot;&gt;
 				&lt;br&gt;
 			&lt;/p&gt;
@@ -2325,7 +2843,7 @@
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
-	&lt;/a&gt;
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
