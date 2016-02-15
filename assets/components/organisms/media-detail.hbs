@@ -1,25 +1,17 @@
 ---
 notes: |
   ##### Introduced : 0.1.1
-  ##### Updated : 0.1.3
+  ##### Updated : 0.3.1
   ##### Usage : `{{> media-detail }}`
 ---
 <div class="spacer spacer-sm"></div>
 <h1 class="text-center">{{media.title}}</h1>
-<h5 class="text-center">
-  {{media.views}}&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small>
-  |
-  {{media.favorites}}&thinsp;<small><i class="glyphicon glyphicon-star"></i></small>
-  -
-  <a href="#">Ajouter au favoris</a>
-  -
-  <a href="#">Partager</a>
-  -
-  <a href="metadata.html">Éditer</a>
-</h5>
 
 <div class="spacer spacer-sm"></div>
 <img src="{{media.source}}" alt="{{media.title}}" class="img-responsive">
+
+{{> media-features-bar }}
+
 <div class="spacer spacer-md"></div>
 
 <div class="row">
