@@ -1,25 +1,30 @@
 @charset "UTF-8";
 
 .media-infobar {
-  background: $concrete;
   margin-top: 10px;
   font-size: $font-size-small;
   font-family: $font-family-sans-serif;
-  padding: 1px $grid-gutter-width/2;
+  padding: 1px 0;
   hr {margin: 0.6em auto;}
-  td {
-    vertical-align: top;
-    padding-bottom: $grid-gutter-width/3;
-    &:first-child {padding-right: $grid-gutter-width/3;}
+  h6 {
+    color: $nobel;
+    margin-bottom: 0.2em;
+    margin-top: 1.5em;
+    font-weight: 500;
   }
+  .row h6 {margin-top: 0;}
   a {
-    display: block;
     padding-bottom: 0.4em;
     font-weight: 700;
+    text-decoration: none;
+    color: darken($monza, 8%);
+    &:hover {color: $monza;}
   }
-  img {
-    display: block;
-    max-width: 90px;
-    margin: 0 auto;
-  }
+}
+
+.license-block {
+  background: $concrete;
+  padding: 5px 10px;
+  font-weight: 500;
+  color: $tundora;
 }

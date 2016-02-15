@@ -1,48 +1,48 @@
 ---
 notes: |
   ##### Introduced : 0.1.1
-  ##### Updated : -
+  ##### Updated : 0.3.0
   ##### Usage : `{{> media-infobar }}`
 ---
 <div class="media-infobar">
-  <h5>Informations</h5>
-  <hr>
-  <table>
-    <tbody>
-      <tr>
-        <td class="text-clear">Date</td>
-        <td>{{media.date}}</td>
-      </tr>
-      <tr>
-        <td class="text-clear">Lieu</td>
-        <td>
-          {{media.location}}<br>
-          <a href="http://maps.google.com/">Voir sur la carte</a>
-        </td>
-      </tr>
-      <tr>
-        <td class="text-clear">Auteur</td>
-        <td>
-          {{#each media.authors }}
-            <a href="#">{{this}}</a>
-          {{/each}}
-        </td>
-      </tr>
-      <tr>
-        <td class="text-clear">License</td>
-        <td>{{media.license}}</td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
-  <h5>Partagé par</h5>
-  <div class="text-center">
-    <a href="#">
-      <img src="{{media.shared_by_avatar}}" class="img-circle" alt="{{media.shared_by}}">
-      {{media.shared_by}}
-    </a>
+  <h6>Date</h6>
+  <p>{{media.date}}</p>
+
+  <h6>Lieu</h6>
+  <p>
+    {{media.location}}<br>
+    <a href="http://maps.google.com/">Voir sur la carte</a>
+  </p>
+
+  <h6>Auteur</h6>
+  <p>
+    {{#each media.authors }}
+      <a href="#">{{this}}</a><br>
+    {{/each}}
+  </p>
+
+  <div class="row">
+    <div class="col-xs-3">
+      <a href="#">
+        <img src="{{media.shared_by_avatar}}" class="img-circle img-responsive" alt="{{media.shared_by}}">
+      </a>
+    </div>
+    <div class="col-xs-9">
+      <h6>Partagé par</h6>
+      <a href="#">{{media.shared_by}}</a>
+    </div>
   </div>
-  <hr>
-  <a href="#">Signaler un abus</a>
+
+  <div class="spacer spacer-sm"></div>
+
+  <div class="license-block">
+    license &rsaquo; <a href="#">{{media.license}}</a>
+  </div>
+
+  <h6>Tags</h6>
   <div class="spacer spacer-xs"></div>
+  {{#each media.tags }}
+    <a href="#" class="label label-default">{{this}}</a>
+  {{/each}}
+
 </div>
