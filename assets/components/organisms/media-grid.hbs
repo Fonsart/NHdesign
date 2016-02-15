@@ -1,11 +1,16 @@
 ---
 notes: |
   ##### Introduced : 0.0.3
-  ##### Updated : 0.0.5
+  ##### Updated : 0.3.0
   ##### Usage : `{{> media-grid }}`
 ---
 <div id="media-container" class="media-grid">
   {{#each medias }}
-    {{> media-item mediaobject=this }}
+    {{#ifgroup this.type}}
+      {{> group-teaser group-object=this }}
+    {{/ifgroup}}
+    {{#ifnotgroup this.type}}
+      {{> media-item mediaobject=this }}
+    {{/ifnotgroup}}
   {{/each}}
 </div>

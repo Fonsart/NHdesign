@@ -6,7 +6,7 @@
   $(document).ready(function () {
     var initGrid = function () {
       $('.media-grid').flexImages({
-        container: '.media-item',
+        container: '.media-item, .group-teaser',
         object: 'img',
         rowHeight: 250,
         truncate: false

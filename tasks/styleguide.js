@@ -48,6 +48,16 @@ module.exports = function() {
           if(type === 'photo'){
             return block.fn(this);
           }
+        },
+        ifgroup: function(type, block) {
+          if(type === 'group'){
+            return block.fn(this);
+          }
+        },
+        ifnotgroup: function(type, block) {
+          if(type !== 'group'){
+            return block.fn(this);
+          }
         }
     }
   };

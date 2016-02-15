@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-$media-caption-height: 48px;
+$media-caption-height: 80px;
 
 .media-item {
   box-sizing: border-box;
@@ -103,7 +103,6 @@ $media-caption-height: 48px;
   transition: background 0.3s;
   box-sizing: border-box;
   h5 {
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -120,11 +119,19 @@ $media-caption-height: 48px;
     height: $media-caption-height;
     padding: 0 16px;
     h5 {
-      line-height: $media-caption-height;
-      margin: 0;
+      line-height: ($media-caption-height / $font-size-base) / 2.4;
       font-weight: 400;
       max-width: 75%;
       max-width: calc(100% - 50px);
+      display: block; /* Fallback for non-webkit */
+      display: -webkit-box;
+      height: $media-caption-height; /* Fallback for non-webkit */
+      margin: 0;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 6px 0;
     }
     .media-icon {
       top: 0;
