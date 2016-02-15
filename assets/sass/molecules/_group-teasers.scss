@@ -14,9 +14,25 @@ $media-caption-height: 80px;
     margin: 8px 8px ($media-caption-height + 8px) 8px;
     &:hover {
       color: $tundora;
-      .media-caption {background: darken($concrete, 8%);}
+      .group-caption {background: darken($concrete, 8%);}
     }
-    img {min-width: 100%;}
+  }
+  .media-list & {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    background: $concrete;
+    margin-bottom: 8px;
+    transition: background 0.3s;
+    &:hover {
+      background: $gallery;
+    }
+    &:before,
+    &:after {
+      display: table;
+      content: ' ';
+      clear: both;
+    }
   }
   @media screen and (max-width: $screen-xs-max) {
     .media-list & img {width: 25%;}
@@ -28,16 +44,8 @@ $media-caption-height: 80px;
   transition: background 0.3s;
   box-sizing: border-box;
   h5 {
-    display: block; /* Fallback for non-webkit */
-    display: -webkit-box;
-    max-width: 100%;
-    height: $media-caption-height; /* Fallback for non-webkit */
-    margin: 0 auto;
     font-weight: 700;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    a, a:hover {text-decoration: none;}
   }
   .media-grid & {
     background: $concrete;
@@ -48,6 +56,15 @@ $media-caption-height: 80px;
     height: $media-caption-height;
     padding: 0 16px;
     h5 {
+      display: block; /* Fallback for non-webkit */
+      display: -webkit-box;
+      max-width: 100%;
+      height: $media-caption-height; /* Fallback for non-webkit */
+      margin: 0 auto;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
       line-height: ($media-caption-height / $font-size-base) / 2.4;
       padding: 6px 0;
       margin: 0;
@@ -56,10 +73,7 @@ $media-caption-height: 80px;
   .media-list & {
     position: relative;
     h5 {
-      position: relative;
-      white-space: nowrap;
-      margin-top: 0.35em;
-      padding-left: $grid-gutter-width/1.2;
+      font-size: ceil(($font-size-base * 1.3333));
     }
   }
   @media screen and (max-width: $screen-xs-max) {
@@ -84,4 +98,23 @@ $media-caption-height: 80px;
   .glyphicon {
     margin-left: 8px;
   }
+  .media-list & {
+    display: inline-block;
+    position: static;
+  }
+}
+
+.group-metadata {
+  font-size: $font-size-small;
+  font-weight: 500;
+  padding: 10px;
+  a {
+    color: darken($monza, 15%);
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: $monza;
+    }
+  }
+  .media-grid & {display: none;}
 }

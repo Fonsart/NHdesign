@@ -17,27 +17,25 @@ $media-caption-height: 80px;
       .media-article {background: darken($tundora, 8%);}
       .media-caption {background: darken($concrete, 8%);}
     }
-    img {min-width: 100%;}
     .media-description {display: none;}
   }
   .media-list & {
     display: block !important;
     width: 100% !important;
     height: auto !important;
-    margin-bottom: $grid-gutter-width;
-    padding-top: $grid-gutter-width/2;
+    margin-bottom: 8px;
     max-height: 200px;
     overflow: hidden;
-    border-top: 1px solid $nobel;
     transition: background 0.3s;
     &:first-child {border-top: none;}
     &:hover {
       color: $tundora;
       text-decoration: none;
+      background: $concrete;
       .media-icon {color: $monza;}
       .media-caption h5:after {background: linear-gradient(to right, transparent 0%, $concrete 90%);}
     }
-    img {
+    .thumbnail {
       width: 15%;
       float: left;
       margin-right: $grid-gutter-width/2;
@@ -105,11 +103,13 @@ $media-caption-height: 80px;
   h5 {
     overflow: hidden;
     text-overflow: ellipsis;
+    a, a:hover {text-decoration: none;}
   }
   .media-icon {
     position: absolute;
     transition: color 0.3s;
   }
+  .media-description {font-size: $font-size-small}
   .media-grid & {
     background: $concrete;
     position: absolute;
@@ -141,6 +141,7 @@ $media-caption-height: 80px;
   }
   .media-list & {
     position: relative;
+    margin: 5px 0;
     h5 {
       position: relative;
       white-space: nowrap;
