@@ -2,5 +2,27 @@
 
 .comment {
   margin-bottom: 1em;
-  h4 a {text-decoration: none;}
+  a {text-decoration: none;}
+  img {
+    max-width: 35px;
+    display: inline-block;
+    margin-right: 0.4em;
+  }
+  h5 {
+    display: inline-block;
+    a {
+      font-weight: 700;
+      color: $carmine;
+    }
+  }
+}
+
+.comment-content {
+  background: $white;
+  margin-top: 0.5em;
+  border-top: 1px solid $gallery;
+  border-bottom: 1px solid $gallery;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-small;
+  padding: 1em;
 }

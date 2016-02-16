@@ -5,21 +5,23 @@ notes: |
   ##### Usage : `{{> media-infobar }}`
 ---
 <div class="media-infobar">
-  <h6>Date</h6>
+  <h5>Date</h5>
   <p>{{media.date}}</p>
 
-  <h6>Lieu</h6>
+  <h5>Lieu</h5>
   <p>
     {{media.location}}<br>
     <a href="http://maps.google.com/">Voir sur la carte</a>
   </p>
 
-  <h6>Auteur</h6>
+  <h5>Auteur</h5>
   <p>
     {{#each media.authors }}
       <a href="#">{{this}}</a><br>
     {{/each}}
   </p>
+
+  <div class="spacer spacer-xs"></div>
 
   <div class="row">
     <div class="col-xs-3">
@@ -28,7 +30,7 @@ notes: |
       </a>
     </div>
     <div class="col-xs-9">
-      <h6>Partagé par</h6>
+      <h5>Partagé par</h5>
       <a href="#">{{media.shared_by}}</a>
     </div>
   </div>
@@ -39,10 +41,21 @@ notes: |
     license &rsaquo; <a href="#">{{media.license}}</a>
   </div>
 
-  <h6>Tags</h6>
+  <h5>Tags</h5>
   <div class="spacer spacer-xs"></div>
   {{#each media.tags }}
     <a href="#" class="label label-default">{{this}}</a>
+  {{/each}}
+
+  <h5>Groupes</h5>
+  <div class="spacer spacer-xs"></div>
+  {{#each media.groups }}
+    <a href="#" class="label label-default">{{this}}</a>
+  {{/each}}
+  <h5>Albums</h5>
+  <div class="spacer spacer-xs"></div>
+  {{#each media.albums }}
+    <a href="#" class="label label-default">Groupe {{@key}} &rsaquo; {{this}}</a>
   {{/each}}
 
 </div>

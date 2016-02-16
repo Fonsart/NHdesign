@@ -6,6 +6,8 @@
   font-size: $font-size-small;
   margin-bottom: 0.3em;
   font-weight: 500 !important;
+  white-space: normal;
+  text-align: left;
   &.label-default {
     border: 1px solid darken($gallery, 5%);
   }
