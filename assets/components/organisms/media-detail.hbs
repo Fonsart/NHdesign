@@ -1,19 +1,27 @@
 ---
 notes: |
   ##### Introduced : 0.1.1
-  ##### Updated : 0.3.1
+  ##### Updated : 0.3.2
   ##### Usage : `{{> media-detail }}`
+  ##### Options :
+    - **is-article** - Boolean
 ---
 <div class="container">
   <div class="spacer spacer-sm"></div>
   <h1 class="text-center">{{media.title}}</h1>
 
+  {{#unless is-article}}
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div class="spacer spacer-sm"></div>
+        <img src="{{media.source}}" alt="{{media.title}}" class="img-responsive">
+        {{> media-features-bar }}
+        <div class="spacer spacer-xs"></div>
+      </div>
+    </div>
+  {{/unless}}
+
   <div class="spacer spacer-sm"></div>
-  <img src="{{media.source}}" alt="{{media.title}}" class="img-responsive">
-
-  {{> media-features-bar }}
-
-  <div class="spacer spacer-md"></div>
 
   <div class="row">
     <div class="col-sm-6 col-sm-offset-1 media-description">
