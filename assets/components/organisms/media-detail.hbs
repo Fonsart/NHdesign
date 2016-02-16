@@ -1,65 +1,53 @@
 ---
 notes: |
   ##### Introduced : 0.1.1
-  ##### Updated : 0.1.3
+  ##### Updated : 0.3.1
   ##### Usage : `{{> media-detail }}`
 ---
-<div class="spacer spacer-sm"></div>
-<h1 class="text-center">{{media.title}}</h1>
-<h5 class="text-center">
-  {{media.views}}&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small>
-  |
-  {{media.favorites}}&thinsp;<small><i class="glyphicon glyphicon-star"></i></small>
-  -
-  <a href="#">Ajouter au favoris</a>
-  -
-  <a href="#">Partager</a>
-  -
-  <a href="metadata.html">Éditer</a>
-</h5>
+<div class="container">
+  <div class="spacer spacer-sm"></div>
+  <h1 class="text-center">{{media.title}}</h1>
 
-<div class="spacer spacer-sm"></div>
-<img src="{{media.source}}" alt="{{media.title}}" class="img-responsive">
-<div class="spacer spacer-md"></div>
+  <div class="spacer spacer-sm"></div>
+  <img src="{{media.source}}" alt="{{media.title}}" class="img-responsive">
 
-<div class="row">
-  <div class="col-sm-6 col-sm-offset-1 media-description">
-    {{{media.description}}}
+  {{> media-features-bar }}
 
-    <div class="spacer spacer-xs"></div>
-    <hr>
-    <h3>Commentaires</h3>
-    <div class="spacer spacer-xs"></div>
-    {{#each media.comments }}
-      {{> comment comment-object=this }}
-    {{/each}}
-    <div class="spacer spacer-xs"></div>
-    <div class="row">
-      <div class="col-sm-10 col-sm-offset-2">
-        <a href="#" class="btn btn-default">Ajouter un commentaire</a>
-      </div>
+  <div class="spacer spacer-md"></div>
+
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-1 media-description">
+      {{{media.description}}}
     </div>
-    <div class="spacer spacer-sm"></div>
+    <div class="col-sm-3 col-sm-offset-1">
+      {{> media-infobar }}
+    </div>
   </div>
-  <div class="col-sm-3 col-sm-offset-1">
-    {{> media-infobar }}
-
-    <h3>Tags</h3>
-    <div class="spacer spacer-xs"></div>
-    {{#each media.tags }}
-      <a href="#" class="btn btn-default btn-sm">{{this}}</a>
-    {{/each}}
-    <h3>Groupes</h3>
-    <div class="spacer spacer-xs"></div>
-    {{#each media.groups }}
-      <a href="#" class="btn btn-primary btn-sm">{{this}}</a>
-    {{/each}}
-    <h3>Albums</h3>
-    <div class="spacer spacer-xs"></div>
-    {{#each media.albums }}
-      <a href="#" class="btn btn-primary btn-sm">Groupe {{@key}} &rsaquo; {{this}}</a>
-    {{/each}}
-  </div>
+  <div class="spacer spacer-sm"></div>
 </div>
 
-<div class="spacer spacer-sm"></div>
+<div class="bg-concrete">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-1">
+        <div class="spacer spacer-sm"></div>
+        <h4>Commentaires <span class="text-clear">(3)</span></h4>
+        <div class="spacer spacer-xs"></div>
+        {{#each media.comments }}
+          {{> comment comment-object=this }}
+        {{/each}}
+        <div class="spacer spacer-xs"></div>
+        <h4>Ajouter un commentaire</h4>
+        {{> textarea
+              textarea-id="comment"
+              textarea-label="Commencez à taper ici..."
+              textarea-help=" "
+        }}
+        <div class="spacer spacer-xs"></div>
+        <a href="#" class="btn btn-primary pull-right">Commenter</a>
+      </div>
+    </div>
+  </div>
+  <div class="spacer"></div>
+</div>
+

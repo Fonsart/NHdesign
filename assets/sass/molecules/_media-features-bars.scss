@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.media-features-bar {
+  background: $concrete;
+  color: $boulder;
+  font-size: $font-size-small;
+  .btn-link {
+    color: $boulder;
+    font-size: $font-size-small;
+    font-weight: 500;
+    &:hover {
+      text-decoration: none;
+      color: $black;
+      .glyphicon {color: $black;}
+    }
+    &.active .glyphicon {color: $monza;}
+    .glyphicon {
+      font-size: $font-size-base;
+      position: relative;
+      top: 0.3em;
+      color: $tundora;
+      transition: color 0.3s;
+    }
+  }
+}
+
+.media-features-bar-infos {
+  @extend .btn;
+  @extend .btn-link;
+}
