@@ -1,7 +1,7 @@
 ---
 notes: |
   ##### Introduced : 0.1.1
-  ##### Updated : 0.3.2
+  ##### Updated : 0.3.3
   ##### Usage : `{{> media-detail }}`
   ##### Options :
     - **is-article** - Boolean
@@ -10,22 +10,32 @@ notes: |
   <div class="spacer spacer-sm"></div>
   <h1 class="text-center">{{media.title}}</h1>
 
-  {{#unless is-article}}
-    <div class="row">
-      <div class="col-sm-10 col-sm-offset-1">
-        <div class="spacer spacer-sm"></div>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="spacer spacer-sm"></div>
+      {{#unless is-article}}
         <img src="{{media.source}}" alt="{{media.title}}" class="img-responsive">
-        {{> media-features-bar }}
-        <div class="spacer spacer-xs"></div>
-      </div>
+      {{^}}
+        <div class="bg-concrete article-container">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              {{{media.article}}}
+            </div>
+          </div>
+        </div>
+      {{/unless}}
+      {{> media-features-bar }}
+      <div class="spacer spacer-xs"></div>
     </div>
-  {{/unless}}
+  </div>
 
   <div class="spacer spacer-sm"></div>
 
   <div class="row">
     <div class="col-sm-6 col-sm-offset-1 media-description">
-      {{{media.description}}}
+      {{#unless is-article}}
+        {{{media.description}}}
+      {{/unless}}
     </div>
     <div class="col-sm-3 col-sm-offset-1">
       {{> media-infobar }}
