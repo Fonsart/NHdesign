@@ -186,6 +186,9 @@
             <a href="templates.html" class="f-menu__heading">Templates</a>
             <ul>
               <li>
+                <a href="templates/article.html">Article</a>
+              </li>
+              <li>
                 <a href="templates/demo.html">Demo</a>
               </li>
               <li>
@@ -675,8 +678,12 @@
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<h5>Introduced : 0.1.1</h5>
-<h5>Updated : 0.3.1</h5>
+<h5>Updated : 0.3.2</h5>
 <h5>Usage : <code>{{&gt; media-detail }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>is-article</strong> - Boolean</li>
+</ul>
 
 </div>
 <div class="f-item-preview">
@@ -684,38 +691,43 @@
 	<div class="spacer spacer-sm"></div>
 	<h1 class="text-center">Le bonheur parmi les narcisses!</h1>
 
-	<div class="spacer spacer-sm"></div>
-	<img src="http://notrehistoire.ch.s3.amazonaws.com/photos/2012/07/d0bc77c0a598c534.jpeg" alt="Le bonheur parmi les narcisses!" class="img-responsive">
-
-	<div class="media-features-bar">
-		<div class="row">
-			<div class="col-sm-4">
-				<button class="btn btn-link">
-					<i class="glyphicon glyphicon-share-alt"></i> Partager
-				</button>
-				<a href="#" class="btn btn-link">
-					<i class="glyphicon glyphicon-comment"></i> Commenter
-				</a>
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1">
+			<div class="spacer spacer-sm"></div>
+			<img src="http://notrehistoire.ch.s3.amazonaws.com/photos/2012/07/d0bc77c0a598c534.jpeg" alt="Le bonheur parmi les narcisses!" class="img-responsive">
+			<div class="media-features-bar">
+				<div class="row">
+					<div class="col-sm-4">
+						<button class="btn btn-link">
+							<i class="glyphicon glyphicon-share-alt"></i> Partager
+						</button>
+						<a href="#" class="btn btn-link">
+							<i class="glyphicon glyphicon-comment"></i> Commenter (4)
+						</a>
+					</div>
+					<div class="col-sm-4 text-center">
+						<a href="#" class="btn btn-link">
+							<i class="glyphicon glyphicon-fullscreen"></i>
+						</a>
+					</div>
+					<div class="col-sm-4 text-right">
+						<span class="media-features-bar-infos">
+                220 vues&nbsp;&nbsp;<i class="glyphicon glyphicon-eye-open"></i>
+              </span>
+						<button class="btn btn-link active">
+							<i class="glyphicon glyphicon-heart"></i>
+						</button>
+						<button class="btn btn-link">
+							<i class="glyphicon glyphicon-alert"></i>
+						</button>
+					</div>
+				</div>
 			</div>
-			<div class="col-sm-4 text-center">
-				<a href="#" class="btn btn-link">
-					<i class="glyphicon glyphicon-fullscreen"></i>
-				</a>
-			</div>
-			<div class="col-sm-4 text-right">
-				<span class="media-features-bar-infos">
-          220 vues&nbsp;&nbsp;<i class="glyphicon glyphicon-eye-open"></i>
-        </span>
-				<button class="btn btn-link active">
-					<i class="glyphicon glyphicon-heart"></i>
-				</button>
-				<button class="btn btn-link">
-					<i class="glyphicon glyphicon-alert"></i>
-				</button>
-			</div>
+			<div class="spacer spacer-xs"></div>
 		</div>
 	</div>
-	<div class="spacer spacer-md"></div>
+
+	<div class="spacer spacer-sm"></div>
 
 	<div class="row">
 		<div class="col-sm-6 col-sm-offset-1 media-description">
@@ -855,38 +867,43 @@
 	&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
 	&lt;h1 class=&quot;text-center&quot;&gt;Le bonheur parmi les narcisses!&lt;/h1&gt;
 
-	&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
-	&lt;img src=&quot;http://notrehistoire.ch.s3.amazonaws.com/photos/2012/07/d0bc77c0a598c534.jpeg&quot; alt=&quot;Le bonheur parmi les narcisses!&quot; class=&quot;img-responsive&quot;&gt;
-
-	&lt;div class=&quot;media-features-bar&quot;&gt;
-		&lt;div class=&quot;row&quot;&gt;
-			&lt;div class=&quot;col-sm-4&quot;&gt;
-				&lt;button class=&quot;btn btn-link&quot;&gt;
-					&lt;i class=&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/i&gt; Partager
-				&lt;/button&gt;
-				&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;
-					&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt; Commenter
-				&lt;/a&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-10 col-sm-offset-1&quot;&gt;
+			&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+			&lt;img src=&quot;http://notrehistoire.ch.s3.amazonaws.com/photos/2012/07/d0bc77c0a598c534.jpeg&quot; alt=&quot;Le bonheur parmi les narcisses!&quot; class=&quot;img-responsive&quot;&gt;
+			&lt;div class=&quot;media-features-bar&quot;&gt;
+				&lt;div class=&quot;row&quot;&gt;
+					&lt;div class=&quot;col-sm-4&quot;&gt;
+						&lt;button class=&quot;btn btn-link&quot;&gt;
+							&lt;i class=&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/i&gt; Partager
+						&lt;/button&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;
+							&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt; Commenter (4)
+						&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-4 text-center&quot;&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;
+							&lt;i class=&quot;glyphicon glyphicon-fullscreen&quot;&gt;&lt;/i&gt;
+						&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-sm-4 text-right&quot;&gt;
+						&lt;span class=&quot;media-features-bar-infos&quot;&gt;
+                220 vues&amp;nbsp;&amp;nbsp;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;
+              &lt;/span&gt;
+						&lt;button class=&quot;btn btn-link active&quot;&gt;
+							&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;
+						&lt;/button&gt;
+						&lt;button class=&quot;btn btn-link&quot;&gt;
+							&lt;i class=&quot;glyphicon glyphicon-alert&quot;&gt;&lt;/i&gt;
+						&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
 			&lt;/div&gt;
-			&lt;div class=&quot;col-sm-4 text-center&quot;&gt;
-				&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;
-					&lt;i class=&quot;glyphicon glyphicon-fullscreen&quot;&gt;&lt;/i&gt;
-				&lt;/a&gt;
-			&lt;/div&gt;
-			&lt;div class=&quot;col-sm-4 text-right&quot;&gt;
-				&lt;span class=&quot;media-features-bar-infos&quot;&gt;
-          220 vues&amp;nbsp;&amp;nbsp;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;
-        &lt;/span&gt;
-				&lt;button class=&quot;btn btn-link active&quot;&gt;
-					&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;
-				&lt;/button&gt;
-				&lt;button class=&quot;btn btn-link&quot;&gt;
-					&lt;i class=&quot;glyphicon glyphicon-alert&quot;&gt;&lt;/i&gt;
-				&lt;/button&gt;
-			&lt;/div&gt;
+			&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;spacer spacer-md&quot;&gt;&lt;/div&gt;
+
+	&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
 
 	&lt;div class=&quot;row&quot;&gt;
 		&lt;div class=&quot;col-sm-6 col-sm-offset-1 media-description&quot;&gt;
