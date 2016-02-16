@@ -12,3 +12,20 @@ h3, .h3, h5, .h5 {
 
 .text-clear {color: $boulder;}
 .text-sans {font-family: $font-family-sans-serif;}
+
+em, i {
+  font-style: normal;
+}
+
+blockquote {
+  border-left: none;
+  padding-left: 0;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+figcaption {
+  font-size: $font-size-small;
+}
