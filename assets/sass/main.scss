@@ -10,6 +10,7 @@
 
 
 // atoms:
+@import 'atoms/covers';
 @import 'atoms/labels';
 @import 'atoms/thumbnails';
 @import 'atoms/separators';
@@ -35,6 +36,7 @@
 @import 'molecules/login-forms';
 
 // organisms:
+@import 'organisms/profile-founds';
 @import 'organisms/profile-persons';
 @import 'organisms/panels';
 @import 'organisms/media-details';
