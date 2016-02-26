@@ -28,7 +28,7 @@
     
       <form id="search-form" class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Rechercher">
+          <input type="text" class="form-control" placeholder="Rechercher" />
         </div>
         <button type="submit" class="btn btn-default">
           <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
@@ -64,16 +64,16 @@
     <div class="spacer spacer-xs"></div>
     <form>
       <div class="form-group">
-        <label for="email" class="hidden">Adresse email</label>
-        <input type="email" class="form-control" id="email" placeholder="Adresse email" value="">
+        <label for="email">Adresse email</label>
+        <input type="email" class="form-control" id="email" placeholder="Adresse email" value="" />
         <p class="help-block">C&#x27;est le moment où vous rentrez votre adresse email</p>
       </div>  <div class="form-group">
-        <label for="password" class="hidden">Votre mot de passe</label>
-        <input type="password" class="form-control" id="password" placeholder="Votre mot de passe" value="">
+        <label for="password">Votre mot de passe</label>
+        <input type="password" class="form-control" id="password" placeholder="Votre mot de passe" value="" />
         <p class="help-block">N&#x27;aillez crainte, je détourne le regard.</p>
       </div>  <div class="checkbox">
         <label>
-          <input type="checkbox"> Resté connecté
+          <input type="checkbox" /> Resté connecté
         </label>
       </div>  <div class="spacer spacer-xs"></div>
       <button type="submit" class="btn btn-primary btn-block">Je me connecte</button>
@@ -86,19 +86,21 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
-      <h1>Éditer le profil</h1>
-      <div class="spacer spacer-xs"></div>
-
+      <h1 class="h2 text-center">Éditer le profil</h1>
+      <p class="text-sans text-clear text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <hr />
       <form action="demo.html" class="text-sans">
 
         <div class="row">
           <div class="col-sm-4">
-            <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/08/876988c033485ccc_jpg_168x168_crop_q85.jpg" alt="Photo de profil de Martine Desarzens" class="img-responsive">
+            <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/08/876988c033485ccc_jpg_168x168_crop_q85.jpg" alt="Photo de profil de Martine Desarzens" class="img-responsive img-circle" />
           </div>
           <div class="col-sm-8">
             <div class="form-group">
               <label for="avatar">Choisissez une image de vous pour votre profil</label>
-              <input type="file" class="form-control" id="avatar" name="avatar">
+              <input type="file" class="form-control" id="avatar" name="avatar" />
             </div>
             <small class="text-clear text-sans"><em>Dimensions minimales: 170x170 pixels. Taille maximale: 2 MB.</em></small>
             <div class="spacer spacer-xs"></div>
@@ -111,25 +113,25 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="firstname" class="hidden">Email address</label>
-              <input type="text" class="form-control" id="firstname" placeholder="Adresse email" value="Martine">
+              <label for="firstname">Votre prénom*</label>
+              <input type="text" class="form-control" id="firstname" placeholder="Votre prénom*" value="Martine" />
               <p class="help-block">Votre prénom*</p>
             </div>          </div>
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="name" class="hidden">Email address</label>
-              <input type="text" class="form-control" id="name" placeholder="Adresse email" value="Desarzens">
+              <label for="name">Votre nom*</label>
+              <input type="text" class="form-control" id="name" placeholder="Votre nom*" value="Desarzens" />
               <p class="help-block">Votre nom*</p>
             </div>          </div>
         </div>
 
         <div class="form-group">
-          <label for="activity" class="hidden">Email address</label>
-          <input type="text" class="form-control" id="activity" placeholder="Adresse email" value="conseillère pédagogique à la retraite mais pas inactive">
+          <label for="activity">Votre occupation actuelle</label>
+          <input type="text" class="form-control" id="activity" placeholder="Votre occupation actuelle" value="conseillère pédagogique à la retraite mais pas inactive" />
           <p class="help-block">Votre occupation actuelle</p>
         </div>
         <div class="form-group">
-          <label class="h5" for="day">Date de naissance</label>
+          <label for="day">Date de naissance</label>
           <div class="row">
             <div class="col-xs-4">
               <select name="day" id="day" class="form-control">
@@ -658,26 +660,28 @@
             </div>
           </div>        </div>
 
-        <div class="spacer spacer-sm"></div>
+        <div class="spacer spacer-xs"></div>
 
         <div class="form-group">
+          <label for="period">Genre</label>
           <select name="period" id="period" class="form-control">
             <option value="female" selected="selected">Femme</option>
             <option value="male">Homme</option>
           </select>
         </div>
 
-        <div class="spacer spacer-sm"></div>
+        <div class="spacer spacer-xs"></div>
 
         <div class="row">
           <div class="col-sm-6">
             <div class="form-group">
-              <label for="city" class="hidden">Email address</label>
-              <input type="text" class="form-control" id="city" placeholder="Adresse email" value="Lausanne">
+              <label for="city">Votre ville de résidence</label>
+              <input type="text" class="form-control" id="city" placeholder="Votre ville de résidence" value="Lausanne" />
               <p class="help-block">Votre ville de résidence</p>
             </div>          </div>
           <div class="col-sm-6">
-            <select name="period" id="period" class="form-control">
+            <label for="country">Pays</label>
+            <select name="country" id="country" class="form-control">
               <option value="suisse" selected="selected">Suisse</option>
               <option value="france">France</option>
               <option value="other">...</option>
@@ -686,10 +690,11 @@
         </div>
 
         <div class="form-group">
-          <label for="descritpion" class="hidden">J’aime ma ville Lausanne, J’aime l’amitié sans calcul, J’aime la musique classique, la chanson française, le jazz, J’aime la radio,...</label>
+          <label for="descritpion">Description</label>
           <textarea class="form-control" id="descritpion" rows="3">J’aime ma ville Lausanne, J’aime l’amitié sans calcul, J’aime la musique classique, la chanson française, le jazz, J’aime la radio,...</textarea>
-          <p class="help-block">Dites-nous en plus sur vous !</p>
         </div>
+        <div class="spacer spacer-sm"></div>
+
         <div class="form-group">
           <button type="submit" class="btn btn-primary">Sauver les changements</button> <button class="btn btn-default">Annuler</button>
         </div>

@@ -86,6 +86,9 @@
                 <a href="atoms.html#checkbox">Checkbox</a>
               </li>
               <li>
+                <a href="atoms.html#cover">Cover</a>
+              </li>
+              <li>
                 <a href="atoms.html#input">Input</a>
               </li>
               <li>
@@ -179,6 +182,12 @@
               <li>
                 <a href="organisms.html#panel-right">Panel Right</a>
               </li>
+              <li>
+                <a href="organisms.html#profile-found">Profile Found</a>
+              </li>
+              <li>
+                <a href="organisms.html#profile-person">Profile Person</a>
+              </li>
             </ul>
           </li>
       
@@ -199,6 +208,12 @@
               </li>
               <li>
                 <a href="templates/profile-edit.html">Profile Edit</a>
+              </li>
+              <li>
+                <a href="templates/profile-found.html">Profile Found</a>
+              </li>
+              <li>
+                <a href="templates/profile-person.html">Profile Person</a>
               </li>
               <li>
                 <a href="templates/upload.html">Upload</a>
@@ -282,15 +297,56 @@
 <div class="f-item-preview">
 	<div class="checkbox">
 	<label>
-		<input type="checkbox"> Resté connecté
+		<input type="checkbox" /> Resté connecté
 	</label>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;checkbox&quot;&gt;
 	&lt;label&gt;
-		&lt;input type=&quot;checkbox&quot;&gt; Resté connecté
+		&lt;input type=&quot;checkbox&quot; /&gt; Resté connecté
 	&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="cover">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Cover</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.4.0</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; cover }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>cover-src</strong> - String</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<div class="cover" style="background-image: url('https://unsplash.it/2000/650?image=984');">
+	<img src="https://unsplash.it/2000/650?image=984" class="img-responsive" />
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;cover&quot; style=&quot;background-image: url(&#x27;https://unsplash.it/2000/650?image=984&#x27;);&quot;&gt;
+	&lt;img src=&quot;https://unsplash.it/2000/650?image=984&quot; class=&quot;img-responsive&quot; /&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -316,7 +372,7 @@
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<h5>Introduced : 0.0.4</h5>
-<h5>Updated : -</h5>
+<h5>Updated : 0.4.0</h5>
 <h5>Usage : <code>{{&gt; input }}</code></h5>
 <h5>Options :</h5>
 <ul>
@@ -331,15 +387,15 @@
 </div>
 <div class="f-item-preview">
 	<div class="form-group">
-	<label for="email" class="hidden">Email address</label>
-	<input type="email" class="form-control" id="email" placeholder="Adresse email" value="">
+	<label for="email">Email address</label>
+	<input type="email" class="form-control" id="email" placeholder="Adresse email" value="" />
 	<p class="help-block">Example block-level help text here.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;form-group&quot;&gt;
-	&lt;label for=&quot;email&quot; class=&quot;hidden&quot;&gt;Email address&lt;/label&gt;
-	&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Adresse email&quot; value=&quot;&quot;&gt;
+	&lt;label for=&quot;email&quot;&gt;Email address&lt;/label&gt;
+	&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Adresse email&quot; value=&quot;&quot; /&gt;
 	&lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -372,15 +428,15 @@
 </div>
 <div class="f-item-preview">
 	<div class="form-group has-error">
-	<label for="email" class="hidden">Email address</label>
-	<input type="email" class="form-control" id="email" placeholder="Adresse email" value="">
+	<label for="email">Email address</label>
+	<input type="email" class="form-control" id="email" placeholder="Adresse email" value="" />
 	<p class="help-block">Example block-level help text here.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;form-group has-error&quot;&gt;
-	&lt;label for=&quot;email&quot; class=&quot;hidden&quot;&gt;Email address&lt;/label&gt;
-	&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Adresse email&quot; value=&quot;&quot;&gt;
+	&lt;label for=&quot;email&quot;&gt;Email address&lt;/label&gt;
+	&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Adresse email&quot; value=&quot;&quot; /&gt;
 	&lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -413,15 +469,15 @@
 </div>
 <div class="f-item-preview">
 	<div class="form-group has-success">
-	<label for="email" class="hidden">Email address</label>
-	<input type="email" class="form-control" id="email" placeholder="Adresse email" value="">
+	<label for="email">Email address</label>
+	<input type="email" class="form-control" id="email" placeholder="Adresse email" value="" />
 	<p class="help-block">Example block-level help text here.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;form-group has-success&quot;&gt;
-	&lt;label for=&quot;email&quot; class=&quot;hidden&quot;&gt;Email address&lt;/label&gt;
-	&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Adresse email&quot; value=&quot;&quot;&gt;
+	&lt;label for=&quot;email&quot;&gt;Email address&lt;/label&gt;
+	&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Adresse email&quot; value=&quot;&quot; /&gt;
 	&lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -481,7 +537,7 @@
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<h5>Introduced : 0.0.6</h5>
-<h5>Updated : -</h5>
+<h5>Updated : 0.4.0</h5>
 <h5>Usage : <code>{{&gt; select }}</code></h5>
 <h5>Options :</h5>
 <ul>
@@ -494,7 +550,7 @@
 </div>
 <div class="f-item-preview">
 	<div class="form-group">
-	<label for="email" class="hidden">Votre canton</label>
+	<label for="email">Votre canton</label>
 	<select class="form-control">
 		<option disabled selected>Votre canton</option>
 		<optgroup>
@@ -531,7 +587,7 @@
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;form-group&quot;&gt;
-	&lt;label for=&quot;email&quot; class=&quot;hidden&quot;&gt;Votre canton&lt;/label&gt;
+	&lt;label for=&quot;email&quot;&gt;Votre canton&lt;/label&gt;
 	&lt;select class=&quot;form-control&quot;&gt;
 		&lt;option disabled selected&gt;Votre canton&lt;/option&gt;
 		&lt;optgroup&gt;
@@ -594,10 +650,10 @@
 
 </div>
 <div class="f-item-preview">
-	<hr>
+	<hr />
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;hr&gt;</code></pre>
+	<pre><code class="language-markup">&lt;hr /&gt;</code></pre>
 </div>
 
 
@@ -655,7 +711,7 @@
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<h5>Introduced : 0.0.6</h5>
-<h5>Updated : -</h5>
+<h5>Updated : 0.4.0</h5>
 <h5>Usage : <code>{{&gt; textarea }}</code></h5>
 <h5>Options :</h5>
 <ul>
@@ -668,16 +724,14 @@
 </div>
 <div class="f-item-preview">
 	<div class="form-group">
-	<label for="email" class="hidden">Message</label>
+	<label for="email">Message</label>
 	<textarea class="form-control" id="email" rows="3">Votre message</textarea>
-	<p class="help-block">Example block-level help text here.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;form-group&quot;&gt;
-	&lt;label for=&quot;email&quot; class=&quot;hidden&quot;&gt;Message&lt;/label&gt;
+	&lt;label for=&quot;email&quot;&gt;Message&lt;/label&gt;
 	&lt;textarea class=&quot;form-control&quot; id=&quot;email&quot; rows=&quot;3&quot;&gt;Votre message&lt;/textarea&gt;
-	&lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -713,12 +767,12 @@
 </div>
 <div class="f-item-preview">
 	<div class="thumbnail" style="background-image: url('');">
-	<img src="" alt="" class="img-responsive">
+	<img src="" alt="" class="img-responsive" />
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;thumbnail&quot; style=&quot;background-image: url(&#x27;&#x27;);&quot;&gt;
-	&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;img-responsive&quot;&gt;
+	&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;img-responsive&quot; /&gt;
 &lt;/div&gt;</code></pre>
 </div>
 

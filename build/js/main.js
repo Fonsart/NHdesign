@@ -87,6 +87,22 @@
 (function($){
 
   $(document).ready(function () {
+
+    $('#btn-readmore').click(function(){
+      $('#person-bio').toggleClass('open');
+    });
+
+  });
+
+}(jQuery));
+
+'use strict';
+
+/* global jQuery */
+
+(function($){
+
+  $(document).ready(function () {
     $('#filer_input').filer({
         changeInput: '<div class="jFiler-input-dragDrop"><div class="jFiler-input-inner"><div class="jFiler-input-icon"><i class="icon-jfi-folder"></i></div><div class="jFiler-input-text"><h3>Click on this box</h3> <span style="display:inline-block; margin: 15px 0">or</span></div><a class="jFiler-input-choose-btn blue">Browse Files</a></div></div>',
         showThumbs: true,

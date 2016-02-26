@@ -28,7 +28,7 @@
     
       <form id="search-form" class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Rechercher">
+          <input type="text" class="form-control" placeholder="Rechercher" />
         </div>
         <button type="submit" class="btn btn-default">
           <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
@@ -64,16 +64,16 @@
     <div class="spacer spacer-xs"></div>
     <form>
       <div class="form-group">
-        <label for="email" class="hidden">Adresse email</label>
-        <input type="email" class="form-control" id="email" placeholder="Adresse email" value="">
+        <label for="email">Adresse email</label>
+        <input type="email" class="form-control" id="email" placeholder="Adresse email" value="" />
         <p class="help-block">C&#x27;est le moment où vous rentrez votre adresse email</p>
       </div>  <div class="form-group">
-        <label for="password" class="hidden">Votre mot de passe</label>
-        <input type="password" class="form-control" id="password" placeholder="Votre mot de passe" value="">
+        <label for="password">Votre mot de passe</label>
+        <input type="password" class="form-control" id="password" placeholder="Votre mot de passe" value="" />
         <p class="help-block">N&#x27;aillez crainte, je détourne le regard.</p>
       </div>  <div class="checkbox">
         <label>
-          <input type="checkbox"> Resté connecté
+          <input type="checkbox" /> Resté connecté
         </label>
       </div>  <div class="spacer spacer-xs"></div>
       <button type="submit" class="btn btn-primary btn-block">Je me connecte</button>
@@ -88,22 +88,23 @@
     <div class="col-sm-6 col-sm-offset-3">
       <h1>Éditer la photo</h1>
       <div class="spacer spacer-xs"></div>
-      <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg" class="img-responsive">
+      <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg" class="img-responsive" />
 
       <div class="spacer spacer-sm"></div>
 
-      <form action="demo.html">
+      <form action="demo.html" class="text-sans">
         <div class="form-group">
-          <label for="title" class="hidden">Titre</label>
-          <input type="text" class="form-control" id="title" placeholder="Titre" value="">
+          <label for="title">Titre</label>
+          <input type="text" class="form-control" id="title" placeholder="Titre" value="" />
           <p class="help-block">Le titre de votre photographie</p>
         </div>        <div class="form-group">
-          <label for="descritpion" class="hidden">Description</label>
-          <textarea class="form-control" id="descritpion" rows="3">Description</textarea>
-          <p class="help-block">Une petite description de la photo</p>
+          <label for="descritpion">Description</label>
+          <textarea class="form-control" id="descritpion" rows="3">Une petite description de la photo</textarea>
         </div>
+        <div class="spacer spacer-sm"></div>
+
         <div class="form-group">
-          <label class="h5" for="day">Date originale</label>
+          <label for="day">Date originale</label>
           <div class="row">
             <div class="col-xs-4">
               <select name="day" id="day" class="form-control">
@@ -645,7 +646,7 @@
         </div>
 
         <div class="form-group">
-          <label for="period" class="h5">Période</label>
+          <label for="period">Période</label>
           <select name="period" id="period" class="form-control">
             <option value="" selected="selected">-</option>
             <option value="1">Avant 1900</option>
@@ -665,8 +666,9 @@
 
         <div class="spacer spacer-sm"></div>
 
+        <label for="place">Lieu</label>
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Lieu">
+          <input type="text" class="form-control" placeholder="Lieu" id="place" />
           <p class="help-block">Où cela a-t-il eu lieu ?</p>
           <span class="input-group-btn">
             <button class="btn btn-default" type="button">Voir sur la carte</button>
@@ -674,20 +676,20 @@
         </div>
 
         <div class="form-group">
-          <label for="tags" class="hidden">Tags</label>
-          <input type="text" class="form-control" id="tags" placeholder="Tags" value="">
+          <label for="tags">Tags</label>
+          <input type="text" class="form-control" id="tags" placeholder="Tags" value="" />
           <p class="help-block">Chaque tag doit être séparé par une virgule. (ex: lausanne, cathédrale, 1960)</p>
         </div>
         <h5>Choisissez la privacité du ou des documents</h5>
         <div class="radio">
           <label class="text-sans">
-            <input type="radio" name="optionsRadios" id="private" value="private">
+            <input type="radio" name="optionsRadios" id="private" value="private" />
             Privé
           </label>
         </div>
         <div class="radio">
           <label class="text-sans">
-            <input type="radio" name="optionsRadios" id="public" value="public" checked>
+            <input type="radio" name="optionsRadios" id="public" value="public" checked />
             Public
           </label>
         </div>
@@ -696,7 +698,7 @@
 
         <div class="checkbox">
           <label>
-            <input type="checkbox">
+            <input type="checkbox" />
             Cette photo est ajoutable dans des albums
           </label>
         </div>
