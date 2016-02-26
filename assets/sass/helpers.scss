@@ -18,7 +18,7 @@
 }
 
 .bg-concrete {
-  background: transparentize($concrete, 0.5);
+  background: lighten($concrete, 1%);
   border-top: 1px solid $concrete;
   .text-clear {
     color: $nobel;

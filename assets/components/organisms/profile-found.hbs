@@ -1,0 +1,30 @@
+---
+notes: |
+  ##### Introduced : 0.4.0
+  ##### Updated : -
+  ##### Usage : `{{> profile-found }}`
+---
+<div class="profile-found">
+  <img src="{{found.avatar}}" alt="{{found.name}}" class="img-responsive center-block" />
+  <h1 class="h2 text-center">{{found.name}}</h1>
+  <ul class="list-inline text-clear text-center text-sans">
+    <li><i class="glyphicon glyphicon-heart"></i> {{found.likes}}</li>
+    <li><i class="glyphicon glyphicon-file"></i> {{found.files}}</li>
+    &bull; {{found.resume}}
+  </ul>
+  {{> separator }}
+  <ul class="list-inline text-justify">
+    <li><a href="#" class="btn btn-link"><i class="glyphicon glyphicon-heart"></i> <b>Ajouter aux favoris</b></a></li>
+    <li><a href="#" class="btn btn-link"><i class="glyphicon glyphicon-share-alt"></i> Partager</a></li>
+    <li><a href="#" class="btn btn-link">Activités</a></li>
+    <li><a href="#" class="btn btn-link">Envoyer un message</a></li>
+  </ul>
+  <p class="text-clear text-sans person-bio" id="person-bio">
+    {{{found.bio}}}
+  </p>
+  <div class="spacer spacer-xs"></div>
+  {{> separator }}
+  <div class="text-center">
+    <button class="btn btn-link btn-readmore" id="btn-readmore">Lire la suite...</button>
+  </div>
+</div>

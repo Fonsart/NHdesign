@@ -1,0 +1,34 @@
+---
+notes: |
+  ##### Introduced : 0.4.0
+  ##### Updated : -
+  ##### Usage : `{{> profile-person }}`
+---
+<div class="profile-person">
+  <div class="spacer spacer-sm"></div>
+  <img src="{{person.avatar}}" alt="{{person.name}}" class="img-responsive img-circle center-block" />
+  <h1 class="h2 text-center">{{person.name}}</h1>
+  <ul class="list-inline text-clear text-center text-sans">
+    <li><i class="glyphicon glyphicon-picture"></i> {{person.pictures}}</li>
+    <li><i class="glyphicon glyphicon-film"></i> {{person.videos}}</li>
+    <li><i class="glyphicon glyphicon-list-alt"></i> {{person.articles}}</li>
+    <li>Abonnés {{person.followings}}</li>
+    <li>Abonnements {{person.followers}}</li>
+  </ul>
+  {{> separator }}
+  <ul class="list-inline text-justify">
+    <li><a href="#" class="btn btn-link"><b>Envoyer un message</b></a></li>
+    <li><a href="#" class="btn btn-link">Ajouter comme contact</a></li>
+    <li><a href="#" class="btn btn-link">Activité</a></li>
+    <li><a href="#" class="chevron text-clear"></a></li>
+  </ul>
+  <p class="text-clear text-sans person-bio" id="person-bio">
+    {{{person.bio}}}
+  </p>
+  <div class="spacer spacer-xs"></div>
+  {{> separator }}
+  <div class="text-center">
+    <button class="btn btn-link btn-readmore" id="btn-readmore">Lire la suite...</button>
+  </div>
+</div>
+

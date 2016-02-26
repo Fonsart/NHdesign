@@ -63,6 +63,9 @@
     transform: rotate(-45deg);
     top: -0.1em;
   }
+  &.text-clear {
+    border-color: $boulder;
+  }
   &.pull-right {
     float: none !important;
     position: absolute;

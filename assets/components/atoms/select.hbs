@@ -1,7 +1,7 @@
 ---
 notes: |
   ##### Introduced : 0.0.6
-  ##### Updated : -
+  ##### Updated : 0.4.0
   ##### Usage : `{{> select }}`
   ##### Options :
   - **select-id** - String
@@ -10,7 +10,7 @@ notes: |
   - **select-help** - String
 ---
 <div class="form-group{{#if select-variant}} {{select-variant}}{{/if}}">
-  <label for="{{#if select-id}}{{select-id}}{{^}}email{{/if}}" class="hidden">{{#if select-label}}{{select-label}}{{^}}Votre canton{{/if}}</label>
+  <label for="{{#if select-id}}{{select-id}}{{^}}email{{/if}}">{{#if select-label}}{{select-label}}{{^}}Votre canton{{/if}}</label>
   <select class="form-control">
     <option disabled selected>{{#if select-label}}{{select-label}}{{^}}Votre canton{{/if}}</option>
     <optgroup>
