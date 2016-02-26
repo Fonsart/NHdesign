@@ -12,7 +12,7 @@
 
       <div class="spacer spacer-sm"></div>
 
-      <form action="demo.html">
+      <form action="demo.html" class="text-sans">
         {{> input
               input-id="title"
               input-type="text"
@@ -25,8 +25,10 @@
               textarea-help="Une petite description de la photo"
         }}
 
+        <div class="spacer spacer-sm"></div>
+
         <div class="form-group">
-          <label class="h5" for="day">Date originale</label>
+          <label for="day">Date originale</label>
           {{> date-field }}
           <small class="text-clear text-sans"><em>Si vous ne connaissez pas le jour ou le mois, veuillez essayer d'estimer l'année</em></small>
         </div>
@@ -43,7 +45,7 @@
         </div>
 
         <div class="form-group">
-          <label for="period" class="h5">Période</label>
+          <label for="period">Période</label>
           <select name="period" id="period" class="form-control">
             <option value="" selected="selected">-</option>
             <option value="1">Avant 1900</option>
@@ -63,8 +65,9 @@
 
         <div class="spacer spacer-sm"></div>
 
+        <label for="place">Lieu</label>
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Lieu">
+          <input type="text" class="form-control" placeholder="Lieu" id="place">
           <p class="help-block">Où cela a-t-il eu lieu ?</p>
           <span class="input-group-btn">
             <button class="btn btn-default" type="button">Voir sur la carte</button>
