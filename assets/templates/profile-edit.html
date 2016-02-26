@@ -6,14 +6,17 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
-      <h1>Éditer le profil</h1>
-      <div class="spacer spacer-xs"></div>
+      <h1 class="h2 text-center">Éditer le profil</h1>
+      <p class="text-sans text-clear text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      {{> separator }}
 
       <form action="demo.html" class="text-sans">
 
         <div class="row">
           <div class="col-sm-4">
-            <img src="{{user.avatar}}" alt="Photo de profil de {{user.firstname}} {{user.lastname}}" class="img-responsive">
+            <img src="{{user.avatar}}" alt="Photo de profil de {{user.firstname}} {{user.lastname}}" class="img-responsive img-circle">
           </div>
           <div class="col-sm-8">
             <div class="form-group">
@@ -35,6 +38,7 @@
                   input-type="text"
                   input-value=user.firstname
                   input-help="Votre prénom*"
+                  input-label="Votre prénom*"
             }}
           </div>
           <div class="col-sm-6">
@@ -43,6 +47,7 @@
                   input-type="text"
                   input-value=user.lastname
                   input-help="Votre nom*"
+                  input-label="Votre nom*"
             }}
           </div>
         </div>
@@ -52,23 +57,25 @@
               input-type="text"
               input-value=user.activity
               input-help="Votre occupation actuelle"
+              input-label="Votre occupation actuelle"
         }}
 
         <div class="form-group">
-          <label class="h5" for="day">Date de naissance</label>
+          <label for="day">Date de naissance</label>
           {{> date-field birthdate=true }}
         </div>
 
-        <div class="spacer spacer-sm"></div>
+        <div class="spacer spacer-xs"></div>
 
         <div class="form-group">
+          <label for="period">Genre</label>
           <select name="period" id="period" class="form-control">
             <option value="female" selected="selected">Femme</option>
             <option value="male">Homme</option>
           </select>
         </div>
 
-        <div class="spacer spacer-sm"></div>
+        <div class="spacer spacer-xs"></div>
 
         <div class="row">
           <div class="col-sm-6">
@@ -77,10 +84,12 @@
                   input-type="text"
                   input-value=user.city
                   input-help="Votre ville de résidence"
+                  input-label="Votre ville de résidence"
             }}
           </div>
           <div class="col-sm-6">
-            <select name="period" id="period" class="form-control">
+            <label for="country">Pays</label>
+            <select name="country" id="country" class="form-control">
               <option value="suisse" selected="selected">Suisse</option>
               <option value="france">France</option>
               <option value="other">...</option>
@@ -90,9 +99,11 @@
 
         {{> textarea
               textarea-id="descritpion"
-              textarea-label=user.bio
-              textarea-help="Dites-nous en plus sur vous !"
+              textarea-label="Description"
+              textarea-help=user.bio
         }}
+
+        <div class="spacer spacer-sm"></div>
 
         <div class="form-group">
           <button type="submit" class="btn btn-primary">Sauver les changements</button> <button class="btn btn-default">Annuler</button>

@@ -1,7 +1,7 @@
 ---
 notes: |
   ##### Introduced : 0.0.6
-  ##### Updated : -
+  ##### Updated : 0.4.0
   ##### Usage : `{{> textarea }}`
   ##### Options :
   - **textarea-id** - String
@@ -11,7 +11,6 @@ notes: |
 ---
 
 <div class="form-group{{#if textarea-variant}} {{textarea-variant}}{{/if}}">
-  <label for="{{#if textarea-id}}{{textarea-id}}{{^}}email{{/if}}" class="hidden">{{#if textarea-label}}{{textarea-label}}{{^}}Message{{/if}}</label>
-  <textarea class="form-control" id="{{#if textarea-id}}{{textarea-id}}{{^}}email{{/if}}" rows="3">{{#if textarea-label}}{{{textarea-label}}}{{^}}Votre message{{/if}}</textarea>
-  <p class="help-block">{{#if textarea-help}}{{textarea-help}}{{^}}Example block-level help text here.{{/if}}</p>
+  <label for="{{#if textarea-id}}{{textarea-id}}{{^}}email{{/if}}">{{#if textarea-label}}{{textarea-label}}{{^}}Message{{/if}}</label>
+  <textarea class="form-control" id="{{#if textarea-id}}{{textarea-id}}{{^}}email{{/if}}" rows="3">{{#if textarea-help}}{{{textarea-help}}}{{^}}Votre message{{/if}}</textarea>
 </div>

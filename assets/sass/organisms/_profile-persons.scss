@@ -18,7 +18,7 @@
 }
 
 .person-bio {
-  max-height: 72px;
+  max-height: 92px;
   overflow: hidden;
   transition: max-height 0.3s;
   &.open {max-height: 2000px;}
