@@ -13,6 +13,12 @@ h3, .h3, h5, .h5 {
 .text-clear {color: $boulder;}
 .text-sans {font-family: $font-family-sans-serif;}
 
+.text-justify {
+  display: flex;
+  justify-content: space-between;
+  a {padding: 0;}
+}
+
 em, i {
   font-style: normal;
 }
