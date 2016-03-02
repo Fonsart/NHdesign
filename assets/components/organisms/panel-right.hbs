@@ -1,15 +1,16 @@
 ---
 notes: |
   ##### Introduced : 0.1.2
-  ##### Updated : -
+  ##### Updated : 0.4.2
   ##### Usage : `{{> panel-right }}`
+  add prefix "side-" to avoid bootstrap panel conflict
 ---
-<div class="panel panel-right panel-animate panel-leave panel-leaving bg-mine-shaft">
-  <button type="button" class="btn btn-default panel-button">
+<div class="side-panel side-panel-right side-panel-animate side-panel-leave side-panel-leaving bg-mine-shaft">
+  <button type="button" class="btn btn-default side-panel-button">
     <span class="hidden-xs">Connexion</span>
     <span class="visible-xs glyphicon glyphicon-user"></span>
   </button>
-  <div class="panel-content">
+  <div class="side-panel-content">
     {{> login-form }}
   </div>
 </div>

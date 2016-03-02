@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.panel {
+.side-panel {
   position: fixed;
   top: 0px;
   bottom: 0px;
@@ -8,17 +8,17 @@
   width: 400px;
   max-width: 90%;
   z-index: 700;
-  &.panel-animate {
+  &.side-panel-animate {
     transition: transform 0.3s;
   }
-  .panel-button {
+  .side-panel-button {
     position: absolute;
     top: 0px;
     border: none;
     border-radius: 0;
   }
-  &.panel-entering .panel-button,
-  &.panel-enter .panel-button {
+  &.side-panel-entering .side-panel-button,
+  &.side-panel-enter .side-panel-button {
     background: inherit;
     color: $white;
     &:hover, &:active, &:focus {
@@ -28,26 +28,26 @@
   }
 }
 
-.panel-left {
+.side-panel-left {
   left: 0px;
   transform: translateX(-400px);
-  &.panel-entering {transform: translateX(0px);}
-  &.panel-enter {transform: translateX(0px);}
-  &.panel-leaving {transform: translateX(-100%);}
-  &.panel-leave {transform: translateX(-100%);}
-  .panel-button {
+  &.side-panel-entering {transform: translateX(0px);}
+  &.side-panel-enter {transform: translateX(0px);}
+  &.side-panel-leaving {transform: translateX(-100%);}
+  &.side-panel-leave {transform: translateX(-100%);}
+  .side-panel-button {
     right: $navbar-height * -1;
   }
 }
 
-.panel-right {
+.side-panel-right {
   right: 0px;
   transform: translateX(400px);
-  &.panel-entering {transform: translateX(0px);}
-  &.panel-enter {transform: translateX(0px);}
-  &.panel-leaving {transform: translateX(100%);}
-  &.panel-leave {transform: translateX(100%);}
-  .panel-button {
+  &.side-panel-entering {transform: translateX(0px);}
+  &.side-panel-enter {transform: translateX(0px);}
+  &.side-panel-leaving {transform: translateX(100%);}
+  &.side-panel-leave {transform: translateX(100%);}
+  .side-panel-button {
     left: 0px;
     transform: translateX(-100%);
     font-weight: 400;
@@ -59,7 +59,7 @@
   }
 }
 
-.panel-content {
+.side-panel-content {
   bottom: 0px;
   overflow: auto;
   position: absolute;

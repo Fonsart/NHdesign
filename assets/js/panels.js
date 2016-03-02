@@ -6,14 +6,14 @@
 
   $(document).ready(function () {
 
-    $('.panel-button').click(function(){
+    $('.side-panel-button').click(function(){
       console.log('toggle');
       $(this)
-        .parents('.panel')
-        .toggleClass('panel-enter')
-        .toggleClass('panel-entering')
-        .toggleClass('panel-leave')
-        .toggleClass('panel-leaving');
+        .parents('.side-panel')
+        .toggleClass('side-panel-enter')
+        .toggleClass('side-panel-entering')
+        .toggleClass('side-panel-leave')
+        .toggleClass('side-panel-leaving');
     });
 
   });
