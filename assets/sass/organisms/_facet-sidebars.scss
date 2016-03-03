@@ -2,4 +2,8 @@
 
 .facet-sidebar {
   margin-top: $grid-gutter-width/2 + 8px;
+  .btn-link {
+    font-weight: 400;
+    color: $nobel;
+  }
 }
