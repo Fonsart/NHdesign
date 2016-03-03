@@ -3,6 +3,45 @@
 .media-header {
   h1, .h2, .h3 {
     margin: 0.1em 0;
-    padding-left: $grid-gutter-width/2;
   }
+
+  strong {font-weight: 500;}
+
+  .btn-default {
+    padding: 0.05em 0.05em;
+    margin: 0 0.2em;
+    border: none;
+    border-radius: 0;
+    color: $tundora;
+    border-bottom: 2px solid $white;
+    background: transparent;
+    box-shadow: none;
+    transition: border-bottom-color 0.3s,
+                color 0.3s;
+    &.active, &.active:hover {
+      background: transparent;
+      color: $boulder;
+      border-bottom-color: $monza;
+    }
+    &:hover {
+      color: $black;
+    }
+  }
+
+  select.form-control {
+    display: inline-block;
+    width: auto;
+    height: 34px;
+    padding: 0 5px;
+  }
+}
+
+.vertical-separator {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+  top: 0.4em;
+  height: 1.5em;
+  width: 1px;
+  background: $gallery;
 }

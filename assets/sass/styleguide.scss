@@ -2,8 +2,19 @@ html {
   font-size: 16px !important;
 }
 
+.f-menu-active body {
+  padding-top: 0;
+}
+
 .f-item-notes {
   margin-bottom: 30px;
 }
 
 .f-item-preview {position: relative;}
+
+.f-color-chip {
+  border-top-width: 50px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  flex-basis: 9em;
+}

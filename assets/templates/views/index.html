@@ -3,41 +3,88 @@ title: Overview | Fabricator
 fabricator: true
 ---
 
-<h1>Overview</h1>
+<h1>Notre Histoire - Styleguide</h1>
 
-<p>This UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.</p>
+<p>
+  Notre Histoire styleguide provided as a npm package. The project is based on <a href="https://github.com/frontend/toolbox">Frontend Toolbox</a>
+</p>
 
-<p>This guide contains real working examples, code snippets, documentation, and style guidelines.</p>
+<div class="row">
+  <div class="col-sm-6">
+    <h2>Typography</h2>
 
-<h2>Usage</h2>
+    <h3>Headings</h3>
+    <hr>
 
-<p>Start by adding the following files to your page:</p>
+    <h1>Heading Level 1</h1>
+    <h2>Heading Level 2</h2>
+    <h3>Heading Level 3</h3>
+    <h4>Heading Level 4</h4>
+    <h5>Heading Level 5</h5>
+    <h6>Heading Level 6</h6>
 
-<pre class="language-markup"><code class="language-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/toolkit/styles/toolkit.css&quot;&gt;</code></pre>
+    <h3>Paragraphs</h3>
+    <hr>
 
-<pre class="language-markup"><code class="language-markup">&lt;script src=&quot;assets/toolkit/scripts/toolkit.js&quot;&gt;&lt;/script&gt;</code></pre>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam enim sunt sapiente molestias, sed dicta inventore consectetur beatae asperiores, aliquid laboriosam animi, praesentium repudiandae et, quam saepe sint cupiditate reiciendis.</p>
 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam enim sunt sapiente molestias, sed dicta inventore consectetur beatae asperiores, aliquid laboriosam animi, praesentium repudiandae et, quam saepe sint cupiditate reiciendis.</p>
 
-<h2>Color</h2>
+    <h3>Text elements</h3>
+    <hr>
+    <p>
+      The <a href="#">link element</a> example
+      <br> The <b>bold element</b> example
+      <br> The <code>code element</code> example
+      <br> The <em>italic element</em> example
+      <br> The <q>quote element <q>inside</q> a quote element</q> example
+      <br> The <small>small element</small> example
+      <br> The <strong>strong element</strong> example
+      <br> The <sub>sub element</sub> example
+      <br> The <sup>sup element</sup> example
+      <br> The <u>u element</u> example
+    </p>
+  </div>
+  <div class="col-sm-6">
+    <h2>Colors</h2>
 
-{{#each colors}}
-	<div class="f-color-chips">
-	{{#each this}}
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">{{@key}}</div>
-			<div class="f-color-chip__color">{{this}}</div>
-		</div>
-	{{/each}}
-	</div>
-{{/each}}
+    {{#each colors}}
+      <div class="f-color-chips">
+      {{#each this}}
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">{{@key}}</div>
+          <div class="f-color-chip__color">{{this}}</div>
+        </div>
+      {{/each}}
+      </div>
+    {{/each}}
 
-<h2>Typography</h2>
+    <h2>Buttons</h2>
+    <button type="button" class="btn btn-default">Default button</button>
+    <button type="button" class="btn btn-primary">Primary button</button>
+    <button type="button" class="btn btn-success">Success button</button>
+    <button type="button" class="btn btn-info">Info button</button>
+    <button type="button" class="btn btn-warning">Warning button</button>
+    <button type="button" class="btn btn-danger">Danger button</button>
+    <button type="button" class="btn btn-link">Link button</button><br><br>
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <button type="button" class="btn btn-primary">Default button</button>
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+    <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam enim sunt sapiente molestias, sed dicta inventore consectetur beatae asperiores, aliquid laboriosam animi, praesentium repudiandae et, quam saepe sint cupiditate reiciendis.</p>
-
-<h1>Heading Level 1</h1>
-<h2>Heading Level 2</h2>
-<h3>Heading Level 3</h3>
-<h4>Heading Level 4</h4>
-<h5>Heading Level 5</h5>
-<h6>Heading Level 6</h6>
+    <h2>Form components</h2>
+    {{> input
+          input-id="name"
+          input-label="Nom"
+          input-type="text"
+          input-help="Votre nom*"
+    }}
+    {{> textarea
+          textarea-id="descritpion"
+          textarea-label="Description"
+          textarea-help="Une petite description de votre humble personne"
+    }}
+    {{> checkbox }}
+    {{> select }}
+  </div>
+</div>

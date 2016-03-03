@@ -1,18 +1,45 @@
 ---
 notes: |
   ##### Introduced : 0.0.5
-  ##### Updated : 0.1.2
+  ##### Updated : 0.4.2
   ##### Usage : `{{> media-header }}`
 ---
-<div class="media-header text-right">
-  <h1 class="pull-left h2">1114 résultats pour “train”</h1>
-  <button id="display-grid" class="btn btn-default">
-    <i class="glyphicon glyphicon-th"></i>
-  </button>
-  <button id="display-list" class="btn btn-default">
-    <i class="glyphicon glyphicon-th-list"></i>
-  </button>
-  <button id="display-map" class="btn btn-default">
-    <i class="glyphicon glyphicon-map-marker"></i>
-  </button>
+<div class="media-header text-sans">
+  <h1 class="h2">1114 résultats pour “train”</h1>
+  <p>
+    {{> facet-used facet-label="chat" }}
+    {{> facet-used facet-label="chalet" }}
+    {{> facet-used facet-label="montagne" }}
+    {{> facet-used facet-label="chien" }}
+    {{> facet-used facet-label="arc-en-ciel" }}
+    {{> facet-used facet-label="1980-1990" }}
+
+  </p>
+  <div class="text-right">
+    <strong class="text-clear">
+      Trier par
+    </strong>
+    <select class="form-control">
+      <option>Alphabetical</option>
+      <option>Les plus vus</option>
+      <option>Most commented</option>
+      <option>Most followed</option>
+      <option selected="selected">Most relevant</option>
+      <option>Newest</option>
+      <option>Oldest</option>
+      <option>Origin_date récent</option>
+      <option>Origin_date vieux</option>
+      <option>Recently updated</option>
+    </select>
+    <span class="vertical-separator"></span>
+    <button id="display-grid" class="btn btn-default active">
+      <i class="glyphicon glyphicon-th"></i>
+    </button>
+    <button id="display-list" class="btn btn-default">
+      <i class="glyphicon glyphicon-th-list"></i>
+    </button>
+    <button id="display-map" class="btn btn-default">
+      <i class="glyphicon glyphicon-map-marker"></i>
+    </button>
+  </div>
 </div>

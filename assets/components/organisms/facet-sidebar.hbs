@@ -5,6 +5,9 @@ notes: |
   ##### Usage : `{{> facet-sidebar }}`
 ---
 <div class="facet-sidebar">
+  <div class="text-right">
+    <button class="btn btn-link btn-xs" id="close-all-facets">Tout fermer</button>
+  </div>
   {{#each facets }}
     {{> facet-group facet-object=this }}
   {{/each}}
