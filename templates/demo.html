@@ -27,12 +27,8 @@
       </div>
     
       <form id="search-form" class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Rechercher" />
-        </div>
-        <button type="submit" class="btn btn-default">
-          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-        </button>
+        <input type="text" class="form-control" placeholder="Rechercher" />
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
       </form>
     
       <a href="upload.html" class="btn btn-default navbar-btn navbar-right">
@@ -84,21 +80,65 @@
     </div>  </div>
 </div>
 <div class="container-wide">
-  <div class="spacer spacer-sm"></div>
-  <div class="media-header text-right">
-    <h1 class="pull-left h2">1114 résultats pour “train”</h1>
-    <button id="display-grid" class="btn btn-default">
-      <i class="glyphicon glyphicon-th"></i>
-    </button>
-    <button id="display-list" class="btn btn-default">
-      <i class="glyphicon glyphicon-th-list"></i>
-    </button>
-    <button id="display-map" class="btn btn-default">
-      <i class="glyphicon glyphicon-map-marker"></i>
-    </button>
+  <div class="alert alert-success alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <strong>Coucou!</strong> Ceci est une alerte qui sert à afficher un message super important !
+  </div>  <div class="media-header text-sans">
+    <h1 class="h2">1114 résultats pour “train”</h1>
+    <p>
+      <span class="facet-used">
+        <button class="facet-remove">&times;</button>
+        chat
+      </span>    <span class="facet-used">
+        <button class="facet-remove">&times;</button>
+        chalet
+      </span>    <span class="facet-used">
+        <button class="facet-remove">&times;</button>
+        montagne
+      </span>    <span class="facet-used">
+        <button class="facet-remove">&times;</button>
+        chien
+      </span>    <span class="facet-used">
+        <button class="facet-remove">&times;</button>
+        arc-en-ciel
+      </span>    <span class="facet-used">
+        <button class="facet-remove">&times;</button>
+        1980-1990
+      </span>
+    </p>
+    <div class="text-right">
+      <strong class="text-clear">
+        Trier par
+      </strong>
+      <select class="form-control">
+        <option>Alphabetical</option>
+        <option>Les plus vus</option>
+        <option>Most commented</option>
+        <option>Most followed</option>
+        <option selected="selected">Most relevant</option>
+        <option>Newest</option>
+        <option>Oldest</option>
+        <option>Origin_date récent</option>
+        <option>Origin_date vieux</option>
+        <option>Recently updated</option>
+      </select>
+      <span class="vertical-separator"></span>
+      <button id="display-grid" class="btn btn-default active">
+        <i class="glyphicon glyphicon-th"></i>
+      </button>
+      <button id="display-list" class="btn btn-default">
+        <i class="glyphicon glyphicon-th-list"></i>
+      </button>
+      <button id="display-map" class="btn btn-default">
+        <i class="glyphicon glyphicon-map-marker"></i>
+      </button>
+    </div>
   </div>  <div class="row">
     <div class="col-sm-3">
       <div class="facet-sidebar">
+        <div class="text-right">
+          <button class="btn btn-link btn-xs" id="close-all-facets">Tout fermer</button>
+        </div>
           <div class="facet-group open">
             <div class="facet-title">
               Périodes<span class="chevron pull-right text-danger"></span>
@@ -399,10 +439,9 @@
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
             </div>      <div class="media-item" data-w="2362" data-h="1569">
-                <a href="detail.html">
-                  <div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg');">
-                    <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/12/c8a355d99222f22c_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive" />
-                  </div>    </a>
+                <div class="media-article">
+                  Anniversaire Mimelou Villeneuve (mars 1961) avec Carole Bula mon amie d'enfance<br>
+                </div>
               <div class="media-caption">
                 <h5>
                   <a href="detail.html">Villeneuve</a>
@@ -415,7 +454,7 @@
                   0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
                   0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
-                <span class="media-icon glyphicon glyphicon-picture"></span>
+                <span class="media-icon glyphicon glyphicon-list-alt "></span>
               </div>
             </div>      <div class="media-item" data-w="5184" data-h="3456">
                 <a href="detail.html">
@@ -438,10 +477,9 @@
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
             </div>      <div class="media-item" data-w="650" data-h="972">
-                <a href="detail.html">
-                  <div class="thumbnail" style="background-image: url('http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg');">
-                    <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/04/93db5acccbf3478f_jpg_200x200_upscale_q85.jpg" alt="Villeneuve" class="img-responsive" />
-                  </div>    </a>
+                <div class="media-article">
+                  Après un bon repas, mais sans filets de perche, elles étaient en vacances - au petit chalet du Raisin - <br />15h10 à l'Eglise du village.<br />
+                </div>
               <div class="media-caption">
                 <h5>
                   <a href="detail.html">Villeneuve</a>
@@ -458,7 +496,7 @@
                   0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
                   0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
-                <span class="media-icon glyphicon glyphicon-picture"></span>
+                <span class="media-icon glyphicon glyphicon-list-alt glyphicon-headphones"></span>
               </div>
             </div>      <div class="media-item" data-w="518" data-h="352">
                 <a href="detail.html">
@@ -477,7 +515,7 @@
                   0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
                   1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
-                <span class="media-icon glyphicon glyphicon-picture"></span>
+                <span class="media-icon glyphicon glyphicon-film"></span>
               </div>
             </div>      <div class="media-item" data-w="3056" data-h="1750">
                 <a href="detail.html">
@@ -650,9 +688,13 @@
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
-            </div></div>    </div>
+            </div></div>      <div class="clearfix"></div>
+      <a href="#" class="btn btn-default btn-lg btn-block">Voir plus...</a>    </div>
   </div>
 </div>
+
+<!-- Demo purpose -->
+<div class="spacer spacer-xl"></div>
 
 
     <script src="./../build/js/vendors.min.js"></script>

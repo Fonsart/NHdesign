@@ -89,6 +89,9 @@
                 <a href="atoms.html#cover">Cover</a>
               </li>
               <li>
+                <a href="atoms.html#facet-used">Facet Used</a>
+              </li>
+              <li>
                 <a href="atoms.html#input">Input</a>
               </li>
               <li>
@@ -99,6 +102,12 @@
               </li>
               <li>
                 <a href="atoms.html#label">Label</a>
+              </li>
+              <li>
+                <a href="atoms.html#load-more">Load More</a>
+              </li>
+              <li>
+                <a href="atoms.html#loader">Loader</a>
               </li>
               <li>
                 <a href="atoms.html#select">Select</a>
@@ -120,6 +129,18 @@
           <li>
             <a href="molecules.html" class="f-menu__heading">Molecules</a>
             <ul>
+              <li>
+                <a href="molecules.html#alert">Alert</a>
+              </li>
+              <li>
+                <a href="molecules.html#alert-danger">Alert Danger</a>
+              </li>
+              <li>
+                <a href="molecules.html#alert-success">Alert Success</a>
+              </li>
+              <li>
+                <a href="molecules.html#alert-warning">Alert Warning</a>
+              </li>
               <li>
                 <a href="molecules.html#comment">Comment</a>
               </li>
@@ -236,56 +257,169 @@
         </div>
 
     
-<h1>Overview</h1>
+<h1>Notre Histoire - Styleguide</h1>
 
-<p>This UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.</p>
+<p>
+  Notre Histoire styleguide provided as a npm package. The project is based on <a href="https://github.com/frontend/toolbox">Frontend Toolbox</a>
+</p>
 
-<p>This guide contains real working examples, code snippets, documentation, and style guidelines.</p>
+<div class="row">
+  <div class="col-sm-6">
+    <h2>Typography</h2>
 
-<h2>Usage</h2>
+    <h3>Headings</h3>
+    <hr>
 
-<p>Start by adding the following files to your page:</p>
+    <h1>Heading Level 1</h1>
+    <h2>Heading Level 2</h2>
+    <h3>Heading Level 3</h3>
+    <h4>Heading Level 4</h4>
+    <h5>Heading Level 5</h5>
+    <h6>Heading Level 6</h6>
 
-<pre class="language-markup"><code class="language-markup">&lt;link rel=&quot;stylesheet&quot; href=&quot;assets/toolkit/styles/toolkit.css&quot;&gt;</code></pre>
+    <h3>Paragraphs</h3>
+    <hr>
 
-<pre class="language-markup"><code class="language-markup">&lt;script src=&quot;assets/toolkit/scripts/toolkit.js&quot;&gt;&lt;/script&gt;</code></pre>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam enim sunt sapiente molestias, sed dicta inventore consectetur beatae asperiores, aliquid laboriosam animi, praesentium repudiandae et, quam saepe sint cupiditate reiciendis.</p>
 
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam enim sunt sapiente molestias, sed dicta inventore consectetur beatae asperiores, aliquid laboriosam animi, praesentium repudiandae et, quam saepe sint cupiditate reiciendis.</p>
 
-<h2>Color</h2>
+    <h3>Text elements</h3>
+    <hr>
+    <p>
+      The <a href="#">link element</a> example
+      <br> The <b>bold element</b> example
+      <br> The <code>code element</code> example
+      <br> The <em>italic element</em> example
+      <br> The <q>quote element <q>inside</q> a quote element</q> example
+      <br> The <small>small element</small> example
+      <br> The <strong>strong element</strong> example
+      <br> The <sub>sub element</sub> example
+      <br> The <sup>sup element</sup> example
+      <br> The <u>u element</u> example
+    </p>
+  </div>
+  <div class="col-sm-6">
+    <h2>Colors</h2>
 
-	<div class="f-color-chips">
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">black</div>
-			<div class="f-color-chip__color">#000</div>
-		</div>
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">mine</div>
-			<div class="f-color-chip__color">#222</div>
-		</div>
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">silver</div>
-			<div class="f-color-chip__color">#7F7F7F</div>
-		</div>
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">dust</div>
-			<div class="f-color-chip__color">#E6E6E6</div>
-		</div>
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">white</div>
-			<div class="f-color-chip__color">#fff</div>
-		</div>
-	</div>
+      <div class="f-color-chips">
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">pirate-gold</div>
+          <div class="f-color-chip__color">#d08402</div>
+        </div>
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">monza</div>
+          <div class="f-color-chip__color">#d0021b</div>
+        </div>
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">carmine</div>
+          <div class="f-color-chip__color">#a80216</div>
+        </div>
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">lima</div>
+          <div class="f-color-chip__color">#7ed321</div>
+        </div>
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">robins-egg-blue</div>
+          <div class="f-color-chip__color">#02D0B7</div>
+        </div>
+      </div>
+      <div class="f-color-chips">
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">white</div>
+          <div class="f-color-chip__color">#ffffff</div>
+        </div>
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">concrete</div>
+          <div class="f-color-chip__color">#f2f2f2</div>
+        </div>
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">gallery</div>
+          <div class="f-color-chip__color">#ededed</div>
+        </div>
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">nobel</div>
+          <div class="f-color-chip__color">#b4b4b4</div>
+        </div>
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">boulder</div>
+          <div class="f-color-chip__color">#7d7d7d</div>
+        </div>
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">tundora</div>
+          <div class="f-color-chip__color">#4a4a4a</div>
+        </div>
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">mine-shaft</div>
+          <div class="f-color-chip__color">#262626</div>
+        </div>
+        <div class="f-color-chip">
+          <div class="f-color-chip__name">black</div>
+          <div class="f-color-chip__color">#000000</div>
+        </div>
+      </div>
 
-<h2>Typography</h2>
+    <h2>Buttons</h2>
+    <button type="button" class="btn btn-default">Default button</button>
+    <button type="button" class="btn btn-primary">Primary button</button>
+    <button type="button" class="btn btn-success">Success button</button>
+    <button type="button" class="btn btn-info">Info button</button>
+    <button type="button" class="btn btn-warning">Warning button</button>
+    <button type="button" class="btn btn-danger">Danger button</button>
+    <button type="button" class="btn btn-link">Link button</button><br><br>
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <button type="button" class="btn btn-primary">Default button</button>
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+    <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam enim sunt sapiente molestias, sed dicta inventore consectetur beatae asperiores, aliquid laboriosam animi, praesentium repudiandae et, quam saepe sint cupiditate reiciendis.</p>
-
-<h1>Heading Level 1</h1>
-<h2>Heading Level 2</h2>
-<h3>Heading Level 3</h3>
-<h4>Heading Level 4</h4>
-<h5>Heading Level 5</h5>
-<h6>Heading Level 6</h6>
+    <h2>Form components</h2>
+    <div class="form-group">
+      <label for="name">Nom</label>
+      <input type="text" class="form-control" id="name" placeholder="Nom" value="" />
+      <p class="help-block">Votre nom*</p>
+    </div>    <div class="form-group">
+      <label for="descritpion">Description</label>
+      <textarea class="form-control" id="descritpion" rows="3">Une petite description de votre humble personne</textarea>
+    </div>    <div class="checkbox">
+      <label>
+        <input type="checkbox" /> Resté connecté
+      </label>
+    </div>    <div class="form-group">
+      <label for="email">Votre canton</label>
+      <select class="form-control">
+        <option disabled selected>Votre canton</option>
+        <optgroup>
+          <option vale="ag">Argovie</option>
+          <option vale="ai">Appenzell Rhodes intérieures</option>
+          <option vale="ar">Appenzell Rhodes extérieures</option>
+          <option vale="be">Berne</option>
+          <option vale="bl">Bâle Campagne</option>
+          <option vale="bs">Bâle Ville</option>
+          <option vale="fr">Fribourg</option>
+          <option vale="ge">Genève</option>
+          <option vale="gl">Glaris</option>
+          <option vale="gr">Grisons</option>
+          <option vale="ju">Jura</option>
+          <option vale="lu">Lucerne -Luzern</option>
+          <option vale="ne">Neuchâtel</option>
+          <option vale="nw">Nidwald</option>
+          <option vale="ow">Obwald</option>
+          <option vale="sg">Saint-Gall</option>
+          <option vale="sh">Schaffhouse</option>
+          <option vale="so">Soleure</option>
+          <option vale="sz">Schwyz</option>
+          <option vale="tg">Thurgovie</option>
+          <option vale="ti">Ticino</option>
+          <option vale="ur">Uri</option>
+          <option vale="vd">Vaud</option>
+          <option vale="vs">Valais</option>
+          <option vale="zg">Zug</option>
+          <option vale="zh">Zurich</option>
+        </optgroup>
+      </select>
+      <p class="help-block">Example block-level help text here.</p>
+    </div>  </div>
+</div>
 
 
       </div>

@@ -89,6 +89,9 @@
                 <a href="atoms.html#cover">Cover</a>
               </li>
               <li>
+                <a href="atoms.html#facet-used">Facet Used</a>
+              </li>
+              <li>
                 <a href="atoms.html#input">Input</a>
               </li>
               <li>
@@ -99,6 +102,12 @@
               </li>
               <li>
                 <a href="atoms.html#label">Label</a>
+              </li>
+              <li>
+                <a href="atoms.html#load-more">Load More</a>
+              </li>
+              <li>
+                <a href="atoms.html#loader">Loader</a>
               </li>
               <li>
                 <a href="atoms.html#select">Select</a>
@@ -120,6 +129,18 @@
           <li>
             <a href="molecules.html" class="f-menu__heading">Molecules</a>
             <ul>
+              <li>
+                <a href="molecules.html#alert">Alert</a>
+              </li>
+              <li>
+                <a href="molecules.html#alert-danger">Alert Danger</a>
+              </li>
+              <li>
+                <a href="molecules.html#alert-success">Alert Success</a>
+              </li>
+              <li>
+                <a href="molecules.html#alert-warning">Alert Warning</a>
+              </li>
               <li>
                 <a href="molecules.html#comment">Comment</a>
               </li>
@@ -354,6 +375,49 @@
 </div>
 
 
+<div class="f-item-group" id="facet-used">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Facet Used</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.4.2</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; facet-used }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>facet-labet</strong> - String</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<span class="facet-used">
+  <button class="facet-remove">&times;</button>
+  something
+</span>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;span class=&quot;facet-used&quot;&gt;
+  &lt;button class=&quot;facet-remove&quot;&gt;&amp;times;&lt;/button&gt;
+  something
+&lt;/span&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="input">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -513,6 +577,72 @@
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;span class=&quot;label label-default&quot;&gt;Default label&lt;/span&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="load-more">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Load More</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.4.2</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; load-more }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<a href="#" class="btn btn-default btn-lg btn-block">Voir plus...</a>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;a href=&quot;#&quot; class=&quot;btn btn-default btn-lg btn-block&quot;&gt;Voir plus...&lt;/a&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="loader">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Loader</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.4.2</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; loader }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<img src="../build/svg/loader.svg" onerror="this.onerror=null; this.src='../build/img/loader.gif'" alt="animated loader" class="img-responsive center-block" />
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;img src=&quot;../build/svg/loader.svg&quot; onerror=&quot;this.onerror=null; this.src=&#x27;../build/img/loader.gif&#x27;&quot; alt=&quot;animated loader&quot; class=&quot;img-responsive center-block&quot; /&gt;</code></pre>
 </div>
 
 
