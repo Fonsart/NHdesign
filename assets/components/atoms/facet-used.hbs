@@ -1,0 +1,12 @@
+---
+notes: |
+  ##### Introduced : 0.4.2
+  ##### Updated : -
+  ##### Usage : `{{> facet-used }}`
+  ##### Options :
+  - **facet-labet** - String
+---
+<span class="facet-used">
+  <button class="facet-remove">&times;</button>
+  {{#if facet-label}}{{ facet-label }}{{^}}something{{/if}}
+</span>

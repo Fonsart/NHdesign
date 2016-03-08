@@ -1,6 +1,16 @@
 primary:
-  black: "#000"
-  mine: "#222"
-  silver: "#7F7F7F"
-  dust: "#E6E6E6"
-  white: "#fff"
+  pirate-gold: '#d08402'
+  monza: "#d0021b"
+  carmine: "#a80216"
+  lima: "#7ed321"
+  robins-egg-blue: '#02D0B7'
+gray-tone:
+  white: "#ffffff"
+  concrete: "#f2f2f2"
+  gallery: "#ededed"
+  nobel: "#b4b4b4"
+  boulder: "#7d7d7d"
+  tundora: "#4a4a4a"
+  mine-shaft: "#262626"
+  black: "#000000"
+
