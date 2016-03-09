@@ -31,22 +31,6 @@
 /* global jQuery */
 
 (function($){
-
-  $(document).ready(function () {
-
-    $('.inbox-message').click(function(){
-      $('.inbox-message-detail').toggleClass('open');
-    });
-
-  });
-
-}(jQuery));
-
-'use strict';
-
-/* global jQuery */
-
-(function($){
   $(document).ready(function () {
     var initGrid = function () {
       $('.media-grid').flexImages({
