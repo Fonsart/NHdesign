@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-$media-caption-height: 64px;
+$media-caption-height: $media-caption-height;
 
 .media-item {
   box-sizing: border-box;
@@ -56,7 +56,7 @@ $media-caption-height: 64px;
   background: $tundora;
   transition: background 0.3s;
   color: $white;
-  font-family: $font-family-serif;
+  font-family: $font-family-sans-serif;
   &:after {
     content: '\00a0';
     position: absolute;
@@ -73,10 +73,10 @@ $media-caption-height: 64px;
     left: 0;
     right: 0;
     overflow: hidden;
-    padding: 26px;
-    padding-top: 12px;
-    font-size: floor(($font-size-base * 2.25));
-    font-weight: 700;
+    padding: 20px;
+    padding-top: 15px;
+    font-size: floor(($font-size-base * 1.8));
+    font-weight: 400;
     line-height: 1.15em;
     &:after {width: 100%;}
   }
@@ -117,7 +117,7 @@ $media-caption-height: 64px;
     left: 0;
     width: 100%;
     height: $media-caption-height;
-    padding: 0 16px;
+    padding: 0 10px;
     h5 {
       line-height: ($media-caption-height / $font-size-base) / 2.4;
       font-weight: 400;
@@ -136,7 +136,7 @@ $media-caption-height: 64px;
     .media-icon {
       top: 0;
       right: 0;
-      padding: 16px;
+      padding: 10px;
     }
   }
   .media-list & {

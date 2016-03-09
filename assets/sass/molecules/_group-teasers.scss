@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-$media-caption-height: 64px;
+$media-caption-height: 56px;
 
 .group-teaser {
   box-sizing: border-box;
@@ -54,7 +54,7 @@ $media-caption-height: 64px;
     left: 0;
     width: 100%;
     height: $media-caption-height;
-    padding: 0 16px;
+    padding: 0 10px;
     h5 {
       display: block; /* Fallback for non-webkit */
       display: -webkit-box;
