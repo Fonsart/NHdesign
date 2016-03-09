@@ -1,5 +1,31 @@
 @charset "UTF-8";
 
+.sidebar {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s,
+              width 0.3s 0.3s,
+              padding 0.3s 0.3s;
+  &.open {
+    width: 25%;
+    padding: 0 $grid-gutter-width/2;
+    opacity: 1;
+    transition: opacity 0.3s 0.3s,
+                width 0.3s,
+                padding 0.3s;
+    & + [class*="col-"] {
+      width: 75%;
+      transition: width 0.3s !important;
+    }
+  }
+  & + [class*="col-"] {
+    transition: width 0.3s 0.3s !important;
+    width: 100%;
+  }
+}
+
 .facet-sidebar {
   margin-top: $grid-gutter-width/2 + 8px;
   .btn-link {

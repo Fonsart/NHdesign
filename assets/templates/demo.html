@@ -5,9 +5,10 @@
 
 <div class="container-wide">
   {{> alert alert-variant="success" }}
-  {{> media-header }}
+  {{> results-heading }}
+  {{> results-navbar }}
   <div class="row">
-    <div class="col-sm-3">
+    <div id="sidebar" class="sidebar col-sm-3">
       {{> facet-sidebar }}
     </div>
     <div class="col-sm-9">
