@@ -10,6 +10,29 @@ notes: |
 <script src="https://googlemaps.github.io/js-marker-clusterer/examples/data.json"></script>
 <script src="https://googlemaps.github.io/js-marker-clusterer/src/markerclusterer.js"></script>
 <script>
+  var styles = [{
+    url: '../build/img/marker-small.png',
+    width: 48,
+    height: 48,
+    anchor: [0, 0],
+    textColor: '#FFFFFF',
+    textSize: 12
+  }, {
+    url: '../build/img/marker-medium.png',
+    width: 64,
+    height: 64,
+    anchor: [0, 0],
+    textColor: '#FFFFFF',
+    textSize: 15
+  }, {
+    url: '../build/img/marker-big.png',
+    width: 80,
+    height: 80,
+    anchor: [0, 0],
+    textColor: '#FFFFFF',
+    textSize: 20
+  }];
+
   function initialize() {
     var center = new google.maps.LatLng(46.530408, 6.617474);
 
@@ -30,7 +53,10 @@ notes: |
       markers.push(marker);
     }
 
-    var markerCluster = new MarkerClusterer(map, markers);
+    var markerCluster = new MarkerClusterer(map, markers, {
+      styles: styles,
+      gridSize: 65
+    });
   }
 
   google.maps.event.addDomListener(window, 'load', initialize);
