@@ -9,6 +9,7 @@ $media-caption-height: 56px;
   text-decoration: none;
   background: $white;
   font-family: $font-family-sans-serif;
+  border: 1px solid $gallery;
   .media-grid & {
     float: left;
     margin: 8px 8px ($media-caption-height + 8px) 8px;
