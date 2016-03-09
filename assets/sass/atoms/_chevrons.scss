@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+.chevron {
+  border-style: solid;
+  border-width: 0.2em 0.2em 0 0;
+  display: inline-block;
+  position: relative;
+  height: 0.45em;
+  width: 0.45em;
+  transform: rotate(135deg);
+  transition: transform 0.3s,
+              top 0.3s,
+              color 0.3s;
+  position: relative;
+  top: -0.2em;
+  .open & {
+    transform: rotate(-45deg);
+    top: -0.1em;
+  }
+  &.text-clear {
+    border-color: $boulder;
+  }
+  &.pull-right {
+    float: none !important;
+    position: absolute;
+    right: $grid-gutter-width/3;
+    top: 50%;
+    margin-top: -0.2em;
+  }
+  &.chevron-top {transform: rotate(-45deg);}
+  &.chevron-left {transform: rotate(-135deg);}
+  &.chevron-right {transform: rotate(45deg);}
+  &.chevron-thin {
+    top: -0.1em;
+    height: 0.5em;
+    width: 0.5em;
+    border-width: 0.15em 0.15em 0 0;
+  }
+}

@@ -1,0 +1,10 @@
+---
+notes: |
+  ##### Introduced : 0.5.0
+  ##### Updated : -
+  ##### Usage : `{{> chevron }}`
+  ##### Options :
+  - **direction** - String (default `"bottom"`)
+  - **thin** - Boolean (default `false`)
+---
+<span class="chevron chevron-{{#if direction}}{{ direction }}{{^}}bottom{{/if}}{{#if thin}} chevron-thin{{/if}}"></span>
