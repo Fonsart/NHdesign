@@ -5,9 +5,10 @@
   top: 0px;
   bottom: 0px;
   overflow: visible;
-  width: 400px;
+  width: 300px;
   max-width: 90%;
-  z-index: 700;
+  z-index: 2000;
+  background: $white;
   &.panel-animate {
     transition: transform 0.3s;
   }
@@ -16,21 +17,29 @@
     top: 0px;
     border: none;
     border-radius: 0;
+    .icon-bar {display: block;}
+    .chevron {
+      display: none;
+      top: -0.3em;
+    }
   }
   &.panel-entering .panel-button,
   &.panel-enter .panel-button {
     background: inherit;
     color: $white;
+    background: $monza;
+    .icon-bar {display: none;}
+    .chevron {display: inline-block;}
     &:hover, &:active, &:focus {
       color: $white;
-      background: inherit;
+      background: $monza;
     }
   }
 }
 
 .panel-left {
   left: 0px;
-  transform: translateX(-400px);
+  transform: translateX(-300px);
   &.panel-entering {transform: translateX(0px);}
   &.panel-enter {transform: translateX(0px);}
   &.panel-leaving {transform: translateX(-100%);}
@@ -42,7 +51,7 @@
 
 .panel-right {
   right: 0px;
-  transform: translateX(400px);
+  transform: translateX(300px);
   &.panel-entering {transform: translateX(0px);}
   &.panel-enter {transform: translateX(0px);}
   &.panel-leaving {transform: translateX(100%);}
@@ -60,11 +69,29 @@
 }
 
 .panel-content {
-  bottom: 0px;
+  bottom: 40px;
   overflow: auto;
   position: absolute;
   top: 0px;
   width: 100%;
-  padding: 0 $grid-gutter-width;
   box-sizing: border-box;
+}
+
+.panel-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.panel {
+  .nav-stacked a {
+    font-family: $font-family-sans-serif;
+    text-decoration: none;
+    padding: 12px $grid-gutter-width/2;
+    .chevron {border-color: $monza;}
+    &:hover {
+      color: $monza;
+    }
+  }
 }

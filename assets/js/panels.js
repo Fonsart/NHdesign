@@ -7,7 +7,7 @@
   $(document).ready(function () {
 
     $('.panel-button').click(function(){
-      console.log('toggle');
+      $('#overlay').toggleClass('open');
       $(this)
         .parents('.panel')
         .toggleClass('panel-enter')
