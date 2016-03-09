@@ -10,7 +10,10 @@ html {
   margin-bottom: 30px;
 }
 
-.f-item-preview {position: relative;}
+.f-item-preview {
+  position: relative;
+  .media-infobar {position: relative;}
+}
 
 .f-color-chip {
   border-top-width: 50px;

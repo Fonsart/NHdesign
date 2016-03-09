@@ -27,6 +27,8 @@
 @import 'atoms/buttons';
 
 // molecules:
+@import 'molecules/results-headings';
+@import 'molecules/results-navbars';
 @import 'molecules/alerts';
 @import 'molecules/media-features-bars';
 @import 'molecules/group-teasers';
@@ -45,7 +47,6 @@
 @import 'organisms/panels';
 @import 'organisms/media-details';
 @import 'organisms/facet-sidebars';
-@import 'organisms/media-headers';
 @import 'organisms/media-lists';
 @import 'organisms/container-wides';
 @import 'organisms/media-grids';
