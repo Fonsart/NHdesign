@@ -3,13 +3,14 @@ notes: |
   ##### Introduced : 0.1.2
   ##### Updated : 0.5.0
   ##### Usage : `{{> panel-left }}`
+  *The panels can't be open both*
 ---
 <div class="panel panel-left panel-animate panel-leave panel-leaving">
   <button type="button" class="navbar-toggle panel-button">
     <span class="sr-only">Toggle navigation</span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
+    <span class="icon-bar panel-closed-component"></span>
+    <span class="icon-bar panel-closed-component"></span>
+    <span class="icon-bar panel-closed-component"></span>
     {{> chevron direction="left" thin=true }}
   </button>
   <div class="panel-content">

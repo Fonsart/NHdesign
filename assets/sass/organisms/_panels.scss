@@ -17,23 +17,33 @@
     top: 0px;
     border: none;
     border-radius: 0;
-    .icon-bar {display: block;}
-    .chevron {
+    .panel-closed-component {display: block;}
+    .chevron, .cross {
       display: none;
       top: -0.3em;
     }
+  }
+  .cross {
+    position: relative;
+    font-size: 1.4em;
+    padding: 0.2em;
   }
   &.panel-entering .panel-button,
   &.panel-enter .panel-button {
     background: inherit;
     color: $white;
     background: $monza;
-    .icon-bar {display: none;}
-    .chevron {display: inline-block;}
+    .panel-closed-component {display: none;}
+    .chevron, .cross {display: inline-block;}
     &:hover, &:active, &:focus {
       color: $white;
       background: $monza;
     }
+    &:hover {background: $carmine;}
+  }
+  img {
+    max-width: 60px;
+    margin-right: 6px;
   }
 }
 
