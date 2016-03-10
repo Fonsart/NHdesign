@@ -51,6 +51,18 @@
     $('#display-list').click(function() {
       $('#media-container').removeClass('media-grid').addClass('media-list');
     });
+
+    $('#toggle-sidebar').click(function(){
+      var delay = 300;
+      if ($('#sidebar').hasClass('open')) {
+        delay = 600;
+      }
+      $('#sidebar').toggleClass('open');
+
+      setTimeout(function(){
+        initGrid();
+      }, delay);
+    });
   });
 }(jQuery));
 
@@ -79,7 +91,7 @@
   $(document).ready(function () {
 
     $('.panel-button').click(function(){
-      console.log('toggle');
+      $('#overlay').toggleClass('open');
       $(this)
         .parents('.panel')
         .toggleClass('panel-enter')
@@ -102,6 +114,11 @@
 
     $('#btn-readmore').click(function(){
       $('#person-bio').toggleClass('open');
+      if ($('#person-bio').hasClass('open')) {
+        $(this).html('Voir moins');
+      } else {
+        $(this).html('Lire la suite...');
+      }
     });
 
   });

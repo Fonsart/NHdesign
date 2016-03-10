@@ -67,11 +67,36 @@
             <a href="index.html" class="f-menu__heading">Overview</a>
           </li>
       
+      
           <li>
-            <a href="docs.html" class="f-menu__heading">Docs</a>
+            <a href="templates.html" class="f-menu__heading">Templates</a>
             <ul>
               <li>
-                <a href="docs.html#javascript">Javascript</a>
+                <a href="templates/article.html">Article</a>
+              </li>
+              <li>
+                <a href="templates/demo.html">Demo</a>
+              </li>
+              <li>
+                <a href="templates/detail.html">Detail</a>
+              </li>
+              <li>
+                <a href="templates/map.html">Map</a>
+              </li>
+              <li>
+                <a href="templates/metadata.html">Metadata</a>
+              </li>
+              <li>
+                <a href="templates/profile-edit.html">Profile Edit</a>
+              </li>
+              <li>
+                <a href="templates/profile-found.html">Profile Found</a>
+              </li>
+              <li>
+                <a href="templates/profile-person.html">Profile Person</a>
+              </li>
+              <li>
+                <a href="templates/upload.html">Upload</a>
               </li>
             </ul>
           </li>
@@ -84,6 +109,9 @@
               </li>
               <li>
                 <a href="atoms.html#checkbox">Checkbox</a>
+              </li>
+              <li>
+                <a href="atoms.html#chevron">Chevron</a>
               </li>
               <li>
                 <a href="atoms.html#cover">Cover</a>
@@ -108,6 +136,9 @@
               </li>
               <li>
                 <a href="atoms.html#loader">Loader</a>
+              </li>
+              <li>
+                <a href="atoms.html#overlay">Overlay</a>
               </li>
               <li>
                 <a href="atoms.html#select">Select</a>
@@ -166,6 +197,12 @@
                 <a href="molecules.html#media-item">Media Item</a>
               </li>
               <li>
+                <a href="molecules.html#results-heading">Results Heading</a>
+              </li>
+              <li>
+                <a href="molecules.html#results-navbar">Results Navbar</a>
+              </li>
+              <li>
                 <a href="molecules.html#signup-form">Signup Form</a>
               </li>
               <li>
@@ -183,13 +220,13 @@
                 <a href="organisms.html#facet-sidebar">Facet Sidebar</a>
               </li>
               <li>
+                <a href="organisms.html#map">Map</a>
+              </li>
+              <li>
                 <a href="organisms.html#media-detail">Media Detail</a>
               </li>
               <li>
                 <a href="organisms.html#media-grid">Media Grid</a>
-              </li>
-              <li>
-                <a href="organisms.html#media-header">Media Header</a>
               </li>
               <li>
                 <a href="organisms.html#media-list">Media List</a>
@@ -213,31 +250,10 @@
           </li>
       
           <li>
-            <a href="templates.html" class="f-menu__heading">Templates</a>
+            <a href="docs.html" class="f-menu__heading">Docs</a>
             <ul>
               <li>
-                <a href="templates/article.html">Article</a>
-              </li>
-              <li>
-                <a href="templates/demo.html">Demo</a>
-              </li>
-              <li>
-                <a href="templates/detail.html">Detail</a>
-              </li>
-              <li>
-                <a href="templates/metadata.html">Metadata</a>
-              </li>
-              <li>
-                <a href="templates/profile-edit.html">Profile Edit</a>
-              </li>
-              <li>
-                <a href="templates/profile-found.html">Profile Found</a>
-              </li>
-              <li>
-                <a href="templates/profile-person.html">Profile Person</a>
-              </li>
-              <li>
-                <a href="templates/upload.html">Upload</a>
+                <a href="docs.html#javascript">Javascript</a>
               </li>
             </ul>
           </li>
@@ -696,6 +712,325 @@
 		&lt;/ul&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="map">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Map</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.5.0</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; map }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<div id="demo-map" style="height:700px;"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+<script src="https://googlemaps.github.io/js-marker-clusterer/src/markerclusterer.js"></script>
+
+<script>
+	// Get data
+	var req = new XMLHttpRequest();
+	req.open('GET', 'http://web2016.notrehistoire.ch/api/v1/search?q=village', true);
+	req.send();
+	req.addEventListener("readystatechange", init, false);
+
+	// Define cluster styles
+	var styles = [{
+		url: '../build/img/marker-small.png',
+		width: 48,
+		height: 48,
+		anchor: [0, 0],
+		textColor: '#FFFFFF',
+		textSize: 12
+	}, {
+		url: '../build/img/marker-medium.png',
+		width: 64,
+		height: 64,
+		anchor: [0, 0],
+		textColor: '#FFFFFF',
+		textSize: 15
+	}, {
+		url: '../build/img/marker-big.png',
+		width: 80,
+		height: 80,
+		anchor: [0, 0],
+		textColor: '#FFFFFF',
+		textSize: 20
+	}];
+
+	// Init map
+	function init() {
+		var data = JSON.parse(req.responseText),
+			center = new google.maps.LatLng(45.534764, 8.199763),
+			bounds = new google.maps.LatLngBounds(),
+			map = new google.maps.Map(document.getElementById('demo-map'), {
+				zoom: 6,
+				center: center,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			});
+
+		// Define marker custom pin
+		var image = new google.maps.MarkerImage("../build/img/pin.png",
+			new google.maps.Size(26, 34),
+			new google.maps.Point(0, 0),
+			new google.maps.Point(13, 34));
+
+		var markers = [];
+
+		// Loop over data.results
+		for (var i = 0; i <= data.results.length; i++) {
+			var item = data.results[i];
+
+			// Create marker only if the result is geolocated
+			if (typeof item !== 'undefined' && item.lat != null && item.lng != null) {
+				var latLng = new google.maps.LatLng(item.lat,
+					item.lng);
+
+				// Define marker
+				var marker = new google.maps.Marker({
+					position: latLng,
+					icon: image,
+					title: 'Hello from here !',
+					map: map
+				});
+				markers.push(marker);
+
+				// Add marker's position to map bounds
+				bounds.extend(marker.position);
+
+				// Define marker's popup
+				switch (item.type) {
+					case 'photo':
+						var icon = 'picture';
+						var thumb = '<img src="' + item.thumbnail + '" />';
+						break;
+					case 'video':
+						var icon = 'film';
+						var thumb = '<img src="' + item.thumbnail + '" />';
+						break;
+					case 'audio':
+						var icon = 'glyphicon-headphones';
+						var thumb = '<p>' + item.description + '</p>';
+						break;
+					case 'article':
+						var icon = 'list-alt';
+						var thumb = '<p>' + item.description + '</p>';
+						break;
+					default:
+						var icon = 'picture';
+						var thumb = '<img src="' + item.thumbnail + '" />';
+				}
+
+				var content = '<a href="#">' +
+					'<div class="infobox-thumb">' +
+					thumb +
+					'</div>' +
+					'<div class="infobox-caption">' +
+					item.title +
+					'<span class="glyphicon glyphicon-' + icon + '"></span>' +
+					'</div>' +
+					'</a>';
+
+				var infowindow = new InfoBox({
+					alignBottom: true,
+					boxClass: 'infobox',
+					boxStyle: {
+						width: '280px'
+					},
+					content: content,
+					closeBoxURL: '../build/img/close.png',
+					disableAutoPan: false,
+					infoBoxClearance: new google.maps.Size(1, 1),
+					maxWidth: 150,
+					pixelOffset: new google.maps.Size(-140, -40),
+					zIndex: null
+				});
+
+				// Open popup on marker click
+				google.maps.event.addListener(marker, 'click', (function(marker, content, infowindow) {
+					return function() {
+						infowindow.open(map, marker);
+					};
+				})(marker, content, infowindow));
+			}
+		}
+
+		// Instantiate cluster module
+		var markerCluster = new MarkerClusterer(map, markers, {
+			styles: styles,
+			gridSize: 65
+		});
+
+		// Fit map to markers
+		map.fitBounds(bounds);
+	}
+</script>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div id=&quot;demo-map&quot; style=&quot;height:700px;&quot;&gt;&lt;/div&gt;
+
+&lt;script src=&quot;https://maps.googleapis.com/maps/api/js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://googlemaps.github.io/js-marker-clusterer/src/markerclusterer.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+	// Get data
+	var req = new XMLHttpRequest();
+	req.open(&#x27;GET&#x27;, &#x27;http://web2016.notrehistoire.ch/api/v1/search?q=village&#x27;, true);
+	req.send();
+	req.addEventListener(&quot;readystatechange&quot;, init, false);
+
+	// Define cluster styles
+	var styles = [{
+		url: &#x27;../build/img/marker-small.png&#x27;,
+		width: 48,
+		height: 48,
+		anchor: [0, 0],
+		textColor: &#x27;#FFFFFF&#x27;,
+		textSize: 12
+	}, {
+		url: &#x27;../build/img/marker-medium.png&#x27;,
+		width: 64,
+		height: 64,
+		anchor: [0, 0],
+		textColor: &#x27;#FFFFFF&#x27;,
+		textSize: 15
+	}, {
+		url: &#x27;../build/img/marker-big.png&#x27;,
+		width: 80,
+		height: 80,
+		anchor: [0, 0],
+		textColor: &#x27;#FFFFFF&#x27;,
+		textSize: 20
+	}];
+
+	// Init map
+	function init() {
+		var data = JSON.parse(req.responseText),
+			center = new google.maps.LatLng(45.534764, 8.199763),
+			bounds = new google.maps.LatLngBounds(),
+			map = new google.maps.Map(document.getElementById(&#x27;demo-map&#x27;), {
+				zoom: 6,
+				center: center,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			});
+
+		// Define marker custom pin
+		var image = new google.maps.MarkerImage(&quot;../build/img/pin.png&quot;,
+			new google.maps.Size(26, 34),
+			new google.maps.Point(0, 0),
+			new google.maps.Point(13, 34));
+
+		var markers = [];
+
+		// Loop over data.results
+		for (var i = 0; i &lt;= data.results.length; i++) {
+			var item = data.results[i];
+
+			// Create marker only if the result is geolocated
+			if (typeof item !== &#x27;undefined&#x27; &amp;&amp; item.lat != null &amp;&amp; item.lng != null) {
+				var latLng = new google.maps.LatLng(item.lat,
+					item.lng);
+
+				// Define marker
+				var marker = new google.maps.Marker({
+					position: latLng,
+					icon: image,
+					title: &#x27;Hello from here !&#x27;,
+					map: map
+				});
+				markers.push(marker);
+
+				// Add marker&#x27;s position to map bounds
+				bounds.extend(marker.position);
+
+				// Define marker&#x27;s popup
+				switch (item.type) {
+					case &#x27;photo&#x27;:
+						var icon = &#x27;picture&#x27;;
+						var thumb = &#x27;&lt;img src=&quot;&#x27; + item.thumbnail + &#x27;&quot; /&gt;&#x27;;
+						break;
+					case &#x27;video&#x27;:
+						var icon = &#x27;film&#x27;;
+						var thumb = &#x27;&lt;img src=&quot;&#x27; + item.thumbnail + &#x27;&quot; /&gt;&#x27;;
+						break;
+					case &#x27;audio&#x27;:
+						var icon = &#x27;glyphicon-headphones&#x27;;
+						var thumb = &#x27;&lt;p&gt;&#x27; + item.description + &#x27;&lt;/p&gt;&#x27;;
+						break;
+					case &#x27;article&#x27;:
+						var icon = &#x27;list-alt&#x27;;
+						var thumb = &#x27;&lt;p&gt;&#x27; + item.description + &#x27;&lt;/p&gt;&#x27;;
+						break;
+					default:
+						var icon = &#x27;picture&#x27;;
+						var thumb = &#x27;&lt;img src=&quot;&#x27; + item.thumbnail + &#x27;&quot; /&gt;&#x27;;
+				}
+
+				var content = &#x27;&lt;a href=&quot;#&quot;&gt;&#x27; +
+					&#x27;&lt;div class=&quot;infobox-thumb&quot;&gt;&#x27; +
+					thumb +
+					&#x27;&lt;/div&gt;&#x27; +
+					&#x27;&lt;div class=&quot;infobox-caption&quot;&gt;&#x27; +
+					item.title +
+					&#x27;&lt;span class=&quot;glyphicon glyphicon-&#x27; + icon + &#x27;&quot;&gt;&lt;/span&gt;&#x27; +
+					&#x27;&lt;/div&gt;&#x27; +
+					&#x27;&lt;/a&gt;&#x27;;
+
+				var infowindow = new InfoBox({
+					alignBottom: true,
+					boxClass: &#x27;infobox&#x27;,
+					boxStyle: {
+						width: &#x27;280px&#x27;
+					},
+					content: content,
+					closeBoxURL: &#x27;../build/img/close.png&#x27;,
+					disableAutoPan: false,
+					infoBoxClearance: new google.maps.Size(1, 1),
+					maxWidth: 150,
+					pixelOffset: new google.maps.Size(-140, -40),
+					zIndex: null
+				});
+
+				// Open popup on marker click
+				google.maps.event.addListener(marker, &#x27;click&#x27;, (function(marker, content, infowindow) {
+					return function() {
+						infowindow.open(map, marker);
+					};
+				})(marker, content, infowindow));
+			}
+		}
+
+		// Instantiate cluster module
+		var markerCluster = new MarkerClusterer(map, markers, {
+			styles: styles,
+			gridSize: 65
+		});
+
+		// Fit map to markers
+		map.fitBounds(bounds);
+	}
+&lt;/script&gt;</code></pre>
 </div>
 
 
@@ -1980,139 +2315,6 @@
 </div>
 
 
-<div class="f-item-group" id="media-header">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Media Header</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<h5>Introduced : 0.0.5</h5>
-<h5>Updated : 0.4.2</h5>
-<h5>Usage : <code>{{&gt; media-header }}</code></h5>
-
-</div>
-<div class="f-item-preview">
-	<div class="media-header text-sans">
-	<h1 class="h2">1114 résultats pour “train”</h1>
-	<p>
-		<span class="facet-used">
-      <button class="facet-remove">&times;</button>
-      chat
-    </span> <span class="facet-used">
-      <button class="facet-remove">&times;</button>
-      chalet
-    </span> <span class="facet-used">
-      <button class="facet-remove">&times;</button>
-      montagne
-    </span> <span class="facet-used">
-      <button class="facet-remove">&times;</button>
-      chien
-    </span> <span class="facet-used">
-      <button class="facet-remove">&times;</button>
-      arc-en-ciel
-    </span> <span class="facet-used">
-      <button class="facet-remove">&times;</button>
-      1980-1990
-    </span>
-	</p>
-	<div class="text-right">
-		<strong class="text-clear">
-      Trier par
-    </strong>
-		<select class="form-control">
-			<option>Alphabetical</option>
-			<option>Les plus vus</option>
-			<option>Most commented</option>
-			<option>Most followed</option>
-			<option selected="selected">Most relevant</option>
-			<option>Newest</option>
-			<option>Oldest</option>
-			<option>Origin_date récent</option>
-			<option>Origin_date vieux</option>
-			<option>Recently updated</option>
-		</select>
-		<span class="vertical-separator"></span>
-		<button id="display-grid" class="btn btn-default active">
-			<i class="glyphicon glyphicon-th"></i>
-		</button>
-		<button id="display-list" class="btn btn-default">
-			<i class="glyphicon glyphicon-th-list"></i>
-		</button>
-		<button id="display-map" class="btn btn-default">
-			<i class="glyphicon glyphicon-map-marker"></i>
-		</button>
-	</div>
-</div>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;media-header text-sans&quot;&gt;
-	&lt;h1 class=&quot;h2&quot;&gt;1114 résultats pour “train”&lt;/h1&gt;
-	&lt;p&gt;
-		&lt;span class=&quot;facet-used&quot;&gt;
-      &lt;button class=&quot;facet-remove&quot;&gt;&amp;times;&lt;/button&gt;
-      chat
-    &lt;/span&gt; &lt;span class=&quot;facet-used&quot;&gt;
-      &lt;button class=&quot;facet-remove&quot;&gt;&amp;times;&lt;/button&gt;
-      chalet
-    &lt;/span&gt; &lt;span class=&quot;facet-used&quot;&gt;
-      &lt;button class=&quot;facet-remove&quot;&gt;&amp;times;&lt;/button&gt;
-      montagne
-    &lt;/span&gt; &lt;span class=&quot;facet-used&quot;&gt;
-      &lt;button class=&quot;facet-remove&quot;&gt;&amp;times;&lt;/button&gt;
-      chien
-    &lt;/span&gt; &lt;span class=&quot;facet-used&quot;&gt;
-      &lt;button class=&quot;facet-remove&quot;&gt;&amp;times;&lt;/button&gt;
-      arc-en-ciel
-    &lt;/span&gt; &lt;span class=&quot;facet-used&quot;&gt;
-      &lt;button class=&quot;facet-remove&quot;&gt;&amp;times;&lt;/button&gt;
-      1980-1990
-    &lt;/span&gt;
-	&lt;/p&gt;
-	&lt;div class=&quot;text-right&quot;&gt;
-		&lt;strong class=&quot;text-clear&quot;&gt;
-      Trier par
-    &lt;/strong&gt;
-		&lt;select class=&quot;form-control&quot;&gt;
-			&lt;option&gt;Alphabetical&lt;/option&gt;
-			&lt;option&gt;Les plus vus&lt;/option&gt;
-			&lt;option&gt;Most commented&lt;/option&gt;
-			&lt;option&gt;Most followed&lt;/option&gt;
-			&lt;option selected=&quot;selected&quot;&gt;Most relevant&lt;/option&gt;
-			&lt;option&gt;Newest&lt;/option&gt;
-			&lt;option&gt;Oldest&lt;/option&gt;
-			&lt;option&gt;Origin_date récent&lt;/option&gt;
-			&lt;option&gt;Origin_date vieux&lt;/option&gt;
-			&lt;option&gt;Recently updated&lt;/option&gt;
-		&lt;/select&gt;
-		&lt;span class=&quot;vertical-separator&quot;&gt;&lt;/span&gt;
-		&lt;button id=&quot;display-grid&quot; class=&quot;btn btn-default active&quot;&gt;
-			&lt;i class=&quot;glyphicon glyphicon-th&quot;&gt;&lt;/i&gt;
-		&lt;/button&gt;
-		&lt;button id=&quot;display-list&quot; class=&quot;btn btn-default&quot;&gt;
-			&lt;i class=&quot;glyphicon glyphicon-th-list&quot;&gt;&lt;/i&gt;
-		&lt;/button&gt;
-		&lt;button id=&quot;display-map&quot; class=&quot;btn btn-default&quot;&gt;
-			&lt;i class=&quot;glyphicon glyphicon-map-marker&quot;&gt;&lt;/i&gt;
-		&lt;/button&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-</div>
-
-
-</div>
-
-
 <div class="f-item-group" id="media-list">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -3097,33 +3299,126 @@
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<h5>Introduced : 0.1.2</h5>
-<h5>Updated : -</h5>
+<h5>Updated : 0.5.0</h5>
 <h5>Usage : <code>{{&gt; panel-left }}</code></h5>
+<p><em>The panels can't be open both</em></p>
 
 </div>
 <div class="f-item-preview">
-	<div class="panel panel-left panel-animate panel-leave panel-leaving bg-mine-shaft">
+	<div class="panel panel-left panel-animate panel-leave panel-leaving">
 	<button type="button" class="navbar-toggle panel-button">
 		<span class="sr-only">Toggle navigation</span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	</button>
+		<span class="icon-bar panel-closed-component"></span>
+		<span class="icon-bar panel-closed-component"></span>
+		<span class="icon-bar panel-closed-component"></span>
+		<span class="chevron chevron-left chevron-thin"></span> </button>
 	<div class="panel-content">
-
+		<ul class="nav nav-stacked">
+			<li role="presentation" class="active"><a href="#">
+        Aide
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+			<li role="presentation"><a href="#">
+        Forum
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+			<li role="presentation"><a href="#">
+        Blog
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+			<li role="presentation"><a href="#">
+        Contact
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+		</ul>
+		<div class="container-fluid">
+			<hr />
+			<h3>
+        <div class="text-clear">Le mouvement</div>
+        <b>NotreHistoire</b>
+      </h3>
+			<p class="text-clear text-sans">
+				Oremière plateforme participative Suisse romande. Elle a pour but de créer une fresque de médias sur l'histoire de notre région.
+				<br>
+				<a href="#">En savoir plus</a>
+			</p>
+			<hr /> </div>
+		<ul class="nav nav-stacked">
+			<li role="presentation" class="active"><a href="#">
+        Activités récentes
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+			<li role="presentation"><a href="#">
+        Fonds documentaires
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+		</ul>
+	</div>
+	<div class="panel-bottom">
+		<div class="container-fluid">
+			<p class="text-clear text-sans">
+				<small><a class="text-clear" href="#">Condition générales</a> - <a class="text-clear" href="#">Impressum</a></small>
+			</p>
+		</div>
 	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;panel panel-left panel-animate panel-leave panel-leaving bg-mine-shaft&quot;&gt;
+	<pre><code class="language-markup">&lt;div class=&quot;panel panel-left panel-animate panel-leave panel-leaving&quot;&gt;
 	&lt;button type=&quot;button&quot; class=&quot;navbar-toggle panel-button&quot;&gt;
 		&lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
-		&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
-	&lt;/button&gt;
+		&lt;span class=&quot;icon-bar panel-closed-component&quot;&gt;&lt;/span&gt;
+		&lt;span class=&quot;icon-bar panel-closed-component&quot;&gt;&lt;/span&gt;
+		&lt;span class=&quot;icon-bar panel-closed-component&quot;&gt;&lt;/span&gt;
+		&lt;span class=&quot;chevron chevron-left chevron-thin&quot;&gt;&lt;/span&gt; &lt;/button&gt;
 	&lt;div class=&quot;panel-content&quot;&gt;
-
+		&lt;ul class=&quot;nav nav-stacked&quot;&gt;
+			&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+        Aide
+        &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
+			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+        Forum
+        &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
+			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+        Blog
+        &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
+			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+        Contact
+        &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;div class=&quot;container-fluid&quot;&gt;
+			&lt;hr /&gt;
+			&lt;h3&gt;
+        &lt;div class=&quot;text-clear&quot;&gt;Le mouvement&lt;/div&gt;
+        &lt;b&gt;NotreHistoire&lt;/b&gt;
+      &lt;/h3&gt;
+			&lt;p class=&quot;text-clear text-sans&quot;&gt;
+				Oremière plateforme participative Suisse romande. Elle a pour but de créer une fresque de médias sur l&#x27;histoire de notre région.
+				&lt;br&gt;
+				&lt;a href=&quot;#&quot;&gt;En savoir plus&lt;/a&gt;
+			&lt;/p&gt;
+			&lt;hr /&gt; &lt;/div&gt;
+		&lt;ul class=&quot;nav nav-stacked&quot;&gt;
+			&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+        Activités récentes
+        &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
+			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+        Fonds documentaires
+        &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;panel-bottom&quot;&gt;
+		&lt;div class=&quot;container-fluid&quot;&gt;
+			&lt;p class=&quot;text-clear text-sans&quot;&gt;
+				&lt;small&gt;&lt;a class=&quot;text-clear&quot; href=&quot;#&quot;&gt;Condition générales&lt;/a&gt; - &lt;a class=&quot;text-clear&quot; href=&quot;#&quot;&gt;Impressum&lt;/a&gt;&lt;/small&gt;
+			&lt;/p&gt;
+		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -3150,76 +3445,83 @@
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<h5>Introduced : 0.1.2</h5>
-<h5>Updated : -</h5>
+<h5>Updated : 0.5.0</h5>
 <h5>Usage : <code>{{&gt; panel-right }}</code></h5>
+<p><em>The panels can't be open both</em></p>
 
 </div>
 <div class="f-item-preview">
-	<div class="panel panel-right panel-animate panel-leave panel-leaving bg-mine-shaft">
+	<div class="panel panel-right panel-animate panel-leave panel-leaving">
 	<button type="button" class="btn btn-default panel-button">
-		<span class="hidden-xs">Connexion</span>
-		<span class="visible-xs glyphicon glyphicon-user"></span>
+		<span class="hidden-xs panel-closed-component">Connexion</span>
+		<span class="visible-xs glyphicon glyphicon-user panel-closed-component"></span>
+		<span class="cross">&times;</span>
 	</button>
 	<div class="panel-content">
-		<h3 class="text-center">Connexion</h3>
-		<div class="spacer spacer-xs"></div>
-		<form>
-			<div class="form-group">
-				<label for="email">Adresse email</label>
-				<input type="email" class="form-control" id="email" placeholder="Adresse email" value="" />
-				<p class="help-block">C&#x27;est le moment où vous rentrez votre adresse email</p>
-			</div>
-			<div class="form-group">
-				<label for="password">Votre mot de passe</label>
-				<input type="password" class="form-control" id="password" placeholder="Votre mot de passe" value="" />
-				<p class="help-block">N&#x27;aillez crainte, je détourne le regard.</p>
-			</div>
-			<div class="checkbox">
-				<label>
-					<input type="checkbox" /> Resté connecté
-				</label>
-			</div>
+		<div class="container-fluid">
 			<div class="spacer spacer-xs"></div>
-			<button type="submit" class="btn btn-primary btn-block">Je me connecte</button>
-		</form>
-		<div class="spacer spacer-sm"></div>
-		<div class="text-center">
-			<a href="#">J'ai oublié mon mot de passe</a>
+			<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/08/876988c033485ccc_jpg_168x168_crop_q85.jpg" class="img-responsive img-circle pull-left">
+			<h4>Martine Desarzens</h4>
+			<div class="spacer spacer-sm"></div>
+		</div>
+		<ul class="nav nav-stacked">
+			<li role="presentation" class="active"><a href="#">
+        Afficher mon profil
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+			<li role="presentation"><a href="#">
+        Mes médias
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+			<li role="presentation"><a href="#">
+        Mes activités
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+			<li role="presentation"><a href="#">
+        Mes préférences
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+		</ul>
+		<div class="container-fluid">
+			<hr /> <a href="#" class="text-sans text-clear">Me déconnecter</a>
 		</div>
 	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;panel panel-right panel-animate panel-leave panel-leaving bg-mine-shaft&quot;&gt;
+	<pre><code class="language-markup">&lt;div class=&quot;panel panel-right panel-animate panel-leave panel-leaving&quot;&gt;
 	&lt;button type=&quot;button&quot; class=&quot;btn btn-default panel-button&quot;&gt;
-		&lt;span class=&quot;hidden-xs&quot;&gt;Connexion&lt;/span&gt;
-		&lt;span class=&quot;visible-xs glyphicon glyphicon-user&quot;&gt;&lt;/span&gt;
+		&lt;span class=&quot;hidden-xs panel-closed-component&quot;&gt;Connexion&lt;/span&gt;
+		&lt;span class=&quot;visible-xs glyphicon glyphicon-user panel-closed-component&quot;&gt;&lt;/span&gt;
+		&lt;span class=&quot;cross&quot;&gt;&amp;times;&lt;/span&gt;
 	&lt;/button&gt;
 	&lt;div class=&quot;panel-content&quot;&gt;
-		&lt;h3 class=&quot;text-center&quot;&gt;Connexion&lt;/h3&gt;
-		&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
-		&lt;form&gt;
-			&lt;div class=&quot;form-group&quot;&gt;
-				&lt;label for=&quot;email&quot;&gt;Adresse email&lt;/label&gt;
-				&lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Adresse email&quot; value=&quot;&quot; /&gt;
-				&lt;p class=&quot;help-block&quot;&gt;C&amp;#x27;est le moment où vous rentrez votre adresse email&lt;/p&gt;
-			&lt;/div&gt;
-			&lt;div class=&quot;form-group&quot;&gt;
-				&lt;label for=&quot;password&quot;&gt;Votre mot de passe&lt;/label&gt;
-				&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;password&quot; placeholder=&quot;Votre mot de passe&quot; value=&quot;&quot; /&gt;
-				&lt;p class=&quot;help-block&quot;&gt;N&amp;#x27;aillez crainte, je détourne le regard.&lt;/p&gt;
-			&lt;/div&gt;
-			&lt;div class=&quot;checkbox&quot;&gt;
-				&lt;label&gt;
-					&lt;input type=&quot;checkbox&quot; /&gt; Resté connecté
-				&lt;/label&gt;
-			&lt;/div&gt;
+		&lt;div class=&quot;container-fluid&quot;&gt;
 			&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
-			&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary btn-block&quot;&gt;Je me connecte&lt;/button&gt;
-		&lt;/form&gt;
-		&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
-		&lt;div class=&quot;text-center&quot;&gt;
-			&lt;a href=&quot;#&quot;&gt;J&#x27;ai oublié mon mot de passe&lt;/a&gt;
+			&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/08/876988c033485ccc_jpg_168x168_crop_q85.jpg&quot; class=&quot;img-responsive img-circle pull-left&quot;&gt;
+			&lt;h4&gt;Martine Desarzens&lt;/h4&gt;
+			&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;ul class=&quot;nav nav-stacked&quot;&gt;
+			&lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+        Afficher mon profil
+        &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
+			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+        Mes médias
+        &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
+			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+        Mes activités
+        &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
+			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+        Mes préférences
+        &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;div class=&quot;container-fluid&quot;&gt;
+			&lt;hr /&gt; &lt;a href=&quot;#&quot; class=&quot;text-sans text-clear&quot;&gt;Me déconnecter&lt;/a&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -3268,9 +3570,9 @@
 		<li><a href="#" class="btn btn-link">Envoyer un message</a></li>
 	</ul>
 	<p class="text-clear text-sans person-bio" id="person-bio">
-		En l’espace de 50 ans, le Montreux Jazz Festival est devenu un rendez-vous singulier dans le monde de la musique. La perspective de cette édition est d’abord l’occasion pour le Festival de raconter son histoire, d’affirmer ses valeurs et ses spécificités,
-		afin de mieux se projeter dans l’avenir. Depuis sa création en 1967 par Claude Nobs, qui aurait fêté ses 80 ans en ce 4 février 2016, le Festival est rapidement devenu un réservoir de concerts fantastiques, de convergences artistiques folles, d’instants
-		rares, d’anecdotes improbables, de culot et de paris ambitieux, d’impulsions décisives.
+		En l’espace de 50 ans, le <a href='#'>Montreux Jazz Festival</a> est devenu un rendez-vous singulier dans le monde de la musique. La perspective de cette édition est d’abord l’occasion pour le Festival de raconter son histoire, d’affirmer ses valeurs
+		et ses spécificités, afin de mieux se projeter dans l’avenir. Depuis sa création en 1967 par Claude Nobs, qui aurait fêté ses 80 ans en ce 4 février 2016, le Festival est rapidement devenu un réservoir de concerts fantastiques, de convergences artistiques
+		folles, d’instants rares, d’anecdotes improbables, de culot et de paris ambitieux, d’impulsions décisives.
 		<br>
 		<br>Le Festival a accueilli dans son cadre idyllique des artistes d’envergure légendaire. Certains, comme Prince ou Deep Purple ont contribué à écrire la légende des lieux dans leurs chansons quand d’autres, tels David Bowie, Nina Simone ou Freddie Mercury
 		sont venus vivre dans la région ou y enregistrer des albums. Le Festival a mélangé tous les genres musicaux, découvert et porté de jeunes talents, installant durablement la ville sur la carte du monde et dans le cœur du public. Il continue aujourd’hui
@@ -3305,9 +3607,9 @@
 		&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Envoyer un message&lt;/a&gt;&lt;/li&gt;
 	&lt;/ul&gt;
 	&lt;p class=&quot;text-clear text-sans person-bio&quot; id=&quot;person-bio&quot;&gt;
-		En l’espace de 50 ans, le Montreux Jazz Festival est devenu un rendez-vous singulier dans le monde de la musique. La perspective de cette édition est d’abord l’occasion pour le Festival de raconter son histoire, d’affirmer ses valeurs et ses spécificités,
-		afin de mieux se projeter dans l’avenir. Depuis sa création en 1967 par Claude Nobs, qui aurait fêté ses 80 ans en ce 4 février 2016, le Festival est rapidement devenu un réservoir de concerts fantastiques, de convergences artistiques folles, d’instants
-		rares, d’anecdotes improbables, de culot et de paris ambitieux, d’impulsions décisives.
+		En l’espace de 50 ans, le &lt;a href=&#x27;#&#x27;&gt;Montreux Jazz Festival&lt;/a&gt; est devenu un rendez-vous singulier dans le monde de la musique. La perspective de cette édition est d’abord l’occasion pour le Festival de raconter son histoire, d’affirmer ses valeurs
+		et ses spécificités, afin de mieux se projeter dans l’avenir. Depuis sa création en 1967 par Claude Nobs, qui aurait fêté ses 80 ans en ce 4 février 2016, le Festival est rapidement devenu un réservoir de concerts fantastiques, de convergences artistiques
+		folles, d’instants rares, d’anecdotes improbables, de culot et de paris ambitieux, d’impulsions décisives.
 		&lt;br&gt;
 		&lt;br&gt;Le Festival a accueilli dans son cadre idyllique des artistes d’envergure légendaire. Certains, comme Prince ou Deep Purple ont contribué à écrire la légende des lieux dans leurs chansons quand d’autres, tels David Bowie, Nina Simone ou Freddie Mercury
 		sont venus vivre dans la région ou y enregistrer des albums. Le Festival a mélangé tous les genres musicaux, découvert et porté de jeunes talents, installant durablement la ville sur la carte du monde et dans le cœur du public. Il continue aujourd’hui

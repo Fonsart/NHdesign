@@ -363,6 +363,8 @@ html {
 
 .f-item-preview {
   position: relative; }
+  .f-item-preview .media-infobar {
+    position: relative; }
 
 .f-color-chip {
   border-top-width: 50px;

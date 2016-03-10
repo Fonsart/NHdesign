@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="./../build/css/vendors.min.css">
+    <link rel="stylesheet" href="./../build/css/main.css">
+
+    <!--[if lt IE 9]>
+      <script src="./../build/js/polyfills.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <div id="demo-map" style="height:700px;"></div>
+    
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+    <script src="https://googlemaps.github.io/js-marker-clusterer/src/markerclusterer.js"></script>
+    
+    <script>
+      // Get data
+      var req = new XMLHttpRequest();
+      req.open('GET', 'http://web2016.notrehistoire.ch/api/v1/search?q=village', true);
+      req.send();
+      req.addEventListener("readystatechange", init, false);
+    
+      // Define cluster styles
+      var styles = [{
+        url: '../build/img/marker-small.png',
+        width: 48,
+        height: 48,
+        anchor: [0, 0],
+        textColor: '#FFFFFF',
+        textSize: 12
+      }, {
+        url: '../build/img/marker-medium.png',
+        width: 64,
+        height: 64,
+        anchor: [0, 0],
+        textColor: '#FFFFFF',
+        textSize: 15
+      }, {
+        url: '../build/img/marker-big.png',
+        width: 80,
+        height: 80,
+        anchor: [0, 0],
+        textColor: '#FFFFFF',
+        textSize: 20
+      }];
+    
+      // Init map
+      function init() {
+        var data = JSON.parse(req.responseText),
+            center = new google.maps.LatLng(45.534764, 8.199763),
+            bounds = new google.maps.LatLngBounds(),
+            map = new google.maps.Map(document.getElementById('demo-map'), {
+              zoom: 6,
+              center: center,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+    
+        // Define marker custom pin
+        var image = new google.maps.MarkerImage("../build/img/pin.png",
+              new google.maps.Size(26,34),
+              new google.maps.Point(0,0),
+              new google.maps.Point(13,34));
+    
+        var markers = [];
+    
+        // Loop over data.results
+        for (var i = 0; i <= data.results.length; i++) {
+          var item = data.results[i];
+    
+          // Create marker only if the result is geolocated
+          if (typeof item !== 'undefined' && item.lat != null && item.lng != null) {
+            var latLng = new google.maps.LatLng(item.lat,
+                item.lng);
+    
+            // Define marker
+            var marker = new google.maps.Marker({
+              position: latLng,
+              icon: image,
+              title: 'Hello from here !',
+              map: map
+            });
+            markers.push(marker);
+    
+            // Add marker's position to map bounds
+            bounds.extend(marker.position);
+    
+            // Define marker's popup
+            switch (item.type) {
+              case 'photo':
+                var icon  = 'picture';
+                var thumb = '<img src="'+item.thumbnail+'" />';
+                break;
+              case 'video':
+                var icon  = 'film';
+                var thumb = '<img src="'+item.thumbnail+'" />';
+                break;
+              case 'audio':
+                var icon  = 'glyphicon-headphones';
+                var thumb = '<p>'+item.description+'</p>';
+                break;
+              case 'article':
+                var icon  = 'list-alt';
+                var thumb = '<p>'+item.description+'</p>';
+                break;
+              default:
+                var icon  = 'picture';
+                var thumb = '<img src="'+item.thumbnail+'" />';
+            }
+    
+            var content = '<a href="#">'+
+                            '<div class="infobox-thumb">'+
+                              thumb+
+                            '</div>'+
+                            '<div class="infobox-caption">'+
+                              item.title+
+                              '<span class="glyphicon glyphicon-'+icon+'"></span>'+
+                            '</div>'+
+                          '</a>';
+    
+            var infowindow = new InfoBox({
+                  alignBottom: true,
+                  boxClass: 'infobox',
+                  boxStyle: {
+                     width: '280px'
+                  },
+                  content: content,
+                  closeBoxURL: '../build/img/close.png',
+                  disableAutoPan: false,
+                  infoBoxClearance: new google.maps.Size(1, 1),
+                  maxWidth: 150,
+                  pixelOffset: new google.maps.Size(-140, -40),
+                  zIndex: null
+                });
+    
+            // Open popup on marker click
+            google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){
+              return function() {
+                infowindow.open(map,marker);
+              };
+            })(marker,content,infowindow));
+          }
+        }
+    
+        // Instantiate cluster module
+        var markerCluster = new MarkerClusterer(map, markers, {
+          styles: styles,
+          gridSize: 65
+        });
+    
+        // Fit map to markers
+        map.fitBounds(bounds);
+      }
+    </script>
+
+    <script src="./../build/js/vendors.min.js"></script>
+    <script src="./../build/js/main.js"></script>
+  </body>
+</html>
