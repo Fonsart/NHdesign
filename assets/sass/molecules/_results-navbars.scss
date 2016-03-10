@@ -16,7 +16,7 @@
     box-shadow: none;
     transition: border-bottom-color 0.3s,
                 color 0.3s;
-    &.active, &.active:hover {
+    &.active, &.active:hover, &:focus {
       background: transparent;
       color: $boulder;
       border-bottom-color: $monza;

@@ -1,1 +1,24 @@
-{{> map }}
+{{> navbar }}
+
+{{> panel-left }}
+{{> panel-right }}
+{{> overlay }}
+
+<div class="container-wide">
+  {{> results-heading }}
+  {{> results-navbar }}
+  <div class="row">
+    <div id="sidebar" class="sidebar col-sm-3">
+      {{> facet-sidebar }}
+    </div>
+    <div class="col-sm-9">
+      {{> map }}
+      <div class="clearfix"></div>
+      {{> load-more }}
+    </div>
+  </div>
+</div>
+
+<!-- Demo purpose -->
+<div class="spacer spacer-xl"></div>
+

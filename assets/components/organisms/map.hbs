@@ -4,7 +4,7 @@ notes: |
   ##### Updated : -
   ##### Usage : `{{> map }}`
 ---
-<div id="demo-map" style="height:700px;"></div>
+<div id="result-map" class="map"></div>
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
@@ -46,7 +46,7 @@ notes: |
     var data = JSON.parse(req.responseText),
         center = new google.maps.LatLng(45.534764, 8.199763),
         bounds = new google.maps.LatLngBounds(),
-        map = new google.maps.Map(document.getElementById('demo-map'), {
+        map = new google.maps.Map(document.getElementById('result-map'), {
           zoom: 6,
           center: center,
           mapTypeId: google.maps.MapTypeId.ROADMAP
