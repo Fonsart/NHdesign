@@ -1,1 +1,81 @@
 @charset "UTF-8";
+
+.infobox {
+  background: $concrete;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  position: relative;
+  transition: background 0.3s,
+              box-shadow 0.3s;
+  box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.4);
+  &:hover {
+    background: $gallery;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  &:after {
+    content: '\00a0';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 8px 0 8px;
+    border-color: $concrete transparent transparent transparent;
+  }
+  > img:first-child {
+    position: absolute !important;
+    top: 4px;
+    right: 4px;
+    z-index: 60;
+  }
+  a {
+    text-decoration: none;
+    color: $mine-shaft;
+    &:hover, &:active, &:focus {color: $mine-shaft;}
+  }
+}
+
+.infobox-thumb {
+  width: 100%;
+  img {width: 100%;}
+  p {
+    position: relative;
+    z-index: 50;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding: 20px;
+    padding-top: 15px;
+    background: $tundora;
+    transition: background 0.3s;
+    color: $white;
+    font-family: $font-family-sans-serif;
+    font-size: floor(($font-size-base * 1.8));
+    font-weight: 400;
+    line-height: 1.15em;
+    height: 200px;
+    &:after {
+      content: '\00a0';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1.25em;
+      width: 100%;
+      background: $tundora;
+      background: linear-gradient(to bottom, transparent 0%,$tundora 70%);
+    }
+  }
+}
+
+.infobox-caption {
+  padding: 12px;
+  padding-right: 38px;
+  position: relative;
+  .glyphicon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+}
