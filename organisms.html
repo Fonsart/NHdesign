@@ -741,7 +741,7 @@
 
 </div>
 <div class="f-item-preview">
-	<div id="demo-map" style="height:700px;"></div>
+	<div id="result-map" class="map"></div>
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
@@ -783,7 +783,7 @@
 		var data = JSON.parse(req.responseText),
 			center = new google.maps.LatLng(45.534764, 8.199763),
 			bounds = new google.maps.LatLngBounds(),
-			map = new google.maps.Map(document.getElementById('demo-map'), {
+			map = new google.maps.Map(document.getElementById('result-map'), {
 				zoom: 6,
 				center: center,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -887,7 +887,7 @@
 </script>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div id=&quot;demo-map&quot; style=&quot;height:700px;&quot;&gt;&lt;/div&gt;
+	<pre><code class="language-markup">&lt;div id=&quot;result-map&quot; class=&quot;map&quot;&gt;&lt;/div&gt;
 
 &lt;script src=&quot;https://maps.googleapis.com/maps/api/js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js&quot;&gt;&lt;/script&gt;
@@ -929,7 +929,7 @@
 		var data = JSON.parse(req.responseText),
 			center = new google.maps.LatLng(45.534764, 8.199763),
 			bounds = new google.maps.LatLngBounds(),
-			map = new google.maps.Map(document.getElementById(&#x27;demo-map&#x27;), {
+			map = new google.maps.Map(document.getElementById(&#x27;result-map&#x27;), {
 				zoom: 6,
 				center: center,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
