@@ -1,17 +1,65 @@
 ---
 notes: |
   ##### Introduced : 0.1.2
-  ##### Updated : -
+  ##### Updated : 0.5.0
   ##### Usage : `{{> panel-left }}`
+  *The panels can't be open both*
 ---
-<div class="panel panel-left panel-animate panel-leave panel-leaving bg-mine-shaft">
+<div class="panel panel-left panel-animate panel-leave panel-leaving">
   <button type="button" class="navbar-toggle panel-button">
     <span class="sr-only">Toggle navigation</span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
+    <span class="icon-bar panel-closed-component"></span>
+    <span class="icon-bar panel-closed-component"></span>
+    <span class="icon-bar panel-closed-component"></span>
+    {{> chevron direction="left" thin=true }}
   </button>
   <div class="panel-content">
-
+    <ul class="nav nav-stacked">
+      <li role="presentation" class="active"><a href="#">
+        Aide
+        <span class="pull-right">{{> chevron direction="right" thin=true }}</span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Forum
+        <span class="pull-right">{{> chevron direction="right" thin=true }}</span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Blog
+        <span class="pull-right">{{> chevron direction="right" thin=true }}</span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Contact
+        <span class="pull-right">{{> chevron direction="right" thin=true }}</span>
+      </a></li>
+    </ul>
+    <div class="container-fluid">
+      {{> separator }}
+      <h3>
+        <div class="text-clear">Le mouvement</div>
+        <b>NotreHistoire</b>
+      </h3>
+      <p class="text-clear text-sans">
+        Oremière plateforme participative Suisse romande. Elle a pour but de créer une fresque de médias sur l'histoire de notre région.<br>
+        <a href="#">En savoir plus</a>
+      </p>
+      {{> separator }}
+    </div>
+    <ul class="nav nav-stacked">
+      <li role="presentation" class="active"><a href="#">
+        Activités récentes
+        <span class="pull-right">{{> chevron direction="right" thin=true }}</span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Fonds documentaires
+        <span class="pull-right">{{> chevron direction="right" thin=true }}</span>
+      </a></li>
+    </ul>
+  </div>
+  <div class="panel-bottom">
+    <div class="container-fluid">
+      <p class="text-clear text-sans">
+        <small><a class="text-clear" href="#">Condition générales</a> - <a class="text-clear" href="#">Impressum</a></small>
+      </p>
+    </div>
   </div>
 </div>

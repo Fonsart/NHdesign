@@ -23,5 +23,17 @@
     $('#display-list').click(function() {
       $('#media-container').removeClass('media-grid').addClass('media-list');
     });
+
+    $('#toggle-sidebar').click(function(){
+      var delay = 300;
+      if ($('#sidebar').hasClass('open')) {
+        delay = 600;
+      }
+      $('#sidebar').toggleClass('open');
+
+      setTimeout(function(){
+        initGrid();
+      }, delay);
+    });
   });
 }(jQuery));

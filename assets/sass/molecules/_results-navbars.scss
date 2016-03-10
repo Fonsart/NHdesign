@@ -1,9 +1,7 @@
 @charset "UTF-8";
 
-.media-header {
-  h1, .h2, .h3 {
-    margin: 0.1em 0;
-  }
+.results-navbar {
+  margin-top: 1.4em;
 
   strong {font-weight: 500;}
 
@@ -18,7 +16,7 @@
     box-shadow: none;
     transition: border-bottom-color 0.3s,
                 color 0.3s;
-    &.active, &.active:hover {
+    &.active, &.active:hover, &:focus {
       background: transparent;
       color: $boulder;
       border-bottom-color: $monza;
@@ -33,6 +31,7 @@
     width: auto;
     height: 34px;
     padding: 0 5px;
+    border: 1px solid $gallery;
   }
 }
 

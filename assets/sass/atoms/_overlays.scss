@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.overlay {
+  transition: background 0.3s;
+  &.open {
+    position: fixed;
+    z-index: 1999;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+}

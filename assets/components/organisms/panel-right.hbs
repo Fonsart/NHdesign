@@ -1,15 +1,44 @@
 ---
 notes: |
   ##### Introduced : 0.1.2
-  ##### Updated : -
+  ##### Updated : 0.5.0
   ##### Usage : `{{> panel-right }}`
+  *The panels can't be open both*
 ---
-<div class="panel panel-right panel-animate panel-leave panel-leaving bg-mine-shaft">
+<div class="panel panel-right panel-animate panel-leave panel-leaving">
   <button type="button" class="btn btn-default panel-button">
-    <span class="hidden-xs">Connexion</span>
-    <span class="visible-xs glyphicon glyphicon-user"></span>
+    <span class="hidden-xs panel-closed-component">Connexion</span>
+    <span class="visible-xs glyphicon glyphicon-user panel-closed-component"></span>
+    <span class="cross">&times;</span>
   </button>
   <div class="panel-content">
-    {{> login-form }}
+    <div class="container-fluid">
+      <div class="spacer spacer-xs"></div>
+      <img src="{{user.avatar}}" class="img-responsive img-circle pull-left">
+      <h4>{{user.firstname}} {{user.lastname}}</h4>
+      <div class="spacer spacer-sm"></div>
+    </div>
+    <ul class="nav nav-stacked">
+      <li role="presentation" class="active"><a href="#">
+        Afficher mon profil
+        <span class="pull-right">{{> chevron direction="right" thin=true }}</span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Mes médias
+        <span class="pull-right">{{> chevron direction="right" thin=true }}</span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Mes activités
+        <span class="pull-right">{{> chevron direction="right" thin=true }}</span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Mes préférences
+        <span class="pull-right">{{> chevron direction="right" thin=true }}</span>
+      </a></li>
+    </ul>
+    <div class="container-fluid">
+      {{> separator }}
+      <a href="#" class="text-sans text-clear">Me déconnecter</a>
+    </div>
   </div>
 </div>

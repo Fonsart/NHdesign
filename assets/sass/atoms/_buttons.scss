@@ -11,7 +11,10 @@
               border 0.3s;
   margin-bottom: 0.2em;
   &.btn-block {text-align: center;}
-  &:active {box-shadow: none;}
+  &:hover, &:focus,  &:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
 }
 
 .btn-primary:hover, .btn-primary:active {
@@ -25,4 +28,24 @@
 .input-group {
   .input-group-btn {vertical-align: top;}
   .btn {white-space: nowrap;}
+}
+
+.btn-clear {
+  background: $concrete;
+  border: 1px solid $gallery;
+  color: $monza;
+  transition: background 0.3s,
+              border-color 0.3s;
+  .chevron {
+    border-color: $mine-shaft;
+    margin-left: $grid-gutter-width;
+  }
+  &:hover, &:focus {
+    border-color: $nobel;
+    color: $monza;
+    .chevron {border-color: $monza;}
+  }
+  &:focus {
+    background: $gallery;
+  }
 }
