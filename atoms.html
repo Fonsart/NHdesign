@@ -117,9 +117,6 @@
                 <a href="atoms.html#cover">Cover</a>
               </li>
               <li>
-                <a href="atoms.html#facet-used">Facet Used</a>
-              </li>
-              <li>
                 <a href="atoms.html#input">Input</a>
               </li>
               <li>
@@ -201,6 +198,12 @@
               </li>
               <li>
                 <a href="molecules.html#results-navbar">Results Navbar</a>
+              </li>
+              <li>
+                <a href="molecules.html#search-field">Search Field</a>
+              </li>
+              <li>
+                <a href="molecules.html#search-field-contextualized">Search Field Contextualized</a>
               </li>
               <li>
                 <a href="molecules.html#signup-form">Signup Form</a>
@@ -429,49 +432,6 @@
 </div>
 
 
-<div class="f-item-group" id="facet-used">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Facet Used</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<h5>Introduced : 0.4.2</h5>
-<h5>Updated : -</h5>
-<h5>Usage : <code>{{&gt; facet-used }}</code></h5>
-<h5>Options :</h5>
-<ul>
-<li><strong>facet-labet</strong> - String</li>
-</ul>
-
-</div>
-<div class="f-item-preview">
-	<span class="facet-used">
-  <button class="facet-remove">&times;</button>
-  something
-</span>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;span class=&quot;facet-used&quot;&gt;
-  &lt;button class=&quot;facet-remove&quot;&gt;&amp;times;&lt;/button&gt;
-  something
-&lt;/span&gt;</code></pre>
-</div>
-
-
-</div>
-
-
 <div class="f-item-group" id="input">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -624,13 +584,24 @@
 	<h5>Introduced : 0.3.1</h5>
 <h5>Updated : -</h5>
 <h5>Usage : <code>{{&gt; label }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>text</strong> - String</li>
+<li><strong>closable</strong> - Boolean (default <code>false</code>)</li>
+</ul>
 
 </div>
 <div class="f-item-preview">
-	<span class="label label-default">Default label</span>
+	<span class="label label-default">
+  Default label
+  <button class="label-close">&times;</button>
+</span>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;span class=&quot;label label-default&quot;&gt;Default label&lt;/span&gt;</code></pre>
+	<pre><code class="language-markup">&lt;span class=&quot;label label-default&quot;&gt;
+  Default label
+  &lt;button class=&quot;label-close&quot;&gt;&amp;times;&lt;/button&gt;
+&lt;/span&gt;</code></pre>
 </div>
 
 

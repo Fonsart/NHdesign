@@ -27,10 +27,10 @@
       </div>
     
       <form id="search-form" class="navbar-form navbar-left" role="search">
+        
         <input type="text" class="form-control" placeholder="Rechercher" />
         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
       </form>
-    
       <a href="upload.html" class="btn btn-default navbar-btn navbar-right">
         <span class="hidden-xs">Ajouter un média</span>
         <span class="visible-xs glyphicon glyphicon-plus"></span>
@@ -167,33 +167,37 @@
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
       <div class="results-navbar text-sans">
-        <button id="toggle-sidebar" class="btn btn-clear btn-sm">Filtres <span class="chevron chevron-right chevron-thin"></span></button>
-        <div class="pull-right">
-          <strong class="text-clear">
-            Trier par
-          </strong>
-          <select class="form-control">
-            <option>Alphabetical</option>
-            <option>Les plus vus</option>
-            <option>Most commented</option>
-            <option>Most followed</option>
-            <option selected="selected">Most relevant</option>
-            <option>Newest</option>
-            <option>Oldest</option>
-            <option>Origin_date récent</option>
-            <option>Origin_date vieux</option>
-            <option>Recently updated</option>
-          </select>
-          <span class="vertical-separator"></span>
-          <button id="display-grid" class="btn btn-default active">
-            <i class="glyphicon glyphicon-th"></i>
-          </button>
-          <button id="display-list" class="btn btn-default">
-            <i class="glyphicon glyphicon-th-list"></i>
-          </button>
-          <button id="display-map" class="btn btn-default">
-            <i class="glyphicon glyphicon-map-marker"></i>
-          </button>
+        <div class="row">
+          <div class="col-sm-9 col-sm-push-3 text-right">
+            <strong class="text-clear">
+              Trier par
+            </strong>
+            <select class="form-control">
+              <option>Alphabetical</option>
+              <option>Les plus vus</option>
+              <option>Most commented</option>
+              <option>Most followed</option>
+              <option selected="selected">Most relevant</option>
+              <option>Newest</option>
+              <option>Oldest</option>
+              <option>Origin_date récent</option>
+              <option>Origin_date vieux</option>
+              <option>Recently updated</option>
+            </select>
+            <span class="vertical-separator"></span>
+            <button id="display-grid" class="btn btn-default active">
+              <i class="glyphicon glyphicon-th"></i>
+            </button>
+            <button id="display-list" class="btn btn-default">
+              <i class="glyphicon glyphicon-th-list"></i>
+            </button>
+            <button id="display-map" class="btn btn-default">
+              <i class="glyphicon glyphicon-map-marker"></i>
+            </button>
+          </div>
+          <div class="col-sm-3 col-sm-pull-9">
+            <button id="toggle-sidebar" class="btn btn-clear btn-sm">Filtres <span class="chevron chevron-right chevron-thin"></span></button>
+          </div>
         </div>
       </div>      <div class="row">
         <div id="sidebar" class="col-sm-3 sidebar">
@@ -266,6 +270,15 @@
                           <span class="text-clear pull-right">42</span>
                         </div>
                       </li>
+                  <li>
+                    <button class="facet-add">
+                      <span>+</span>
+                      Ajouter
+                    </button>
+                    <form class="facet-form hidden">
+                      <input type="text" class="form-control input-sm">
+                    </form>
+                  </li>
                 </ul>
               </div>    <div class="facet-group open">
                 <div class="facet-title">
@@ -302,6 +315,15 @@
                           <span class="text-clear pull-right">410</span>
                         </div>
                       </li>
+                  <li>
+                    <button class="facet-add">
+                      <span>+</span>
+                      Ajouter
+                    </button>
+                    <form class="facet-form hidden">
+                      <input type="text" class="form-control input-sm">
+                    </form>
+                  </li>
                 </ul>
               </div>    <div class="facet-group open">
                 <div class="facet-title">
@@ -356,6 +378,15 @@
                           <span class="text-clear pull-right">493</span>
                         </div>
                       </li>
+                  <li>
+                    <button class="facet-add">
+                      <span>+</span>
+                      Ajouter
+                    </button>
+                    <form class="facet-form hidden">
+                      <input type="text" class="form-control input-sm">
+                    </form>
+                  </li>
                 </ul>
               </div></div>        </div>
         <div class="col-sm-9">

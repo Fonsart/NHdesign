@@ -117,9 +117,6 @@
                 <a href="atoms.html#cover">Cover</a>
               </li>
               <li>
-                <a href="atoms.html#facet-used">Facet Used</a>
-              </li>
-              <li>
                 <a href="atoms.html#input">Input</a>
               </li>
               <li>
@@ -201,6 +198,12 @@
               </li>
               <li>
                 <a href="molecules.html#results-navbar">Results Navbar</a>
+              </li>
+              <li>
+                <a href="molecules.html#search-field">Search Field</a>
+              </li>
+              <li>
+                <a href="molecules.html#search-field-contextualized">Search Field Contextualized</a>
               </li>
               <li>
                 <a href="molecules.html#signup-form">Signup Form</a>
@@ -415,6 +418,14 @@
 					<span class="text-clear pull-right">42</span>
 				</div>
 			</li>
+			<li>
+				<button class="facet-add">
+					<span>+</span> Ajouter
+				</button>
+				<form class="facet-form hidden">
+					<input type="text" class="form-control input-sm">
+				</form>
+			</li>
 		</ul>
 	</div>
 	<div class="facet-group open">
@@ -456,6 +467,14 @@
 						<input type="checkbox" value="articles" /> Articles</label>
 					<span class="text-clear pull-right">410</span>
 				</div>
+			</li>
+			<li>
+				<button class="facet-add">
+					<span>+</span> Ajouter
+				</button>
+				<form class="facet-form hidden">
+					<input type="text" class="form-control input-sm">
+				</form>
 			</li>
 		</ul>
 	</div>
@@ -519,6 +538,14 @@
 						<input type="checkbox" value="nec tellus." /> sed</label>
 					<span class="text-clear pull-right">493</span>
 				</div>
+			</li>
+			<li>
+				<button class="facet-add">
+					<span>+</span> Ajouter
+				</button>
+				<form class="facet-form hidden">
+					<input type="text" class="form-control input-sm">
+				</form>
 			</li>
 		</ul>
 	</div>
@@ -604,6 +631,14 @@
 					&lt;span class=&quot;text-clear pull-right&quot;&gt;42&lt;/span&gt;
 				&lt;/div&gt;
 			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;button class=&quot;facet-add&quot;&gt;
+					&lt;span&gt;+&lt;/span&gt; Ajouter
+				&lt;/button&gt;
+				&lt;form class=&quot;facet-form hidden&quot;&gt;
+					&lt;input type=&quot;text&quot; class=&quot;form-control input-sm&quot;&gt;
+				&lt;/form&gt;
+			&lt;/li&gt;
 		&lt;/ul&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;facet-group open&quot;&gt;
@@ -645,6 +680,14 @@
 						&lt;input type=&quot;checkbox&quot; value=&quot;articles&quot; /&gt; Articles&lt;/label&gt;
 					&lt;span class=&quot;text-clear pull-right&quot;&gt;410&lt;/span&gt;
 				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;button class=&quot;facet-add&quot;&gt;
+					&lt;span&gt;+&lt;/span&gt; Ajouter
+				&lt;/button&gt;
+				&lt;form class=&quot;facet-form hidden&quot;&gt;
+					&lt;input type=&quot;text&quot; class=&quot;form-control input-sm&quot;&gt;
+				&lt;/form&gt;
 			&lt;/li&gt;
 		&lt;/ul&gt;
 	&lt;/div&gt;
@@ -708,6 +751,14 @@
 						&lt;input type=&quot;checkbox&quot; value=&quot;nec tellus.&quot; /&gt; sed&lt;/label&gt;
 					&lt;span class=&quot;text-clear pull-right&quot;&gt;493&lt;/span&gt;
 				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;button class=&quot;facet-add&quot;&gt;
+					&lt;span&gt;+&lt;/span&gt; Ajouter
+				&lt;/button&gt;
+				&lt;form class=&quot;facet-form hidden&quot;&gt;
+					&lt;input type=&quot;text&quot; class=&quot;form-control input-sm&quot;&gt;
+				&lt;/form&gt;
 			&lt;/li&gt;
 		&lt;/ul&gt;
 	&lt;/div&gt;
@@ -3241,10 +3292,10 @@
 	</div>
 
 	<form id="search-form" class="navbar-form navbar-left" role="search">
+
 		<input type="text" class="form-control" placeholder="Rechercher" />
 		<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 	</form>
-
 	<a href="upload.html" class="btn btn-default navbar-btn navbar-right">
 		<span class="hidden-xs">Ajouter un média</span>
 		<span class="visible-xs glyphicon glyphicon-plus"></span>
@@ -3262,10 +3313,10 @@
 	&lt;/div&gt;
 
 	&lt;form id=&quot;search-form&quot; class=&quot;navbar-form navbar-left&quot; role=&quot;search&quot;&gt;
+
 		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Rechercher&quot; /&gt;
 		&lt;span class=&quot;glyphicon glyphicon-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
 	&lt;/form&gt;
-
 	&lt;a href=&quot;upload.html&quot; class=&quot;btn btn-default navbar-btn navbar-right&quot;&gt;
 		&lt;span class=&quot;hidden-xs&quot;&gt;Ajouter un média&lt;/span&gt;
 		&lt;span class=&quot;visible-xs glyphicon glyphicon-plus&quot;&gt;&lt;/span&gt;
