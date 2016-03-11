@@ -22,6 +22,20 @@
       });
     });
 
+    $('.facet-add').click(function(){
+      $(this).addClass('hidden');
+      $(this)
+        .next()
+        .removeClass('hidden')
+        .find('.form-control')
+        .focus();
+    });
+
+    $('.facet-form').find('.form-control').focusout(function(){
+      $(this).parents('.facet-form').prev().removeClass('hidden');
+      $(this).parents('.facet-form').addClass('hidden');
+    });
+
   });
 
 }(jQuery));

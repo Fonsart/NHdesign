@@ -33,6 +33,18 @@
     padding: 0 5px;
     border: 1px solid $gallery;
   }
+
+  .btn.open .chevron {
+    transform: rotate(-135deg);
+  }
+
+  @media screen and (max-width: $screen-xs-max) {
+    [class*="col-"] {margin-bottom: 5px;}
+    select {float: left;}
+    strong.text-clear {display: none;}
+    .chevron {transform: rotate(135deg);}
+    .btn.open .chevron {transform: rotate(-45deg);}
+  }
 }
 
 .vertical-separator {

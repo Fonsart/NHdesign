@@ -29,6 +29,7 @@
       if ($('#sidebar').hasClass('open')) {
         delay = 600;
       }
+      $(this).toggleClass('open');
       $('#sidebar').toggleClass('open');
 
       setTimeout(function(){

@@ -1,14 +1,59 @@
 @charset "UTF-8";
 
-.label {
+.label, a.label {
+  position: relative;
   display: inline-block;
   padding: 0.5em 0.7em;
   font-size: $font-size-small;
+  font-family: $font-family-sans-serif;
   margin-bottom: 0.3em;
   font-weight: 500 !important;
   white-space: normal;
   text-align: left;
+  color: $monza;
+  transition: color 0.3s,
+              background 0.3s;
   &.label-default {
     border: 1px solid darken($gallery, 5%);
+  }
+  &:hover {
+    color: $carmine;
+    background: $concrete !important;
+  }
+}
+
+.label-close {
+  background: $concrete;
+  color: $nobel;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  padding: 0;
+  border: none;
+  border-radius: 13px;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 0.8em;
+  text-align: center;
+  opacity: 1;
+  transition: color 0.3s,
+              background 0.3s;
+  &:before {
+    content: '\00a0';
+    position: absolute;
+    top: 0.95em;
+    left: calc(100% - 27px);
+    right: 27px;
+    display: block;
+    height: 1px;
+    background: $monza;
+    transition: left 0.3s;
+  }
+  &:hover {
+    background: $white;
+    color: $monza;
+    &:before {
+      left: 0.5em;
+    }
   }
 }

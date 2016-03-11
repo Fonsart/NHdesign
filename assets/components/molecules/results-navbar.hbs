@@ -1,36 +1,40 @@
 ---
 notes: |
   ##### Introduced : 0.5.0
-  ##### Updated : -
+  ##### Updated : 0.5.1
   ##### Usage : `{{> results-navbar }}`
 ---
 <div class="results-navbar text-sans">
-  <button id="toggle-sidebar" class="btn btn-clear btn-sm">Filtres {{> chevron direction="right" thin=true }}</button>
-  <div class="pull-right">
-    <strong class="text-clear">
-      Trier par
-    </strong>
-    <select class="form-control">
-      <option>Alphabetical</option>
-      <option>Les plus vus</option>
-      <option>Most commented</option>
-      <option>Most followed</option>
-      <option selected="selected">Most relevant</option>
-      <option>Newest</option>
-      <option>Oldest</option>
-      <option>Origin_date récent</option>
-      <option>Origin_date vieux</option>
-      <option>Recently updated</option>
-    </select>
-    <span class="vertical-separator"></span>
-    <button id="display-grid" class="btn btn-default active">
-      <i class="glyphicon glyphicon-th"></i>
-    </button>
-    <button id="display-list" class="btn btn-default">
-      <i class="glyphicon glyphicon-th-list"></i>
-    </button>
-    <button id="display-map" class="btn btn-default">
-      <i class="glyphicon glyphicon-map-marker"></i>
-    </button>
+  <div class="row">
+    <div class="col-sm-9 col-sm-push-3 text-right">
+      <strong class="text-clear">
+        Trier par
+      </strong>
+      <select class="form-control">
+        <option>Alphabetical</option>
+        <option>Les plus vus</option>
+        <option>Most commented</option>
+        <option>Most followed</option>
+        <option selected="selected">Most relevant</option>
+        <option>Newest</option>
+        <option>Oldest</option>
+        <option>Origin_date récent</option>
+        <option>Origin_date vieux</option>
+        <option>Recently updated</option>
+      </select>
+      <span class="vertical-separator"></span>
+      <button id="display-grid" class="btn btn-default active">
+        <i class="glyphicon glyphicon-th"></i>
+      </button>
+      <button id="display-list" class="btn btn-default">
+        <i class="glyphicon glyphicon-th-list"></i>
+      </button>
+      <button id="display-map" class="btn btn-default">
+        <i class="glyphicon glyphicon-map-marker"></i>
+      </button>
+    </div>
+    <div class="col-sm-3 col-sm-pull-9">
+      <button id="toggle-sidebar" class="btn btn-clear btn-sm">Filtres {{> chevron direction="right" thin=true }}</button>
+    </div>
   </div>
 </div>

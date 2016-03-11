@@ -1,0 +1,13 @@
+---
+notes: |
+  ##### Introduced : 0.5.1
+  ##### Updated : -
+  ##### Usage : `{{> search-field }}`
+  ##### Options :
+  - **contextualized** - Boolean (default `false`)
+---
+<form id="search-form" class="navbar-form navbar-left{{#if contextualized}} navbar-form-contextualized{{/if}}" role="search">
+  {{#if contextualized}}{{> label closable=true text="Le Temps" }}{{/if}}
+  <input type="text" class="form-control" placeholder="Rechercher" />
+  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+</form>

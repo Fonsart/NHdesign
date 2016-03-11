@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+.navbar-form {
+  position: relative;
+  width: 50%;
+  margin: 4px 0;
+  padding: 0;
+  border: 1px solid $nobel !important;
+  border-radius: 50px;
+  @media screen and (max-width: $screen-md-max) {
+    width: 35%;
+  }
+  @media screen and (max-width: $screen-xs-max) {
+    display: block;
+    position: absolute;
+    top: $navbar-height;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    padding: 0 $grid-gutter-width/2;
+    overflow: hidden;
+    margin-top: 0;
+    background: $gallery;
+    border: none !important;
+    border-radius: 0;
+    z-index: 600;
+    transition: height 0.3s,
+                padding 0.3s;
+    &.open {
+      height: $navbar-height + 12px;
+      padding: 5px $grid-gutter-width/2;
+    }
+    .btn {
+      width: 20%;
+      float: right;
+      border: none;
+    }
+  }
+}
+
+.navbar-form .form-control {
+  border: none;
+  background: none;
+  box-shadow: none;
+  padding: 0px 15px;
+  padding-left: 40px;
+  width: 100%;
+  height: 38px;
+  &:focus {
+    border-color: $boulder;
+    & + .glyphicon {color: $boulder;}
+  }
+  & + .glyphicon {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    z-index: 10;
+    color: $nobel;
+    transition: color 0.3s;
+  }
+  @media screen and (max-width: $screen-xs-max) {
+    background: $white;
+    max-width: none;
+    width: 100%;
+    height: $navbar-height - 8px;
+    float: left;
+    padding: 6px;
+    padding-left: 40px;
+    margin-top: 4px;
+    border-radius: 50px;
+    & + .glyphicon {
+      left: 28px;
+      top: 22px;
+    }
+  }
+}
+
+.navbar-form-contextualized {
+  width: auto;
+  .form-control {
+    padding-left: 40px;
+    width: auto;
+    display: inline-block;
+    padding-left: 10px;
+    float: left;
+  }
+  .label {
+    height: 38px;
+    padding-left: 35px;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    line-height: 22px;
+    font-size: $font-size-base;
+    margin-bottom: 0;
+    .label-close:hover {&:before {left: 1.7em;}}
+  }
+  @media screen and (max-width: $screen-xs-max) {
+    overflow: hidden;
+    &.open {
+      height: $navbar-height + 45px;
+    }
+    .label {
+      padding-left: 10px;
+      border-radius: 2px;
+    }
+    .form-control {
+      width: 100%;
+      border-radius: 50px;
+      padding-left: 35px;
+      & + .glyphicon {
+        top: 60px;
+      }
+    }
+  }
+}

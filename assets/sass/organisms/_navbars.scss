@@ -16,76 +16,10 @@ body {
   border: none;
   font-family: $font-family-sans-serif;
   a {text-decoration: none;}
-  form {
-    position: relative;
-    width: 50%;
-    padding: 4px 0;
-  }
-  .form-control {
-    border-color: $nobel;
-    border-width: 1px;
-    border-radius: 50px;
-    box-shadow: none;
-    padding: 0px 15px;
-    padding-left: 40px;
-    width: 100%;
-    height: 38px;
-    &:focus {
-      border-color: $boulder;
-      & + .glyphicon {color: $boulder;}
-    }
-    & + .glyphicon {
-      position: absolute;
-      left: 15px;
-      top: 16px;
-      color: $nobel;
-      transition: color 0.3s;
-    }
-  }
-  @media screen and (max-width: $screen-md-max) {
-    form {width: 35%;}
-  }
   @media screen and (max-width: $screen-xs-max) {
     padding-right: 45px;
     height: $navbar-height;
     background: $white;
-    form {
-      display: block;
-      position: absolute;
-      top: $navbar-height;
-      left: $grid-gutter-width / 2;
-      width: 100%;
-      height: 0px;
-      padding: 0 $grid-gutter-width/2;
-      overflow: hidden;
-      margin-top: 0;
-      background: $gallery;
-      z-index: 600;
-      transition: height 0.3s,
-                  padding 0.3s;
-      &.open {
-        height: $navbar-height + 12px;
-        padding: 5px $grid-gutter-width/2;
-      }
-    }
-    .form-control {
-      max-width: none;
-      width: 100%;
-      height: $navbar-height - 8px;
-      float: left;
-      padding: 6px;
-      padding-left: 40px;
-      margin-top: 4px;
-      & + .glyphicon {
-        left: 28px;
-        top: 22px;
-      }
-    }
-    form .btn {
-      width: 20%;
-      float: right;
-      border: none;
-    }
     .navbar-nav {margin: 0;}
     .navbar-header {display: inline-block;}
     .navbar-right {float: right;}
