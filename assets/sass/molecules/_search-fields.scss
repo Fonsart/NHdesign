@@ -3,7 +3,10 @@
 .navbar-form {
   position: relative;
   width: 50%;
-  padding: 4px 0;
+  margin: 4px 0;
+  padding: 0;
+  border: 1px solid $nobel;
+  border-radius: 50px;
   @media screen and (max-width: $screen-md-max) {
     width: 35%;
   }
@@ -34,9 +37,8 @@
 }
 
 .navbar-form .form-control {
-  border-color: $nobel;
-  border-width: 1px;
-  border-radius: 50px;
+  border: none;
+  background: none;
   box-shadow: none;
   padding: 0px 15px;
   padding-left: 40px;
@@ -49,7 +51,8 @@
   & + .glyphicon {
     position: absolute;
     left: 15px;
-    top: 16px;
+    top: 12px;
+    z-index: 10;
     color: $nobel;
     transition: color 0.3s;
   }
@@ -65,5 +68,30 @@
       left: 28px;
       top: 22px;
     }
+  }
+}
+
+.navbar-form-contextualized {
+  width: auto;
+  .form-control {
+    padding-left: 40px;
+    width: auto;
+    display: inline-block;
+    padding-left: 10px;
+    float: left;
+  }
+  .label {
+    height: 38px;
+    padding-left: 35px;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    line-height: 22px;
+    font-size: $font-size-base;
+    margin-bottom: 0;
+    .label-close:hover {&:before {left: 1.7em;}}
   }
 }
