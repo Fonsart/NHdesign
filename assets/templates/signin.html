@@ -5,11 +5,19 @@
 {{> overlay }}
 
 <div class="container">
-{{> login-form}}
-  <div class="spacer spacer-ml"></div>
-  <button type="link" class="btn btn-primary btn-sm btn-block">Je m'inscris à notre histoire</button>
-  <div class="spacer spacer-xs"></div>
-  <div class="text-center">
-    <a href="creation-institution.html">Je suis une institution</a>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      {{> login-form}}
+      <div class="spacer spacer-sm"></div>
+      {{> separator}}
+      <div class="spacer spacer-sm"></div>
+      <div class="text-center">
+        <a href="signup-form.html" class="btn btn-primary btn-sm" role="button">Je m'inscris à notre histoire</a>  
+      </div>     
+      <div class="spacer spacer-xs"></div>
+      <div class="text-center">
+        <a href="creation-institution.html">Je suis une institution</a>
+      </div>
+    </div>
   </div>
 </div>
