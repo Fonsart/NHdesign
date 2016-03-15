@@ -7,7 +7,7 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
-      <h1>Éditer la photo</h1>
+      <h1>Éditer le média</h1>
       <div class="spacer spacer-xs"></div>
       <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg" class="img-responsive" />
 
@@ -23,7 +23,7 @@
         {{> textarea
               textarea-id="descritpion"
               textarea-label="Description"
-              textarea-help="Une petite description de la photo"
+              textarea-help="Description du média ou article"
         }}
 
         <div class="spacer spacer-sm"></div>
@@ -40,7 +40,7 @@
           <div class="checkbox">
             <label>
               <input type="checkbox">
-              M'aider à dater la photographie
+              M'aider à dater la média
             </label>
           </div>
         </div>
@@ -98,15 +98,6 @@
 
         <div class="spacer spacer-sm"></div>
 
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" />
-            Cette photo est ajoutable dans des albums
-          </label>
-        </div>
-
-
-        <div class="spacer spacer-xs"></div>
         <button type="submit" class="btn btn-primary">Sauver les changements</button> <button class="btn btn-default">Annuler</button>
       </form>
     </div>

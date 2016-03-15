@@ -1,23 +1,23 @@
 @charset "UTF-8";
 
-.profile-found {
-  margin-top: -100px;
+.profile-collection {
+  .text-clear {color: $tundora;}
   .text-justify a {
     font-weight: 400;
     color: $monza;
   }
-  img {
-    max-width: 130px;
-    border: 3px solid $white;
-    outline: 1px solid $nobel;
-  }
   .btn-readmore {
     font-weight: 400;
     margin-top: -4em;
-    background: lighten($concrete, 1%);
+    background: $white;
     padding: 0 10px;
     color: $tundora;
     font-size: $font-size-small;
     &:hover {text-decoration: none;}
+    &:hover, &:focus {
+      outline: none;
+      box-shadow: none;
+      text-decoration: none;
+    }
   }
 }

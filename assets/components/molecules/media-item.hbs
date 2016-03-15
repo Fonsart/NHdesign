@@ -27,9 +27,7 @@ notes: |
       {{/each}}<br>
     </p>
     <div class="text-clear">
-      {{mediaobject.views_count}}&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-      {{mediaobject.bookmarks_count}}&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-      {{mediaobject.comments.length}}&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+      {{mediaobject.views_count}}&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | {{mediaobject.bookmarks_count}}&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | {{mediaobject.comments.length}}&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
     </div>
     <span class="media-icon glyphicon glyphicon-{{#ifarticle mediaobject.type}}list-alt {{#ifaudio mediaobject.type}}glyphicon-headphones{{/ifaudio}}{{/ifarticle}}{{#ifvideo mediaobject.type}}film{{/ifvideo}}{{#ifphoto mediaobject.type}}picture{{/ifphoto}}"></span>
   </div>

@@ -1,0 +1,14 @@
+---
+notes: |
+  ##### Introduced : 0.5.2
+  ##### Updated : -
+  ##### Usage : `{{> label-hierarchy }}`
+  ##### Options :
+  - **parent** - String
+  - **child** - String
+  - **closable** - Boolean (default `false`)
+---
+<span class="label label-default">
+  <strong>{{#if parent}}{{ parent }}{{^}}Default parent{{/if}}</strong> &rsaquo; {{#if child}}{{ child }}{{^}}Default child{{/if}}
+  {{#if closable}}<button class="label-close">&times;</button>{{/if}}
+</span>

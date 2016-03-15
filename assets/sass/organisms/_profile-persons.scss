@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 .profile-person {
+  margin-top: -65px;
+  padding-top: 65px;
+  color: $tundora;
   img {max-width: 130px;}
   .text-justify a {
     font-weight: 400;
@@ -20,11 +23,4 @@
       text-decoration: none;
     }
   }
-}
-
-.person-bio {
-  max-height: 92px;
-  overflow: hidden;
-  transition: max-height 0.3s;
-  &.open {max-height: 2000px;}
 }

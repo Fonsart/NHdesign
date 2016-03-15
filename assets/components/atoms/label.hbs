@@ -8,6 +8,6 @@ notes: |
   - **closable** - Boolean (default `false`)
 ---
 <span class="label label-default">
-  {{#if text}}{{ text }}{{^}}Default label{{/if}}
-  <button class="label-close">&times;</button>
+  {{#if text}}{{{ text }}}{{^}}Default label{{/if}}
+  {{#if closable}}<button class="label-close">&times;</button>{{/if}}
 </span>

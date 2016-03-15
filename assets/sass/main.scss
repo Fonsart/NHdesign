@@ -10,6 +10,7 @@
 
 
 // atoms:
+@import 'atoms/label-hierarchys';
 @import 'atoms/overlays';
 @import 'atoms/chevrons';
 @import 'atoms/loaders';
@@ -28,6 +29,7 @@
 @import 'atoms/buttons';
 
 // molecules:
+@import 'molecules/progressions';
 @import 'molecules/search-fields';
 @import 'molecules/results-headings';
 @import 'molecules/results-navbars';
@@ -44,6 +46,8 @@
 @import 'molecules/login-forms';
 
 // organisms:
+@import 'organisms/profile-collections';
+@import 'organisms/profile-themes';
 @import 'organisms/maps';
 @import 'organisms/profile-founds';
 @import 'organisms/profile-persons';
@@ -56,3 +60,8 @@
 @import 'organisms/navbars';
 
 // templates:
+@import 'templates/signup-form';
+@import 'templates/creation-institution';
+@import 'templates/connexion';
+@import 'templates/collection';
+@import 'templates/theme';
