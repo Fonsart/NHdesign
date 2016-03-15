@@ -3,10 +3,11 @@
 .label, a.label {
   position: relative;
   display: inline-block;
-  padding: 0.5em 0.7em;
-  font-size: $font-size-small;
+  padding: 0.2em 0.3em;
+  font-size: ceil(($font-size-base * 0.78));
   font-family: $font-family-sans-serif;
   margin-bottom: 0.3em;
+  margin-right: 3px;
   font-weight: 500 !important;
   white-space: normal;
   text-align: left;
@@ -41,7 +42,7 @@
   &:before {
     content: '\00a0';
     position: absolute;
-    top: 0.95em;
+    top: 0.6em;
     left: calc(100% - 27px);
     right: 27px;
     display: block;

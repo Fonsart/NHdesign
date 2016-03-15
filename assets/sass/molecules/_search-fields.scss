@@ -86,6 +86,7 @@
   }
   .label {
     height: 38px;
+    padding: 0.5em 0.7em;
     padding-left: 35px;
     float: left;
     white-space: nowrap;
@@ -96,7 +97,10 @@
     line-height: 22px;
     font-size: $font-size-base;
     margin-bottom: 0;
-    .label-close:hover {&:before {left: 1.7em;}}
+    .label-close:hover {&:before {
+      left: 1.7em;
+      top: 0.95em;
+    }}
   }
   @media screen and (max-width: $screen-xs-max) {
     overflow: hidden;
