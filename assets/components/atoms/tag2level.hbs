@@ -1,0 +1,13 @@
+---
+notes: |
+  ##### Usage : `{{> tag2level }}`
+  ##### Options :
+  ##### Options :
+  - **parent** - String
+  - **child** - String
+  - **closable** - Boolean (default `false`)
+---
+<span class="label label-default">
+  <strong>{{#if parent}}{{ parent }}{{^}}Default parent{{/if}}</strong> &rsaquo; {{#if child}}{{ child }}{{^}}Default child{{/if}}
+  <button class="label-close">&times;</button>
+</span>
