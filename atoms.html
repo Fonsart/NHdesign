@@ -78,6 +78,18 @@
                 <a href="templates/basic-page.html">Basic Page</a>
               </li>
               <li>
+                <a href="templates/collection.html">Collection</a>
+              </li>
+              <li>
+                <a href="templates/creation-collection-recherche.html">Creation Collection Recherche</a>
+              </li>
+              <li>
+                <a href="templates/creation-collection.html">Creation Collection</a>
+              </li>
+              <li>
+                <a href="templates/creation-institution.html">Creation Institution</a>
+              </li>
+              <li>
                 <a href="templates/demo.html">Demo</a>
               </li>
               <li>
@@ -100,6 +112,12 @@
               </li>
               <li>
                 <a href="templates/profile-person.html">Profile Person</a>
+              </li>
+              <li>
+                <a href="templates/signin.html">Signin</a>
+              </li>
+              <li>
+                <a href="templates/signup-form.html">Signup Form</a>
               </li>
               <li>
                 <a href="templates/upload.html">Upload</a>
@@ -133,6 +151,9 @@
               </li>
               <li>
                 <a href="atoms.html#label">Label</a>
+              </li>
+              <li>
+                <a href="atoms.html#label-hierarchy">Label Hierarchy</a>
               </li>
               <li>
                 <a href="atoms.html#load-more">Load More</a>
@@ -251,6 +272,9 @@
               </li>
               <li>
                 <a href="organisms.html#panel-right">Panel Right</a>
+              </li>
+              <li>
+                <a href="organisms.html#profile-collection">Profile Collection</a>
               </li>
               <li>
                 <a href="organisms.html#profile-found">Profile Found</a>
@@ -603,13 +627,58 @@
 <div class="f-item-preview">
 	<span class="label label-default">
   Default label
-  <button class="label-close">&times;</button>
+  
 </span>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;span class=&quot;label label-default&quot;&gt;
   Default label
-  &lt;button class=&quot;label-close&quot;&gt;&amp;times;&lt;/button&gt;
+  
+&lt;/span&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="label-hierarchy">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Label Hierarchy</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.5.2</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; label-hierarchy }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>parent</strong> - String</li>
+<li><strong>child</strong> - String</li>
+<li><strong>closable</strong> - Boolean (default <code>false</code>)</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<span class="label label-default">
+  <strong>Default parent</strong> &rsaquo; Default child
+  
+</span>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;span class=&quot;label label-default&quot;&gt;
+  &lt;strong&gt;Default parent&lt;/strong&gt; &amp;rsaquo; Default child
+  
 &lt;/span&gt;</code></pre>
 </div>
 
@@ -922,13 +991,13 @@
 <div class="f-item-preview">
 	<div class="form-group">
 	<label for="email">Message</label>
-	<textarea class="form-control" id="email" rows="3">Votre message</textarea>
+	<textarea class="form-control" id="email" rows="8">Votre message</textarea>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;form-group&quot;&gt;
 	&lt;label for=&quot;email&quot;&gt;Message&lt;/label&gt;
-	&lt;textarea class=&quot;form-control&quot; id=&quot;email&quot; rows=&quot;3&quot;&gt;Votre message&lt;/textarea&gt;
+	&lt;textarea class=&quot;form-control&quot; id=&quot;email&quot; rows=&quot;8&quot;&gt;Votre message&lt;/textarea&gt;
 &lt;/div&gt;</code></pre>
 </div>
 

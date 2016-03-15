@@ -78,6 +78,18 @@
                 <a href="templates/basic-page.html">Basic Page</a>
               </li>
               <li>
+                <a href="templates/collection.html">Collection</a>
+              </li>
+              <li>
+                <a href="templates/creation-collection-recherche.html">Creation Collection Recherche</a>
+              </li>
+              <li>
+                <a href="templates/creation-collection.html">Creation Collection</a>
+              </li>
+              <li>
+                <a href="templates/creation-institution.html">Creation Institution</a>
+              </li>
+              <li>
                 <a href="templates/demo.html">Demo</a>
               </li>
               <li>
@@ -100,6 +112,12 @@
               </li>
               <li>
                 <a href="templates/profile-person.html">Profile Person</a>
+              </li>
+              <li>
+                <a href="templates/signin.html">Signin</a>
+              </li>
+              <li>
+                <a href="templates/signup-form.html">Signup Form</a>
               </li>
               <li>
                 <a href="templates/upload.html">Upload</a>
@@ -133,6 +151,9 @@
               </li>
               <li>
                 <a href="atoms.html#label">Label</a>
+              </li>
+              <li>
+                <a href="atoms.html#label-hierarchy">Label Hierarchy</a>
               </li>
               <li>
                 <a href="atoms.html#load-more">Load More</a>
@@ -251,6 +272,9 @@
               </li>
               <li>
                 <a href="organisms.html#panel-right">Panel Right</a>
+              </li>
+              <li>
+                <a href="organisms.html#profile-collection">Profile Collection</a>
               </li>
               <li>
                 <a href="organisms.html#profile-found">Profile Found</a>
@@ -1841,7 +1865,7 @@
     </h5>
 	</div>
 	<div class="group-counter">
-		<h6>Groupe</h6>
+		<h6>Thème</h6>
 		<small><i class="glyphicon glyphicon-user"></i></small>&thinsp;
 		<small><i class="glyphicon glyphicon-file"></i></small>&thinsp;
 	</div>
@@ -1863,7 +1887,7 @@
     &lt;/h5&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;group-counter&quot;&gt;
-		&lt;h6&gt;Groupe&lt;/h6&gt;
+		&lt;h6&gt;Thème&lt;/h6&gt;
 		&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt;&lt;/small&gt;&amp;thinsp;
 		&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-file&quot;&gt;&lt;/i&gt;&lt;/small&gt;&amp;thinsp;
 	&lt;/div&gt;
@@ -1981,11 +2005,11 @@
 
 </div>
 <div class="f-item-preview">
-	<div class="media-features-bar">
+	<div class="media-features-bar bg-concrete">
 	<div class="row">
 		<div class="col-sm-4">
-			<button class="btn btn-link">
-				<i class="glyphicon glyphicon-share-alt"></i> Partager
+			<button class="btn btn-link active">
+				<span class="text-danger">Suivre</span>&nbsp;&nbsp;<i class="glyphicon glyphicon-heart"></i>
 			</button>
 			<a href="#" class="btn btn-link">
 				<i class="glyphicon glyphicon-comment"></i> Commenter (4)
@@ -1997,11 +2021,11 @@
 			</a>
 		</div>
 		<div class="col-sm-4 text-right">
-			<span class="media-features-bar-infos">
-        220 vues&nbsp;&nbsp;<i class="glyphicon glyphicon-eye-open"></i>
-      </span>
-			<button class="btn btn-link active">
-				<i class="glyphicon glyphicon-heart"></i>
+			<button class="btn btn-link">
+				<i class="glyphicon glyphicon-share-alt"></i> Partager
+			</button>
+			<button class="btn btn-link">
+				<i class="glyphicon glyphicon-plus"></i> Ajouter
 			</button>
 			<button class="btn btn-link">
 				<i class="glyphicon glyphicon-alert"></i>
@@ -2011,11 +2035,11 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;media-features-bar&quot;&gt;
+	<pre><code class="language-markup">&lt;div class=&quot;media-features-bar bg-concrete&quot;&gt;
 	&lt;div class=&quot;row&quot;&gt;
 		&lt;div class=&quot;col-sm-4&quot;&gt;
-			&lt;button class=&quot;btn btn-link&quot;&gt;
-				&lt;i class=&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/i&gt; Partager
+			&lt;button class=&quot;btn btn-link active&quot;&gt;
+				&lt;span class=&quot;text-danger&quot;&gt;Suivre&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;
 			&lt;/button&gt;
 			&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;
 				&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt; Commenter (4)
@@ -2027,11 +2051,11 @@
 			&lt;/a&gt;
 		&lt;/div&gt;
 		&lt;div class=&quot;col-sm-4 text-right&quot;&gt;
-			&lt;span class=&quot;media-features-bar-infos&quot;&gt;
-        220 vues&amp;nbsp;&amp;nbsp;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;
-      &lt;/span&gt;
-			&lt;button class=&quot;btn btn-link active&quot;&gt;
-				&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;
+			&lt;button class=&quot;btn btn-link&quot;&gt;
+				&lt;i class=&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/i&gt; Partager
+			&lt;/button&gt;
+			&lt;button class=&quot;btn btn-link&quot;&gt;
+				&lt;i class=&quot;glyphicon glyphicon-plus&quot;&gt;&lt;/i&gt; Ajouter
 			&lt;/button&gt;
 			&lt;button class=&quot;btn btn-link&quot;&gt;
 				&lt;i class=&quot;glyphicon glyphicon-alert&quot;&gt;&lt;/i&gt;
@@ -2079,6 +2103,13 @@
 		<a href="http://maps.google.com/">Voir sur la carte</a>
 	</p>
 
+	<h5>Popularité</h5>
+	<p>
+		<i class="glyphicon glyphicon-eye-open"></i> 220 vues
+		<br>
+		<i class="glyphicon glyphicon-heart text-danger"></i> 40 suivent
+	</p>
+
 	<h5>Auteur</h5>
 	<p>
 		<a href="#">Suzanne Ogay</a>
@@ -2113,18 +2144,18 @@
 	<a href="#" class="label label-default">montreux</a>
 	<a href="#" class="label label-default">narcisses</a>
 
-	<h5>Groupes</h5>
+	<h5>Thèmes</h5>
 	<div class="spacer spacer-xs"></div>
 	<a href="#" class="label label-default">Montreux</a>
 	<a href="#" class="label label-default">Paysages romands</a>
 	<a href="#" class="label label-default">La nature complice</a>
 	<a href="#" class="label label-default">Fête des Narcisses de Montreux</a>
-	<h5>Albums</h5>
+	<h5>Collections</h5>
 	<div class="spacer spacer-xs"></div>
-	<a href="#" class="label label-default">Groupe 0 &rsaquo; Les Avants</a>
-	<a href="#" class="label label-default">Groupe 1 &rsaquo; Ma famille maternelle</a>
-	<a href="#" class="label label-default">Groupe 2 &rsaquo; Le Narcisse “La Fleur” et tout autour</a>
-	<a href="#" class="label label-default">Groupe 3 &rsaquo; Les fleurs</a>
+	<a href="#" class="label label-default"><strong>Thème 0</strong> &rsaquo; Les Avants</a>
+	<a href="#" class="label label-default"><strong>Thème 1</strong> &rsaquo; Ma famille maternelle</a>
+	<a href="#" class="label label-default"><strong>Thème 2</strong> &rsaquo; Le Narcisse “La Fleur” et tout autour</a>
+	<a href="#" class="label label-default"><strong>Thème 3</strong> &rsaquo; Les fleurs</a>
 
 </div>
 </div>
@@ -2138,6 +2169,13 @@
 		Route des Narcisses, 1833 Les Avants s/Montreux, Zwitserland
 		&lt;br&gt;
 		&lt;a href=&quot;http://maps.google.com/&quot;&gt;Voir sur la carte&lt;/a&gt;
+	&lt;/p&gt;
+
+	&lt;h5&gt;Popularité&lt;/h5&gt;
+	&lt;p&gt;
+		&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt; 220 vues
+		&lt;br&gt;
+		&lt;i class=&quot;glyphicon glyphicon-heart text-danger&quot;&gt;&lt;/i&gt; 40 suivent
 	&lt;/p&gt;
 
 	&lt;h5&gt;Auteur&lt;/h5&gt;
@@ -2174,18 +2212,18 @@
 	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;montreux&lt;/a&gt;
 	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;narcisses&lt;/a&gt;
 
-	&lt;h5&gt;Groupes&lt;/h5&gt;
+	&lt;h5&gt;Thèmes&lt;/h5&gt;
 	&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
 	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Montreux&lt;/a&gt;
 	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Paysages romands&lt;/a&gt;
 	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;La nature complice&lt;/a&gt;
 	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Fête des Narcisses de Montreux&lt;/a&gt;
-	&lt;h5&gt;Albums&lt;/h5&gt;
+	&lt;h5&gt;Collections&lt;/h5&gt;
 	&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
-	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Groupe 0 &amp;rsaquo; Les Avants&lt;/a&gt;
-	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Groupe 1 &amp;rsaquo; Ma famille maternelle&lt;/a&gt;
-	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Groupe 2 &amp;rsaquo; Le Narcisse “La Fleur” et tout autour&lt;/a&gt;
-	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Groupe 3 &amp;rsaquo; Les fleurs&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;&lt;strong&gt;Thème 0&lt;/strong&gt; &amp;rsaquo; Les Avants&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;&lt;strong&gt;Thème 1&lt;/strong&gt; &amp;rsaquo; Ma famille maternelle&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;&lt;strong&gt;Thème 2&lt;/strong&gt; &amp;rsaquo; Le Narcisse “La Fleur” et tout autour&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;&lt;strong&gt;Thème 3&lt;/strong&gt; &amp;rsaquo; Les fleurs&lt;/a&gt;
 
 &lt;/div&gt;</code></pre>
 </div>
@@ -2235,9 +2273,7 @@
 			<br>
 		</p>
 		<div class="text-clear">
-			&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | &thinsp;
-			<small><i class="glyphicon glyphicon-star"></i></small> | &thinsp;
-			<small><i class="glyphicon glyphicon-comment"></i></small>
+			&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | &thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | &thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 		</div>
 		<span class="media-icon glyphicon glyphicon-"></span>
 	</div>
@@ -2258,9 +2294,7 @@
 			&lt;br&gt;
 		&lt;/p&gt;
 		&lt;div class=&quot;text-clear&quot;&gt;
-			&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | &amp;thinsp;
-			&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | &amp;thinsp;
-			&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+			&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | &amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | &amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 		&lt;/div&gt;
 		&lt;span class=&quot;media-icon glyphicon glyphicon-&quot;&gt;&lt;/span&gt;
 	&lt;/div&gt;
@@ -2363,6 +2397,9 @@
       chien
       <button class="label-close">&times;</button>
     </span> <span class="label label-default">
+      <strong>Vie quotidienne</strong> &rsaquo; Transport
+      <button class="label-close">&times;</button>
+    </span> <span class="label label-default">
       arc-en-ciel
       <button class="label-close">&times;</button>
     </span> <span class="label label-default">
@@ -2386,6 +2423,9 @@
       &lt;button class=&quot;label-close&quot;&gt;&amp;times;&lt;/button&gt;
     &lt;/span&gt; &lt;span class=&quot;label label-default&quot;&gt;
       chien
+      &lt;button class=&quot;label-close&quot;&gt;&amp;times;&lt;/button&gt;
+    &lt;/span&gt; &lt;span class=&quot;label label-default&quot;&gt;
+      &lt;strong&gt;Vie quotidienne&lt;/strong&gt; &amp;rsaquo; Transport
       &lt;button class=&quot;label-close&quot;&gt;&amp;times;&lt;/button&gt;
     &lt;/span&gt; &lt;span class=&quot;label label-default&quot;&gt;
       arc-en-ciel
@@ -2431,16 +2471,13 @@
         Trier par
       </strong>
 			<select class="form-control">
-				<option>Alphabetical</option>
-				<option>Les plus vus</option>
-				<option>Most commented</option>
-				<option>Most followed</option>
-				<option selected="selected">Most relevant</option>
-				<option>Newest</option>
-				<option>Oldest</option>
-				<option>Origin_date récent</option>
-				<option>Origin_date vieux</option>
-				<option>Recently updated</option>
+				<option>Popularité</option>
+				<option>Date de publication (nouveautés)</option>
+				<option>Date de publication (le plus ancien)</option>
+				<option selected="selected">Pertinence</option>
+				<option>Date d'origine (le plus récent)</option>
+				<option>Date d'orginie (le plus ancien)</option>
+				<option>Récemment mis à jour</option>
 			</select>
 			<span class="vertical-separator"></span>
 			<button id="display-grid" class="btn btn-default active">
@@ -2467,16 +2504,13 @@
         Trier par
       &lt;/strong&gt;
 			&lt;select class=&quot;form-control&quot;&gt;
-				&lt;option&gt;Alphabetical&lt;/option&gt;
-				&lt;option&gt;Les plus vus&lt;/option&gt;
-				&lt;option&gt;Most commented&lt;/option&gt;
-				&lt;option&gt;Most followed&lt;/option&gt;
-				&lt;option selected=&quot;selected&quot;&gt;Most relevant&lt;/option&gt;
-				&lt;option&gt;Newest&lt;/option&gt;
-				&lt;option&gt;Oldest&lt;/option&gt;
-				&lt;option&gt;Origin_date récent&lt;/option&gt;
-				&lt;option&gt;Origin_date vieux&lt;/option&gt;
-				&lt;option&gt;Recently updated&lt;/option&gt;
+				&lt;option&gt;Popularité&lt;/option&gt;
+				&lt;option&gt;Date de publication (nouveautés)&lt;/option&gt;
+				&lt;option&gt;Date de publication (le plus ancien)&lt;/option&gt;
+				&lt;option selected=&quot;selected&quot;&gt;Pertinence&lt;/option&gt;
+				&lt;option&gt;Date d&#x27;origine (le plus récent)&lt;/option&gt;
+				&lt;option&gt;Date d&#x27;orginie (le plus ancien)&lt;/option&gt;
+				&lt;option&gt;Récemment mis à jour&lt;/option&gt;
 			&lt;/select&gt;
 			&lt;span class=&quot;vertical-separator&quot;&gt;&lt;/span&gt;
 			&lt;button id=&quot;display-grid&quot; class=&quot;btn btn-default active&quot;&gt;
@@ -2619,8 +2653,8 @@
 <div class="spacer spacer-xs"></div>
 <form>
 	<div class="form-group">
-		<label for="nom">Nom Prénom</label>
-		<input type="text" class="form-control" id="nom" placeholder="Nom Prénom" value="" />
+		<label for="nom">Nom et Prénom</label>
+		<input type="text" class="form-control" id="nom" placeholder="Nom et Prénom" value="" />
 		<p class="help-block">À qui avons-nous l&#x27;honneur ?</p>
 	</div>
 	<div class="form-group">
@@ -2675,10 +2709,10 @@
 	</div>
 	<div class="form-group">
 		<label for="message">Des commentaires à chaud ?</label>
-		<textarea class="form-control" id="message" rows="3">Ne soyez pas timide, nous sommes tout ouïe.</textarea>
+		<textarea class="form-control" id="message" rows="8">Ne soyez pas timide, nous sommes tout ouïe.</textarea>
 	</div>
 	<div class="spacer spacer-xs"></div>
-	<button type="submit" class="btn btn-primary btn-block">Je m'inscris</button>
+	<a href="profile-edit.html" class="btn btn-primary btn-block" role="button">Je m'inscris</a>
 </form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -2686,8 +2720,8 @@
 &lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
 &lt;form&gt;
 	&lt;div class=&quot;form-group&quot;&gt;
-		&lt;label for=&quot;nom&quot;&gt;Nom Prénom&lt;/label&gt;
-		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;nom&quot; placeholder=&quot;Nom Prénom&quot; value=&quot;&quot; /&gt;
+		&lt;label for=&quot;nom&quot;&gt;Nom et Prénom&lt;/label&gt;
+		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;nom&quot; placeholder=&quot;Nom et Prénom&quot; value=&quot;&quot; /&gt;
 		&lt;p class=&quot;help-block&quot;&gt;À qui avons-nous l&amp;#x27;honneur ?&lt;/p&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;form-group&quot;&gt;
@@ -2742,10 +2776,10 @@
 	&lt;/div&gt;
 	&lt;div class=&quot;form-group&quot;&gt;
 		&lt;label for=&quot;message&quot;&gt;Des commentaires à chaud ?&lt;/label&gt;
-		&lt;textarea class=&quot;form-control&quot; id=&quot;message&quot; rows=&quot;3&quot;&gt;Ne soyez pas timide, nous sommes tout ouïe.&lt;/textarea&gt;
+		&lt;textarea class=&quot;form-control&quot; id=&quot;message&quot; rows=&quot;8&quot;&gt;Ne soyez pas timide, nous sommes tout ouïe.&lt;/textarea&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
-	&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary btn-block&quot;&gt;Je m&#x27;inscris&lt;/button&gt;
+	&lt;a href=&quot;profile-edit.html&quot; class=&quot;btn btn-primary btn-block&quot; role=&quot;button&quot;&gt;Je m&#x27;inscris&lt;/a&gt;
 &lt;/form&gt;</code></pre>
 </div>
 
@@ -2778,13 +2812,13 @@
 <div class="f-item-preview">
 	<form class="uploader" action="metadata.html" method="get" enctype="multipart/form-data">
 	<input type="file" name="files[]" id="filer_input" multiple="multiple" />
-	<input type="submit" class="btn btn-primary" value="Suivant" />
+	<input type="submit" class="btn btn-primary pull-right" value="Suivant" />
 </form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;form class=&quot;uploader&quot; action=&quot;metadata.html&quot; method=&quot;get&quot; enctype=&quot;multipart/form-data&quot;&gt;
 	&lt;input type=&quot;file&quot; name=&quot;files[]&quot; id=&quot;filer_input&quot; multiple=&quot;multiple&quot; /&gt;
-	&lt;input type=&quot;submit&quot; class=&quot;btn btn-primary&quot; value=&quot;Suivant&quot; /&gt;
+	&lt;input type=&quot;submit&quot; class=&quot;btn btn-primary pull-right&quot; value=&quot;Suivant&quot; /&gt;
 &lt;/form&gt;</code></pre>
 </div>
 

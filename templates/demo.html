@@ -65,6 +65,10 @@
         Contact
         <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
       </a></li>
+      <li role="presentation"><a href="#">
+        Partenaires
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
     </ul>
     <div class="container-fluid">
       <hr />      <h3>
@@ -126,6 +130,9 @@
       </a></li>
     </ul>
     <div class="container-fluid">
+      <hr />      <p>
+        <a href="creation-collection.html" class="btn btn-default btn-sm btn-block" role="button">Créer une collection</a>
+      </p>
       <hr />      <a href="#" class="text-sans text-clear">Me déconnecter</a>
     </div>
   </div>
@@ -150,6 +157,9 @@
         chien
         <button class="label-close">&times;</button>
       </span>    <span class="label label-default">
+        <strong>Vie quotidienne</strong> &rsaquo; Transport
+        <button class="label-close">&times;</button>
+      </span>    <span class="label label-default">
         arc-en-ciel
         <button class="label-close">&times;</button>
       </span>    <span class="label label-default">
@@ -163,16 +173,13 @@
           Trier par
         </strong>
         <select class="form-control">
-          <option>Alphabetical</option>
-          <option>Les plus vus</option>
-          <option>Most commented</option>
-          <option>Most followed</option>
-          <option selected="selected">Most relevant</option>
-          <option>Newest</option>
-          <option>Oldest</option>
-          <option>Origin_date récent</option>
-          <option>Origin_date vieux</option>
-          <option>Recently updated</option>
+          <option>Popularité</option>
+          <option>Date de publication (nouveautés)</option>
+          <option>Date de publication (le plus ancien)</option>
+          <option selected="selected">Pertinence</option>
+          <option>Date d'origine (le plus récent)</option>
+          <option>Date d'orginie (le plus ancien)</option>
+          <option>Récemment mis à jour</option>
         </select>
         <span class="vertical-separator"></span>
         <button id="display-grid" class="btn btn-default active">
@@ -378,7 +385,9 @@
                 </form>
               </li>
             </ul>
-          </div></div>    </div>
+          </div>  <a href="creation-collection-recherche.html" class="btn btn-primary btn-sm">Enregistrer la recherche</a>
+        <p><small class="text-clear text-sans"><em>Il vous est possible d'enregistrer cette recherche et d'en faire une collection.</em></small></p>
+      </div>    </div>
     <div class="col-sm-9">
       <div id="media-container" class="media-grid">
             <div class="media-item" data-w="3072" data-h="2304">
@@ -394,9 +403,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  18&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  18&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -417,9 +424,7 @@
                   <br>
                 </p>
                 <div class="text-clear">
-                  37&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  37&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -440,9 +445,7 @@
                   <br>
                 </p>
                 <div class="text-clear">
-                  43&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  43&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -459,9 +462,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  41&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  41&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -476,7 +477,7 @@
                 </h5>
               </div>
               <div class="group-counter">
-                <h6>Groupe</h6>
+                <h6>Thème</h6>
                 <small><i class="glyphicon glyphicon-user"></i></small>&thinsp;34
                 <small><i class="glyphicon glyphicon-file"></i></small>&thinsp;183
               </div>
@@ -496,9 +497,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  78&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  78&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -515,9 +514,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  144&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  1&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  144&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 1&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -533,9 +530,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  62&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  62&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-list-alt "></span>
               </div>
@@ -553,9 +548,7 @@
                   <br>
                 </p>
                 <div class="text-clear">
-                  40&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  40&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -575,9 +568,7 @@
                   <br>
                 </p>
                 <div class="text-clear">
-                  101&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  101&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-list-alt glyphicon-headphones"></span>
               </div>
@@ -594,9 +585,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  27&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  27&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-film"></span>
               </div>
@@ -613,9 +602,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  45&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  45&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -632,9 +619,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  36&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  36&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -651,9 +636,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  43&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  43&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -670,9 +653,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  16&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  16&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -689,9 +670,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  51&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  51&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -708,9 +687,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  37&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  37&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -727,9 +704,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  24&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  24&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -746,9 +721,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  23&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  23&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>
@@ -765,9 +738,7 @@
             <br>
                 </p>
                 <div class="text-clear">
-                  156&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-star"></i></small> |
-                  0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+                  156&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
                 </div>
                 <span class="media-icon glyphicon glyphicon-picture"></span>
               </div>

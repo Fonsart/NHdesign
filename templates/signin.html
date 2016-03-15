@@ -138,13 +138,40 @@
   </div>
 </div><div id="overlay" class="overlay"></div>
 <div class="container">
-  <h1>Ajouter un média</h1>
-  <h3>Téléverser un fichier (photo, vidéo, son) ou <a href="metadata.html">rédiger un article</a></h3>
-  <div class="spacer spacer-sm"></div>
-  <form class="uploader" action="metadata.html" method="get" enctype="multipart/form-data">
-    <input type="file" name="files[]" id="filer_input" multiple="multiple" />
-    <input type="submit" class="btn btn-primary pull-right" value="Suivant" />
-  </form>  <div class="spacer spacer-md"></div>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h3 class="text-center">Connexion</h3>
+      <div class="spacer spacer-xs"></div>
+      <form>
+        <div class="form-group">
+          <label for="email">Adresse email</label>
+          <input type="email" class="form-control" id="email" placeholder="Adresse email" value="" />
+          <p class="help-block">C&#x27;est le moment où vous rentrez votre adresse email</p>
+        </div>  <div class="form-group">
+          <label for="password">Votre mot de passe</label>
+          <input type="password" class="form-control" id="password" placeholder="Votre mot de passe" value="" />
+          <p class="help-block">N&#x27;aillez crainte, je détourne le regard.</p>
+        </div>  <div class="checkbox">
+          <label>
+            <input type="checkbox" /> Resté connecté
+          </label>
+        </div>  <div class="spacer spacer-xs"></div>
+        <button type="submit" class="btn btn-primary btn-block">Je me connecte</button>
+      </form>
+      <div class="spacer spacer-sm"></div>
+      <div class="text-center">
+        <a href="#">J'ai oublié mon mot de passe</a>
+      </div>      <div class="spacer spacer-sm"></div>
+      <hr />      <div class="spacer spacer-sm"></div>
+      <div class="text-center">
+        <a href="signup-form.html" class="btn btn-primary btn-sm" role="button">Je m'inscris à notre histoire</a>  
+      </div>     
+      <div class="spacer spacer-xs"></div>
+      <div class="text-center">
+        <a href="creation-institution.html">Je suis une institution</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 

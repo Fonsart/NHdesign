@@ -78,6 +78,18 @@
                 <a href="templates/basic-page.html">Basic Page</a>
               </li>
               <li>
+                <a href="templates/collection.html">Collection</a>
+              </li>
+              <li>
+                <a href="templates/creation-collection-recherche.html">Creation Collection Recherche</a>
+              </li>
+              <li>
+                <a href="templates/creation-collection.html">Creation Collection</a>
+              </li>
+              <li>
+                <a href="templates/creation-institution.html">Creation Institution</a>
+              </li>
+              <li>
                 <a href="templates/demo.html">Demo</a>
               </li>
               <li>
@@ -100,6 +112,12 @@
               </li>
               <li>
                 <a href="templates/profile-person.html">Profile Person</a>
+              </li>
+              <li>
+                <a href="templates/signin.html">Signin</a>
+              </li>
+              <li>
+                <a href="templates/signup-form.html">Signup Form</a>
               </li>
               <li>
                 <a href="templates/upload.html">Upload</a>
@@ -133,6 +151,9 @@
               </li>
               <li>
                 <a href="atoms.html#label">Label</a>
+              </li>
+              <li>
+                <a href="atoms.html#label-hierarchy">Label Hierarchy</a>
               </li>
               <li>
                 <a href="atoms.html#load-more">Load More</a>
@@ -251,6 +272,9 @@
               </li>
               <li>
                 <a href="organisms.html#panel-right">Panel Right</a>
+              </li>
+              <li>
+                <a href="organisms.html#profile-collection">Profile Collection</a>
               </li>
               <li>
                 <a href="organisms.html#profile-found">Profile Found</a>
@@ -557,7 +581,8 @@
 				</form>
 			</li>
 		</ul>
-	</div>
+	</div> <a href="creation-collection-recherche.html" class="btn btn-primary btn-sm">Enregistrer la recherche</a>
+	<p><small class="text-clear text-sans"><em>Il vous est possible d'enregistrer cette recherche et d'en faire une collection.</em></small></p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
@@ -770,7 +795,8 @@
 				&lt;/form&gt;
 			&lt;/li&gt;
 		&lt;/ul&gt;
-	&lt;/div&gt;
+	&lt;/div&gt; &lt;a href=&quot;creation-collection-recherche.html&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Enregistrer la recherche&lt;/a&gt;
+	&lt;p&gt;&lt;small class=&quot;text-clear text-sans&quot;&gt;&lt;em&gt;Il vous est possible d&#x27;enregistrer cette recherche et d&#x27;en faire une collection.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -1132,11 +1158,11 @@
 		<div class="col-sm-10 col-sm-offset-1">
 			<div class="spacer spacer-sm"></div>
 			<img src="http://notrehistoire.ch.s3.amazonaws.com/photos/2012/07/d0bc77c0a598c534.jpeg" alt="Le bonheur parmi les narcisses!" class="img-responsive" />
-			<div class="media-features-bar">
+			<div class="media-features-bar bg-concrete">
 				<div class="row">
 					<div class="col-sm-4">
-						<button class="btn btn-link">
-							<i class="glyphicon glyphicon-share-alt"></i> Partager
+						<button class="btn btn-link active">
+							<span class="text-danger">Suivre</span>&nbsp;&nbsp;<i class="glyphicon glyphicon-heart"></i>
 						</button>
 						<a href="#" class="btn btn-link">
 							<i class="glyphicon glyphicon-comment"></i> Commenter (4)
@@ -1148,11 +1174,11 @@
 						</a>
 					</div>
 					<div class="col-sm-4 text-right">
-						<span class="media-features-bar-infos">
-              220 vues&nbsp;&nbsp;<i class="glyphicon glyphicon-eye-open"></i>
-            </span>
-						<button class="btn btn-link active">
-							<i class="glyphicon glyphicon-heart"></i>
+						<button class="btn btn-link">
+							<i class="glyphicon glyphicon-share-alt"></i> Partager
+						</button>
+						<button class="btn btn-link">
+							<i class="glyphicon glyphicon-plus"></i> Ajouter
 						</button>
 						<button class="btn btn-link">
 							<i class="glyphicon glyphicon-alert"></i>
@@ -1184,6 +1210,13 @@
 					Route des Narcisses, 1833 Les Avants s/Montreux, Zwitserland
 					<br>
 					<a href="http://maps.google.com/">Voir sur la carte</a>
+				</p>
+
+				<h5>Popularité</h5>
+				<p>
+					<i class="glyphicon glyphicon-eye-open"></i> 220 vues
+					<br>
+					<i class="glyphicon glyphicon-heart text-danger"></i> 40 suivent
 				</p>
 
 				<h5>Auteur</h5>
@@ -1220,18 +1253,18 @@
 				<a href="#" class="label label-default">montreux</a>
 				<a href="#" class="label label-default">narcisses</a>
 
-				<h5>Groupes</h5>
+				<h5>Thèmes</h5>
 				<div class="spacer spacer-xs"></div>
 				<a href="#" class="label label-default">Montreux</a>
 				<a href="#" class="label label-default">Paysages romands</a>
 				<a href="#" class="label label-default">La nature complice</a>
 				<a href="#" class="label label-default">Fête des Narcisses de Montreux</a>
-				<h5>Albums</h5>
+				<h5>Collections</h5>
 				<div class="spacer spacer-xs"></div>
-				<a href="#" class="label label-default">Groupe 0 &rsaquo; Les Avants</a>
-				<a href="#" class="label label-default">Groupe 1 &rsaquo; Ma famille maternelle</a>
-				<a href="#" class="label label-default">Groupe 2 &rsaquo; Le Narcisse “La Fleur” et tout autour</a>
-				<a href="#" class="label label-default">Groupe 3 &rsaquo; Les fleurs</a>
+				<a href="#" class="label label-default"><strong>Thème 0</strong> &rsaquo; Les Avants</a>
+				<a href="#" class="label label-default"><strong>Thème 1</strong> &rsaquo; Ma famille maternelle</a>
+				<a href="#" class="label label-default"><strong>Thème 2</strong> &rsaquo; Le Narcisse “La Fleur” et tout autour</a>
+				<a href="#" class="label label-default"><strong>Thème 3</strong> &rsaquo; Les fleurs</a>
 
 			</div>
 		</div>
@@ -1288,7 +1321,7 @@
 				<h4>Ajouter un commentaire</h4>
 				<div class="form-group">
 					<label for="comment">Commencez à taper ici...</label>
-					<textarea class="form-control" id="comment" rows="3"> </textarea>
+					<textarea class="form-control" id="comment" rows="8"> </textarea>
 				</div>
 				<div class="spacer spacer-xs"></div>
 				<a href="#" class="btn btn-primary pull-right">Commenter</a>
@@ -1307,11 +1340,11 @@
 		&lt;div class=&quot;col-sm-10 col-sm-offset-1&quot;&gt;
 			&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
 			&lt;img src=&quot;http://notrehistoire.ch.s3.amazonaws.com/photos/2012/07/d0bc77c0a598c534.jpeg&quot; alt=&quot;Le bonheur parmi les narcisses!&quot; class=&quot;img-responsive&quot; /&gt;
-			&lt;div class=&quot;media-features-bar&quot;&gt;
+			&lt;div class=&quot;media-features-bar bg-concrete&quot;&gt;
 				&lt;div class=&quot;row&quot;&gt;
 					&lt;div class=&quot;col-sm-4&quot;&gt;
-						&lt;button class=&quot;btn btn-link&quot;&gt;
-							&lt;i class=&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/i&gt; Partager
+						&lt;button class=&quot;btn btn-link active&quot;&gt;
+							&lt;span class=&quot;text-danger&quot;&gt;Suivre&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;
 						&lt;/button&gt;
 						&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;
 							&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt; Commenter (4)
@@ -1323,11 +1356,11 @@
 						&lt;/a&gt;
 					&lt;/div&gt;
 					&lt;div class=&quot;col-sm-4 text-right&quot;&gt;
-						&lt;span class=&quot;media-features-bar-infos&quot;&gt;
-              220 vues&amp;nbsp;&amp;nbsp;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;
-            &lt;/span&gt;
-						&lt;button class=&quot;btn btn-link active&quot;&gt;
-							&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;
+						&lt;button class=&quot;btn btn-link&quot;&gt;
+							&lt;i class=&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/i&gt; Partager
+						&lt;/button&gt;
+						&lt;button class=&quot;btn btn-link&quot;&gt;
+							&lt;i class=&quot;glyphicon glyphicon-plus&quot;&gt;&lt;/i&gt; Ajouter
 						&lt;/button&gt;
 						&lt;button class=&quot;btn btn-link&quot;&gt;
 							&lt;i class=&quot;glyphicon glyphicon-alert&quot;&gt;&lt;/i&gt;
@@ -1359,6 +1392,13 @@
 					Route des Narcisses, 1833 Les Avants s/Montreux, Zwitserland
 					&lt;br&gt;
 					&lt;a href=&quot;http://maps.google.com/&quot;&gt;Voir sur la carte&lt;/a&gt;
+				&lt;/p&gt;
+
+				&lt;h5&gt;Popularité&lt;/h5&gt;
+				&lt;p&gt;
+					&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt; 220 vues
+					&lt;br&gt;
+					&lt;i class=&quot;glyphicon glyphicon-heart text-danger&quot;&gt;&lt;/i&gt; 40 suivent
 				&lt;/p&gt;
 
 				&lt;h5&gt;Auteur&lt;/h5&gt;
@@ -1395,18 +1435,18 @@
 				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;montreux&lt;/a&gt;
 				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;narcisses&lt;/a&gt;
 
-				&lt;h5&gt;Groupes&lt;/h5&gt;
+				&lt;h5&gt;Thèmes&lt;/h5&gt;
 				&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
 				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Montreux&lt;/a&gt;
 				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Paysages romands&lt;/a&gt;
 				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;La nature complice&lt;/a&gt;
 				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Fête des Narcisses de Montreux&lt;/a&gt;
-				&lt;h5&gt;Albums&lt;/h5&gt;
+				&lt;h5&gt;Collections&lt;/h5&gt;
 				&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
-				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Groupe 0 &amp;rsaquo; Les Avants&lt;/a&gt;
-				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Groupe 1 &amp;rsaquo; Ma famille maternelle&lt;/a&gt;
-				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Groupe 2 &amp;rsaquo; Le Narcisse “La Fleur” et tout autour&lt;/a&gt;
-				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;Groupe 3 &amp;rsaquo; Les fleurs&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;&lt;strong&gt;Thème 0&lt;/strong&gt; &amp;rsaquo; Les Avants&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;&lt;strong&gt;Thème 1&lt;/strong&gt; &amp;rsaquo; Ma famille maternelle&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;&lt;strong&gt;Thème 2&lt;/strong&gt; &amp;rsaquo; Le Narcisse “La Fleur” et tout autour&lt;/a&gt;
+				&lt;a href=&quot;#&quot; class=&quot;label label-default&quot;&gt;&lt;strong&gt;Thème 3&lt;/strong&gt; &amp;rsaquo; Les fleurs&lt;/a&gt;
 
 			&lt;/div&gt;
 		&lt;/div&gt;
@@ -1463,7 +1503,7 @@
 				&lt;h4&gt;Ajouter un commentaire&lt;/h4&gt;
 				&lt;div class=&quot;form-group&quot;&gt;
 					&lt;label for=&quot;comment&quot;&gt;Commencez à taper ici...&lt;/label&gt;
-					&lt;textarea class=&quot;form-control&quot; id=&quot;comment&quot; rows=&quot;3&quot;&gt; &lt;/textarea&gt;
+					&lt;textarea class=&quot;form-control&quot; id=&quot;comment&quot; rows=&quot;8&quot;&gt; &lt;/textarea&gt;
 				&lt;/div&gt;
 				&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
 				&lt;a href=&quot;#&quot; class=&quot;btn btn-primary pull-right&quot;&gt;Commenter&lt;/a&gt;
@@ -1516,9 +1556,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				18&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				18&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1541,9 +1579,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				37&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				37&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1566,9 +1602,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				43&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				43&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1587,9 +1621,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				41&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 1&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				41&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1606,7 +1638,7 @@
           </h5>
 		</div>
 		<div class="group-counter">
-			<h6>Groupe</h6>
+			<h6>Thème</h6>
 			<small><i class="glyphicon glyphicon-user"></i></small>&thinsp;34
 			<small><i class="glyphicon glyphicon-file"></i></small>&thinsp;183
 		</div>
@@ -1628,9 +1660,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				78&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				78&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1649,9 +1679,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				144&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 1&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				144&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 1&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1669,9 +1697,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				62&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				62&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-list-alt "></span>
 		</div>
@@ -1691,9 +1717,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				40&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				40&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1716,9 +1740,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				101&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				101&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-list-alt glyphicon-headphones"></span>
 		</div>
@@ -1737,9 +1759,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				27&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 1&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				27&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-film"></span>
 		</div>
@@ -1758,9 +1778,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				45&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 1&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				45&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1779,9 +1797,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				36&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				36&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1800,9 +1816,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				43&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				43&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1821,9 +1835,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				16&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				16&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1842,9 +1854,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				51&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				51&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1863,9 +1873,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				37&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				37&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1884,9 +1892,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				24&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				24&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1905,9 +1911,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				23&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				23&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1926,9 +1930,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				156&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				156&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -1951,9 +1953,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				18&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				18&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -1976,9 +1976,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				37&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				37&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2001,9 +1999,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				43&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				43&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2022,9 +2018,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				41&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				41&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2041,7 +2035,7 @@
           &lt;/h5&gt;
 		&lt;/div&gt;
 		&lt;div class=&quot;group-counter&quot;&gt;
-			&lt;h6&gt;Groupe&lt;/h6&gt;
+			&lt;h6&gt;Thème&lt;/h6&gt;
 			&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt;&lt;/small&gt;&amp;thinsp;34
 			&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-file&quot;&gt;&lt;/i&gt;&lt;/small&gt;&amp;thinsp;183
 		&lt;/div&gt;
@@ -2063,9 +2057,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				78&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				78&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2084,9 +2076,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				144&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				144&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2104,9 +2094,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				62&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				62&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-list-alt &quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2126,9 +2114,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				40&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				40&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2151,9 +2137,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				101&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				101&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-list-alt glyphicon-headphones&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2172,9 +2156,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				27&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				27&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-film&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2193,9 +2175,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				45&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				45&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2214,9 +2194,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				36&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				36&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2235,9 +2213,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				43&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				43&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2256,9 +2232,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				16&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				16&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2277,9 +2251,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				51&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				51&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2298,9 +2270,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				37&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				37&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2319,9 +2289,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				24&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				24&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2340,9 +2308,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				23&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				23&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2361,9 +2327,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				156&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				156&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2413,9 +2377,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				18&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				18&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2438,9 +2400,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				37&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				37&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2463,9 +2423,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				43&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				43&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2484,9 +2442,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				41&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 1&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				41&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2503,7 +2459,7 @@
           </h5>
 		</div>
 		<div class="group-counter">
-			<h6>Groupe</h6>
+			<h6>Thème</h6>
 			<small><i class="glyphicon glyphicon-user"></i></small>&thinsp;34
 			<small><i class="glyphicon glyphicon-file"></i></small>&thinsp;183
 		</div>
@@ -2525,9 +2481,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				78&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				78&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2546,9 +2500,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				144&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 1&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				144&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 1&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2566,9 +2518,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				62&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				62&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-list-alt "></span>
 		</div>
@@ -2588,9 +2538,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				40&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				40&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2613,9 +2561,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				101&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				101&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-list-alt glyphicon-headphones"></span>
 		</div>
@@ -2634,9 +2580,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				27&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 1&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				27&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-film"></span>
 		</div>
@@ -2655,9 +2599,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				45&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 1&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				45&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 1&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2676,9 +2618,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				36&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				36&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2697,9 +2637,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				43&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				43&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2718,9 +2656,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				16&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				16&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2739,9 +2675,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				51&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				51&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2760,9 +2694,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				37&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				37&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2781,9 +2713,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				24&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				24&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2802,9 +2732,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				23&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				23&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2823,9 +2751,7 @@
 				<br>
 			</p>
 			<div class="text-clear">
-				156&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-star"></i></small> | 0&thinsp;
-				<small><i class="glyphicon glyphicon-comment"></i></small>
+				156&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | 0&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
 			</div>
 			<span class="media-icon glyphicon glyphicon-picture"></span>
 		</div>
@@ -2848,9 +2774,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				18&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				18&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2873,9 +2797,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				37&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				37&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2898,9 +2820,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				43&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				43&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2919,9 +2839,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				41&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				41&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2938,7 +2856,7 @@
           &lt;/h5&gt;
 		&lt;/div&gt;
 		&lt;div class=&quot;group-counter&quot;&gt;
-			&lt;h6&gt;Groupe&lt;/h6&gt;
+			&lt;h6&gt;Thème&lt;/h6&gt;
 			&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/i&gt;&lt;/small&gt;&amp;thinsp;34
 			&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-file&quot;&gt;&lt;/i&gt;&lt;/small&gt;&amp;thinsp;183
 		&lt;/div&gt;
@@ -2960,9 +2878,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				78&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				78&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -2981,9 +2897,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				144&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				144&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3001,9 +2915,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				62&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				62&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-list-alt &quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3023,9 +2935,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				40&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				40&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3048,9 +2958,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				101&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				101&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-list-alt glyphicon-headphones&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3069,9 +2977,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				27&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				27&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-film&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3090,9 +2996,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				45&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				45&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 1&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3111,9 +3015,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				36&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				36&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3132,9 +3034,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				43&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				43&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3153,9 +3053,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				16&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				16&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3174,9 +3072,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				51&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				51&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3195,9 +3091,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				37&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				37&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3216,9 +3110,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				24&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				24&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3237,9 +3129,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				23&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				23&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3258,9 +3148,7 @@
 				&lt;br&gt;
 			&lt;/p&gt;
 			&lt;div class=&quot;text-clear&quot;&gt;
-				156&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-star&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;
-				&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
+				156&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;&lt;/small&gt; | 0&amp;thinsp;&lt;small&gt;&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt;&lt;/small&gt;
 			&lt;/div&gt;
 			&lt;span class=&quot;media-icon glyphicon glyphicon-picture&quot;&gt;&lt;/span&gt;
 		&lt;/div&gt;
@@ -3390,6 +3278,10 @@
         Contact
         <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
       </a></li>
+			<li role="presentation"><a href="#">
+        Partenaires
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
 		</ul>
 		<div class="container-fluid">
 			<hr />
@@ -3447,6 +3339,10 @@
       &lt;/a&gt;&lt;/li&gt;
 			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;
         Contact
+        &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
+			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+        Partenaires
         &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
       &lt;/a&gt;&lt;/li&gt;
 		&lt;/ul&gt;
@@ -3543,6 +3439,10 @@
       </a></li>
 		</ul>
 		<div class="container-fluid">
+			<hr />
+			<p>
+				<a href="creation-collection.html" class="btn btn-default btn-sm btn-block" role="button">Créer une collection</a>
+			</p>
 			<hr /> <a href="#" class="text-sans text-clear">Me déconnecter</a>
 		</div>
 	</div>
@@ -3581,9 +3481,110 @@
       &lt;/a&gt;&lt;/li&gt;
 		&lt;/ul&gt;
 		&lt;div class=&quot;container-fluid&quot;&gt;
+			&lt;hr /&gt;
+			&lt;p&gt;
+				&lt;a href=&quot;creation-collection.html&quot; class=&quot;btn btn-default btn-sm btn-block&quot; role=&quot;button&quot;&gt;Créer une collection&lt;/a&gt;
+			&lt;/p&gt;
 			&lt;hr /&gt; &lt;a href=&quot;#&quot; class=&quot;text-sans text-clear&quot;&gt;Me déconnecter&lt;/a&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="profile-collection">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Profile Collection</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.5.2</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; profile-collection }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<div class="profile-collection">
+	<div class="spacer spacer-sm"></div>
+	<h1 class="h2 text-center">Champéry</h1>
+	<ul class="list-inline text-center text-sans">
+		<li><i class="glyphicon glyphicon-heart"></i> 70k</li>
+		<li><i class="glyphicon glyphicon-file"></i> 9506</li>
+		&bull; Collection éditée par <a href="profile-person.html" alt="Sarah Muelheim">Sarah Muelheim</a>
+	</ul>
+	<hr />
+	<div class="row">
+		<div class="col-sm-4">
+			<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/41d52c14611d0821_jpg_530x530_q85.jpg" alt="Champéry" class="img-responsive" />
+		</div>
+		<div class="col-sm-8">
+			<p class="text-sans collection-bio" id="collection-bio">
+				Vallée du district de Monthey où coule la Vièze et qui porte le nom de la commune, Val d'Illiez. De nombreux villages ou stations comme Champéry, Morgins, Troistorrents, Les Crosets, Champoussin... Tous les documents d'hier et d'aujourd'hui, en rapport
+				avec cette vallée, sans les autres communes du district comme Monthey, Vouvry Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat enim Polemonis. Duo Reges: constructio interrete. Immo alio genere; A mene tu? Nihil opus est exemplis hoc
+				facere longius. Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Cum autem venissemus in Academiae non sine causa nobilitata spatia, solitudo erat ea, quam volueramus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tollenda
+				est atque extrahenda radicitus.
+				<br>
+				<br>Nonne igitur tibi videntur, inquit, mala? Sed residamus, inquit, si placet. Sed ad illum redeo. Quo modo autem optimum, si bonum praeterea nullum est? Duo Reges: constructio interrete. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus
+				deserenda est. Quod cum dixissent, ille contra. Ergo adhuc, quantum equidem intellego, causa non videtur fuisse mutandi nominis. Haec para/doca illi, nos admirabilia dicamus.
+			</p>
+		</div>
+	</div>
+	<div class="spacer spacer-xs"></div>
+</div>
+
+<div class="media-features-bar bg-nobel text-center">
+	<a href="#" class="btn btn-link active"><i class="glyphicon glyphicon-heart"></i> Suivre</a>
+	<a href="#" class="btn btn-link"><i class="glyphicon glyphicon-share-alt"></i> Partager</a>
+	<a href="#" class="btn btn-link"><i class="glyphicon glyphicon-hourglass"></i> Activités</a>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;profile-collection&quot;&gt;
+	&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+	&lt;h1 class=&quot;h2 text-center&quot;&gt;Champéry&lt;/h1&gt;
+	&lt;ul class=&quot;list-inline text-center text-sans&quot;&gt;
+		&lt;li&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt; 70k&lt;/li&gt;
+		&lt;li&gt;&lt;i class=&quot;glyphicon glyphicon-file&quot;&gt;&lt;/i&gt; 9506&lt;/li&gt;
+		&amp;bull; Collection éditée par &lt;a href=&quot;profile-person.html&quot; alt=&quot;Sarah Muelheim&quot;&gt;Sarah Muelheim&lt;/a&gt;
+	&lt;/ul&gt;
+	&lt;hr /&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-4&quot;&gt;
+			&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2010/10/41d52c14611d0821_jpg_530x530_q85.jpg&quot; alt=&quot;Champéry&quot; class=&quot;img-responsive&quot; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-8&quot;&gt;
+			&lt;p class=&quot;text-sans collection-bio&quot; id=&quot;collection-bio&quot;&gt;
+				Vallée du district de Monthey où coule la Vièze et qui porte le nom de la commune, Val d&#x27;Illiez. De nombreux villages ou stations comme Champéry, Morgins, Troistorrents, Les Crosets, Champoussin... Tous les documents d&#x27;hier et d&#x27;aujourd&#x27;hui, en rapport
+				avec cette vallée, sans les autres communes du district comme Monthey, Vouvry Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat enim Polemonis. Duo Reges: constructio interrete. Immo alio genere; A mene tu? Nihil opus est exemplis hoc
+				facere longius. Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Cum autem venissemus in Academiae non sine causa nobilitata spatia, solitudo erat ea, quam volueramus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tollenda
+				est atque extrahenda radicitus.
+				&lt;br&gt;
+				&lt;br&gt;Nonne igitur tibi videntur, inquit, mala? Sed residamus, inquit, si placet. Sed ad illum redeo. Quo modo autem optimum, si bonum praeterea nullum est? Duo Reges: constructio interrete. Quos nisi redarguimus, omnis virtus, omne decus, omnis vera laus
+				deserenda est. Quod cum dixissent, ille contra. Ergo adhuc, quantum equidem intellego, causa non videtur fuisse mutandi nominis. Haec para/doca illi, nos admirabilia dicamus.
+			&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;media-features-bar bg-nobel text-center&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-link active&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt; Suivre&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/i&gt; Partager&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-hourglass&quot;&gt;&lt;/i&gt; Activités&lt;/a&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -3617,19 +3618,13 @@
 	<div class="profile-found">
 	<img src="http://www.ticketcorner.ch/obj/media/CH-eventim/galery/222x222/m/montreux-jazz-festival-tickets.gif" alt="Montreux Jazz Festival" class="img-responsive center-block" />
 	<h1 class="h2 text-center">Montreux Jazz Festival</h1>
-	<ul class="list-inline text-clear text-center text-sans">
+	<ul class="list-inline text-center text-sans">
 		<li><i class="glyphicon glyphicon-heart"></i> 70k</li>
 		<li><i class="glyphicon glyphicon-file"></i> 9506</li>
 		&bull; Fond documentaire officiel, basé à Montreux
 	</ul>
 	<hr />
-	<ul class="list-inline text-justify">
-		<li><a href="#" class="btn btn-link"><i class="glyphicon glyphicon-heart"></i> <b>Ajouter aux favoris</b></a></li>
-		<li><a href="#" class="btn btn-link"><i class="glyphicon glyphicon-share-alt"></i> Partager</a></li>
-		<li><a href="#" class="btn btn-link">Activités</a></li>
-		<li><a href="#" class="btn btn-link">Envoyer un message</a></li>
-	</ul>
-	<p class="text-clear text-sans person-bio" id="person-bio">
+	<p class="text-sans person-bio" id="person-bio">
 		En l’espace de 50 ans, le <a href='#'>Montreux Jazz Festival</a> est devenu un rendez-vous singulier dans le monde de la musique. La perspective de cette édition est d’abord l’occasion pour le Festival de raconter son histoire, d’affirmer ses valeurs
 		et ses spécificités, afin de mieux se projeter dans l’avenir. Depuis sa création en 1967 par Claude Nobs, qui aurait fêté ses 80 ans en ce 4 février 2016, le Festival est rapidement devenu un réservoir de concerts fantastiques, de convergences artistiques
 		folles, d’instants rares, d’anecdotes improbables, de culot et de paris ambitieux, d’impulsions décisives.
@@ -3644,29 +3639,26 @@
 		aujourd’hui inscrite au Registre de la “Mémoire du Monde” de l’UNESCO.
 	</p>
 	<div class="spacer spacer-xs"></div>
-	<hr />
-	<div class="text-center">
-		<button class="btn btn-link btn-readmore" id="btn-readmore">Lire la suite...</button>
-	</div>
+</div>
+
+<div class="media-features-bar bg-nobel text-center">
+	<a href="#" class="btn btn-link active"><i class="glyphicon glyphicon-heart"></i> Suivre</a>
+	<a href="#" class="btn btn-link"><i class="glyphicon glyphicon-share-alt"></i> Partager</a>
+	<a href="#" class="btn btn-link"><i class="glyphicon glyphicon-hourglass"></i> Activités</a>
+	<a href="#" class="btn btn-link"><i class="glyphicon glyphicon-send"></i> Envoyer un message</a>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;profile-found&quot;&gt;
 	&lt;img src=&quot;http://www.ticketcorner.ch/obj/media/CH-eventim/galery/222x222/m/montreux-jazz-festival-tickets.gif&quot; alt=&quot;Montreux Jazz Festival&quot; class=&quot;img-responsive center-block&quot; /&gt;
 	&lt;h1 class=&quot;h2 text-center&quot;&gt;Montreux Jazz Festival&lt;/h1&gt;
-	&lt;ul class=&quot;list-inline text-clear text-center text-sans&quot;&gt;
+	&lt;ul class=&quot;list-inline text-center text-sans&quot;&gt;
 		&lt;li&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt; 70k&lt;/li&gt;
 		&lt;li&gt;&lt;i class=&quot;glyphicon glyphicon-file&quot;&gt;&lt;/i&gt; 9506&lt;/li&gt;
 		&amp;bull; Fond documentaire officiel, basé à Montreux
 	&lt;/ul&gt;
 	&lt;hr /&gt;
-	&lt;ul class=&quot;list-inline text-justify&quot;&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt; &lt;b&gt;Ajouter aux favoris&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/i&gt; Partager&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Activités&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Envoyer un message&lt;/a&gt;&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;p class=&quot;text-clear text-sans person-bio&quot; id=&quot;person-bio&quot;&gt;
+	&lt;p class=&quot;text-sans person-bio&quot; id=&quot;person-bio&quot;&gt;
 		En l’espace de 50 ans, le &lt;a href=&#x27;#&#x27;&gt;Montreux Jazz Festival&lt;/a&gt; est devenu un rendez-vous singulier dans le monde de la musique. La perspective de cette édition est d’abord l’occasion pour le Festival de raconter son histoire, d’affirmer ses valeurs
 		et ses spécificités, afin de mieux se projeter dans l’avenir. Depuis sa création en 1967 par Claude Nobs, qui aurait fêté ses 80 ans en ce 4 février 2016, le Festival est rapidement devenu un réservoir de concerts fantastiques, de convergences artistiques
 		folles, d’instants rares, d’anecdotes improbables, de culot et de paris ambitieux, d’impulsions décisives.
@@ -3681,10 +3673,13 @@
 		aujourd’hui inscrite au Registre de la “Mémoire du Monde” de l’UNESCO.
 	&lt;/p&gt;
 	&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
-	&lt;hr /&gt;
-	&lt;div class=&quot;text-center&quot;&gt;
-		&lt;button class=&quot;btn btn-link btn-readmore&quot; id=&quot;btn-readmore&quot;&gt;Lire la suite...&lt;/button&gt;
-	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;media-features-bar bg-nobel text-center&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-link active&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt; Suivre&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/i&gt; Partager&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-hourglass&quot;&gt;&lt;/i&gt; Activités&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-send&quot;&gt;&lt;/i&gt; Envoyer un message&lt;/a&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -3715,69 +3710,61 @@
 
 </div>
 <div class="f-item-preview">
-	<div class="profile-person">
 	<div class="spacer spacer-sm"></div>
-	<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2010/06/3df5d755692b4154_jpg_168x168_crop_q85.jpg" alt="Sarah Muehlheim" class="img-responsive img-circle center-block" />
+<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2010/06/3df5d755692b4154_jpg_168x168_crop_q85.jpg" alt="Sarah Muehlheim" class="img-responsive img-circle center-block" />
+
+<div class="profile-person">
 	<h1 class="h2 text-center">Sarah Muehlheim</h1>
-	<ul class="list-inline text-clear text-center text-sans">
+	<ul class="list-inline text-center text-sans">
 		<li><i class="glyphicon glyphicon-picture"></i> 43</li>
 		<li><i class="glyphicon glyphicon-film"></i> 12</li>
 		<li><i class="glyphicon glyphicon-list-alt"></i> 3</li>
-		<li>Abonnés 38</li>
-		<li>Abonnements 79</li>
+		<li><strong>Abonnés</strong> 38</li>
+		<li><strong>Abonnements</strong> 79</li>
 	</ul>
 	<hr />
-	<ul class="list-inline text-justify">
-		<li><a href="#" class="btn btn-link"><b>Envoyer un message</b></a></li>
-		<li><a href="#" class="btn btn-link">Ajouter comme contact</a></li>
-		<li><a href="#" class="btn btn-link">Activité</a></li>
-		<li>
-			<a href="#" class="chevron text-clear"></a>
-		</li>
-	</ul>
-	<p class="text-clear text-sans person-bio" id="person-bio">
+	<p class="text-sans person-bio" id="person-bio">
 		Je suis née à Sion en Valais, je vis et travaille actuellement à Genève.Je suis curieuse et passionnée de l'histoire et surtout des archives photographique des modes de vie de l'époque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori
 		non voluptas contraria est, sed doloris privatio. Sed ille, ut dixi, vitiose. Quamquam te quidem video minime esse deterritum. Que Manilium, ab iisque M. Huic mori optimum esse propter desperationem sapientiae, illi propter spem vivere. Pauca mutat
 		vel plura sane; Quis est tam dissimile homini.
 	</p>
 	<div class="spacer spacer-xs"></div>
-	<hr />
-	<div class="text-center">
-		<button class="btn btn-link btn-readmore" id="btn-readmore">Lire la suite...</button>
-	</div>
+</div>
+
+<div class="media-features-bar bg-nobel text-center">
+	<a href="#" class="btn btn-link active"><i class="glyphicon glyphicon-heart"></i> Suivre</a>
+	<a href="#" class="btn btn-link"><i class="glyphicon glyphicon-share-alt"></i> Partager</a>
+	<a href="#" class="btn btn-link"><i class="glyphicon glyphicon-hourglass"></i> Activités</a>
+	<a href="#" class="btn btn-link"><i class="glyphicon glyphicon-send"></i> Envoyer un message</a>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class=&quot;profile-person&quot;&gt;
-	&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
-	&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2010/06/3df5d755692b4154_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Sarah Muehlheim&quot; class=&quot;img-responsive img-circle center-block&quot; /&gt;
+	<pre><code class="language-markup">&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2010/06/3df5d755692b4154_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Sarah Muehlheim&quot; class=&quot;img-responsive img-circle center-block&quot; /&gt;
+
+&lt;div class=&quot;profile-person&quot;&gt;
 	&lt;h1 class=&quot;h2 text-center&quot;&gt;Sarah Muehlheim&lt;/h1&gt;
-	&lt;ul class=&quot;list-inline text-clear text-center text-sans&quot;&gt;
+	&lt;ul class=&quot;list-inline text-center text-sans&quot;&gt;
 		&lt;li&gt;&lt;i class=&quot;glyphicon glyphicon-picture&quot;&gt;&lt;/i&gt; 43&lt;/li&gt;
 		&lt;li&gt;&lt;i class=&quot;glyphicon glyphicon-film&quot;&gt;&lt;/i&gt; 12&lt;/li&gt;
 		&lt;li&gt;&lt;i class=&quot;glyphicon glyphicon-list-alt&quot;&gt;&lt;/i&gt; 3&lt;/li&gt;
-		&lt;li&gt;Abonnés 38&lt;/li&gt;
-		&lt;li&gt;Abonnements 79&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;Abonnés&lt;/strong&gt; 38&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;Abonnements&lt;/strong&gt; 79&lt;/li&gt;
 	&lt;/ul&gt;
 	&lt;hr /&gt;
-	&lt;ul class=&quot;list-inline text-justify&quot;&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;&lt;b&gt;Envoyer un message&lt;/b&gt;&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Ajouter comme contact&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;Activité&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;
-			&lt;a href=&quot;#&quot; class=&quot;chevron text-clear&quot;&gt;&lt;/a&gt;
-		&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;p class=&quot;text-clear text-sans person-bio&quot; id=&quot;person-bio&quot;&gt;
+	&lt;p class=&quot;text-sans person-bio&quot; id=&quot;person-bio&quot;&gt;
 		Je suis née à Sion en Valais, je vis et travaille actuellement à Genève.Je suis curieuse et passionnée de l&#x27;histoire et surtout des archives photographique des modes de vie de l&#x27;époque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quia dolori
 		non voluptas contraria est, sed doloris privatio. Sed ille, ut dixi, vitiose. Quamquam te quidem video minime esse deterritum. Que Manilium, ab iisque M. Huic mori optimum esse propter desperationem sapientiae, illi propter spem vivere. Pauca mutat
 		vel plura sane; Quis est tam dissimile homini.
 	&lt;/p&gt;
 	&lt;div class=&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
-	&lt;hr /&gt;
-	&lt;div class=&quot;text-center&quot;&gt;
-		&lt;button class=&quot;btn btn-link btn-readmore&quot; id=&quot;btn-readmore&quot;&gt;Lire la suite...&lt;/button&gt;
-	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;media-features-bar bg-nobel text-center&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-link active&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt; Suivre&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/i&gt; Partager&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-hourglass&quot;&gt;&lt;/i&gt; Activités&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-send&quot;&gt;&lt;/i&gt; Envoyer un message&lt;/a&gt;
 &lt;/div&gt;</code></pre>
 </div>
 

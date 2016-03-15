@@ -138,15 +138,84 @@
   </div>
 </div><div id="overlay" class="overlay"></div>
 <div class="container">
-  <h1>Ajouter un média</h1>
-  <h3>Téléverser un fichier (photo, vidéo, son) ou <a href="metadata.html">rédiger un article</a></h3>
-  <div class="spacer spacer-sm"></div>
-  <form class="uploader" action="metadata.html" method="get" enctype="multipart/form-data">
-    <input type="file" name="files[]" id="filer_input" multiple="multiple" />
-    <input type="submit" class="btn btn-primary pull-right" value="Suivant" />
-  </form>  <div class="spacer spacer-md"></div>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1 class="h2 text-center">Créer votre profil d'institution</h1>
+      <p class="text-sans text-clear text-center">
+        En tant qu'institution, vous pouvez créer un profil. Pour ceci, complétez simplement les information ci-dessous.
+      </p>
+      <hr />      <form action="demo.html" class="text-sans">
+        <div class="form-group">
+          <label for="nom">Choisissez votre nom d&#x27;utilisateur</label>
+          <input type="text" class="form-control" id="nom" placeholder="Choisissez votre nom d&#x27;utilisateur" value="" />
+          <p class="help-block">Par exemple, le nom de votre institution. Minimum 4 caractères, sans espace.</p>
+        </div>        <div class="form-group">
+          <label for="email">Adresse email</label>
+          <input type="email" class="form-control" id="email" placeholder="Adresse email" value="" />
+          <p class="help-block">C&#x27;est le moment où vous rentrez votre adresse email.</p>
+        </div>        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="password">Mot de passe</label>
+              <input type="password" class="form-control" id="password" placeholder="Mot de passe" value="" />
+              <p class="help-block">N&#x27;aillez crainte, je détourne le regard.</p>
+            </div>          </div>
+          <div class="col-sm-6">
+              <div class="form-group">
+                <label for="password">Confirmation du mot de passe</label>
+                <input type="password" class="form-control" id="password" placeholder="Confirmation du mot de passe" value="" />
+                <p class="help-block">Juste pour être sûr que vous vous en souvenez.</p>
+              </div>          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="http://www.ticketcorner.ch/obj/media/CH-eventim/galery/222x222/m/montreux-jazz-festival-tickets.gif" alt="Photo de profil de Montreux Jazz Festival" class="img-responsive img-circle" />
+          </div>
+          <div class="col-sm-8">
+            <div class="form-group">
+              <label for="avatar">Choisissez une image de votre institution pour votre profil (votre logo par exemple)</label>
+              <input type="file" class="form-control" id="avatar" name="avatar" />
+            </div>
+            <small class="text-clear text-sans"><em>Dimensions minimales: 170x170 pixels. Taille maximale: 2 MB.</em></small>
+            <div class="spacer spacer-xs"></div>
+            <button class="btn btn-default btn-sm">Effacer l'image</button>
+          </div>
+        </div>
+        <div class="spacer spacer-sm"></div>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="https://source.unsplash.com/wzj86-5JVcM/2000x650" alt="Photo de profil de Montreux Jazz Festival" class="img-responsive" />
+          </div>
+          <div class="col-sm-8">
+            <div class="form-group">
+              <label for="avatar">Choisissez une image de couverture pour votre institution</label>
+              <input type="file" class="form-control" id="avatar" name="avatar" />
+            </div>
+            <small class="text-clear text-sans"><em>Dimensions minimales: 2000x650 pixels. Taille maximale: 2 MB.</em></small>
+            <div class="spacer spacer-xs"></div>
+            <button class="btn btn-default btn-sm">Effacer l'image</button>
+          </div>
+        </div>
+        <div class="spacer spacer-sm"></div>
+        <div class="form-group">
+          <label for="title">Le nom de votre institution*</label>
+          <input type="text" class="form-control" id="title" placeholder="Le nom de votre institution*" value="Montreux Jazz Festival" />
+          <p class="help-block">Le nom de votre institution*</p>
+        </div>        <div class="form-group">
+          <label for="descritpion">Description</label>
+          <textarea class="form-control" id="descritpion" rows="8">Décrivez en quelques mots votre institution</textarea>
+        </div>        <div class="spacer spacer-xs"></div>
+        <div class="form-group">
+          <label for="tags">Tags</label>
+          <input type="text" class="form-control" id="tags" placeholder="Tags" value="" />
+          <p class="help-block">Chaque tag doit être séparé par une virgule. (ex: lausanne, cathédrale, 1960)</p>
+        </div>        <div class="spacer spacer-xs"></div>
+        <a href="profile-found.html" class="btn btn-primary btn-block" role="button">Je m'inscris</a>  
+      </form>
+      <div class="spacer"></div>
+    </div>
+  </div>
 </div>
-
 
     <script src="./../build/js/vendors.min.js"></script>
     <script src="./../build/js/main.js"></script>

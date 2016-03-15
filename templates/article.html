@@ -65,6 +65,10 @@
         Contact
         <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
       </a></li>
+      <li role="presentation"><a href="#">
+        Partenaires
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
     </ul>
     <div class="container-fluid">
       <hr />      <h3>
@@ -126,6 +130,9 @@
       </a></li>
     </ul>
     <div class="container-fluid">
+      <hr />      <p>
+        <a href="creation-collection.html" class="btn btn-default btn-sm btn-block" role="button">Créer une collection</a>
+      </p>
       <hr />      <a href="#" class="text-sans text-clear">Me déconnecter</a>
     </div>
   </div>
@@ -146,11 +153,11 @@
             </div>
           </div>
         </div>
-      <div class="media-features-bar">
+      <div class="media-features-bar bg-concrete">
         <div class="row">
           <div class="col-sm-4">
-            <button class="btn btn-link">
-              <i class="glyphicon glyphicon-share-alt"></i> Partager
+            <button class="btn btn-link active">
+              <span class="text-danger">Suivre</span>&nbsp;&nbsp;<i class="glyphicon glyphicon-heart"></i>
             </button>
             <a href="#" class="btn btn-link">
               <i class="glyphicon glyphicon-comment"></i> Commenter (4)
@@ -162,11 +169,11 @@
             </a>
           </div>
           <div class="col-sm-4 text-right">
-            <span class="media-features-bar-infos">
-              220 vues&nbsp;&nbsp;<i class="glyphicon glyphicon-eye-open"></i>
-            </span>
-            <button class="btn btn-link active">
-              <i class="glyphicon glyphicon-heart"></i>
+            <button class="btn btn-link">
+              <i class="glyphicon glyphicon-share-alt"></i> Partager
+            </button>
+            <button class="btn btn-link">
+              <i class="glyphicon glyphicon-plus"></i> Ajouter
             </button>
             <button class="btn btn-link">
               <i class="glyphicon glyphicon-alert"></i>
@@ -191,6 +198,12 @@
         <p>
           Route des Narcisses, 1833 Les Avants s/Montreux, Zwitserland<br>
           <a href="http://maps.google.com/">Voir sur la carte</a>
+        </p>
+      
+        <h5>Popularité</h5>
+        <p>
+          <i class="glyphicon glyphicon-eye-open"></i> 220 vues<br>
+          <i class="glyphicon glyphicon-heart text-danger"></i> 40 suivent
         </p>
       
         <h5>Auteur</h5>
@@ -226,18 +239,18 @@
           <a href="#" class="label label-default">montreux</a>
           <a href="#" class="label label-default">narcisses</a>
       
-        <h5>Groupes</h5>
+        <h5>Thèmes</h5>
         <div class="spacer spacer-xs"></div>
           <a href="#" class="label label-default">Montreux</a>
           <a href="#" class="label label-default">Paysages romands</a>
           <a href="#" class="label label-default">La nature complice</a>
           <a href="#" class="label label-default">Fête des Narcisses de Montreux</a>
-        <h5>Albums</h5>
+        <h5>Collections</h5>
         <div class="spacer spacer-xs"></div>
-          <a href="#" class="label label-default">Groupe 0 &rsaquo; Les Avants</a>
-          <a href="#" class="label label-default">Groupe 1 &rsaquo; Ma famille maternelle</a>
-          <a href="#" class="label label-default">Groupe 2 &rsaquo; Le Narcisse “La Fleur” et tout autour</a>
-          <a href="#" class="label label-default">Groupe 3 &rsaquo; Les fleurs</a>
+          <a href="#" class="label label-default"><strong>Thème 0</strong> &rsaquo; Les Avants</a>
+          <a href="#" class="label label-default"><strong>Thème 1</strong> &rsaquo; Ma famille maternelle</a>
+          <a href="#" class="label label-default"><strong>Thème 2</strong> &rsaquo; Le Narcisse “La Fleur” et tout autour</a>
+          <a href="#" class="label label-default"><strong>Thème 3</strong> &rsaquo; Les fleurs</a>
       
       </div>    </div>
   </div>
@@ -288,7 +301,7 @@
         <h4>Ajouter un commentaire</h4>
         <div class="form-group">
           <label for="comment">Commencez à taper ici...</label>
-          <textarea class="form-control" id="comment" rows="3"> </textarea>
+          <textarea class="form-control" id="comment" rows="8"> </textarea>
         </div>        <div class="spacer spacer-xs"></div>
         <a href="#" class="btn btn-primary pull-right">Commenter</a>
       </div>

@@ -65,6 +65,10 @@
         Contact
         <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
       </a></li>
+      <li role="presentation"><a href="#">
+        Partenaires
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
     </ul>
     <div class="container-fluid">
       <hr />      <h3>
@@ -126,6 +130,9 @@
       </a></li>
     </ul>
     <div class="container-fluid">
+      <hr />      <p>
+        <a href="creation-collection.html" class="btn btn-default btn-sm btn-block" role="button">Créer une collection</a>
+      </p>
       <hr />      <a href="#" class="text-sans text-clear">Me déconnecter</a>
     </div>
   </div>
@@ -147,6 +154,9 @@
         chien
         <button class="label-close">&times;</button>
       </span>    <span class="label label-default">
+        <strong>Vie quotidienne</strong> &rsaquo; Transport
+        <button class="label-close">&times;</button>
+      </span>    <span class="label label-default">
         arc-en-ciel
         <button class="label-close">&times;</button>
       </span>    <span class="label label-default">
@@ -160,16 +170,13 @@
           Trier par
         </strong>
         <select class="form-control">
-          <option>Alphabetical</option>
-          <option>Les plus vus</option>
-          <option>Most commented</option>
-          <option>Most followed</option>
-          <option selected="selected">Most relevant</option>
-          <option>Newest</option>
-          <option>Oldest</option>
-          <option>Origin_date récent</option>
-          <option>Origin_date vieux</option>
-          <option>Recently updated</option>
+          <option>Popularité</option>
+          <option>Date de publication (nouveautés)</option>
+          <option>Date de publication (le plus ancien)</option>
+          <option selected="selected">Pertinence</option>
+          <option>Date d'origine (le plus récent)</option>
+          <option>Date d'orginie (le plus ancien)</option>
+          <option>Récemment mis à jour</option>
         </select>
         <span class="vertical-separator"></span>
         <button id="display-grid" class="btn btn-default active">
@@ -375,7 +382,9 @@
                 </form>
               </li>
             </ul>
-          </div></div>    </div>
+          </div>  <a href="creation-collection-recherche.html" class="btn btn-primary btn-sm">Enregistrer la recherche</a>
+        <p><small class="text-clear text-sans"><em>Il vous est possible d'enregistrer cette recherche et d'en faire une collection.</em></small></p>
+      </div>    </div>
     <div class="col-sm-9">
       <div id="result-map" class="map"></div>
       
