@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.progression {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-small;
+  color: $tundora;
+  h5 {font-weight: 700;}
+  h5, p {margin: 0;}
+}
+
+.progress {
+  height: 6px;
+  box-shadow: none;
+}
+
+.progress-bar {
+  border-radius: $progress-border-radius;
+}
