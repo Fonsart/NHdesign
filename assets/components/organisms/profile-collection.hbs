@@ -1,12 +1,11 @@
 ---
 notes: |
-  ##### Introduced : 0.4.0
+  ##### Introduced : 0.5.2
   ##### Updated : -
   ##### Usage : `{{> profile-collection }}`
 ---
-<div class="profile-person">
+<div class="profile-collection">
   <div class="spacer spacer-sm"></div>
-  <img src="{{collection.avatar}}" alt="{{collection.title}}" class="img-responsive img-circle center-block" />
   <h1 class="h2 text-center">{{collection.title}}</h1>
   <ul class="list-inline text-clear text-center text-sans">
     <li><i class="glyphicon glyphicon-heart"></i> {{collection.likes}}</li>
@@ -14,14 +13,21 @@ notes: |
     &bull; Collection édité par <a href="profile-person.html" alt="{{collection.author}}">{{collection.author}}</a>
   </ul>
   {{> separator }}
-<ul class="list-inline text-justify">
-    <li><a href="#" class="btn btn-link"><i class="glyphicon glyphicon-heart"></i> <b>Suivre</b></a></li>
-    <li><a href="#" class="btn btn-link"><i class="glyphicon glyphicon-share-alt"></i> Partager</a></li>
-    <li><a href="#" class="btn btn-link">Activités</a></li>
-  </ul>
-  <p class="text-clear text-sans person-bio" id="person-bio">
-    {{{collection.bio}}}
-  </p>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="{{collection.avatar}}" alt="{{collection.title}}" class="img-responsive" />
+    </div>
+    <div class="col-sm-8">
+      <ul class="list-inline text-justify">
+        <li><a href="#" class="btn btn-link"><i class="glyphicon glyphicon-heart"></i> <b>Suivre</b></a></li>
+        <li><a href="#" class="btn btn-link"><i class="glyphicon glyphicon-share-alt"></i> Partager</a></li>
+        <li><a href="#" class="btn btn-link">Activités</a></li>
+      </ul>
+      <p class="text-clear text-sans collection-bio" id="collection-bio">
+        {{{collection.bio}}}
+      </p>
+    </div>
+  </div>
   <div class="spacer spacer-xs"></div>
   {{> separator }}
   <div class="text-center">

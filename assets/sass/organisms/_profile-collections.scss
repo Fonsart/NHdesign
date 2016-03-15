@@ -1,1 +1,29 @@
 @charset "UTF-8";
+
+.profile-collection {
+  .text-justify a {
+    font-weight: 400;
+    color: $monza;
+  }
+  .btn-readmore {
+    font-weight: 400;
+    margin-top: -4em;
+    background: $white;
+    padding: 0 10px;
+    color: $tundora;
+    font-size: $font-size-small;
+    &:hover {text-decoration: none;}
+    &:hover, &:focus {
+      outline: none;
+      box-shadow: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.collection-bio {
+  max-height: 190px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  &.open {max-height: 2000px;}
+}
