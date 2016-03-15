@@ -4,31 +4,29 @@ notes: |
   ##### Updated : -
   ##### Usage : `{{> profile-person }}`
 ---
+<div class="spacer spacer-sm"></div>
+<img src="{{person.avatar}}" alt="{{person.name}}" class="img-responsive img-circle center-block" />
+
 <div class="profile-person">
-  <div class="spacer spacer-sm"></div>
-  <img src="{{person.avatar}}" alt="{{person.name}}" class="img-responsive img-circle center-block" />
   <h1 class="h2 text-center">{{person.name}}</h1>
-  <ul class="list-inline text-clear text-center text-sans">
+  <ul class="list-inline text-center text-sans">
     <li><i class="glyphicon glyphicon-picture"></i> {{person.pictures}}</li>
     <li><i class="glyphicon glyphicon-film"></i> {{person.videos}}</li>
     <li><i class="glyphicon glyphicon-list-alt"></i> {{person.articles}}</li>
-    <li>Abonnés {{person.followings}}</li>
-    <li>Abonnements {{person.followers}}</li>
+    <li><strong>Abonnés</strong> {{person.followings}}</li>
+    <li><strong>Abonnements</strong> {{person.followers}}</li>
   </ul>
   {{> separator }}
-<ul class="list-inline text-justify">
-    <li><a href="#" class="btn btn-link"><i class="glyphicon glyphicon-heart"></i> <b>Suivre</b></a></li>
-    <li><a href="#" class="btn btn-link"><i class="glyphicon glyphicon-share-alt"></i> Partager</a></li>
-    <li><a href="#" class="btn btn-link">Activités</a></li>
-    <li><a href="#" class="btn btn-link">Envoyer un message</a></li>
-  </ul>
-  <p class="text-clear text-sans person-bio" id="person-bio">
+  <p class="text-sans person-bio" id="person-bio">
     {{{person.bio}}}
   </p>
   <div class="spacer spacer-xs"></div>
-  {{> separator }}
-  <div class="text-center">
-    <button class="btn btn-link btn-readmore" id="btn-readmore">Lire la suite...</button>
-  </div>
+</div>
+
+<div class="media-features-bar bg-nobel text-center">
+  <a href="#" class="btn btn-link active"><i class="glyphicon glyphicon-heart"></i> Suivre</a>
+  <a href="#" class="btn btn-link"><i class="glyphicon glyphicon-share-alt"></i> Partager</a>
+  <a href="#" class="btn btn-link"><i class="glyphicon glyphicon-hourglass"></i> Activités</a>
+  <a href="#" class="btn btn-link"><i class="glyphicon glyphicon-send"></i> Envoyer un message</a>
 </div>
 

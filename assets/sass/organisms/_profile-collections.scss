@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 .profile-collection {
+  .text-clear {color: $tundora;}
   .text-justify a {
     font-weight: 400;
     color: $monza;
@@ -19,11 +20,4 @@
       text-decoration: none;
     }
   }
-}
-
-.collection-bio {
-  max-height: 210px;
-  overflow: hidden;
-  transition: max-height 0.3s;
-  &.open {max-height: 2000px;}
 }

@@ -24,3 +24,8 @@
     color: $nobel;
   }
 }
+
+.bordered {
+  padding: $grid-gutter-width/4 $grid-gutter-width/2;
+  border: 1px solid $gallery;
+}

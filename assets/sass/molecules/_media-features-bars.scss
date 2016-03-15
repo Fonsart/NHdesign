@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
 .media-features-bar {
-  background: $concrete;
   color: $boulder;
   font-size: $font-size-small;
+  border-top: 1px solid $nobel;
+  padding: 0.4em 0;
   .btn-link {
     color: $boulder;
     font-size: $font-size-small;
