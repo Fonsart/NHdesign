@@ -5,7 +5,7 @@ notes: |
   ##### Usage : `{{> panel-right }}`
   *The panels can't be open both*
 ---
-<div class="panel panel-right panel-animate panel-leave panel-leaving">
+<div class="panel panel-right panel-animate panel-entere panel-entering">
   <button type="button" class="btn btn-default panel-button">
     <span class="hidden-xs panel-closed-component">Connexion</span>
     <span class="visible-xs glyphicon glyphicon-user panel-closed-component"></span>
@@ -37,10 +37,13 @@ notes: |
       </a></li>
     </ul>
     <div class="container-fluid">
-    <a href="creation_theme.html" class="btn btn-primary active" role="button">Créer un thème</a>
-    <a href="creation-collection.html" class="btn btn-primary active" role="button">Créer une collection</a>
-    </div>
-    <div class="container-fluid">
+      {{> separator }}
+      <p>
+        <a href="creation_theme.html" class="btn btn-default btn-sm btn-block" role="button">Créer un thème</a>
+      </p>
+      <p>
+        <a href="creation-collection.html" class="btn btn-default btn-sm btn-block" role="button">Créer une collection</a>
+      </p>
       {{> separator }}
       <a href="#" class="text-sans text-clear">Me déconnecter</a>
     </div>
