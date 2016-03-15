@@ -13,6 +13,36 @@
       </p>
       {{> separator }}
       <form action="demo.html" class="text-sans">
+        {{> input
+          input-id="nom"
+          input-type="text"
+          input-label="Choisissez votre nom d'utilisateur"
+          input-help="Par exemple, le nom de votre institution. Minimum 4 caractères, sans espace."
+        }}
+        {{> input
+            input-id="email"
+            input-type="email"
+            input-label="Adresse email"
+            input-help="C'est le moment où vous rentrez votre adresse email."
+        }}    
+        <div class="row">
+          <div class="col-sm-6">
+            {{> input
+              input-id="password"
+              input-type="password"
+              input-label="Mot de passe"
+              input-help="N'aillez crainte, je détourne le regard."
+            }}
+          </div>
+          <div class="col-sm-6">
+              {{> input
+              input-id="password"
+              input-type="password"
+              input-label="Confirmation du mot de passe"
+              input-help="Juste pour être sûr que vous vous en souvenez."
+            }}
+          </div>
+        </div>
         <div class="row">
           <div class="col-sm-4">
             <img src="{{found.avatar}}" alt="Photo de profil de {{found.name}}" class="img-responsive img-circle" />
@@ -42,7 +72,6 @@
             <button class="btn btn-default btn-sm">Effacer l'image</button>
           </div>
         </div>
-
         <div class="spacer spacer-sm"></div>
         {{> input
               input-id="title"
@@ -51,13 +80,12 @@
               input-help="Le nom de votre institution*"
               input-label="Le nom de votre institution*"
         }}
-        <div class="spacer spacer-xs"></div>
         {{> textarea
               textarea-id="descritpion"
               textarea-label="Description"
-              textarea-help=found.bio
+              textarea-help="Décrivez en quelques mots votre institution"
         }}
-        <div class="spacer spacer-sm"></div>
+        <div class="spacer spacer-xs"></div>
         {{> input
               input-id="tags"
               input-type="text"
@@ -65,9 +93,7 @@
               input-help="Chaque tag doit être séparé par une virgule. (ex: lausanne, cathédrale, 1960)"
         }}
         <div class="spacer spacer-xs"></div>
-        <div class="form-group">
-          <a href="profile-found.html" class="btn btn-primary" role="button">Créer</a> <button class="btn btn-default">Annuler</button>
-        </div>
+        <a href="profile-found.html" class="btn btn-primary btn-block" role="button">Je m'inscris</a>  
       </form>
       <div class="spacer"></div>
     </div>
