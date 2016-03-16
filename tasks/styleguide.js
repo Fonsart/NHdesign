@@ -35,12 +35,12 @@ module.exports = function() {
           }
         },
         ifarticle: function(type, block) {
-          if(type === 'article' || type === 'audio'){
+          if(type === 'article'){
             return block.fn(this);
           }
         },
         ifnotarticle: function(type, block) {
-          if(type !== 'article' && type !== 'audio'){
+          if(type !== 'article'){
             return block.fn(this);
           }
         },
