@@ -3,5 +3,17 @@ notes: |
   ##### Introduced : 0.5.0
   ##### Updated : -
   ##### Usage : `{{> overlay }}`
+  ##### Options :
+  - **fullscreen** - String ('true')
 ---
-<div id="overlay" class="overlay"></div>
+<div id="overlay" class="overlay">
+  {{#if fullscreen}}
+  <div class="fullscreen">
+    <a href="#" class="btn-close" >
+      <span class="cross">×</span>
+    </a>
+    <img src="http://notrehistoire.ch.s3.amazonaws.com/photos/2015/03/d4ed767309c114f4.jpeg" alt="Salavaux ( Tea-Room Friederich)" class="img-responsive" style="position:absolute;top:0;left:50%;width:1611.418320610687px;height:1321px;margin-top:0;margin-left:-805.7091603053435px;">
+  </div>
+  {{^}}
+  {{/if}}
+</div>
