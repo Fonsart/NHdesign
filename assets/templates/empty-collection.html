@@ -8,7 +8,10 @@
   <h1>Votre collection est vide, ajouter votre premier média</h1>
   <h3>Téléverser un fichier (photo, vidéo, son) ou <a href="metadata.html">rédiger un article</a></h3>
   <div class="spacer spacer-sm"></div>
-  {{> uploader }}
+  <form class="uploader" action="add-media.html" method="get" enctype="multipart/form-data">
+	  <input type="file" name="files[]" id="filer_input" multiple="multiple" />
+	  <input type="submit" class="btn btn-primary pull-right" value="Suivant" />
+	</form>
   {{> separator }}
   <div class="text-center">
   	<h3>Ou ajouter depuis</h3>
