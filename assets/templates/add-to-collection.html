@@ -1,0 +1,47 @@
+{{> navbar }}
+
+{{> panel-left }}
+{{> panel-right }}
+{{> overlay }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1>Ajouter votre média à une collection</h1>
+      <h3>Ce média a été ajouté à votre profil. Voulez-vous l'ajouter à une collection ?</h3>
+      <div class="spacer spacer-xs"></div>
+      <form>
+        <h4>Mes collections</h4>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="" checked>
+            Général
+          </label>
+        </div>
+        <div class="checkbox disabled">
+          <label>
+            <input type="checkbox" value="" disabled>
+            Trains
+          </label>
+        </div>
+        <div class="checkbox disabled">
+          <label>
+            <input type="checkbox" value="" disabled>
+            Paysage
+          </label>
+        </div>
+        <div class="checkbox disabled">
+          <label>
+            <input type="checkbox" value="" disabled>
+            Villeneuve
+          </label>
+        </div>
+        <div class="spacer spacer-xs"></div>
+        <h4>Les collections collaboratives de notrehistoire.ch</h4>
+      </form>
+      {{> search-field }}
+      <div class="spacer spacer-md"></div>
+      <a href="detail.html" class="btn btn-primary" role="button">Ajouter</a> <button class="btn btn-default">Annuler</button>
+    </div>
+  </div>
+</div>
