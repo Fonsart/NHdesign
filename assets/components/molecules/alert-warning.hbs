@@ -4,4 +4,9 @@ notes: |
   ##### Updated : -
   ##### Usage : `{{> alert-warning }}`
 ---
-{{> alert alert-variant="warning" }}
+<div class="alert alert-warning alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <div class="alert-message">
+    <i class='glyphicon glyphicon-alert'></i> Attention, quelque chose se trame !
+  </div>
+</div>

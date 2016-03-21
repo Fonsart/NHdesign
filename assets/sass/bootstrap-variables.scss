@@ -629,20 +629,20 @@ $alert-padding:               15px !default;
 $alert-border-radius:         $border-radius-base !default;
 $alert-link-font-weight:      bold !default;
 
-$alert-success-text:             $mine-shaft !default;
-$alert-success-bg:               $brand-success!default;
+$alert-success-text:             $white !default;
+$alert-success-bg:               $gray-dark!default;
 $alert-success-border:           transparent !default;
 
-$alert-info-text:                $mine-shaft!default;
-$alert-info-bg:                  $brand-info !default;
+$alert-info-text:                $white!default;
+$alert-info-bg:                  $gray-dark !default;
 $alert-info-border:              transparent !default;
 
-$alert-warning-text:             $mine-shaft !default;
-$alert-warning-bg:               $brand-warning !default;
+$alert-warning-text:             $white !default;
+$alert-warning-bg:               $gray-dark !default;
 $alert-warning-border:           transparent !default;
 
 $alert-danger-text:              $white !default;
-$alert-danger-bg:                $monza !default;
+$alert-danger-bg:                $gray-dark !default;
 $alert-danger-border:            transparent !default;
 
 
