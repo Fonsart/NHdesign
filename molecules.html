@@ -72,6 +72,15 @@
             <a href="templates.html" class="f-menu__heading">Templates</a>
             <ul>
               <li>
+                <a href="templates/add-media-to-collection.html">Add Media To Collection</a>
+              </li>
+              <li>
+                <a href="templates/add-media.html">Add Media</a>
+              </li>
+              <li>
+                <a href="templates/add-to-collection.html">Add To Collection</a>
+              </li>
+              <li>
                 <a href="templates/article.html">Article</a>
               </li>
               <li>
@@ -93,7 +102,13 @@
                 <a href="templates/demo.html">Demo</a>
               </li>
               <li>
+                <a href="templates/detail-fullscreen.html">Detail Fullscreen</a>
+              </li>
+              <li>
                 <a href="templates/detail.html">Detail</a>
+              </li>
+              <li>
+                <a href="templates/empty-collection.html">Empty Collection</a>
               </li>
               <li>
                 <a href="templates/map.html">Map</a>
@@ -189,6 +204,9 @@
               </li>
               <li>
                 <a href="molecules.html#alert-danger">Alert Danger</a>
+              </li>
+              <li>
+                <a href="molecules.html#alert-info">Alert Info</a>
               </li>
               <li>
                 <a href="molecules.html#alert-success">Alert Success</a>
@@ -330,24 +348,29 @@
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
 	<h5>Introduced : 0.4.1</h5>
-<h5>Updated : -</h5>
+<h5>Updated : 0.5.3</h5>
 <h5>Usage : <code>{{&gt; alert }}</code></h5>
 <h5>Options :</h5>
 <ul>
 <li><strong>alert-variant</strong> - String (<code>success</code>, <code>warning</code>, <code>danger</code>) <code>info</code> by default</li>
+<li><strong>alert-message</strong> - String</li>
 </ul>
 
 </div>
 <div class="f-item-preview">
 	<div class="alert alert-info alert-dismissible" role="alert">
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	<strong>Coucou!</strong> Ceci est une alerte qui sert à afficher un message super important !
+	<div class="alert-message">
+		<strong>Coucou!</strong> Ceci est une alerte qui sert à afficher un message super important !
+	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;alert alert-info alert-dismissible&quot; role=&quot;alert&quot;&gt;
 	&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
-	&lt;strong&gt;Coucou!&lt;/strong&gt; Ceci est une alerte qui sert à afficher un message super important !
+	&lt;div class=&quot;alert-message&quot;&gt;
+		&lt;strong&gt;Coucou!&lt;/strong&gt; Ceci est une alerte qui sert à afficher un message super important !
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -380,13 +403,60 @@
 <div class="f-item-preview">
 	<div class="alert alert-danger alert-dismissible" role="alert">
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	<strong>Coucou!</strong> Ceci est une alerte qui sert à afficher un message super important !
+	<div class="alert-message">
+		<i class='glyphicon glyphicon-flash'></i> Oups, une erreur s'est produite
+	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;alert alert-danger alert-dismissible&quot; role=&quot;alert&quot;&gt;
 	&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
-	&lt;strong&gt;Coucou!&lt;/strong&gt; Ceci est une alerte qui sert à afficher un message super important !
+	&lt;div class=&quot;alert-message&quot;&gt;
+		&lt;i class=&#x27;glyphicon glyphicon-flash&#x27;&gt;&lt;/i&gt; Oups, une erreur s&#x27;est produite
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="alert-info">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Alert Info</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.5.1</h5>
+<h5>Updated : -</h5>
+<h5>Usage : <code>{{&gt; alert-info }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<div class="alert alert-info alert-dismissible" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	<div class="alert-message">
+		<i class='glyphicon glyphicon-info-sign'></i> Juste pour information, tout se passe bien
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;alert alert-info alert-dismissible&quot; role=&quot;alert&quot;&gt;
+	&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+	&lt;div class=&quot;alert-message&quot;&gt;
+		&lt;i class=&#x27;glyphicon glyphicon-info-sign&#x27;&gt;&lt;/i&gt; Juste pour information, tout se passe bien
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -419,13 +489,17 @@
 <div class="f-item-preview">
 	<div class="alert alert-success alert-dismissible" role="alert">
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	<strong>Coucou!</strong> Ceci est une alerte qui sert à afficher un message super important !
+	<div class="alert-message">
+		<i class='glyphicon glyphicon-ok'></i> Votre opération s'est déroulée avec succès !
+	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;alert alert-success alert-dismissible&quot; role=&quot;alert&quot;&gt;
 	&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
-	&lt;strong&gt;Coucou!&lt;/strong&gt; Ceci est une alerte qui sert à afficher un message super important !
+	&lt;div class=&quot;alert-message&quot;&gt;
+		&lt;i class=&#x27;glyphicon glyphicon-ok&#x27;&gt;&lt;/i&gt; Votre opération s&#x27;est déroulée avec succès !
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -458,13 +532,17 @@
 <div class="f-item-preview">
 	<div class="alert alert-warning alert-dismissible" role="alert">
 	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	<strong>Coucou!</strong> Ceci est une alerte qui sert à afficher un message super important !
+	<div class="alert-message">
+		<i class='glyphicon glyphicon-alert'></i> Attention, quelque chose se trame !
+	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;alert alert-warning alert-dismissible&quot; role=&quot;alert&quot;&gt;
 	&lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
-	&lt;strong&gt;Coucou!&lt;/strong&gt; Ceci est une alerte qui sert à afficher un message super important !
+	&lt;div class=&quot;alert-message&quot;&gt;
+		&lt;i class=&#x27;glyphicon glyphicon-alert&#x27;&gt;&lt;/i&gt; Attention, quelque chose se trame !
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -2000,15 +2078,13 @@
 	<div class="media-features-bar bg-concrete">
 	<div class="row">
 		<div class="col-sm-4">
-			<button class="btn btn-link active">
-				<span class="text-danger">Suivre</span>&nbsp;&nbsp;<i class="glyphicon glyphicon-heart"></i>
-			</button>
+			<a href="#" class="btn btn-link active" data-alert-message="<i class='glyphicon glyphicon-ok'></i> Bravo, vous suivez le média : Le bonheur parmi les narcisses!"><i class="glyphicon glyphicon-heart"></i> Suivre</a>
 			<a href="#" class="btn btn-link">
 				<i class="glyphicon glyphicon-comment"></i> Commenter (4)
 			</a>
 		</div>
 		<div class="col-sm-4 text-center">
-			<a href="#" class="btn btn-link">
+			<a href="detail-fullscreen.html" class="btn btn-link">
 				<i class="glyphicon glyphicon-fullscreen"></i>
 			</a>
 		</div>
@@ -2016,9 +2092,7 @@
 			<button class="btn btn-link">
 				<i class="glyphicon glyphicon-share-alt"></i> Partager
 			</button>
-			<button class="btn btn-link">
-				<i class="glyphicon glyphicon-plus"></i> Ajouter
-			</button>
+			<a href="add-to-collection.html" class="btn btn-link"><i class="glyphicon glyphicon-plus"></i> Ajouter</a>
 			<button class="btn btn-link">
 				<i class="glyphicon glyphicon-alert"></i>
 			</button>
@@ -2030,15 +2104,13 @@
 	<pre><code class="language-markup">&lt;div class=&quot;media-features-bar bg-concrete&quot;&gt;
 	&lt;div class=&quot;row&quot;&gt;
 		&lt;div class=&quot;col-sm-4&quot;&gt;
-			&lt;button class=&quot;btn btn-link active&quot;&gt;
-				&lt;span class=&quot;text-danger&quot;&gt;Suivre&lt;/span&gt;&amp;nbsp;&amp;nbsp;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt;
-			&lt;/button&gt;
+			&lt;a href=&quot;#&quot; class=&quot;btn btn-link active&quot; data-alert-message=&quot;&lt;i class=&#x27;glyphicon glyphicon-ok&#x27;&gt;&lt;/i&gt; Bravo, vous suivez le média : Le bonheur parmi les narcisses!&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-heart&quot;&gt;&lt;/i&gt; Suivre&lt;/a&gt;
 			&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;
 				&lt;i class=&quot;glyphicon glyphicon-comment&quot;&gt;&lt;/i&gt; Commenter (4)
 			&lt;/a&gt;
 		&lt;/div&gt;
 		&lt;div class=&quot;col-sm-4 text-center&quot;&gt;
-			&lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot;&gt;
+			&lt;a href=&quot;detail-fullscreen.html&quot; class=&quot;btn btn-link&quot;&gt;
 				&lt;i class=&quot;glyphicon glyphicon-fullscreen&quot;&gt;&lt;/i&gt;
 			&lt;/a&gt;
 		&lt;/div&gt;
@@ -2046,9 +2118,7 @@
 			&lt;button class=&quot;btn btn-link&quot;&gt;
 				&lt;i class=&quot;glyphicon glyphicon-share-alt&quot;&gt;&lt;/i&gt; Partager
 			&lt;/button&gt;
-			&lt;button class=&quot;btn btn-link&quot;&gt;
-				&lt;i class=&quot;glyphicon glyphicon-plus&quot;&gt;&lt;/i&gt; Ajouter
-			&lt;/button&gt;
+			&lt;a href=&quot;add-to-collection.html&quot; class=&quot;btn btn-link&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-plus&quot;&gt;&lt;/i&gt; Ajouter&lt;/a&gt;
 			&lt;button class=&quot;btn btn-link&quot;&gt;
 				&lt;i class=&quot;glyphicon glyphicon-alert&quot;&gt;&lt;/i&gt;
 			&lt;/button&gt;
@@ -2802,13 +2872,13 @@
 
 </div>
 <div class="f-item-preview">
-	<form class="uploader" action="metadata.html" method="get" enctype="multipart/form-data">
+	<form class="uploader" action="add-media-to-collection.html" method="get" enctype="multipart/form-data">
 	<input type="file" name="files[]" id="filer_input" multiple="multiple" />
 	<input type="submit" class="btn btn-primary pull-right" value="Suivant" />
 </form>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;form class=&quot;uploader&quot; action=&quot;metadata.html&quot; method=&quot;get&quot; enctype=&quot;multipart/form-data&quot;&gt;
+	<pre><code class="language-markup">&lt;form class=&quot;uploader&quot; action=&quot;add-media-to-collection.html&quot; method=&quot;get&quot; enctype=&quot;multipart/form-data&quot;&gt;
 	&lt;input type=&quot;file&quot; name=&quot;files[]&quot; id=&quot;filer_input&quot; multiple=&quot;multiple&quot; /&gt;
 	&lt;input type=&quot;submit&quot; class=&quot;btn btn-primary pull-right&quot; value=&quot;Suivant&quot; /&gt;
 &lt;/form&gt;</code></pre>

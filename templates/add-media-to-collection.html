@@ -144,60 +144,33 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
-      <h1 class="h2 text-center">Éditer le profil</h1>
-      <p class="text-sans text-clear text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-      <hr />
-      <form action="demo.html" class="text-sans">
+      <h1>Ajouter le média</h1>
+      <div class="spacer spacer-xs"></div>
+      <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg" class="img-responsive" />
 
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/08/876988c033485ccc_jpg_168x168_crop_q85.jpg" alt="Photo de profil de Martine Desarzens" class="img-responsive img-circle" />
-          </div>
-          <div class="col-sm-8">
-            <div class="form-group">
-              <label for="avatar">Choisissez une image de vous pour votre profil</label>
-              <input type="file" class="form-control" id="avatar" name="avatar" />
-            </div>
-            <small class="text-clear text-sans"><em>Dimensions minimales: 170x170 pixels. Taille maximale: 2 MB.</em></small>
-            <div class="spacer spacer-xs"></div>
-            <button class="btn btn-default btn-sm">Effacer l'image</button>
-          </div>
+      <div class="spacer spacer-sm"></div>
+
+      <form action="add-to-collection.html" class="text-sans">
+        <div class="form-group">
+          <label for="title">Titre</label>
+          <input type="text" class="form-control" id="title" placeholder="Titre" value="" />
+          <p class="help-block">Le titre de votre photographie</p>
+        </div>        <div class="form-group">
+          <label for="descritpion">Description</label>
+          <textarea class="form-control" id="descritpion" rows="8">Description du média ou article</textarea>
         </div>
-
         <div class="spacer spacer-sm"></div>
 
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="firstname">Votre prénom*</label>
-              <input type="text" class="form-control" id="firstname" placeholder="Votre prénom*" value="Martine" />
-              <p class="help-block">Votre prénom*</p>
-            </div>          </div>
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="name">Votre nom*</label>
-              <input type="text" class="form-control" id="name" placeholder="Votre nom*" value="Desarzens" />
-              <p class="help-block">Votre nom*</p>
-            </div>          </div>
-        </div>
-
         <div class="form-group">
-          <label for="activity">Votre occupation actuelle</label>
-          <input type="text" class="form-control" id="activity" placeholder="Votre occupation actuelle" value="conseillère pédagogique à la retraite mais pas inactive" />
-          <p class="help-block">Votre occupation actuelle</p>
-        </div>
-        <div class="form-group">
-          <label for="day">Date de naissance</label>
+          <label for="day">Date originale</label>
           <div class="row">
             <div class="col-xs-4">
               <select name="day" id="day" class="form-control">
-                <option value="">-</option>
+                <option value="" selected="selected">-</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
-                <option value="4" selected="selected">4</option>
+                <option value="4">4</option>
                 <option value="5">5</option>
                 <option value="6">6</option>
                 <option value="7">7</option>
@@ -229,10 +202,10 @@
             </div>
             <div class="col-xs-4">
               <select name="month" class="form-control">
-                <option value="">-</option>
+                <option value="" selected="selected">-</option>
                 <option value="1">janvier</option>
                 <option value="2">février</option>
-                <option value="3" selected="selected">mars</option>
+                <option value="3">mars</option>
                 <option value="4">avril</option>
                 <option value="5">mai</option>
                 <option value="6">juin</option>
@@ -246,7 +219,7 @@
             </div>
             <div class="col-xs-4">
               <select name="year" id="year" class="form-control">
-                <option value="">-</option>
+                <option value="" selected="selected">-</option>
                 <option value="2016">2016</option>
                 <option value="2015">2015</option>
                 <option value="2014">2014</option>
@@ -319,7 +292,7 @@
                 <option value="1947">1947</option>
                 <option value="1946">1946</option>
                 <option value="1945">1945</option>
-                <option value="1944" selected="selected">1944</option>
+                <option value="1944">1944</option>
                 <option value="1943">1943</option>
                 <option value="1942">1942</option>
                 <option value="1941">1941</option>
@@ -716,52 +689,77 @@
                 <option value="1550">1550</option>
               </select>
             </div>
-          </div>        </div>
-
-        <div class="spacer spacer-xs"></div>
-
-        <div class="form-group">
-          <label for="period">Genre</label>
-          <select name="period" id="period" class="form-control">
-            <option value="female" selected="selected">Femme</option>
-            <option value="male">Homme</option>
-          </select>
+          </div>          <small class="text-clear text-sans"><em>Si vous ne connaissez pas le jour ou le mois, veuillez essayer d'estimer l'année</em></small>
         </div>
 
         <div class="spacer spacer-xs"></div>
 
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="form-group">
-              <label for="city">Votre ville de résidence</label>
-              <input type="text" class="form-control" id="city" placeholder="Votre ville de résidence" value="Lausanne" />
-              <p class="help-block">Votre ville de résidence</p>
-            </div>          </div>
-          <div class="col-sm-6">
-            <label for="country">Pays</label>
-            <select name="country" id="country" class="form-control">
-              <option value="suisse" selected="selected">Suisse</option>
-              <option value="france">France</option>
-              <option value="other">...</option>
-            </select>
+        <div class="form-group">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              M'aider à dater la média
+            </label>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="descritpion">Description</label>
-          <textarea class="form-control" id="descritpion" rows="8">J’aime ma ville Lausanne, J’aime l’amitié sans calcul, J’aime la musique classique, la chanson française, le jazz, J’aime la radio,...</textarea>
+          <label for="period">Période</label>
+          <select name="period" id="period" class="form-control">
+            <option value="" selected="selected">-</option>
+            <option value="1">Avant 1900</option>
+            <option value="2">1900 - 1909</option>
+            <option value="3">1910 - 1919</option>
+            <option value="4">1920 - 1929</option>
+            <option value="5">1930 - 1939</option>
+            <option value="6">1940 - 1949</option>
+            <option value="7">1950 - 1959</option>
+            <option value="8">1960 - 1969</option>
+            <option value="9">1970 - 1979</option>
+            <option value="10">1980 - 1989</option>
+            <option value="11">1990 - 1999</option>
+            <option value="12">Après 2000</option>
+          </select>
         </div>
+
         <div class="spacer spacer-sm"></div>
 
-        <div class="form-group">
-          <button type="submit" class="btn btn-primary">Sauver les changements</button> <button class="btn btn-default">Annuler</button>
+        <label for="place">Lieu</label>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Lieu" id="place" />
+          <p class="help-block">Où cela a-t-il eu lieu ?</p>
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Voir sur la carte</button>
+          </span>
         </div>
 
-      </form>
+        <div class="form-group">
+          <label for="tags">Tags</label>
+          <input type="text" class="form-control" id="tags" placeholder="Tags" value="" />
+          <p class="help-block">Chaque tag doit être séparé par une virgule. (ex: lausanne, cathédrale, 1960)</p>
+        </div>
+        <h5>Choisissez la privacité du ou des documents</h5>
+        <div class="radio">
+          <label class="text-sans">
+            <input type="radio" name="optionsRadios" id="private" value="private" />
+            Privé
+          </label>
+        </div>
+        <div class="radio">
+          <label class="text-sans">
+            <input type="radio" name="optionsRadios" id="public" value="public" checked />
+            Public
+          </label>
+        </div>
 
-      <div class="spacer"></div>
+        <div class="spacer spacer-sm"></div>
+
+        <button type="submit" class="btn btn-primary">Suivant</button> <button class="btn btn-default">Annuler</button>
+      </form>
     </div>
   </div>
+
+  <div class="spacer"></div>
 </div>
 
 
