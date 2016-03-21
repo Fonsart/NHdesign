@@ -1,0 +1,107 @@
+{{> navbar }}
+
+{{> panel-left }}
+{{> panel-right }}
+{{> overlay }}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1>Ajouter le média</h1>
+      <div class="spacer spacer-xs"></div>
+      <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/89687fee5d7be359_JPG_200x200_upscale_q85.jpg" class="img-responsive" />
+
+      <div class="spacer spacer-sm"></div>
+
+      <form action="detail.html" class="text-sans">
+        {{> input
+              input-id="title"
+              input-type="text"
+              input-label="Titre"
+              input-help="Le titre de votre photographie"
+        }}
+        {{> textarea
+              textarea-id="descritpion"
+              textarea-label="Description"
+              textarea-help="Description du média ou article"
+        }}
+
+        <div class="spacer spacer-sm"></div>
+
+        <div class="form-group">
+          <label for="day">Date originale</label>
+          {{> date-field }}
+          <small class="text-clear text-sans"><em>Si vous ne connaissez pas le jour ou le mois, veuillez essayer d'estimer l'année</em></small>
+        </div>
+
+        <div class="spacer spacer-xs"></div>
+
+        <div class="form-group">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">
+              M'aider à dater la média
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="period">Période</label>
+          <select name="period" id="period" class="form-control">
+            <option value="" selected="selected">-</option>
+            <option value="1">Avant 1900</option>
+            <option value="2">1900 - 1909</option>
+            <option value="3">1910 - 1919</option>
+            <option value="4">1920 - 1929</option>
+            <option value="5">1930 - 1939</option>
+            <option value="6">1940 - 1949</option>
+            <option value="7">1950 - 1959</option>
+            <option value="8">1960 - 1969</option>
+            <option value="9">1970 - 1979</option>
+            <option value="10">1980 - 1989</option>
+            <option value="11">1990 - 1999</option>
+            <option value="12">Après 2000</option>
+          </select>
+        </div>
+
+        <div class="spacer spacer-sm"></div>
+
+        <label for="place">Lieu</label>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Lieu" id="place" />
+          <p class="help-block">Où cela a-t-il eu lieu ?</p>
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Voir sur la carte</button>
+          </span>
+        </div>
+
+        {{> input
+              input-id="tags"
+              input-type="text"
+              input-label="Tags"
+              input-help="Chaque tag doit être séparé par une virgule. (ex: lausanne, cathédrale, 1960)"
+        }}
+
+        <h5>Choisissez la privacité du ou des documents</h5>
+        <div class="radio">
+          <label class="text-sans">
+            <input type="radio" name="optionsRadios" id="private" value="private" />
+            Privé
+          </label>
+        </div>
+        <div class="radio">
+          <label class="text-sans">
+            <input type="radio" name="optionsRadios" id="public" value="public" checked />
+            Public
+          </label>
+        </div>
+
+        <div class="spacer spacer-sm"></div>
+
+        <button type="submit" class="btn btn-primary">Suivant</button> <button class="btn btn-default">Annuler</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+</div>

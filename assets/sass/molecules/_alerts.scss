@@ -6,9 +6,39 @@
   .close {
     padding: 0 8px;
     opacity: 0.4;
-    color: $black;
+    color: $white;
     transition: opacity 0.3s;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
     &:hover {opacity: 1;}
   }
+  &.alert-dismissible{
+    padding-left: 65px;
+    text-align: center;
+  }
+
+  &.alert-success{
+    .glyphicon{
+      color: $brand-success;
+    }
+  }
+  &.alert-danger{
+    .glyphicon{
+      color: $brand-danger;
+    }
+  }
+  &.alert-warning{
+    .glyphicon{
+      color: $brand-warning;
+    }
+  }
+  &.alert-info{
+    .glyphicon{
+      color: $brand-info;
+    }
+  }
+  // icons used ;-)
+  // glyphicon glyphicon-info-sign
+  // glyphicon glyphicon-flash
+  // glyphicon glyphicon-alert
+  // glyphicon glyphicon-ok
 }

@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
 .article-container {
-  padding: 4em 0;
+  padding: 4em 1em;
   font-size: $font-size-large;
+}
+
+.media-container{
+  position: relative;
+  .media-action{
+    position: absolute;
+    top: -1.5rem;
+    right: 1em;
+  }
 }
