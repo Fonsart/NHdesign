@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="./../build/css/vendors.min.css">
+    <link rel="stylesheet" href="./../build/css/main.css">
+
+    <!--[if lt IE 9]>
+      <script src="./../build/js/polyfills.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="demo.html"><h1 class="h4">Notre histoire</h1></a>
+      </div>
+    
+      <form id="search-form" class="navbar-form navbar-left" role="search">
+        
+        <input type="text" class="form-control" placeholder="Rechercher" />
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+      </form>
+      <a href="upload.html" class="btn btn-default navbar-btn navbar-right">
+        <span class="hidden-xs">Ajouter un média</span>
+        <span class="visible-xs glyphicon glyphicon-plus"></span>
+      </a>
+    
+      <button id="search-mobile" type="button" class="btn btn-default navbar-btn navbar-right visible-xs">
+        <span class="visible-xs glyphicon glyphicon-search"></span>
+      </button>
+    </nav>
+<div class="panel panel-left panel-animate panel-leave panel-leaving">
+  <button type="button" class="navbar-toggle panel-button">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar panel-closed-component"></span>
+    <span class="icon-bar panel-closed-component"></span>
+    <span class="icon-bar panel-closed-component"></span>
+    <span class="cross">&times;</span>
+  </button>
+  <div class="panel-content">
+    <ul class="nav nav-stacked">
+      <li role="presentation" class="active"><a href="#">
+        Aide
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Forum
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Blog
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Contact
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Partenaires
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+    </ul>
+    <div class="container-fluid">
+      <hr />      <h3>
+        <div class="text-clear">Le mouvement</div>
+        <b>NotreHistoire</b>
+      </h3>
+      <p class="text-clear text-sans">
+        Oremière plateforme participative Suisse romande. Elle a pour but de créer une fresque de médias sur l'histoire de notre région.<br>
+        <a href="#">En savoir plus</a>
+      </p>
+      <hr />    </div>
+    <ul class="nav nav-stacked">
+      <li role="presentation" class="active"><a href="#">
+        Activités récentes
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Fonds documentaires
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+    </ul>
+  </div>
+  <div class="panel-bottom">
+    <div class="container-fluid">
+      <p class="text-clear text-sans">
+        <small><a class="text-clear" href="#">Condition générales</a> - <a class="text-clear" href="#">Impressum</a></small>
+      </p>
+    </div>
+  </div>
+</div><div class="panel panel-right panel-animate panel-leave panel-leaving">
+  <button type="button" class="btn btn-default panel-button">
+    <span class="hidden-xs panel-closed-component">Connexion</span>
+    <span class="visible-xs">
+      <span class="glyphicon glyphicon-user panel-closed-component"></span>
+    </span>
+    <span class="cross">&times;</span>
+  </button>
+  <div class="panel-content">
+    <div class="container-fluid">
+      <div class="spacer spacer-xs"></div>
+      <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/08/876988c033485ccc_jpg_168x168_crop_q85.jpg" class="img-responsive img-circle pull-left">
+      <h4>Martine Desarzens</h4>
+      <div class="spacer spacer-sm"></div>
+    </div>
+    <ul class="nav nav-stacked">
+      <li role="presentation" class="active"><a href="#">
+        Afficher mon profil
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Mes médias
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Mes activités
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Mes préférences
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+    </ul>
+    <div class="container-fluid">
+      <hr />      <p>
+        <a href="creation-collection.html" class="btn btn-default btn-sm btn-block" role="button">Créer une collection</a>
+      </p>
+      <hr />      <a href="#" class="text-sans text-clear">Me déconnecter</a>
+    </div>
+  </div>
+</div><div id="overlay" class="overlay">
+</div>
+<div class="homepage">
+  <div class="media-mondrian">
+  
+    <div class="media-mondrian-item media-mondrian-item-xl">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="http://notrehistoire.ch.s3.amazonaws.com/photos/2016/03/7864ebef395b5417.jpg" class="img-responsive" alt="" width="1200" height="780"/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span>Territet vu du Léman</span>
+          <div class="pull-right">
+              <small><i class="glyphicon glyphicon-picture"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="media-mondrian-item media-mondrian-item-text media-mondrian-item-md">
+      <a href="/basic-page.html">
+        <h3>Partagez vos archives et contribuez à illustrer l'histoire de la Suisse</h3>
+        <p>
+          Notre Histoire est la première plateforme participative déidiée aux archives de Suisse Romande. Elle a pour but de créer une fresque en image et en sons de l'histoire de notre région.
+        </p>
+        <p>
+          <strong>En apprendre plus sur le projet ➜</strong>
+        </p>
+      </a>
+    </div>
+  
+  
+  
+    <div class="media-mondrian-item media-mondrian-item-sm">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2009/11/10b70108a77a54cd_jpg_530x530_q85.jpg" class="img-responsive" alt=""/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span>Promenade du dimanche</span>
+          <div class="pull-right">
+              <small><i class="glyphicon glyphicon-picture"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+  
+    <div class="media-mondrian-item media-mondrian-item-xs">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/02/426080ebf50aa64a_jpg_530x530_upscale_q85.jpg" class="img-responsive" alt=""/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span>Trains de Suisse</span>
+          <div class="pull-right">
+              400&nbsp;<small><i class="glyphicon glyphicon-file"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+  
+    <div class="media-mondrian-item media-mondrian-item-xs">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="/build/img/hompeage_logo_rts.png" class="img-responsive" alt=""/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span>Fond d'archive RTS</span>
+          <div class="pull-right">
+              400'000&nbsp;<small><i class="glyphicon glyphicon-file"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="media-mondrian-item media-mondrian-item-xs">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="/build/img/hompeage_logo_ringier.png" class="img-responsive" alt=""/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span>Fond d'archive Ringier</span>
+          <div class="pull-right">
+              80'000&nbsp;<small><i class="glyphicon glyphicon-file"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="media-mondrian-item media-mondrian-item-fact media-mondrian-item-text media-mondrian-item-sm">
+      <h2>46'021 médias sur notrehistoire.ch</h2>
+    </div>
+    <div class="media-mondrian-item media-mondrian-item-sm">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="http://notrehistoire.ch.s3.amazonaws.com/photos/2014/06/2fd9556b96067f50.jpg" class="img-responsive" alt="" width="400" height="400"/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span>Expo02 – Arteplage d'Yverdon</span>
+          <div class="pull-right">
+              <small><i class="glyphicon glyphicon-picture"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+  
+    <div class="media-mondrian-item media-mondrian-item-xs">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/03/e69176c0b7868d3c_jpg_464x464_upscale_q85.jpg" class="img-responsive" alt=""/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span>Un ancien wagon du Territet-Glion</span>
+          <div class="pull-right">
+              <small><i class="glyphicon glyphicon-picture"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+  
+    <div class="media-mondrian-item media-mondrian-item-xs">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="/build/img/homepage_logo_expo64.png" class="img-responsive" alt="" width="200" height="200"/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span>L'Exposition nationale de 1964</span>
+          <div class="pull-right">
+              432&nbsp;<small><i class="glyphicon glyphicon-file"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+  
+    <div class="media-mondrian-item media-mondrian-item-sm">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="http://notrehistoire.ch.s3.amazonaws.com/photos/2015/03/ed624ee7f527806b.jpg" class="img-responsive" alt="" width="400" height="628"/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span> Tours et gratte-ciel romands</span>
+          <div class="pull-right">
+              183&nbsp;<small><i class="glyphicon glyphicon-file"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="media-mondrian-item media-mondrian-item-blog media-mondrian-item-text media-mondrian-item-sm">
+      <a href="/blog">
+        <h6><i class="glyphicon glyphicon-certificate"></i> En direct du blog de Notre Histoire </h6>
+        <h3>À quoi servent les collections ?</h3>
+        <p>
+          Comment s'y retrouver entre les collections intelligente et manuelles et collaboratives. Notre guide pour vous simplifier la vie.
+        </p>
+      </a>
+    </div>
+    <div class="media-mondrian-item media-mondrian-item-sm">
+    <a href="detail.html">
+      <div class="media-mondrian-thumbnail">
+        <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2012/04/9eb0b78dc37b87b8_jpg_464x464_upscale_q85.jpg" class="img-responsive" alt=""/>
+      </div>
+      <div class="media-mondrian-caption">
+        <span>Le Glacier du Rhône</span>
+        <div class="pull-right">
+            <small><i class="glyphicon glyphicon-picture"></i></small>
+        </div>
+      </div>
+    </a>
+  </div>
+    <div class="media-mondrian-item media-mondrian-item-sm">
+      <div class="axis">
+        <a href="#" class="axis-element">
+          <strong>Axe</strong>
+          <span>
+            Événements
+          </span>
+        </a>
+        <a href="#" class="axis-element">
+          <strong>Axe</strong>
+          <span>
+            Lieux
+          </span>
+        </a>
+        <a href="#" class="axis-element">
+          <strong>Axe</strong>
+          <span>
+            Personnalités
+          </span>
+        </a>
+        <a href="#" class="axis-element">
+          <strong>Axe</strong>
+          <span>
+            Vie quotidienne
+          </span>
+        </a>
+      </div>  </div>
+  
+    <div class="media-mondrian-item media-mondrian-item-xs">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/01/ba610aba0e3d3701_JPG_464x464_upscale_q85.jpg" class="img-responsive" alt="" width="200"/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span>David et Goliath 1959</span>
+          <div class="pull-right">
+              <small><i class="glyphicon glyphicon-picture"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+  
+    <div class="media-mondrian-item media-mondrian-item-xs">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="http://www.ticketcorner.ch/obj/media/CH-eventim/galery/222x222/m/montreux-jazz-festival-tickets.gif" class="img-responsive" alt="" width="200" height="200"/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span>Fond d'archive du Montreux Jazz</span>
+          <div class="pull-right">
+              832&nbsp;<small><i class="glyphicon glyphicon-file"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="media-mondrian-item media-mondrian-item-comment media-mondrian-item-sm">
+      <div class="comment">
+        <a href="#">
+          <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/08/876988c033485ccc_jpg_168x168_crop_q85.jpg" alt="Martine Desarzens" class="img-responsive img-circle" />
+        </a>
+        <h5>
+          <a href="#">Martine Desarzens</a>
+          <span class="text-clear">le 5 mars 2013</span>
+        </h5>
+        <div class="comment-content">
+            Avez-vous connu, Nicolas, les si jolis petits cartons dans lesquels nous placions délicatement les fleurs de mai que nous envoyions par la poste à notre famille.
+        </div>
+      </div>    <div class="media-mondrian-caption">
+        <span>Le bonheur parmi les narcisses!</span>
+        <div class="pull-right">
+            5&nbsp;<small><i class="glyphicon glyphicon-comment"></i></small>
+        </div>
+      </div>
+    </div>
+    <div class="media-mondrian-item media-mondrian-item-sm">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2014/07/e29c33b5154da63f_jpg_530x530_q85.jpg" class="img-responsive" alt="" width="400"/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span>Faire schmolitz!</span>
+          <div class="pull-right">
+              <small><i class="glyphicon glyphicon-picture"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="media-mondrian-item media-mondrian-item-xs">
+      <a href="detail.html">
+        <div class="media-mondrian-thumbnail">
+          <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2010/04/d1956651118ec894_png_168x168_crop_q85.jpg" class="img-responsive" alt="" width="200"/>
+        </div>
+        <div class="media-mondrian-caption">
+          <span>Raphael Briner</span>
+          <div class="pull-right">
+              <small><i class="glyphicon glyphicon-user"></i></small>
+          </div>
+        </div>
+      </a>
+    </div>
+  
+  </div></div>
+
+
+    <script src="./../build/js/vendors.min.js"></script>
+    <script src="./../build/js/main.js"></script>
+  </body>
+</html>
