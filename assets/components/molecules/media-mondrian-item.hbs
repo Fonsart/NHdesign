@@ -5,29 +5,6 @@ notes: |
   ##### Options :
   - **mediaobject** - Object
 ---
-<div class="media-item media-mondrian-item">
-  {{#ifnotarticle mediaobject.type}}
-    <a href="detail.html">
-      {{> thumbnail-mondrian thumbnail-object=mediaobject }}
-    </a>
-  {{/ifnotarticle}}
-  {{#ifarticle mediaobject.type}}
-    <div class="media-article">
-      {{#ifarticle mediaobject.type}}{{{mediaobject.description}}}{{/ifarticle}}
-    </div>
-  {{/ifarticle}}
-  <div class="media-caption">
-    <h5>
-      <a href="detail.html">{{mediaobject.title}}</a>
-    </h5>
-    <p class="media-description">
-      {{#each mediaobject.tags }}
-        <a href="#">{{this.name}}</a>,
-      {{/each}}<br>
-    </p>
-    <div class="text-clear">
-      {{mediaobject.views_count}}&thinsp;<small><i class="glyphicon glyphicon-eye-open"></i></small> | {{mediaobject.bookmarks_count}}&thinsp;<small><i class="glyphicon glyphicon-heart"></i></small> | {{mediaobject.comments.length}}&thinsp;<small><i class="glyphicon glyphicon-comment"></i></small>
-    </div>
-    <span class="media-icon glyphicon glyphicon-{{#ifarticle mediaobject.type}}list-alt{{/ifarticle}}{{#ifaudio mediaobject.type}}headphones{{/ifaudio}}{{#ifvideo mediaobject.type}}film{{/ifvideo}}{{#ifphoto mediaobject.type}}picture{{/ifphoto}}"></span>
-  </div>
+<div class="media-mondrian-item">
+ {{> thumbnail-mondrian thumbnail-object=mediaobject }}
 </div>

@@ -36,5 +36,14 @@
         initGrid();
       }, delay);
     });
+
+
+    $('.media-mondrian').masonry({
+      // options...
+      itemSelector: '.media-mondrian-item',
+      columnWidth: 100,
+      gutter: 0
+    });
+
   });
 }(jQuery));

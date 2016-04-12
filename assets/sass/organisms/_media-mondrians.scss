@@ -1,10 +1,6 @@
 @charset "UTF-8";
 
 .media-mondrian{
-  .thumbnail{
-    position: static;
-    img{
-      opacity: 1;
-    }
-  }
+  background-color: $concrete;
+  padding: 6px;
 }
