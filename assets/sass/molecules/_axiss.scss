@@ -28,8 +28,15 @@
     span, strong{
       color: white;
     }
+    strong{
+      padding-bottom: 0em;
+      padding-top: 0.5em;
+    }
   }
   strong{
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    transition: padding 0.2s;
     font-size: 0.6em;
     font-family: $font-family-sans-serif;
     font-weight: normal;
