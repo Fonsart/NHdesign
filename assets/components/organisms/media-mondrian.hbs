@@ -1,0 +1,40 @@
+---
+notes: |
+  ##### Introduced : 0.6.0
+  ##### Usage : `{{> media-mondrian }}`
+---
+<div class="media-grid media-mondrian">
+
+  <div class="media-item media-mondrian-item">
+    <a href="detail.html">
+      <div class="thumbnail">
+        <img src="http://notrehistoire.ch.s3.amazonaws.com/photos/2016/03/7864ebef395b5417.jpg" alt="" class="img-responsive"/>
+      </div>
+    </a>
+    <div class="media-caption">
+      <h5>
+        <a href="detail.html">Villette</a>
+      </h5>
+      <p class="media-description">
+  <br>
+      </p>
+      <div class="text-clear">
+        41 <small><i class="glyphicon glyphicon-eye-open"></i></small> | 0 <small><i class="glyphicon glyphicon-heart"></i></small> | 1 <small><i class="glyphicon glyphicon-comment"></i></small>
+      </div>
+      <span class="media-icon glyphicon glyphicon-picture"></span>
+    </div>
+  </div>
+  {{#each medias }}
+    {{#ifgroup this.type}}
+      {{> group-teaser group-object=this }}
+    {{/ifgroup}}
+    {{#ifnotgroup this.type}}
+      {{> media-mondrian-item mediaobject=this }}
+    {{/ifnotgroup}}
+  {{/each}}
+  <div class="media-mondrian-item">
+    {{> axis }}
+  </div>
+
+
+</div>

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.axis{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $pirate-gold;
+  width: 18em;
+  height: 18em;
+}
+.axis-element{
+  flex: 1;
+  display: block;
+}

@@ -10,6 +10,7 @@
 
 
 // atoms:
+@import 'atoms/thumbnail-mondrians';
 @import 'atoms/label-hierarchys';
 @import 'atoms/overlays';
 @import 'atoms/chevrons';
@@ -29,6 +30,8 @@
 @import 'atoms/buttons';
 
 // molecules:
+@import 'molecules/axiss';
+@import 'molecules/media-mondrian-items';
 @import 'molecules/alert-infos';
 @import 'molecules/progressions';
 @import 'molecules/search-fields';
@@ -47,6 +50,7 @@
 @import 'molecules/login-forms';
 
 // organisms:
+@import 'organisms/media-mondrians';
 @import 'organisms/profile-collections';
 @import 'organisms/profile-themes';
 @import 'organisms/maps';
