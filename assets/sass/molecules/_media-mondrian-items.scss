@@ -6,10 +6,11 @@
 @media screen and (min-width: $screen-sm-max) {
   .media-mondrian-item-md{ width: 600px;}
   .media-mondrian-item-lg{ width: 800px;}
-  .media-mondrian-item-xl{ width: 1000px;}
+  .media-mondrian-item-xl{ width: 1200px;}
 }
 
 .media-mondrian-item{
+  border: 5px solid white;
   float: left;
   opacity: 0.9;
   transition: opacity 0.3s;
@@ -25,11 +26,11 @@
   }
   .media-mondrian-caption{
     transition: all 0.3s;
-    position: absolute;
-    left: 1em;
-    right: 1em;
+    // position: absolute;
+    // left: 1em;
+    // right: 1em;
     z-index: 32;
-    bottom:1em;
+    // bottom:1em;
     background: transparentize($black, 0.6);
     font-family: $font-family-sans-serif;
     padding: 0.5em;
