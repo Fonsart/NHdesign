@@ -5,7 +5,7 @@
 (function($){
   $(document).ready(function () {
     var initGrid = function () {
-      $('.media-grid').flexImages({
+      $('.media-grid:not(.media-mondrian)').flexImages({
         container: '.media-item, .group-teaser',
         object: 'img',
         rowHeight: 250,
@@ -36,5 +36,14 @@
         initGrid();
       }, delay);
     });
+
+
+    $('.media-mondrian').masonry({
+      // options...
+      itemSelector: '.media-mondrian-item',
+      columnWidth: 100,
+      gutter: 0
+    });
+
   });
 }(jQuery));
