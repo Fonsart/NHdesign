@@ -1,16 +1,19 @@
 primary:
-  pirate-gold: '#d08402'
-  monza: "#d0021b"
-  carmine: "#a80216"
-  lima: "#7ed321"
-  robins-egg-blue: '#02D0B7'
+  vermilion: '#f34b00'
 gray-tone:
-  white: "#ffffff"
-  concrete: "#f2f2f2"
-  gallery: "#ededed"
-  nobel: "#b4b4b4"
-  boulder: "#7d7d7d"
-  tundora: "#4a4a4a"
-  mine-shaft: "#262626"
-  black: "#000000"
+  tuatara: '#3c3c3b'
+  chicago: '#575756'
+  storm-dust: '#6f6f6e'
+  friar-gray: '#878786'
+  dusty-gray: '#9d9c9c'
+  gray-nickel: '#b2b2b1'
+  gray-nickel-2: '#c6c6c5'
+  quill-gray: '#dadad9'
+  gallery-2: '#ececec'
+  wild-sand: '#f5f5f5'
+secondary:
+  malachite: '#13c04a'
+  picton-blue: '#45bde1'
+  radical-red: '#ff2149'
+  saffron: '#efc12a'
 
