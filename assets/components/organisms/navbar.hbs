@@ -1,15 +1,15 @@
 ---
 notes: |
   ##### Introduced : 0.0.2
-  ##### Updated : 0.4.2
+  ##### Updated : 0.5.0
   ##### Usage : `{{> navbar }}`
 ---
 <nav class="navbar navbar-default">
-  <div class="navbar-header">
-    <a class="navbar-brand" href="demo.html"><h1 class="h4">Notre histoire</h1></a>
-  </div>
-
   {{> search-field }}
+
+  <a class="navbar-brand" href="demo.html">
+    <img class="img-responsive" src="{{#if fabricator}}./{{else}}./../{{/if}}build/svg/nh-brand.svg" onerror="this.onerror=null; this.src='{{#if fabricator}}./{{else}}./../{{/if}}build/img/nh-brand.png'" />
+  </a>
 
   <a href="upload.html" class="btn btn-default navbar-btn navbar-right">
     <span class="hidden-xs">Ajouter un média</span>
