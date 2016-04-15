@@ -10,6 +10,7 @@
               background 0.3s,
               border 0.3s;
   margin-bottom: 0.2em;
+  border-radius: 10px !important;
   &.btn-block {text-align: center;}
   &:hover, &:focus,  &:active {
     outline: none !important;
@@ -26,14 +27,20 @@
 }
 
 .input-group {
-  .input-group-btn {vertical-align: top;}
-  .btn {white-space: nowrap;}
+  .input-group-btn {
+    vertical-align: top;
+    border-radius: 0px !important;
+  }
+  .btn {
+    white-space: nowrap;
+    border-radius: 0px !important;
+  }
 }
 
 .btn-clear {
   background: $concrete;
-  border: 1px solid $gallery;
-  color: $monza;
+  color: $tundora;
+  border-radius: 0px !important;
   transition: background 0.3s,
               border-color 0.3s;
   .chevron {
@@ -41,11 +48,14 @@
     margin-left: $grid-gutter-width;
   }
   &:hover, &:focus {
-    border-color: $nobel;
-    color: $monza;
-    .chevron {border-color: $monza;}
+    color: $brand-primary;
+    .chevron {border-color: $brand-primary;}
   }
   &:focus {
     background: $gallery;
   }
+}
+
+.btn-link {
+  border: 1px solid $brand-primary;
 }

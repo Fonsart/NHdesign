@@ -5,25 +5,27 @@
   top: 0;
   left: 0;
   width: 100%;
-  margin-top: -0.8em;
+  margin-top: -2em;
   background: $white;
   font-family: $font-family-sans-serif;
   padding: $grid-gutter-width/2;
   padding-top: 1px;
   hr {margin: 0.6em auto;}
   h5 {
-    color: $nobel;
-    margin-bottom: 0.2em;
+    color: $boulder;
+    margin-bottom: 0.5em;
     margin-top: 1.5em;
+    padding-bottom: 0.5em;
     font-weight: 500;
+    border-bottom: 1px solid $tundora;
   }
   .row h5 {margin-top: 0;}
   a {
     padding-bottom: 0.4em;
     font-weight: 700;
     text-decoration: none;
-    color: $carmine;
-    &:hover {color: $monza;}
+    color: darken($brand-primary, 5%);
+    &:hover {color: $brand-primary;}
   }
   @media screen and (max-width: $screen-xs-max) {
     position: static;

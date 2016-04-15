@@ -5,7 +5,7 @@
 (function($){
   $(document).ready(function () {
     var initGrid = function () {
-      $('.media-grid').flexImages({
+      $('.media-grid:not(.media-mondrian)').flexImages({
         container: '.media-item, .group-teaser',
         object: 'img',
         rowHeight: 250,
