@@ -24,8 +24,8 @@
     padding-bottom: 0.4em;
     font-weight: 700;
     text-decoration: none;
-    color: $carmine;
-    &:hover {color: $monza;}
+    color: darken($brand-primary, 5%);
+    &:hover {color: $brand-primary;}
   }
   @media screen and (max-width: $screen-xs-max) {
     position: static;
