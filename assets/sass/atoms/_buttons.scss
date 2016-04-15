@@ -27,8 +27,14 @@
 }
 
 .input-group {
-  .input-group-btn {vertical-align: top;}
-  .btn {white-space: nowrap;}
+  .input-group-btn {
+    vertical-align: top;
+    border-radius: 0px !important;
+  }
+  .btn {
+    white-space: nowrap;
+    border-radius: 0px !important;
+  }
 }
 
 .btn-clear {

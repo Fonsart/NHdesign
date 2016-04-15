@@ -36,13 +36,13 @@
       position: absolute;
       top: 0px;
       right: 0px;
-      background: $monza none repeat scroll 0% 0%;
+      background: $brand-primary none repeat scroll 0% 0%;
       color: rgb(255, 255, 255);
       text-decoration: none;
       font-size: 1.4em;
       padding: 3px 14px;
       transition: background 0.3s;
-      &:hover {background-color: $carmine;}
+      &:hover {background-color: darken($brand-primary, 10%);}
     }
   }
 
