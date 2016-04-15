@@ -17,7 +17,7 @@
   &:hover{
     opacity: 1;
     .media-mondrian-caption{
-      background: transparentize($carmine, 0.2);
+      background: darken($concrete, 8%);;
       bottom:1.4em;
     }
   }
@@ -31,10 +31,10 @@
     // right: 1em;
     z-index: 32;
     // bottom:1em;
-    background: transparentize($black, 0.6);
+    background: $concrete;
     font-family: $font-family-sans-serif;
     padding: 0.5em;
-    color: $white;
+    color: $tundora;
     span{
       text-decoration: none;
     }

@@ -17,13 +17,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $carmine;
+  background-color: $brand-primary;
   transition: background 0.3s;
   color: white;
   font-size: 1.4em;
 
   &:hover{
-    background-color: $monza;
+    background-color: darken($brand-primary, 5%);
     text-decoration: none;
     span, strong{
       color: white;
