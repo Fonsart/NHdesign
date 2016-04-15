@@ -22,15 +22,15 @@
 
 
     <nav class="navbar navbar-default">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="demo.html"><h1 class="h4">Notre histoire</h1></a>
-      </div>
-    
       <form id="search-form" class="navbar-form navbar-left" role="search">
         
         <input type="text" class="form-control" placeholder="Rechercher" />
         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
       </form>
+      <a class="navbar-brand" href="demo.html">
+        <img class="img-responsive" src="./../build/svg/nh-brand.svg" onerror="this.onerror=null; this.src='./../build/img/nh-brand.png'" />
+      </a>
+    
       <a href="upload.html" class="btn btn-default navbar-btn navbar-right">
         <span class="hidden-xs">Ajouter un média</span>
         <span class="visible-xs glyphicon glyphicon-plus"></span>
@@ -470,23 +470,23 @@
               // Define marker's popup
               switch (item.type) {
                 case 'photo':
-                  var icon  = 'picture';
+                  var icon  = 'camera';
                   var thumb = '<img src="'+item.thumbnail+'" />';
                   break;
                 case 'video':
-                  var icon  = 'film';
+                  var icon  = 'video';
                   var thumb = '<img src="'+item.thumbnail+'" />';
                   break;
                 case 'audio':
-                  var icon  = 'glyphicon-headphones';
+                  var icon  = 'microphone';
                   var thumb = '<p>'+item.description+'</p>';
                   break;
                 case 'article':
-                  var icon  = 'list-alt';
+                  var icon  = 'newspaper';
                   var thumb = '<p>'+item.description+'</p>';
                   break;
                 default:
-                  var icon  = 'picture';
+                  var icon  = 'camera';
                   var thumb = '<img src="'+item.thumbnail+'" />';
               }
       
@@ -496,7 +496,7 @@
                               '</div>'+
                               '<div class="infobox-caption">'+
                                 item.title+
-                                '<span class="glyphicon glyphicon-'+icon+'"></span>'+
+                                '<span class="icons icons-'+icon+'"></span>'+
                               '</div>'+
                             '</a>';
       
