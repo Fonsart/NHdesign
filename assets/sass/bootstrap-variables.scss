@@ -15,7 +15,7 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         $mine-shaft !default; // #337ab7
+$brand-primary:         $vermilion !default; // #337ab7
 $brand-success:         $lima !default;
 $brand-info:            $robins-egg-blue !default;
 $brand-warning:         $pirate-gold !default;
@@ -43,11 +43,11 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Work Sans", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       "Source Serif Pro", Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:  "Roboto", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       "Lora", Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:        $font-family-serif !default;
+$font-family-base:        $font-family-sans-serif !default;
 
 $font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.2222)) !default; // ~20px
@@ -66,8 +66,8 @@ $line-height-base:        1.5 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    $font-family-sans-serif !default;
-$headings-font-weight:    700 !default;
+$headings-font-family:    $font-family-serif !default;
+$headings-font-weight:    400 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
@@ -149,11 +149,11 @@ $table-border-color:            #ddd !default;
 
 $btn-font-weight:                normal !default;
 
-$btn-default-color:              #333 !default;
+$btn-default-color:              $black !default;
 $btn-default-bg:                 #fff !default;
-$btn-default-border:             $nobel !default;
+$btn-default-border:             $black  !default;
 
-$btn-primary-color:              #fff !default;
+$btn-primary-color:              $white !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             transparent !default;
 
@@ -198,17 +198,17 @@ $input-border:                   #ccc !default;
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
 // This has no effect on `<select>`s in some browsers, due to the limited stylability of `<select>`s in CSS.
-$input-border-radius:            $border-radius-base !default;
+$input-border-radius:            0 !default;
 //** Large `.form-control` border radius
-$input-border-radius-large:      $border-radius-large !default;
+$input-border-radius-large:      0 !default;
 //** Small `.form-control` border radius
-$input-border-radius-small:      $border-radius-small !default;
+$input-border-radius-small:      0 !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             $boulder !default;
+$input-border-focus:             $dusty-gray !default;
 
 //** Placeholder text color
-$input-color-placeholder:        $boulder !default;
+$input-color-placeholder:        $dusty-gray !default;
 
 //** Default `.form-control` height
 $input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2) !default;
@@ -513,7 +513,7 @@ $state-warning-text:             $brand-warning !default;
 $state-warning-bg:               #fcf8e3 !default;
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
 
-$state-danger-text:              $brand-danger !default;
+$state-danger-text:              $brand-primary !default;
 $state-danger-bg:                #f2dede !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 

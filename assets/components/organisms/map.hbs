@@ -84,23 +84,23 @@ notes: |
         // Define marker's popup
         switch (item.type) {
           case 'photo':
-            var icon  = 'picture';
+            var icon  = 'camera';
             var thumb = '<img src="'+item.thumbnail+'" />';
             break;
           case 'video':
-            var icon  = 'film';
+            var icon  = 'video';
             var thumb = '<img src="'+item.thumbnail+'" />';
             break;
           case 'audio':
-            var icon  = 'glyphicon-headphones';
+            var icon  = 'microphone';
             var thumb = '<p>'+item.description+'</p>';
             break;
           case 'article':
-            var icon  = 'list-alt';
+            var icon  = 'newspaper';
             var thumb = '<p>'+item.description+'</p>';
             break;
           default:
-            var icon  = 'picture';
+            var icon  = 'camera';
             var thumb = '<img src="'+item.thumbnail+'" />';
         }
 
@@ -110,7 +110,7 @@ notes: |
                         '</div>'+
                         '<div class="infobox-caption">'+
                           item.title+
-                          '<span class="glyphicon glyphicon-'+icon+'"></span>'+
+                          '<span class="icons icons-'+icon+'"></span>'+
                         '</div>'+
                       '</a>';
 

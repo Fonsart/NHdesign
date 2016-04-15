@@ -11,14 +11,14 @@
   font-weight: 500 !important;
   white-space: normal;
   text-align: left;
-  color: $monza;
+  color: $brand-primary;
   transition: color 0.3s,
               background 0.3s;
   &.label-default {
     border: 1px solid darken($gallery, 5%);
   }
   &:hover {
-    color: $carmine;
+    color: darken($brand-primary, 5%);
     background: $concrete !important;
   }
 }
@@ -47,12 +47,12 @@
     right: 27px;
     display: block;
     height: 1px;
-    background: $monza;
+    background: $brand-primary;
     transition: left 0.3s;
   }
   &:hover {
     background: $white;
-    color: $monza;
+    color: $brand-primary;
     &:before {
       left: 0.5em;
     }

@@ -3,12 +3,13 @@
 .media-features-bar {
   color: $boulder;
   font-size: $font-size-small;
-  border-top: 1px solid $nobel;
   padding: 0.4em 0;
+  background: lighten($concrete, 1%);
   .btn-link {
     color: $boulder;
     font-size: $font-size-small;
     font-weight: 500;
+    border: 0;
     &:hover {
       text-decoration: none;
       color: $black;

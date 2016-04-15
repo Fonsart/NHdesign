@@ -1,9 +1,13 @@
 @charset "UTF-8";
 
+body {
+  font-weight: 300;
+}
+
 a {
   transition: color 0.3s;
   text-decoration: underline;
-  &:hover {color: $monza;}
+  &:hover {color: darken($brand-primary, 5%);}
 }
 
 h3, .h3, h5, .h5 {
@@ -17,6 +21,11 @@ h3, .h3, h5, .h5 {
   display: flex;
   justify-content: space-between;
   a {padding: 0;}
+}
+
+p.lead {
+  font-family: $font-family-serif;
+  color: $dusty-gray;
 }
 
 em, i {
@@ -35,3 +44,6 @@ figure {
 figcaption {
   font-size: $font-size-small;
 }
+
+b {font-weight: 700;}
+strong {font-weight: 900;}

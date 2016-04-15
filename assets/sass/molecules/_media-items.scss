@@ -104,7 +104,10 @@ $media-caption-height: $media-caption-height;
   h5 {
     overflow: hidden;
     text-overflow: ellipsis;
-    a, a:hover {text-decoration: none;}
+    a, a:hover {
+      text-decoration: none;
+      color: $tundora;
+    }
   }
   .media-icon {
     position: absolute;
@@ -135,9 +138,10 @@ $media-caption-height: $media-caption-height;
       padding: 6px 0;
     }
     .media-icon {
-      top: 0;
+      bottom: 0;
       right: 0;
       padding: 10px;
+      padding-bottom: 0;
     }
   }
   .media-list & {

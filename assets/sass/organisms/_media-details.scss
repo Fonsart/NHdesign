@@ -1,15 +1,30 @@
 @charset "UTF-8";
 
 .article-container {
-  padding: 4em 1em;
   font-size: $font-size-large;
+  padding: 4em 1em;
 }
 
-.media-container{
+.media-container {
   position: relative;
-  .media-action{
+
+  &:not(.article-container) {background: $gallery-2;}
+
+  img {
+    margin: 0 auto;
+    max-height: 60vh;
+  }
+
+  .media-action {
     position: absolute;
-    top: -1.5rem;
-    right: 1em;
+    right: 0;
+    bottom: 100%;
+
+    a {
+      background: $gallery-2;
+      color: $tundora;
+      margin-bottom: 0;
+      border-radius: $btn-border-radius-small $btn-border-radius-small 0 0 !important;
+    }
   }
 }
