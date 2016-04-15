@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.axis{
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 400px;
+  height: 200px;
+}
+.axis-element{
+  flex: 1;
+  display: block;
+  text-align: center;
+  min-width: 50%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $carmine;
+  transition: background 0.3s;
+  color: white;
+  font-size: 1.4em;
+
+  &:hover{
+    background-color: $monza;
+    text-decoration: none;
+    span, strong{
+      color: white;
+    }
+    strong{
+      padding-bottom: 0em;
+      padding-top: 0.5em;
+    }
+  }
+  strong{
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    transition: padding 0.2s;
+    font-size: 0.6em;
+    font-family: $font-family-sans-serif;
+    font-weight: normal;
+  }
+  span{
+    color: white;
+  }
+}
