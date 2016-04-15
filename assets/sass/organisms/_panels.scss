@@ -16,7 +16,7 @@
     position: absolute;
     top: 0px;
     border: none;
-    border-radius: 0;
+    border-radius: 0 !important;
     .panel-closed-component {display: block;}
     .chevron, .cross {
       display: none;
@@ -39,14 +39,14 @@
   &.panel-enter .panel-button {
     background: inherit;
     color: $white;
-    background: $monza;
+    background: $brand-primary;
     .panel-closed-component {display: none;}
     .chevron, .cross {display: inline-block;}
     &:hover, &:active, &:focus {
       color: $white;
-      background: $monza;
+      background: $brand-primary;
     }
-    &:hover {background: $carmine;}
+    &:hover {background: darken($brand-primary, 10%);}
   }
   img {
     max-width: 60px;
@@ -78,9 +78,11 @@
     transform: translateX(-100%);
     font-weight: 400;
     height: $navbar-height;
+    background: $gallery-2;
+    border-radius: 0;
     &:hover, &:active {
-      border-color: $white;
-      background: $white;
+      border-color: $gallery-2;
+      background: $gallery-2;
     }
   }
 }
@@ -106,9 +108,9 @@
     font-family: $font-family-sans-serif;
     text-decoration: none;
     padding: 12px $grid-gutter-width/2;
-    .chevron {border-color: $monza;}
+    .chevron {border-color: $brand-primary;}
     &:hover {
-      color: $monza;
+      color: $brand-primary;
     }
   }
 }
