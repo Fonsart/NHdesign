@@ -39,8 +39,8 @@
 
 .btn-clear {
   background: $concrete;
-  border: 1px solid $gallery;
-  color: $monza;
+  color: $tundora;
+  border-radius: 0px !important;
   transition: background 0.3s,
               border-color 0.3s;
   .chevron {
@@ -48,9 +48,8 @@
     margin-left: $grid-gutter-width;
   }
   &:hover, &:focus {
-    border-color: $nobel;
-    color: $monza;
-    .chevron {border-color: $monza;}
+    color: $brand-primary;
+    .chevron {border-color: $brand-primary;}
   }
   &:focus {
     background: $gallery;
