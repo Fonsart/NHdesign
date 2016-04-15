@@ -13,10 +13,16 @@ notes: |
     <div class="col-sm-10 col-sm-offset-1">
       <div class="spacer spacer-sm"></div>
       {{#unless is-article}}
-        <div class="media-container">
-          <div class="media-action"><a href="metadata.html" class="btn btn-xs btn-primary" role="button">Éditer mon média</a></div>
-          <img src="{{media.source}}" alt="{{media.title}}" class="img-responsive" />
-        </div>
+    </div>
+  </div>
+</div>
+<div class="media-container">
+  <div class="media-action"><a href="metadata.html" class="btn btn-xs btn-primary" role="button">Éditer mon média</a></div>
+  <img src="{{media.source}}" alt="{{media.title}}" class="img-responsive" />
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
       {{^}}
         <div class="bg-concrete media-container article-container">
           <div class="media-action"><a href="metadata.html" class="btn btn-xs btn-primary" role="button">Éditer mon média</a></div>
