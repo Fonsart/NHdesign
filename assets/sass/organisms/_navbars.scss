@@ -12,7 +12,7 @@ body {
   width: 100%;
   background: $gallery-2;
   padding-right: ($grid-gutter-width / 2) + 123px;
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
+  // box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.14);
   border: none;
   font-family: $font-family-sans-serif;
   a {text-decoration: none;}
@@ -83,11 +83,11 @@ body {
   font-weight: 700;
   position: relative;
   margin-bottom: 0;
-  margin-top: 4px;
+  margin-top: 6px;
   color: $brand-primary;
   background: $gallery-2;
-  height: $navbar-height - 8px;
-  line-height: $navbar-height - 30px;
+  height: $navbar-height - 12px;
+  line-height: $navbar-height - 34px;
 
   &:hover, &:focus, &:active {
     border-color: $brand-primary;
