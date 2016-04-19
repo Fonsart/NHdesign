@@ -19,7 +19,7 @@
     opacity: 1;
     .media-mondrian-caption{
       background: darken($concrete, 8%);;
-      border-bottom: 5px solid darken($brand-primary, 8%);
+      border-bottom: 5px solid darken($brand-primary, 4%);
       bottom:1.4em;
     }
   }
@@ -28,11 +28,7 @@
   }
   .media-mondrian-caption{
     transition: all 0.3s;
-    // position: absolute;
-    // left: 1em;
-    // right: 1em;
     z-index: 32;
-    // bottom:1em;
     background: $concrete;
     font-family: $font-family-sans-serif;
     font-size: 0.8em;
@@ -71,6 +67,11 @@
     padding: 0;
     font-family: $font-family-sans-serif;
     font-weight: bold;
+  }
+}
+.media-mondrian-item-number{
+  a{
+    background-color: $tundora;
   }
 }
 .media-mondrian-item-number h2{
