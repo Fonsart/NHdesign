@@ -3,11 +3,11 @@
 .navbar-form {
   position: relative;
   width: 20%;
-  margin-top: 4px;
+  margin-top: 8px;
   margin-left: $navbar-height + 15px;
   padding: 0;
-  border: 2px solid $dusty-gray !important;
-  border-radius: 10px;
+  border: 1px solid $dusty-gray !important;
+  border-radius: 20px;
   background: $wild-sand;
 
   @media screen and (max-width: $screen-md-max) {
@@ -54,14 +54,14 @@
   padding: 0px 15px;
   padding-left: 40px;
   width: 100%;
-  height: 38px;
+  height: 30px;
   &:focus {
     & + .glyphicon {color: $boulder;}
   }
   & + .glyphicon {
     position: absolute;
     left: 15px;
-    top: 12px;
+    top: 8px;
     z-index: 10;
     color: $dusty-gray;
     transition: color 0.3s;
@@ -93,8 +93,8 @@
     float: left;
   }
   .label {
-    height: 38px;
-    padding: 0.5em 0.7em;
+    height: 30px;
+    padding: 0.3em 0.7em;
     padding-left: 35px;
     float: left;
     white-space: nowrap;
@@ -107,7 +107,7 @@
     margin-bottom: 0;
     .label-close:hover {&:before {
       left: 1.7em;
-      top: 0.95em;
+      top: 0.75em;
     }}
   }
   @media screen and (max-width: $screen-xs-max) {
