@@ -7,10 +7,10 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
-      <h1 class="h2 text-center">Créer une collection</h1>
+      <h1 class="h2 text-center">Créer un dossier</h1>
       <h4 class="text-center">À partir de la recherche</h4>
       <p class="text-sans text-clear text-center">
-        Pour créer votre collection, merci de compléter les information ci-dessous.
+        Pour créer votre dossier, merci de compléter les information ci-dessous.
       </p>
 
       <div class="bordered">
@@ -25,14 +25,14 @@
           {{> label closable=true text="1980-1990" }}
         </p>
         <p class="text-sans">
-          Cette collection basée sur une recherche est mise à jour automatiquement dès qu'un nouveau média correspond aux critères.
+          Ce dossier basée sur une recherche est mis à jour automatiquement dès qu'un nouveau média correspond aux critères.
         </p>
       </div>
 
       <div class="spacer spacer-sm"></div>
 
       <form action="demo.html" class="text-sans">
-        <label for="avatar">Choisissez une vignette pour représenter votre collection</label>
+        <label for="avatar">Choisissez une vignette pour représenter votre dossier</label>
         <div class="row">
           <div class="col-sm-4">
             <img src="{{collection.avatar}}" alt="Vignette de {{collection.title}}" class="img-responsive" />
@@ -51,8 +51,8 @@
               input-id="title"
               input-type="text"
               input-value=collection.title
-              input-help="Titre de votre collection*"
-              input-label="Titre de votre collection*"
+              input-help="Titre de votre dossier*"
+              input-label="Titre de votre dossier*"
         }}
         {{> textarea
               textarea-id="descritpion"
@@ -81,7 +81,7 @@
             </select>
           </div>
         </div>
-        <small class="text-clear text-sans"><em>Il vous est possible de classer votre collection dans un axe avec une thématique</em></small>
+        <small class="text-clear text-sans"><em>Il vous est possible de classer votre dossier dans un axe avec une thématique</em></small>
 
      <div class="spacer spacer-xs"></div>
 
