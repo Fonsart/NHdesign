@@ -1,37 +1,44 @@
 @charset "UTF-8";
 
-.media-mondrian-item-xs{ width: 200px;}
+.media-mondrian-item-xs{ width: 200px; }
 .media-mondrian-item-sm{ width: 400px;}
 .media-mondrian-item-md, .media-mondrian-item-lg, .media-mondrian-item-xl{ width: 100%;}
 @media screen and (min-width: $screen-sm-max) {
-  .media-mondrian-item-md{ width: 600px;}
-  .media-mondrian-item-lg{ width: 800px;}
-  .media-mondrian-item-xl{ width: 1200px;}
+  .media-mondrian-item-md{ width: 600px; }
+  .media-mondrian-item-lg{ width: 800px; }
+
 }
 
 .media-mondrian-item{
+  overflow: hidden;
   background-color: $gallery-2;
-  border: 10px solid white;
-  float: left;
+  // border: 10px solid white;
+  // float: left;
   opacity: 0.9;
   transition: opacity 0.3s;
+  position: relative;
   &:hover{
     opacity: 1;
     .media-mondrian-caption{
-      background: darken($concrete, 8%);;
-      border-bottom: 5px solid darken($brand-primary, 4%);
-      bottom:1.4em;
+      background: darken($concrete, 8%);
+      // border-bottom: 5px solid darken($brand-primary, 4%);
+      // bottom:1.4em;
     }
   }
   a{
     text-decoration: none;
   }
+  .media-mondrian-thumbnail{
+    height: 100%;
+  }
   .media-mondrian-caption{
+    width: 100%;
+    position: absolute;
+    bottom:0;
     transition: all 0.3s;
     z-index: 32;
     background: $concrete;
     font-family: $font-family-sans-serif;
-    font-size: 0.8em;
     padding: 0.5em;
     color: $tundora;
     span{
@@ -39,6 +46,19 @@
     }
   }
 }
+.media-mondrian-item-first{
+  img{
+    width: 100%;
+    position: absolute;
+    top:-20%;
+  }
+  .media-mondrian-thumbnail{
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
 .media-mondrian-item-text{
 
 }
@@ -55,9 +75,11 @@
   padding: 0;
   a{
     display: block;
-    color: $white;
+    // color: $white;
     padding: 2em 2em;
-    background-color: $brand-primary;
+    // background-color: $brand-primary;
+    background: white url('../img/fingerprint.png') 0 0 no-repeat;
+    background-size: cover;
     &:hover{
       background-color: darken($brand-primary,8%)
     }
@@ -89,4 +111,14 @@
     a{
       color: $white;
     }
+}
+
+.media-mondrian-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // justify-content: space-between;
+  .media-mondrian-item{
+    margin: 10px;
+  }
 }
