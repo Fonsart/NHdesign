@@ -13,10 +13,10 @@
     &:hover {
       text-decoration: none;
       color: $black;
-      .glyphicon {color: $black;}
+      .icons {color: $black;}
     }
-    &.active .glyphicon {color: $monza;}
-    .glyphicon {
+    &.active .icons {color: $monza;}
+    .icons {
       font-size: $font-size-base;
       position: relative;
       top: 0.3em;

@@ -24,15 +24,15 @@
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: 'Glyphicons Halflings';
+  font-family: 'icons';
   font-style: normal;
   text-shadow: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
 
-.icon-jfi-folder:before {@extend .glyphicon-folder-open:before;}
-.icon-jfi-trash:before {@extend .glyphicon-trash:before;}
+.icon-jfi-folder:before {@extend .icons-folder-open:before;}
+.icon-jfi-trash:before {@extend .icons-trash:before;}
 
 .jFiler-input-choose-btn.blue {
   @extend .btn;

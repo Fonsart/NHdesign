@@ -56,12 +56,12 @@
   width: 100%;
   height: 30px;
   &:focus {
-    & + .glyphicon {color: $boulder;}
+    & + .icons {color: $boulder;}
   }
-  & + .glyphicon {
+  & + .icons {
     position: absolute;
     left: 15px;
-    top: 8px;
+    top: 5px;
     z-index: 10;
     color: $dusty-gray;
     transition: color 0.3s;
@@ -76,9 +76,9 @@
     padding-left: 40px;
     margin-top: 4px;
     border-radius: 50px;
-    & + .glyphicon {
+    & + .icons {
       left: 28px;
-      top: 22px;
+      top: 19px;
     }
   }
 }
@@ -122,9 +122,9 @@
     .form-control {
       width: 100%;
       border-radius: 50px;
-      padding-left: 35px;
-      & + .glyphicon {
-        top: 60px;
+      padding-left: 38px;
+      & + .icons {
+        top: 50px;
       }
     }
   }
