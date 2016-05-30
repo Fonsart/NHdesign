@@ -7,7 +7,8 @@
   overflow: visible;
   width: 300px;
   max-width: 90%;
-  z-index: 2000;
+  max-width: calc(100% - #{$navbar-height});
+  z-index: $zindex-navbar + 5;
   background: $white;
   box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0);
   transition: transform 0.3s,
@@ -33,6 +34,7 @@
     padding: 0;
   }
   &.panel-entering, &.panel-enter {
+    z-index: $zindex-modal + 10;
     box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.5);
   }
   &.panel-entering .panel-button,
