@@ -7,7 +7,7 @@
   if ($(window).width() < 767) {
     $(document).ready(function () {
       $('#search-mobile').click(function () {
-        $('#search-form').toggleClass('open')
+        $('#search-form').toggleClass('open');
       });
     });
   }
