@@ -26,7 +26,6 @@
     });
 
     $('#close-all-facets').click(function(){
-      console.log('hello');
       $('.facet-group').each(function(){
         if (!$(this).hasClass('open')) {
           $('#close-all-facets').html('Tout fermer');
@@ -102,7 +101,7 @@
 
 (function($){
   $(window).load(function () {
-    $('.media-mondrian').masonry({
+    $('.media-mondrian___').masonry({
       itemSelector: '.media-mondrian-item',
       columnWidth: 100,
       gutter: 0
@@ -119,7 +118,7 @@
   if ($(window).width() < 767) {
     $(document).ready(function () {
       $('#search-mobile').click(function () {
-        $('#search-form').toggleClass('open')
+        $('#search-form').toggleClass('open');
       });
     });
   }
@@ -150,6 +149,24 @@
 
 'use strict';
 
+// This polyfill adds support for object-fit for IE and Edge.(even working on IE9!!)
+// To use it, just add the [data-object-fit] attribute to the img tag. Example:
+// `<img class="img-responsive" src="URL" data-object-fit="cover" alt="text">
+//
+// Source: https://twitter.com/jon_neal/status/707058033730277376
+
+if ('objectFit' in document.documentElement.style === false) {
+  document.addEventListener('DOMContentLoaded', function () {
+    Array.prototype.forEach.call(document.querySelectorAll('img[data-object-fit]'), function (image) {
+      (image.runtimeStyle || image.style).background = 'url("' + image.src + '") no-repeat 50%/' + (image.currentStyle ? image.currentStyle['object-fit'] : image.getAttribute('data-object-fit'));
+
+      image.src = 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'' + image.width + '\' height=\'' + image.height + '\'%3E%3C/svg%3E';
+    });
+  });
+}
+
+'use strict';
+
 /* global jQuery */
 
 (function($){
@@ -172,6 +189,7 @@
 'use strict';
 
 /* global jQuery */
+/*jshint multistr: true */
 
 (function($){
 
@@ -179,7 +197,7 @@
     $('#filer_input').filer({
         changeInput: '<div class="jFiler-input-dragDrop"><div class="jFiler-input-inner"><div class="jFiler-input-icon"><i class="icon-jfi-folder"></i></div><div class="jFiler-input-text"><h3>Click on this box</h3> <span style="display:inline-block; margin: 15px 0">or</span></div><a class="jFiler-input-choose-btn blue">Browse Files</a></div></div>',
         showThumbs: true,
-        theme: "dragdropbox",
+        theme: 'dragdropbox',
         templates: {
             box: '<ul class="jFiler-items-list jFiler-items-grid"></ul>',
             item: '<li class="jFiler-item">\
