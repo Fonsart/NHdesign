@@ -12,8 +12,6 @@
 .media-mondrian-item{
   overflow: hidden;
   background-color: $gallery-2;
-  // border: 10px solid white;
-  // float: left;
   opacity: 0.9;
   transition: opacity 0.3s;
   position: relative;
@@ -21,11 +19,10 @@
     opacity: 1;
     .media-mondrian-caption{
       background: darken($concrete, 8%);
-      // border-bottom: 5px solid darken($brand-primary, 4%);
-      // bottom:1.4em;
     }
   }
   a{
+    display: block;
     text-decoration: none;
   }
   .media-mondrian-thumbnail{
@@ -49,11 +46,12 @@
 .media-mondrian-item-first{
   img{
     width: 100%;
-    position: absolute;
-    top:-20%;
+    height: auto;
+    max-height: 90vh;
+    object-fit: cover;
   }
   .media-mondrian-thumbnail{
-    height: 90vh;
+    max-height: 90vh;
     overflow: hidden;
     position: relative;
   }
@@ -75,9 +73,7 @@
   padding: 0;
   a{
     display: block;
-    // color: $white;
     padding: 2em 2em;
-    // background-color: $brand-primary;
     background: white url('../img/fingerprint.png') 0 0 no-repeat;
     background-size: cover;
     &:hover{
@@ -117,7 +113,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // justify-content: space-between;
   .media-mondrian-item{
     margin: 10px;
   }
