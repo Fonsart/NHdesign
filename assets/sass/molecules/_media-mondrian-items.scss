@@ -12,7 +12,7 @@
 .media-mondrian-item{
   flex: 1 1 auto;
   overflow: hidden;
-  background-color: $gallery-2;
+  background-color: $quill-gray;
   opacity: 0.9;
   transition: opacity 0.3s;
   position: relative;
@@ -46,7 +46,7 @@
   img{
     width: 100%;
     height: auto;
-    max-height: 90vh;
+    max-height: 80vh;
     object-fit: cover;
   }
   .media-mondrian-thumbnail{
@@ -58,6 +58,11 @@
 
 .media-mondrian-item-text{
   display: flex;
+}
+.media-mondrian-item-button {
+  .btn {
+    font-size: 100%;
+  }
 }
 .media-mondrian-item-comment{
 
