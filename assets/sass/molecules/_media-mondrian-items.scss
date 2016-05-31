@@ -23,14 +23,15 @@
     }
   }
   a{
-    display: block;
-    text-decoration: none;
-  }
-  .media-mondrian-thumbnail{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     height: 100%;
+    text-decoration: none;
   }
   .media-mondrian-caption{
     width: 100%;
+    margin-top: auto;
     transition: all 0.3s;
     z-index: 32;
     background: $concrete;
@@ -59,16 +60,9 @@
 .media-mondrian-item-text{
   display: flex;
 }
-.media-mondrian-item-button {
-  .btn {
-    font-size: 100%;
-  }
-}
-.media-mondrian-item-comment{
-
-}
 .media-mondrian-content{
   padding: 1em 2em;
+  flex: 1;
   h4{
     line-height: 1.4em;
   }
