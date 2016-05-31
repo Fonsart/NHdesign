@@ -58,6 +58,10 @@
   }
 }
 
+.media-mondrian-thumbnail {
+  min-height: 1px; // IE 11 FIX
+}
+
 .media-mondrian-item-text{
   display: flex;
 }
