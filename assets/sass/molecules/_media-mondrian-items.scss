@@ -10,6 +10,7 @@
 }
 
 .media-mondrian-item{
+  flex: 1 1 auto;
   overflow: hidden;
   background-color: $gallery-2;
   opacity: 0.9;
@@ -73,10 +74,11 @@
     display: block;
     flex: 1;
     padding: 2em 2em;
-    background: white url('../img/fingerprint.png') 0 0 no-repeat;
+    background: lighten($gallery-2, 2%) url('../img/fingerprint.png') 0 0 no-repeat;
     background-size: cover;
+    transition: background 300ms ease;
     &:hover{
-      background-color: darken($brand-primary,8%)
+      background-color: darken($gallery-2, 4%);
     }
   }
   h1, h2, h3, h4, h5, h6, p{
@@ -85,10 +87,9 @@
     font-family: $font-family-sans-serif;
     font-weight: bold;
   }
-}
-.media-mondrian-item-number{
-  a{
-    background-color: $tundora;
+  .lead {
+    font-weight: normal;
+    color: darken($text-muted, 10%);
   }
 }
 .media-mondrian-item-number h2{
