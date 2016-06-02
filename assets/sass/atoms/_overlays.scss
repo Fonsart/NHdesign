@@ -14,7 +14,7 @@
 
   &.open {
     position: fixed;
-    z-index: 1999;
+    z-index: $zindex-modal + 5;
     top: 0px;
     bottom: 0px;
     left: 0px;
@@ -42,7 +42,7 @@
       font-size: 1.4em;
       padding: 3px 14px;
       transition: background 0.3s;
-      &:hover {background-color: darken($brand-primary, 5%);}
+      &:hover {background-color: $link-hover-color;}
     }
   }
 

@@ -4,7 +4,7 @@
 
 (function($){
   $(window).load(function () {
-    $('.media-mondrian').masonry({
+    $('.media-mondrian___').masonry({
       itemSelector: '.media-mondrian-item',
       columnWidth: 100,
       gutter: 0

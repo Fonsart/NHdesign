@@ -24,7 +24,7 @@
     padding-bottom: 0.4em;
     font-weight: 700;
     text-decoration: none;
-    color: darken($brand-primary, 5%);
+    color: $link-hover-color;
     &:hover {color: $brand-primary;}
   }
   @media screen and (max-width: $screen-xs-max) {

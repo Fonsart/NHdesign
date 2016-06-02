@@ -25,6 +25,15 @@
   }
 }
 
+.bg-waves {
+  background: url(../svg/waves.svg) no-repeat bottom center lighten($concrete, 1%);
+  background-size: cover;
+  border-top: 1px solid $concrete;
+  .text-clear {
+    color: $nobel;
+  }
+}
+
 .bordered {
   padding: $grid-gutter-width/4 $grid-gutter-width/2;
   border: 1px solid $gallery;
