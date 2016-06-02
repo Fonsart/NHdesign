@@ -134,15 +134,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: none;
 
   h1,
   h2 {
     text-align: center;
+    font-weight: normal;
   }
 }
 
 .media-mondrian-item-number h2{
-  font-weight: normal;
   font-size: 4em;
 }
 
