@@ -48,7 +48,7 @@
       color: $white;
       background: $brand-primary;
     }
-    &:hover {background: darken($brand-primary, 5%);}
+    &:hover {background: $link-hover-color;}
   }
   img {
     max-width: 60px;
