@@ -1,49 +1,87 @@
 @charset "UTF-8";
 
-.media-mondrian-item-xs{ width: 200px;}
+.media-mondrian-item-xs{ width: 200px; }
 .media-mondrian-item-sm{ width: 400px;}
 .media-mondrian-item-md, .media-mondrian-item-lg, .media-mondrian-item-xl{ width: 100%;}
 @media screen and (min-width: $screen-sm-max) {
-  .media-mondrian-item-md{ width: 600px;}
-  .media-mondrian-item-lg{ width: 800px;}
-  .media-mondrian-item-xl{ width: 1200px;}
+  .media-mondrian-item-md{ width: 600px; }
+  .media-mondrian-item-lg{ width: 800px; }
+
 }
 
 .media-mondrian-item{
-  background-color: $gallery-2;
-  border: 10px solid white;
-  float: left;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: $quill-gray;
   opacity: 0.9;
   transition: opacity 0.3s;
+  position: relative;
+  text-decoration: none;
   &:hover{
     opacity: 1;
+    text-decoration: none;
     .media-mondrian-caption{
-      background: darken($concrete, 8%);;
-      border-bottom: 5px solid darken($brand-primary, 4%);
-      bottom:1.4em;
+      background: darken($concrete, 8%);
     }
   }
-  a{
-    text-decoration: none;
-  }
+  a {text-decoration: none;}
   .media-mondrian-caption{
+    width: 100%;
+    margin-top: auto;
     transition: all 0.3s;
     z-index: 32;
     background: $concrete;
     font-family: $font-family-sans-serif;
-    font-size: 0.8em;
     padding: 0.5em;
+    font-size: 110%;
     color: $tundora;
+    border-left: 1px solid $quill-gray;
+    border-right: 1px solid $quill-gray;
+    border-bottom: 1px solid $quill-gray;
     span{
       text-decoration: none;
     }
   }
 }
-.media-mondrian-item-text{
 
+.media-mondrian-thumbnail {
+  min-height: 1px; // IE 11 FIX
+
+  &:not(.no-trick) {
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    img {
+      opacity: 0;
+    }
+  }
 }
-.media-mondrian-item-comment{
 
+.media-mondrian-item-first{
+  img{
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: cover;
+  }
+  .media-mondrian-thumbnail{
+    flex: none;
+    max-height: 90vh;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+.media-mondrian-item-text{
+  display: flex;
 }
 .media-mondrian-content{
   padding: 1em 2em;
@@ -52,30 +90,63 @@
   }
 }
 .media-mondrian-item-no-caption{
-  padding: 0;
-  a{
-    display: block;
-    color: $white;
-    padding: 2em 2em;
-    background-color: $brand-primary;
-    &:hover{
-      background-color: darken($brand-primary,8%)
+  display: block;
+  flex: 1 1 auto;
+  position: relative;
+  padding: 2em 2em;
+
+  &:hover{
+    background: none;
+    opacity: 0.9;
+    text-decoration: none;
+
+    &:before {
+      opacity: 1;
     }
+  }
+
+  &:before {
+    content: '';
+    background: url('../img/fingerprint.png') 0 0 no-repeat;
+    background-size: cover;
+    transition: opacity 300ms ease;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
   }
   h1, h2, h3, h4, h5, h6, p{
     margin: 0;
     padding: 0;
-    font-family: $font-family-sans-serif;
     font-weight: bold;
   }
-}
-.media-mondrian-item-number{
-  a{
-    background-color: $tundora;
+  .lead {
+    font-weight: normal;
+    color: darken($text-muted, 10%);
   }
 }
+
+.media-mondrian-item-slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+
+  h1 {
+    color: $text-color;
+  }
+  h1,
+  h2 {
+    text-align: center;
+    font-weight: normal;
+  }
+}
+
 .media-mondrian-item-number h2{
-  font-weight: normal;
   font-size: 4em;
 }
 
@@ -89,4 +160,13 @@
     a{
       color: $white;
     }
+}
+
+.media-mondrian-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .media-mondrian-item{
+    margin: 10px;
+  }
 }

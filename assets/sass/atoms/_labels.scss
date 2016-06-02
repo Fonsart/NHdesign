@@ -18,7 +18,7 @@
     border: 1px solid darken($gallery, 5%);
   }
   &:hover {
-    color: darken($brand-primary, 5%);
+    color: $link-hover-color;
     background: $concrete !important;
   }
 }

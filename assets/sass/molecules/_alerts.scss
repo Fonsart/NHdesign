@@ -17,28 +17,28 @@
   }
 
   &.alert-success{
-    .glyphicon{
+    .icons{
       color: $brand-success;
     }
   }
   &.alert-danger{
-    .glyphicon{
+    .icons{
       color: $brand-danger;
     }
   }
   &.alert-warning{
-    .glyphicon{
+    .icons{
       color: $brand-warning;
     }
   }
   &.alert-info{
-    .glyphicon{
+    .icons{
       color: $brand-info;
     }
   }
   // icons used ;-)
-  // glyphicon glyphicon-info-sign
-  // glyphicon glyphicon-flash
-  // glyphicon glyphicon-alert
-  // glyphicon glyphicon-ok
+  // icons icons-info-sign
+  // icons icons-flash
+  // icons icons-alert
+  // icons icons-ok
 }

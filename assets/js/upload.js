@@ -1,6 +1,7 @@
 'use strict';
 
 /* global jQuery */
+/*jshint multistr: true */
 
 (function($){
 
@@ -8,7 +9,7 @@
     $('#filer_input').filer({
         changeInput: '<div class="jFiler-input-dragDrop"><div class="jFiler-input-inner"><div class="jFiler-input-icon"><i class="icon-jfi-folder"></i></div><div class="jFiler-input-text"><h3>Click on this box</h3> <span style="display:inline-block; margin: 15px 0">or</span></div><a class="jFiler-input-choose-btn blue">Browse Files</a></div></div>',
         showThumbs: true,
-        theme: "dragdropbox",
+        theme: 'dragdropbox',
         templates: {
             box: '<ul class="jFiler-items-list jFiler-items-grid"></ul>',
             item: '<li class="jFiler-item">\

@@ -11,7 +11,6 @@
     });
 
     $('#close-all-facets').click(function(){
-      console.log('hello');
       $('.facet-group').each(function(){
         if (!$(this).hasClass('open')) {
           $('#close-all-facets').html('Tout fermer');

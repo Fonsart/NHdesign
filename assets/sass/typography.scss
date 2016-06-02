@@ -7,7 +7,7 @@ body {
 a {
   transition: color 0.3s;
   text-decoration: underline;
-  &:hover {color: darken($brand-primary, 5%);}
+  &:hover {color: $link-hover-color;}
 }
 
 h3, .h3, h5, .h5 {

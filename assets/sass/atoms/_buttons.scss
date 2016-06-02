@@ -19,7 +19,7 @@
 }
 
 .btn-primary:hover, .btn-primary:active {
-  background: darken($monza, 20%);
+  background: $link-hover-color;
 }
 
 .btn-default:hover, .btn-default:active {

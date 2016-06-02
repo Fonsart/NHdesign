@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+a {
+  &:hover {
+    &.icons-heart,
+    .icons-heart {
+      @extend .icons-heart-full;
+    }
+  }
+}
