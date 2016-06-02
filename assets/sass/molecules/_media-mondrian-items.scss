@@ -136,6 +136,9 @@
   align-items: center;
   background: none;
 
+  h1 {
+    color: $text-color;
+  }
   h1,
   h2 {
     text-align: center;
