@@ -50,7 +50,7 @@
   min-height: 1px; // IE 11 FIX
 
   &:not(.no-trick) {
-    flex: 1;
+    flex: 1 1 auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -123,6 +123,7 @@
     margin: 0;
     padding: 0;
     font-weight: bold;
+    max-width: 100%;
   }
   .lead {
     font-weight: normal;
