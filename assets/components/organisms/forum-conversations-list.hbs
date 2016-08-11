@@ -1,0 +1,29 @@
+---
+notes: |
+  ##### Introduced : 0.6.7
+  ##### Usage : `{{> conversations-list }}`
+  ##### Options :
+      - empty : true
+---
+<div>
+  <div class="bg-concrete list-group-head">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="list-item-flex-center list-item-flex-right">
+          <a href="./conversation-new.html" class="btn btn-primary pull-right btn-xs">Créer un nouveau sujet</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="list-conversation">
+    {{#each forum-conversations }}
+      {{> forum-conversation forum-conversationobject=this }}
+    {{/each}}
+  </div>
+  <div class="spacer spacer-sm"></div>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <button type="button" name="button" class="btn btn-block btn-default">Voir plus ...</button>
+    </div>
+  </div>
+</div>

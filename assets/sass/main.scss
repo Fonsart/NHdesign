@@ -33,6 +33,8 @@
 @import 'atoms/no-thumbnail';
 
 // molecules:
+@import 'molecules/message-bubbles';
+@import 'molecules/forum-conversations';
 @import 'molecules/conversations';
 @import 'molecules/axiss';
 @import 'molecules/media-mondrian-items';
@@ -55,6 +57,7 @@
 @import 'molecules/activity-items';
 
 // organisms:
+@import 'organisms/forum-conversations-lists';
 @import 'organisms/conversation-items';
 @import 'organisms/conversations-lists';
 @import 'organisms/media-mondrians';
