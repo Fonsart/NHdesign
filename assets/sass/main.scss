@@ -73,6 +73,9 @@
 @import 'organisms/activity-lists';
 
 // templates:
+@import 'templates/forum-conversation';
+@import 'templates/forum-new';
+@import 'templates/forum';
 @import 'templates/inbox-conversation';
 @import 'templates/inbox-new';
 @import 'templates/inbox';
