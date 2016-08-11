@@ -10,15 +10,17 @@ notes: |
     <div class="row">
       <div class="col-xs-12">
         <div class="list-item-flex-center list-item-flex-right">
-          <a href="./conversation-new.html" class="btn btn-primary pull-right btn-xs">Créer un nouveau sujet</a>
+          <a href="./forum-new.html" class="btn btn-primary pull-right btn-xs">Créer un nouveau sujet</a>
         </div>
       </div>
     </div>
   </div>
   <div class="list-conversation">
-    {{#each forum-conversations }}
-      {{> forum-conversation forum-conversationobject=this }}
-    {{/each}}
+  	<table class="table table-striped">
+  		{{#each forum-conversations }}
+      		{{> forum-conversation forum-conversationobject=this }}
+    	{{/each}}
+  	</table>
   </div>
   <div class="spacer spacer-sm"></div>
   <div class="row">

@@ -10,36 +10,12 @@ notes: |
     message-intro
     date
 ---
-
-<a href="inbox-conversation.html" class="conversation-item">
-  <div class="row">
-    <div class="col-xs-10">
-    	<table class="table">
-		  <tr>
-		  		<td>
-		  			<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2012/02/b144a398ee8b34a2_jpg_168x168_crop_q85.jpg"/>
-		  		</td>
-		  		<td>
-		  			Alison
-		  		</td>
-		  </tr>
-		  <tr>
-		  		<td>
-		  			...
-		  		</td>
-		  </tr>
-		</table>
-      <div class="media">
-        <div class="media-left">
-          <img src="{{forum-conversationobject.avatar}}" alt="{{forum-conversationobject.username}}" class="media-object" />
-        </div>
-        <div class="media-body">
-          <b>{{forum-conversationobject.username}}</b> – <small>{{forum-conversationobject.date}}</small>
-          <h5 class="media-heading">
-            {{forum-conversationobject.message-intro}} ...
-          </h5>
-        </div>
-      </div>
-    </div>
-  </div>
-</a>
+        <tr>
+          <td>
+            <a href="./forum-conversation.html"><h4>{{forum-conversationobject.subject}}</h4></a>
+            <b>{{forum-conversationobject.username}}</b> – <small>{{forum-conversationobject.date}}</small> - <small>{{forum-conversationobject.category}}</small>
+          </td>
+          <td class="text-right">
+            <small>{{forum-conversationobject.response}}</small>
+          </td>
+        </tr>
