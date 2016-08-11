@@ -35,7 +35,9 @@ notes: |
         {{#if new}}
         {{^}}
         <div class="bordered">
-
+          {{#each conversations-detail }}
+            {{> message-bubble conversationobject=this }}
+          {{/each}}
         </div>
         {{/if}}
         <div class="bordered bg-concrete">

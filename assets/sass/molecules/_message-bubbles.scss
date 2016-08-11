@@ -1,1 +1,19 @@
 @charset "UTF-8";
+
+.message-bubble{
+  .media-object{
+    max-width: 60px;
+  }
+  .media-body{
+    padding: 1em;
+    border-radius: 0.3em;
+    background-color: $wild-sand;
+    border: 1px solid $gray-nickel-2;
+  }
+}
+.message-bubble-left{
+    margin-right: 10vw;
+}
+.message-bubble-right{
+    margin-left: 10vw;
+}

@@ -2,5 +2,26 @@
 notes: |
   ##### Usage : `{{> message-bubble }}`
   ##### Options :
-  - **option** - Type
+  - **conversationobject** - Object
+  - **left** - true
+  - **message** - string
+  - **avatar** - url
 ---
+
+<div class="media message-bubble {{#if conversationobject.left}}message-bubble-left{{^}}message-bubble-right{{/if}}">
+  {{#if conversationobject.left}}
+    <div class="media-left">
+      <img class="media-object" src="{{ conversationobject.avatar }}" alt="...">
+    </div>
+  {{^}}
+  {{/if}}
+  <div class="media-body">
+    {{ conversationobject.message }}
+  </div>
+  {{#if conversationobject.left}}
+  {{^}}
+    <div class="media-right">
+      <img class="media-object" src="{{ conversationobject.avatar }}" alt="...">
+    </div>
+  {{/if}}
+</div>
