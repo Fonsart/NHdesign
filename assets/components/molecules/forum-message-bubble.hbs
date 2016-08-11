@@ -1,0 +1,31 @@
+---
+notes: |
+  ##### Usage : `{{> message-bubble }}`
+  ##### Options :
+  - **conversationobject** - Object
+  - **left** - true
+  - **message** - string
+  - **avatar** - url
+  - **date** - string
+---
+
+<div class="media message-bubble">
+  {{#if forumconversationobject.left}}
+      <div class="media-left">
+        <img class="media-object" src="{{ forumconversationobject.avatar }}" alt="...">
+      </div>
+  {{^}}
+  {{/if}}
+  <div class="media-body">
+    {{ forumconversationobject.message }}
+    <br/>
+    <small class="text-muted">Écrit par <a href="./profile-person.html">{{ forumconversationobject.name }}</a>, le {{ forumconversationobject.date }}</small>
+  </div>
+  {{#if forumconversationobject.left}}
+  {{^}}
+      <div class="media-right">
+        <img class="media-object" src="{{ forumconversationobject.avatar }}" alt="...">
+      </div>
+  {{/if}}
+</div>
+
