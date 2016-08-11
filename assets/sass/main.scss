@@ -33,6 +33,7 @@
 @import 'atoms/no-thumbnail';
 
 // molecules:
+@import 'molecules/conversations';
 @import 'molecules/axiss';
 @import 'molecules/media-mondrian-items';
 @import 'molecules/alert-infos';
@@ -54,6 +55,7 @@
 @import 'molecules/activity-items';
 
 // organisms:
+@import 'organisms/conversations-lists';
 @import 'organisms/media-mondrians';
 @import 'organisms/profile-collections';
 @import 'organisms/profile-themes';
@@ -70,6 +72,10 @@
 @import 'organisms/activity-lists';
 
 // templates:
+@import 'templates/inbox-conversation';
+@import 'templates/inbox-new';
+@import 'templates/inbox';
+@import 'templates/inbox-empty';
 @import 'templates/activites';
 @import 'templates/homepage';
 @import 'templates/detail-fullscreen';
