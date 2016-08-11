@@ -1,6 +1,33 @@
 ---
 notes: |
+  ##### Introduced : 0.6.7
   ##### Usage : `{{> conversations-list }}`
-  ##### Options :
-  - **option** - Type
 ---
+<div>
+  <div class="bg-concrete list-group-head">
+    <div class="row">
+      <div class="col-xs-1">
+        <div class="list-item-flex-center">
+          <input type="checkbox" name="name" value="">
+        </div>
+      </div>
+      <div class="col-xs-11">
+        <div class="list-item-flex-center list-item-flex-right">
+          <a href="./inbox-new.html" class="btn btn-primary pull-right btn-xs">Rédiger un nouveau message</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="list-conversation">
+    {{#each conversations }}
+      {{> conversation conversationobject=this }}
+    {{/each}}
+  </div>
+  <div class="spacer spacer-sm"></div>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <button type="button" name="button" class="btn btn-block btn-default">Voir plus ...</button>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,40 @@
 ---
 notes: |
+  ##### Introduced : 0.6.7
+  ##### Updated :
   ##### Usage : `{{> conversation }}`
   ##### Options :
-  - **option** - Type
+  - **activityobject** Object
+    username
+    avatar
+    message-intro
+    date
 ---
+
+<a href="inbox-conversation.html" class="conversation-item">
+  <div class="row">
+    <div class="col-xs-1">
+      <div class="list-item-flex-center">
+        <input type="checkbox" name="name" value="">
+      </div>
+    </div>
+    <div class="col-xs-9">
+      <div class="media">
+        <div class="media-left">
+          <img src="{{conversationobject.avatar}}" alt="{{conversationobject.username}}" class="media-object" />
+        </div>
+        <div class="media-body">
+          <b>{{conversationobject.username}}</b> – <small>{{conversationobject.date}}</small>
+          <h5 class="media-heading">
+            {{conversationobject.message-intro}} ...
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="list-item-flex-right list-item-flex-center">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </div>
+    </div>
+  </div>
+</a>
