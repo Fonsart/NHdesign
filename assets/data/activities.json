@@ -1,0 +1,19 @@
+[
+  {
+    "username" : "Marc",
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg",
+    "verb": "a commenté",
+    "date": "12/08/2016",
+    "media-title": "Neige à Genève en février 1985",
+    "media-type": "Photo",
+    "media-url" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/groups/icon/2010/05/820f0440a4480383_JPG_104x104_crop_q85.jpg"
+  },
+  {
+    "username" : "",
+    "avatar" : "",
+    "verb" : "",
+    "date" : "",
+    "media-title" : "",
+    "media-type" : "",
+  }
+]

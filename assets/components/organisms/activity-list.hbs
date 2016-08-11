@@ -1,0 +1,11 @@
+---
+notes: |
+  ##### Introduced : 0.6.7
+  ##### Updated :
+  ##### Usage : `{{> activity-list }}`
+---
+<div id="media-container" class="media-list">
+  {{#each activities }}
+      {{> activity-items activityobject=this }}
+  {{/each}}
+</div>
