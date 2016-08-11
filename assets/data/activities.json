@@ -50,7 +50,7 @@
     "verb" : "a ajouté",
     "date" : "09/08/2016",
     "media-title" : "Franz Lochmatter, guide de montagne",
-    "type" : "text",
+    "type" : "article",
     "media-url" : ""
   },
   {
@@ -95,88 +95,7 @@
     "verb" : "a ajouté",
     "date" : "03/08/2016",
     "media-title" : "Franz Lochmatter, guide de montagne",
-    "type" : "text",
-    "media-url" : ""
-  },
-  {
-    "username" : "Sylvie",
-    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg",
-    "verb" : "a ajouté",
-    "date" : "03/08/2016",
-    "media-title" : "Franz Lochmatter, guide de montagne",
-    "type" : "text",
-    "media-url" : ""
-  },
-  {
-    "username" : "Sylvie",
-    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg",
-    "verb" : "a ajouté",
-    "date" : "03/08/2016",
-    "media-title" : "Franz Lochmatter, guide de montagne",
-    "type" : "text",
-    "media-url" : ""
-  },
-  {
-    "username" : "Sylvie",
-    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg",
-    "verb" : "a ajouté",
-    "date" : "29/07/2016",
-    "media-title" : "Franz Lochmatter, guide de montagne",
-    "type" : "text",
-    "media-url" : ""
-  },
-  {
-    "username" : "Sylvie",
-    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg",
-    "verb" : "a ajouté",
-    "date" : "29/07/2016",
-    "media-title" : "Franz Lochmatter, guide de montagne",
-    "type" : "text",
-    "media-url" : ""
-  },
-  {
-    "username" : "Sylvie",
-    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg",
-    "verb" : "a ajouté",
-    "date" : "28/07/2016",
-    "media-title" : "Franz Lochmatter, guide de montagne",
-    "type" : "text",
-    "media-url" : ""
-  },
-  {
-    "username" : "Sylvie",
-    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg",
-    "verb" : "a ajouté",
-    "date" : "26/07/2016",
-    "media-title" : "Franz Lochmatter, guide de montagne",
-    "type" : "text",
-    "media-url" : ""
-  },
-  {
-    "username" : "Sylvie",
-    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg",
-    "verb" : "a ajouté",
-    "date" : "25/07/2016",
-    "media-title" : "Franz Lochmatter, guide de montagne",
-    "type" : "text",
-    "media-url" : ""
-  },
-  {
-    "username" : "Sylvie",
-    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg",
-    "verb" : "a ajouté",
-    "date" : "25/07/2016",
-    "media-title" : "Franz Lochmatter, guide de montagne",
-    "type" : "text",
-    "media-url" : ""
-  },
-  {
-    "username" : "Sylvie",
-    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg",
-    "verb" : "a ajouté",
-    "date" : "24/07/2016",
-    "media-title" : "Franz Lochmatter, guide de montagne",
-    "type" : "text",
+    "type" : "article",
     "media-url" : ""
   }
 ]
