@@ -4,8 +4,14 @@ notes: |
   ##### Updated :
   ##### Usage : `{{> activity-list }}`
 ---
-<div id="media-container" class="media-list">
+<div>
   {{#each activities }}
       {{> activity-items activityobject=this }}
   {{/each}}
+  <div class="spacer spacer-sm"></div>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <button type="button" name="button" class="btn btn-block btn-default">Voir plus ...</button>
+    </div>
+  </div>
 </div>

@@ -3,9 +3,13 @@
   color: $white;
   min-width: 60px;
   min-height: 60px;
-  line-height: 60px;
-  text-align: center;
-  font-size: 40px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span{
+    margin-top: 0.3em;
+  }
   a:hover & {
     background-color: $gray-darker;
   }
