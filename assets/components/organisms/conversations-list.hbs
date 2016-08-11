@@ -2,23 +2,43 @@
 notes: |
   ##### Introduced : 0.6.7
   ##### Usage : `{{> conversations-list }}`
+  ##### Options :
+      - empty : true
 ---
 <div>
   <div class="bg-concrete list-group-head">
     <div class="row">
       <div class="col-xs-1">
         <div class="list-item-flex-center">
+          {{#if empty}}
+          {{^}}
           <input type="checkbox" name="name" value="">
+          {{/if}}
         </div>
       </div>
       <div class="col-xs-11">
         <div class="list-item-flex-center list-item-flex-right">
+          {{#if empty}}
+          {{^}}
           <a href="./inbox-new.html" class="btn btn-primary pull-right btn-xs">Rédiger un nouveau message</a>
+          {{/if}}
         </div>
       </div>
     </div>
   </div>
-
+  {{#if empty}}
+  <div class="bordered">
+    <div class="spacer spacer-md"></div>
+    <div class="text-center">
+      <h3>Aucun message pour le moment</h3>
+      <p>
+        N'hésitez pas à dialoguer avec vos amis de Notre Histoire
+      </p>
+      <a href="./inbox-new.html" class="btn btn-primary">Rédiger un nouveau message</a>
+    </div>
+    <div class="spacer spacer-md"></div>
+  </div>
+  {{^}}
   <div class="list-conversation">
     {{#each conversations }}
       {{> conversation conversationobject=this }}
@@ -30,4 +50,5 @@ notes: |
       <button type="button" name="button" class="btn btn-block btn-default">Voir plus ...</button>
     </div>
   </div>
+  {{/if}}
 </div>
