@@ -145,70 +145,148 @@
   </div>
 </div><div id="overlay" class="overlay">
 </div>
+<div class="spacer spacer-xs"></div>
+
 <div class="container">
   <div class="row">
     <div class="col-sm-6 col-sm-offset-3">
-      <h3 class="text-center">Inscription</h3>
+      <h1 class="text-center">Messagerie</h1>
       <div class="spacer spacer-xs"></div>
-      <form>
-        <div class="form-group">
-          <label for="nom">Nom et Prénom</label>
-          <input type="text" class="form-control" id="nom" placeholder="Nom et Prénom" value="" />
-          <p class="help-block">À qui avons-nous l&#x27;honneur ?</p>
-        </div>  <div class="form-group">
-          <label for="email">Adresse email</label>
-          <input type="email" class="form-control" id="email" placeholder="Adresse email" value="" />
-          <p class="help-block">C&#x27;est le moment où vous rentrez votre adresse email.</p>
-        </div>  <div class="form-group">
-          <label for="password">Mot de passe</label>
-          <input type="password" class="form-control" id="password" placeholder="Mot de passe" value="" />
-          <p class="help-block">N&#x27;aillez crainte, je détourne le regard.</p>
-        </div>  <div class="form-group">
-          <label for="password">Confirmation du mot de passe</label>
-          <input type="password" class="form-control" id="password" placeholder="Confirmation du mot de passe" value="" />
-          <p class="help-block">Juste pour être sûr que vous vous en souvenez.</p>
-        </div>  <div class="form-group">
-          <label for="canton">Votre canton</label>
-          <select class="form-control">
-            <option disabled selected>Votre canton</option>
-            <optgroup>
-              <option vale="ag">Argovie</option>
-              <option vale="ai">Appenzell Rhodes intérieures</option>
-              <option vale="ar">Appenzell Rhodes extérieures</option>
-              <option vale="be">Berne</option>
-              <option vale="bl">Bâle Campagne</option>
-              <option vale="bs">Bâle Ville</option>
-              <option vale="fr">Fribourg</option>
-              <option vale="ge">Genève</option>
-              <option vale="gl">Glaris</option>
-              <option vale="gr">Grisons</option>
-              <option vale="ju">Jura</option>
-              <option vale="lu">Lucerne -Luzern</option>
-              <option vale="ne">Neuchâtel</option>
-              <option vale="nw">Nidwald</option>
-              <option vale="ow">Obwald</option>
-              <option vale="sg">Saint-Gall</option>
-              <option vale="sh">Schaffhouse</option>
-              <option vale="so">Soleure</option>
-              <option vale="sz">Schwyz</option>
-              <option vale="tg">Thurgovie</option>
-              <option vale="ti">Ticino</option>
-              <option vale="ur">Uri</option>
-              <option vale="vd">Vaud</option>
-              <option vale="vs">Valais</option>
-              <option vale="zg">Zug</option>
-              <option vale="zh">Zurich</option>
-            </optgroup>
-          </select>
-          <p class="help-block">T&#x27;as où les vaches ?</p>
-        </div>  <div class="form-group">
-          <label for="message">Des commentaires à chaud ?</label>
-          <textarea class="form-control" id="message" rows="8">Ne soyez pas timide, nous sommes tout ouïe.</textarea>
-        </div>  <div class="spacer spacer-xs"></div>
-        <a href="profile-edit.html" class="btn btn-primary btn-block" role="button">Je m'inscris</a>  
-      </form>    </div>
+    </div>
   </div>
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <div>
+        <div class="bg-concrete list-group-head">
+          <div class="row">
+            <div class="col-xs-1">
+              <div class="list-item-flex-center">
+                <input type="checkbox" name="name" value="">
+              </div>
+            </div>
+            <div class="col-xs-11">
+              <div class="list-item-flex-center list-item-flex-right">
+                <a href="./inbox-new.html" class="btn btn-primary pull-right btn-xs">Rédiger un nouveau message</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-conversation">
+            <a href="inbox-conversation.html" class="conversation-item">
+              <div class="row">
+                <div class="col-xs-1">
+                  <div class="list-item-flex-center">
+                    <input type="checkbox" name="name" value="">
+                  </div>
+                </div>
+                <div class="col-xs-9">
+                  <div class="media">
+                    <div class="media-left">
+                      <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg" alt="Marc" class="media-object" />
+                    </div>
+                    <div class="media-body">
+                      <b>Marc</b> – <small>12/08/2016</small>
+                      <h5 class="media-heading">
+                        Salut, comment vas-tu depuis le temps ? ...
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-2">
+                  <div class="list-item-flex-right list-item-flex-center">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </div>
+                </div>
+              </div>
+            </a>      <a href="inbox-conversation.html" class="conversation-item">
+              <div class="row">
+                <div class="col-xs-1">
+                  <div class="list-item-flex-center">
+                    <input type="checkbox" name="name" value="">
+                  </div>
+                </div>
+                <div class="col-xs-9">
+                  <div class="media">
+                    <div class="media-left">
+                      <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg" alt="Ian" class="media-object" />
+                    </div>
+                    <div class="media-body">
+                      <b>Ian</b> – <small>11/08/2016</small>
+                      <h5 class="media-heading">
+                        Cette photo n&#x27;a rien à voir avec la Suisse ...
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-2">
+                  <div class="list-item-flex-right list-item-flex-center">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </div>
+                </div>
+              </div>
+            </a>      <a href="inbox-conversation.html" class="conversation-item">
+              <div class="row">
+                <div class="col-xs-1">
+                  <div class="list-item-flex-center">
+                    <input type="checkbox" name="name" value="">
+                  </div>
+                </div>
+                <div class="col-xs-9">
+                  <div class="media">
+                    <div class="media-left">
+                      <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2009/10/c030407f8dc6d950_gif_168x168_crop_q85.jpg" alt="Jean-Paul" class="media-object" />
+                    </div>
+                    <div class="media-body">
+                      <b>Jean-Paul</b> – <small>11/08/2016</small>
+                      <h5 class="media-heading">
+                        Cette nouvelle plate-forme, quelle classe ! ...
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-2">
+                  <div class="list-item-flex-right list-item-flex-center">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </div>
+                </div>
+              </div>
+            </a>      <a href="inbox-conversation.html" class="conversation-item">
+              <div class="row">
+                <div class="col-xs-1">
+                  <div class="list-item-flex-center">
+                    <input type="checkbox" name="name" value="">
+                  </div>
+                </div>
+                <div class="col-xs-9">
+                  <div class="media">
+                    <div class="media-left">
+                      <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2011/01/ee68c10788b054e_JPG_168x168_crop_q85.jpg" alt="Pierre-Marie" class="media-object" />
+                    </div>
+                    <div class="media-body">
+                      <b>Pierre-Marie</b> – <small>11/08/2016</small>
+                      <h5 class="media-heading">
+                        J&#x27;adore le logo ! ...
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-2">
+                  <div class="list-item-flex-right list-item-flex-center">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </div>
+                </div>
+              </div>
+            </a>  </div>
+        <div class="spacer spacer-sm"></div>
+        <div class="row">
+          <div class="col-xs-6 col-xs-offset-3">
+            <button type="button" name="button" class="btn btn-block btn-default">Voir plus ...</button>
+          </div>
+        </div>
+      </div>    </div>
+   </div>
 </div>
+
 
     <script src="./../build/js/vendors.min.js"></script>
     <script src="./../build/js/main.js"></script>

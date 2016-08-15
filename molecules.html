@@ -72,6 +72,9 @@
             <a href="templates.html" class="f-menu__heading">Templates</a>
             <ul>
               <li>
+                <a href="templates/activites.html">Activites</a>
+              </li>
+              <li>
                 <a href="templates/add-media-to-collection.html">Add Media To Collection</a>
               </li>
               <li>
@@ -111,7 +114,28 @@
                 <a href="templates/empty-collection.html">Empty Collection</a>
               </li>
               <li>
+                <a href="templates/forum-conversation.html">Forum Conversation</a>
+              </li>
+              <li>
+                <a href="templates/forum-new.html">Forum New</a>
+              </li>
+              <li>
+                <a href="templates/forum.html">Forum</a>
+              </li>
+              <li>
                 <a href="templates/homepage.html">Homepage</a>
+              </li>
+              <li>
+                <a href="templates/inbox-conversation.html">Inbox Conversation</a>
+              </li>
+              <li>
+                <a href="templates/inbox-empty.html">Inbox Empty</a>
+              </li>
+              <li>
+                <a href="templates/inbox-new.html">Inbox New</a>
+              </li>
+              <li>
+                <a href="templates/inbox.html">Inbox</a>
               </li>
               <li>
                 <a href="templates/map.html">Map</a>
@@ -180,6 +204,9 @@
                 <a href="atoms.html#loader">Loader</a>
               </li>
               <li>
+                <a href="atoms.html#no-thumbnail">No Thumbnail</a>
+              </li>
+              <li>
                 <a href="atoms.html#overlay">Overlay</a>
               </li>
               <li>
@@ -206,6 +233,9 @@
             <a href="molecules.html" class="f-menu__heading">Molecules</a>
             <ul>
               <li>
+                <a href="molecules.html#activity-items">Activity Items</a>
+              </li>
+              <li>
                 <a href="molecules.html#alert">Alert</a>
               </li>
               <li>
@@ -227,10 +257,19 @@
                 <a href="molecules.html#comment">Comment</a>
               </li>
               <li>
+                <a href="molecules.html#conversation">Conversation</a>
+              </li>
+              <li>
                 <a href="molecules.html#date-field">Date Field</a>
               </li>
               <li>
                 <a href="molecules.html#facet-group">Facet Group</a>
+              </li>
+              <li>
+                <a href="molecules.html#forum-conversation">Forum Conversation</a>
+              </li>
+              <li>
+                <a href="molecules.html#forum-message-bubble">Forum Message Bubble</a>
               </li>
               <li>
                 <a href="molecules.html#group-teaser">Group Teaser</a>
@@ -249,6 +288,9 @@
               </li>
               <li>
                 <a href="molecules.html#media-mondrian-item">Media Mondrian Item</a>
+              </li>
+              <li>
+                <a href="molecules.html#message-bubble">Message Bubble</a>
               </li>
               <li>
                 <a href="molecules.html#progression">Progression</a>
@@ -277,10 +319,25 @@
             <a href="organisms.html" class="f-menu__heading">Organisms</a>
             <ul>
               <li>
+                <a href="organisms.html#activity-list">Activity List</a>
+              </li>
+              <li>
                 <a href="organisms.html#container-wide">Container Wide</a>
               </li>
               <li>
+                <a href="organisms.html#conversation-item">Conversation Item</a>
+              </li>
+              <li>
+                <a href="organisms.html#conversations-list">Conversations List</a>
+              </li>
+              <li>
                 <a href="organisms.html#facet-sidebar">Facet Sidebar</a>
+              </li>
+              <li>
+                <a href="organisms.html#forum-conversation-item">Forum Conversation Item</a>
+              </li>
+              <li>
+                <a href="organisms.html#forum-conversations-list">Forum Conversations List</a>
               </li>
               <li>
                 <a href="organisms.html#map">Map</a>
@@ -343,6 +400,94 @@
 
     
 <h1 data-f-toggle="labels">Molecules</h1>
+
+
+<div class="f-item-group" id="activity-items">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Activity Items</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.6.7</h5>
+<h5>Updated :</h5>
+<h5>Usage : <code>{{&gt; activity-items }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>activityobject</strong> Object
+<ul>
+<li>username</li>
+<li>avatar</li>
+<li>verb</li>
+<li>date</li>
+<li>media-title</li>
+<li>media-type</li>
+</ul>
+</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<div class="media activity-item">
+	<div class="media-left media-middle">
+		<a href="./profile-person.html">
+			<img src="" alt="" class="media-object" />
+		</a>
+	</div>
+	<div class="media-body">
+		<h5 class="media-heading">
+     <a href="./profile-person.html"></a>
+     
+     <a href="./detail.html"></a>
+   </h5>
+		<span></span>
+	</div>
+	<div class="media-right">
+		<a href="./detail.html">
+			<div class="no-thumbnail">
+				<span class="media-icon icons icons-"></span>
+			</div>
+		</a>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;media activity-item&quot;&gt;
+	&lt;div class=&quot;media-left media-middle&quot;&gt;
+		&lt;a href=&quot;./profile-person.html&quot;&gt;
+			&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;media-object&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-body&quot;&gt;
+		&lt;h5 class=&quot;media-heading&quot;&gt;
+     &lt;a href=&quot;./profile-person.html&quot;&gt;&lt;/a&gt;
+     
+     &lt;a href=&quot;./detail.html&quot;&gt;&lt;/a&gt;
+   &lt;/h5&gt;
+		&lt;span&gt;&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-right&quot;&gt;
+		&lt;a href=&quot;./detail.html&quot;&gt;
+			&lt;div class=&quot;no-thumbnail&quot;&gt;
+				&lt;span class=&quot;media-icon icons icons-&quot;&gt;&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
 
 
 <div class="f-item-group" id="alert">
@@ -692,6 +837,99 @@
 		Avez-vous connu, Nicolas, les si jolis petits cartons dans lesquels nous placions délicatement les fleurs de mai que nous envoyions par la poste à notre famille.
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="conversation">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Conversation</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.6.7</h5>
+<h5>Updated :</h5>
+<h5>Usage : <code>{{&gt; conversation }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>activityobject</strong> Object
+username
+avatar
+message-intro
+date</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<a href="inbox-conversation.html" class="conversation-item">
+	<div class="row">
+		<div class="col-xs-1">
+			<div class="list-item-flex-center">
+				<input type="checkbox" name="name" value="">
+			</div>
+		</div>
+		<div class="col-xs-9">
+			<div class="media">
+				<div class="media-left">
+					<img src="" alt="" class="media-object" />
+				</div>
+				<div class="media-body">
+					<b></b> – <small></small>
+					<h5 class="media-heading">
+             ...
+          </h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2">
+			<div class="list-item-flex-right list-item-flex-center">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</div>
+		</div>
+	</div>
+</a>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;a href=&quot;inbox-conversation.html&quot; class=&quot;conversation-item&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-xs-1&quot;&gt;
+			&lt;div class=&quot;list-item-flex-center&quot;&gt;
+				&lt;input type=&quot;checkbox&quot; name=&quot;name&quot; value=&quot;&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-xs-9&quot;&gt;
+			&lt;div class=&quot;media&quot;&gt;
+				&lt;div class=&quot;media-left&quot;&gt;
+					&lt;img src=&quot;&quot; alt=&quot;&quot; class=&quot;media-object&quot; /&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;media-body&quot;&gt;
+					&lt;b&gt;&lt;/b&gt; – &lt;small&gt;&lt;/small&gt;
+					&lt;h5 class=&quot;media-heading&quot;&gt;
+             ...
+          &lt;/h5&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-xs-2&quot;&gt;
+			&lt;div class=&quot;list-item-flex-right list-item-flex-center&quot;&gt;
+				&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/a&gt;</code></pre>
 </div>
 
 
@@ -1993,6 +2231,120 @@
 </div>
 
 
+<div class="f-item-group" id="forum-conversation">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Forum Conversation</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.6.7</h5>
+<h5>Updated :</h5>
+<h5>Usage : <code>{{&gt; conversation }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>activityobject</strong> Object
+username
+avatar
+message-intro
+date</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<tr>
+	<td>
+		<a href="./forum-conversation.html"><h4></h4></a>
+		<b></b> – <small></small> - <small></small>
+	</td>
+	<td class="text-right">
+		<small></small>
+	</td>
+</tr>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;tr&gt;
+	&lt;td&gt;
+		&lt;a href=&quot;./forum-conversation.html&quot;&gt;&lt;h4&gt;&lt;/h4&gt;&lt;/a&gt;
+		&lt;b&gt;&lt;/b&gt; – &lt;small&gt;&lt;/small&gt; - &lt;small&gt;&lt;/small&gt;
+	&lt;/td&gt;
+	&lt;td class=&quot;text-right&quot;&gt;
+		&lt;small&gt;&lt;/small&gt;
+	&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="forum-message-bubble">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Forum Message Bubble</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Usage : <code>{{&gt; message-bubble }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>conversationobject</strong> - Object</li>
+<li><strong>left</strong> - true</li>
+<li><strong>message</strong> - string</li>
+<li><strong>avatar</strong> - url</li>
+<li><strong>date</strong> - string</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<div class="media message-bubble">
+	<div class="media-body">
+
+		<br/>
+		<small class="text-muted">Écrit par <a href="./profile-person.html"></a>, le </small>
+	</div>
+	<div class="media-right">
+		<img class="media-object" src="" alt="...">
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;media message-bubble&quot;&gt;
+	&lt;div class=&quot;media-body&quot;&gt;
+
+		&lt;br/&gt;
+		&lt;small class=&quot;text-muted&quot;&gt;Écrit par &lt;a href=&quot;./profile-person.html&quot;&gt;&lt;/a&gt;, le &lt;/small&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-right&quot;&gt;
+		&lt;img class=&quot;media-object&quot; src=&quot;&quot; alt=&quot;...&quot;&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="group-teaser">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -2492,6 +2844,63 @@
 	<pre><code class="language-markup">&lt;div class=&quot;media-mondrian-item&quot;&gt;
 	&lt;div class=&quot;thumbnail&quot;&gt;
 		&lt;img src=&quot;&quot; alt=&quot;&quot; width=&quot;&quot; height=&quot;&quot; /&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="message-bubble">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Message Bubble</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Usage : <code>{{&gt; message-bubble }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>conversationobject</strong> - Object</li>
+<li><strong>left</strong> - true</li>
+<li><strong>message</strong> - string</li>
+<li><strong>avatar</strong> - url</li>
+<li><strong>date</strong> - string</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<div class="media message-bubble message-bubble-right">
+	<div class="media-body">
+
+		<br/>
+		<small class="text-muted"></small>
+	</div>
+	<div class="media-right">
+		<img class="media-object" src="" alt="...">
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;media message-bubble message-bubble-right&quot;&gt;
+	&lt;div class=&quot;media-body&quot;&gt;
+
+		&lt;br/&gt;
+		&lt;small class=&quot;text-muted&quot;&gt;&lt;/small&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media-right&quot;&gt;
+		&lt;img class=&quot;media-object&quot; src=&quot;&quot; alt=&quot;...&quot;&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>

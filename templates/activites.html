@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="./../build/css/vendors.min.css">
+    <link rel="stylesheet" href="./../build/css/main.css">
+
+    <!--[if lt IE 9]>
+      <script src="./../build/js/polyfills.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-default">
+      <form id="search-form" class="navbar-form navbar-left" role="search">
+        
+        <input type="text" class="form-control" placeholder="Rechercher" />
+        <span class="icons icons-search" aria-hidden="true"></span>
+      </form>
+      <a class="navbar-brand" href="demo.html">
+        <img class="img-responsive" src="./../build/svg/nh-brand.svg" onerror="this.onerror=null; this.src='./../build/img/nh-brand.png'" />
+      </a>
+    
+      <a href="upload.html" class="btn btn-default navbar-btn navbar-right">
+        <span class="hidden-xs">Ajouter un média</span>
+        <span class="visible-xs icons icons-plus"></span>
+      </a>
+    
+      <button id="search-mobile" type="button" class="btn btn-default navbar-btn navbar-right visible-xs">
+        <span class="visible-xs icons icons-search"></span>
+      </button>
+    </nav>
+<div class="panel panel-left panel-animate panel-leave panel-leaving">
+  <button type="button" class="navbar-toggle panel-button">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar panel-closed-component"></span>
+    <span class="icon-bar panel-closed-component"></span>
+    <span class="icon-bar panel-closed-component"></span>
+    <span class="cross">&times;</span>
+  </button>
+  <div class="panel-content">
+    <ul class="nav nav-stacked">
+      <li role="presentation" class="active"><a href="#">
+        Aide
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="./forum.html">
+        Forum
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Blog
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Contact
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Partenaires
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+    </ul>
+    <div class="container-fluid">
+      <hr />      <h3>
+        <div class="text-clear">Le mouvement</div>
+        <b>NotreHistoire</b>
+      </h3>
+      <p class="text-clear text-sans">
+        Oremière plateforme participative Suisse romande. Elle a pour but de créer une fresque de médias sur l'histoire de notre région.<br>
+        <a href="#">En savoir plus</a>
+      </p>
+      <hr />    </div>
+    <ul class="nav nav-stacked">
+      <li role="presentation" class="active"><a href="#">
+        Activités récentes
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Fonds documentaires
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+    </ul>
+  </div>
+  <div class="panel-bottom">
+    <div class="container-fluid">
+      <p class="text-clear text-sans">
+        <small><a class="text-clear" href="#">Condition générales</a> - <a class="text-clear" href="#">Impressum</a></small>
+      </p>
+    </div>
+  </div>
+</div><div class="panel panel-right panel-animate panel-leave panel-leaving">
+  <button type="button" class="btn btn-default panel-button">
+    <span class="hidden-xs panel-closed-component">Connexion</span>
+    <span class="visible-xs">
+      <span class="icons icons-user panel-closed-component"></span>
+    </span>
+    <span class="cross">&times;</span>
+  </button>
+  <div class="panel-content">
+    <div class="container-fluid">
+      <div class="spacer spacer-xs"></div>
+      <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/08/876988c033485ccc_jpg_168x168_crop_q85.jpg" class="img-responsive img-circle pull-left">
+      <h4>Martine Desarzens</h4>
+      <div class="spacer spacer-sm"></div>
+    </div>
+    <ul class="nav nav-stacked">
+      <li role="presentation" class="active"><a href="#">
+        Afficher mon profil
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="./inbox.html">
+        Mes messages
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="./profile-person.html">
+        Mes médias
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="./activites.html">
+        Mes activités
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+      <li role="presentation"><a href="#">
+        Mes préférences
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+    </ul>
+    <div class="container-fluid">
+      <hr />      <p>
+        <a href="creation-collection.html" class="btn btn-default btn-sm btn-block" role="button">Créer un dossier</a>
+      </p>
+      <hr />      <a href="#" class="text-sans text-clear">Me déconnecter</a>
+    </div>
+  </div>
+</div><div id="overlay" class="overlay">
+</div>
+<div class="spacer spacer-xs"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1 class="text-center">Activités</h1>
+      <div class="spacer spacer-xs"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-1 col-md-2">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">Public</a></li>
+        <li><a href="#">Personnel</a></li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      <div>
+            <div class="media activity-item">
+             <div class="media-left media-middle">
+               <a href="./profile-person.html">
+                 <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg" alt="Marc" class="media-object" />
+               </a>
+             </div>
+             <div class="media-body">
+               <h5 class="media-heading">
+                 <a href="./profile-person.html">Marc</a>
+                 a commenté
+                 <a href="./detail.html">Neige à Genève en février 1985</a>
+               </h5>
+               <span>12/08/2016</span>
+             </div>
+             <div class="media-right">
+               <a href="./detail.html">
+                 <img alt="Neige à Genève en février 1985" class="media-object"  src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/groups/icon/2010/05/820f0440a4480383_JPG_104x104_crop_q85.jpg">
+               </a>
+             </div>
+            </div>      <div class="media activity-item">
+             <div class="media-left media-middle">
+               <a href="./profile-person.html">
+                 <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg" alt="Ian" class="media-object" />
+               </a>
+             </div>
+             <div class="media-body">
+               <h5 class="media-heading">
+                 <a href="./profile-person.html">Ian</a>
+                 a mis à jour
+                 <a href="./detail.html">Le travail de la scripte sur le tournage de La nasse</a>
+               </h5>
+               <span>11/08/2016</span>
+             </div>
+             <div class="media-right">
+               <a href="./detail.html">
+                 <img alt="Le travail de la scripte sur le tournage de La nasse" class="media-object"  src="http://notrehistoire.ch.s3.amazonaws.com/photos/2015/05/fb972b441b66950f.jpg">
+               </a>
+             </div>
+            </div>      <div class="media activity-item">
+             <div class="media-left media-middle">
+               <a href="./profile-person.html">
+                 <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2009/10/c030407f8dc6d950_gif_168x168_crop_q85.jpg" alt="Jean-Paul" class="media-object" />
+               </a>
+             </div>
+             <div class="media-body">
+               <h5 class="media-heading">
+                 <a href="./profile-person.html">Jean-Paul</a>
+                 a mis à jour
+                 <a href="./detail.html">Camping</a>
+               </h5>
+               <span>11/08/2016</span>
+             </div>
+             <div class="media-right">
+               <a href="./detail.html">
+                 <img alt="Camping" class="media-object"  src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/415da01234f12de6_jpg_200x200_upscale_q85.jpg">
+               </a>
+             </div>
+            </div>      <div class="media activity-item">
+             <div class="media-left media-middle">
+               <a href="./profile-person.html">
+                 <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2011/01/ee68c10788b054e_JPG_168x168_crop_q85.jpg" alt="Pierre-Marie" class="media-object" />
+               </a>
+             </div>
+             <div class="media-body">
+               <h5 class="media-heading">
+                 <a href="./profile-person.html">Pierre-Marie</a>
+                 a aimé
+                 <a href="./detail.html">Mon premier mort</a>
+               </h5>
+               <span>11/08/2016</span>
+             </div>
+             <div class="media-right">
+               <a href="./detail.html">
+                 <div class="no-thumbnail">
+                   <span class="media-icon icons icons-microphone"></span>
+                 </div>   </a>
+             </div>
+            </div>      <div class="media activity-item">
+             <div class="media-left media-middle">
+               <a href="./profile-person.html">
+                 <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg" alt="Sylvie" class="media-object" />
+               </a>
+             </div>
+             <div class="media-body">
+               <h5 class="media-heading">
+                 <a href="./profile-person.html">Sylvie</a>
+                 a commenté
+                 <a href="./detail.html">Lausanne - Destruction des Halles aux locomotives CFF</a>
+               </h5>
+               <span>10/08/2016</span>
+             </div>
+             <div class="media-right">
+               <a href="./detail.html">
+                 <img alt="Lausanne - Destruction des Halles aux locomotives CFF" class="media-object"  src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/videos/thumbnails/c1085b39e3bd7bea5c6ba9b5514250b3.mp4_jpg_200x150_crop_upscale_q85.jpg">
+               </a>
+             </div>
+            </div>      <div class="media activity-item">
+             <div class="media-left media-middle">
+               <a href="./profile-person.html">
+                 <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg" alt="Sylvie" class="media-object" />
+               </a>
+             </div>
+             <div class="media-body">
+               <h5 class="media-heading">
+                 <a href="./profile-person.html">Sylvie</a>
+                 a ajouté
+                 <a href="./detail.html">Franz Lochmatter, guide de montagne</a>
+               </h5>
+               <span>09/08/2016</span>
+             </div>
+             <div class="media-right">
+               <a href="./detail.html">
+                 <div class="no-thumbnail">
+                   <span class="media-icon icons icons-newspaper"></span>
+                 </div>   </a>
+             </div>
+            </div>      <div class="media activity-item">
+             <div class="media-left media-middle">
+               <a href="./profile-person.html">
+                 <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/02/db0e46886d7e7925_jpg_168x168_crop_q85.jpg" alt="Patrick" class="media-object" />
+               </a>
+             </div>
+             <div class="media-body">
+               <h5 class="media-heading">
+                 <a href="./profile-person.html">Patrick</a>
+                 a aimé
+                 <a href="./detail.html">Le cochon</a>
+               </h5>
+               <span>08/08/2016</span>
+             </div>
+             <div class="media-right">
+               <a href="./detail.html">
+                 <img alt="Le cochon" class="media-object"  src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/08/74c6f904a6f7ee49_jpg_530x530_q85.jpg">
+               </a>
+             </div>
+            </div>      <div class="media activity-item">
+             <div class="media-left media-middle">
+               <a href="./profile-person.html">
+                 <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/04/d628c65d25915cfe_jpg_168x168_crop_q85.jpg" alt="Albin" class="media-object" />
+               </a>
+             </div>
+             <div class="media-body">
+               <h5 class="media-heading">
+                 <a href="./profile-person.html">Albin</a>
+                 a mis à jour
+                 <a href="./detail.html">Viège, les vitraux de l&#x27;église Saint-Martin</a>
+               </h5>
+               <span>06/08/2016</span>
+             </div>
+             <div class="media-right">
+               <a href="./detail.html">
+                 <img alt="Viège, les vitraux de l&#x27;église Saint-Martin" class="media-object"  src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/08/868ff48e4270efa8_jpg_200x200_upscale_q85.jpg">
+               </a>
+             </div>
+            </div>      <div class="media activity-item">
+             <div class="media-left media-middle">
+               <a href="./profile-person.html">
+                 <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/04/d628c65d25915cfe_jpg_168x168_crop_q85.jpg" alt="Albin" class="media-object" />
+               </a>
+             </div>
+             <div class="media-body">
+               <h5 class="media-heading">
+                 <a href="./profile-person.html">Albin</a>
+                 a mis à jour
+                 <a href="./detail.html">Moiry, la vache</a>
+               </h5>
+               <span>06/08/2016</span>
+             </div>
+             <div class="media-right">
+               <a href="./detail.html">
+                 <img alt="Moiry, la vache" class="media-object"  src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/08/69ddea8af394b203_jpg_200x200_upscale_q85.jpg">
+               </a>
+             </div>
+            </div>      <div class="media activity-item">
+             <div class="media-left media-middle">
+               <a href="./profile-person.html">
+                 <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/04/d628c65d25915cfe_jpg_168x168_crop_q85.jpg" alt="Albin" class="media-object" />
+               </a>
+             </div>
+             <div class="media-body">
+               <h5 class="media-heading">
+                 <a href="./profile-person.html">Albin</a>
+                 a commenté
+                 <a href="./detail.html">Les Haudères et la Dent Blanche</a>
+               </h5>
+               <span>06/08/2016</span>
+             </div>
+             <div class="media-right">
+               <a href="./detail.html">
+                 <img alt="Les Haudères et la Dent Blanche" class="media-object"  src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/08/c07da7912f483371_jpg_530x530_q85.jpg">
+               </a>
+             </div>
+            </div>      <div class="media activity-item">
+             <div class="media-left media-middle">
+               <a href="./profile-person.html">
+                 <img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2010/04/526ab5e9a6e5c748_jpg_168x168_crop_q85.jpg" alt="Daniel" class="media-object" />
+               </a>
+             </div>
+             <div class="media-body">
+               <h5 class="media-heading">
+                 <a href="./profile-person.html">Daniel</a>
+                 a ajouté
+                 <a href="./detail.html">Franz Lochmatter, guide de montagne</a>
+               </h5>
+               <span>03/08/2016</span>
+             </div>
+             <div class="media-right">
+               <a href="./detail.html">
+                 <div class="no-thumbnail">
+                   <span class="media-icon icons icons-newspaper"></span>
+                 </div>   </a>
+             </div>
+            </div>  <div class="spacer spacer-sm"></div>
+        <div class="row">
+          <div class="col-xs-6 col-xs-offset-3">
+            <button type="button" name="button" class="btn btn-block btn-default">Voir plus ...</button>
+          </div>
+        </div>
+      </div>    </div>
+   </div>
+</div>
+
+
+    <script src="./../build/js/vendors.min.js"></script>
+    <script src="./../build/js/main.js"></script>
+  </body>
+</html>

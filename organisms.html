@@ -72,6 +72,9 @@
             <a href="templates.html" class="f-menu__heading">Templates</a>
             <ul>
               <li>
+                <a href="templates/activites.html">Activites</a>
+              </li>
+              <li>
                 <a href="templates/add-media-to-collection.html">Add Media To Collection</a>
               </li>
               <li>
@@ -111,7 +114,28 @@
                 <a href="templates/empty-collection.html">Empty Collection</a>
               </li>
               <li>
+                <a href="templates/forum-conversation.html">Forum Conversation</a>
+              </li>
+              <li>
+                <a href="templates/forum-new.html">Forum New</a>
+              </li>
+              <li>
+                <a href="templates/forum.html">Forum</a>
+              </li>
+              <li>
                 <a href="templates/homepage.html">Homepage</a>
+              </li>
+              <li>
+                <a href="templates/inbox-conversation.html">Inbox Conversation</a>
+              </li>
+              <li>
+                <a href="templates/inbox-empty.html">Inbox Empty</a>
+              </li>
+              <li>
+                <a href="templates/inbox-new.html">Inbox New</a>
+              </li>
+              <li>
+                <a href="templates/inbox.html">Inbox</a>
               </li>
               <li>
                 <a href="templates/map.html">Map</a>
@@ -180,6 +204,9 @@
                 <a href="atoms.html#loader">Loader</a>
               </li>
               <li>
+                <a href="atoms.html#no-thumbnail">No Thumbnail</a>
+              </li>
+              <li>
                 <a href="atoms.html#overlay">Overlay</a>
               </li>
               <li>
@@ -206,6 +233,9 @@
             <a href="molecules.html" class="f-menu__heading">Molecules</a>
             <ul>
               <li>
+                <a href="molecules.html#activity-items">Activity Items</a>
+              </li>
+              <li>
                 <a href="molecules.html#alert">Alert</a>
               </li>
               <li>
@@ -227,10 +257,19 @@
                 <a href="molecules.html#comment">Comment</a>
               </li>
               <li>
+                <a href="molecules.html#conversation">Conversation</a>
+              </li>
+              <li>
                 <a href="molecules.html#date-field">Date Field</a>
               </li>
               <li>
                 <a href="molecules.html#facet-group">Facet Group</a>
+              </li>
+              <li>
+                <a href="molecules.html#forum-conversation">Forum Conversation</a>
+              </li>
+              <li>
+                <a href="molecules.html#forum-message-bubble">Forum Message Bubble</a>
               </li>
               <li>
                 <a href="molecules.html#group-teaser">Group Teaser</a>
@@ -249,6 +288,9 @@
               </li>
               <li>
                 <a href="molecules.html#media-mondrian-item">Media Mondrian Item</a>
+              </li>
+              <li>
+                <a href="molecules.html#message-bubble">Message Bubble</a>
               </li>
               <li>
                 <a href="molecules.html#progression">Progression</a>
@@ -277,10 +319,25 @@
             <a href="organisms.html" class="f-menu__heading">Organisms</a>
             <ul>
               <li>
+                <a href="organisms.html#activity-list">Activity List</a>
+              </li>
+              <li>
                 <a href="organisms.html#container-wide">Container Wide</a>
               </li>
               <li>
+                <a href="organisms.html#conversation-item">Conversation Item</a>
+              </li>
+              <li>
+                <a href="organisms.html#conversations-list">Conversations List</a>
+              </li>
+              <li>
                 <a href="organisms.html#facet-sidebar">Facet Sidebar</a>
+              </li>
+              <li>
+                <a href="organisms.html#forum-conversation-item">Forum Conversation Item</a>
+              </li>
+              <li>
+                <a href="organisms.html#forum-conversations-list">Forum Conversations List</a>
               </li>
               <li>
                 <a href="organisms.html#map">Map</a>
@@ -345,6 +402,505 @@
 <h1 data-f-toggle="labels">Organisms</h1>
 
 
+<div class="f-item-group" id="activity-list">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Activity List</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.6.7</h5>
+<h5>Updated :</h5>
+<h5>Usage : <code>{{&gt; activity-list }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<div>
+	<div class="media activity-item">
+		<div class="media-left media-middle">
+			<a href="./profile-person.html">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg" alt="Marc" class="media-object" />
+			</a>
+		</div>
+		<div class="media-body">
+			<h5 class="media-heading">
+           <a href="./profile-person.html">Marc</a>
+           a commenté
+           <a href="./detail.html">Neige à Genève en février 1985</a>
+         </h5>
+			<span>12/08/2016</span>
+		</div>
+		<div class="media-right">
+			<a href="./detail.html">
+				<img alt="Neige à Genève en février 1985" class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/groups/icon/2010/05/820f0440a4480383_JPG_104x104_crop_q85.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="media activity-item">
+		<div class="media-left media-middle">
+			<a href="./profile-person.html">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg" alt="Ian" class="media-object" />
+			</a>
+		</div>
+		<div class="media-body">
+			<h5 class="media-heading">
+           <a href="./profile-person.html">Ian</a>
+           a mis à jour
+           <a href="./detail.html">Le travail de la scripte sur le tournage de La nasse</a>
+         </h5>
+			<span>11/08/2016</span>
+		</div>
+		<div class="media-right">
+			<a href="./detail.html">
+				<img alt="Le travail de la scripte sur le tournage de La nasse" class="media-object" src="http://notrehistoire.ch.s3.amazonaws.com/photos/2015/05/fb972b441b66950f.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="media activity-item">
+		<div class="media-left media-middle">
+			<a href="./profile-person.html">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2009/10/c030407f8dc6d950_gif_168x168_crop_q85.jpg" alt="Jean-Paul" class="media-object" />
+			</a>
+		</div>
+		<div class="media-body">
+			<h5 class="media-heading">
+           <a href="./profile-person.html">Jean-Paul</a>
+           a mis à jour
+           <a href="./detail.html">Camping</a>
+         </h5>
+			<span>11/08/2016</span>
+		</div>
+		<div class="media-right">
+			<a href="./detail.html">
+				<img alt="Camping" class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/415da01234f12de6_jpg_200x200_upscale_q85.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="media activity-item">
+		<div class="media-left media-middle">
+			<a href="./profile-person.html">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2011/01/ee68c10788b054e_JPG_168x168_crop_q85.jpg" alt="Pierre-Marie" class="media-object" />
+			</a>
+		</div>
+		<div class="media-body">
+			<h5 class="media-heading">
+           <a href="./profile-person.html">Pierre-Marie</a>
+           a aimé
+           <a href="./detail.html">Mon premier mort</a>
+         </h5>
+			<span>11/08/2016</span>
+		</div>
+		<div class="media-right">
+			<a href="./detail.html">
+				<div class="no-thumbnail">
+					<span class="media-icon icons icons-microphone"></span>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="media activity-item">
+		<div class="media-left media-middle">
+			<a href="./profile-person.html">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg" alt="Sylvie" class="media-object" />
+			</a>
+		</div>
+		<div class="media-body">
+			<h5 class="media-heading">
+           <a href="./profile-person.html">Sylvie</a>
+           a commenté
+           <a href="./detail.html">Lausanne - Destruction des Halles aux locomotives CFF</a>
+         </h5>
+			<span>10/08/2016</span>
+		</div>
+		<div class="media-right">
+			<a href="./detail.html">
+				<img alt="Lausanne - Destruction des Halles aux locomotives CFF" class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/videos/thumbnails/c1085b39e3bd7bea5c6ba9b5514250b3.mp4_jpg_200x150_crop_upscale_q85.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="media activity-item">
+		<div class="media-left media-middle">
+			<a href="./profile-person.html">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg" alt="Sylvie" class="media-object" />
+			</a>
+		</div>
+		<div class="media-body">
+			<h5 class="media-heading">
+           <a href="./profile-person.html">Sylvie</a>
+           a ajouté
+           <a href="./detail.html">Franz Lochmatter, guide de montagne</a>
+         </h5>
+			<span>09/08/2016</span>
+		</div>
+		<div class="media-right">
+			<a href="./detail.html">
+				<div class="no-thumbnail">
+					<span class="media-icon icons icons-newspaper"></span>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="media activity-item">
+		<div class="media-left media-middle">
+			<a href="./profile-person.html">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/02/db0e46886d7e7925_jpg_168x168_crop_q85.jpg" alt="Patrick" class="media-object" />
+			</a>
+		</div>
+		<div class="media-body">
+			<h5 class="media-heading">
+           <a href="./profile-person.html">Patrick</a>
+           a aimé
+           <a href="./detail.html">Le cochon</a>
+         </h5>
+			<span>08/08/2016</span>
+		</div>
+		<div class="media-right">
+			<a href="./detail.html">
+				<img alt="Le cochon" class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/08/74c6f904a6f7ee49_jpg_530x530_q85.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="media activity-item">
+		<div class="media-left media-middle">
+			<a href="./profile-person.html">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/04/d628c65d25915cfe_jpg_168x168_crop_q85.jpg" alt="Albin" class="media-object" />
+			</a>
+		</div>
+		<div class="media-body">
+			<h5 class="media-heading">
+           <a href="./profile-person.html">Albin</a>
+           a mis à jour
+           <a href="./detail.html">Viège, les vitraux de l&#x27;église Saint-Martin</a>
+         </h5>
+			<span>06/08/2016</span>
+		</div>
+		<div class="media-right">
+			<a href="./detail.html">
+				<img alt="Viège, les vitraux de l&#x27;église Saint-Martin" class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/08/868ff48e4270efa8_jpg_200x200_upscale_q85.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="media activity-item">
+		<div class="media-left media-middle">
+			<a href="./profile-person.html">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/04/d628c65d25915cfe_jpg_168x168_crop_q85.jpg" alt="Albin" class="media-object" />
+			</a>
+		</div>
+		<div class="media-body">
+			<h5 class="media-heading">
+           <a href="./profile-person.html">Albin</a>
+           a mis à jour
+           <a href="./detail.html">Moiry, la vache</a>
+         </h5>
+			<span>06/08/2016</span>
+		</div>
+		<div class="media-right">
+			<a href="./detail.html">
+				<img alt="Moiry, la vache" class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/08/69ddea8af394b203_jpg_200x200_upscale_q85.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="media activity-item">
+		<div class="media-left media-middle">
+			<a href="./profile-person.html">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/04/d628c65d25915cfe_jpg_168x168_crop_q85.jpg" alt="Albin" class="media-object" />
+			</a>
+		</div>
+		<div class="media-body">
+			<h5 class="media-heading">
+           <a href="./profile-person.html">Albin</a>
+           a commenté
+           <a href="./detail.html">Les Haudères et la Dent Blanche</a>
+         </h5>
+			<span>06/08/2016</span>
+		</div>
+		<div class="media-right">
+			<a href="./detail.html">
+				<img alt="Les Haudères et la Dent Blanche" class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/08/c07da7912f483371_jpg_530x530_q85.jpg">
+			</a>
+		</div>
+	</div>
+	<div class="media activity-item">
+		<div class="media-left media-middle">
+			<a href="./profile-person.html">
+				<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2010/04/526ab5e9a6e5c748_jpg_168x168_crop_q85.jpg" alt="Daniel" class="media-object" />
+			</a>
+		</div>
+		<div class="media-body">
+			<h5 class="media-heading">
+           <a href="./profile-person.html">Daniel</a>
+           a ajouté
+           <a href="./detail.html">Franz Lochmatter, guide de montagne</a>
+         </h5>
+			<span>03/08/2016</span>
+		</div>
+		<div class="media-right">
+			<a href="./detail.html">
+				<div class="no-thumbnail">
+					<span class="media-icon icons icons-newspaper"></span>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="spacer spacer-sm"></div>
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-3">
+			<button type="button" name="button" class="btn btn-block btn-default">Voir plus ...</button>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;div class=&quot;media activity-item&quot;&gt;
+		&lt;div class=&quot;media-left media-middle&quot;&gt;
+			&lt;a href=&quot;./profile-person.html&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Marc&quot; class=&quot;media-object&quot; /&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h5 class=&quot;media-heading&quot;&gt;
+           &lt;a href=&quot;./profile-person.html&quot;&gt;Marc&lt;/a&gt;
+           a commenté
+           &lt;a href=&quot;./detail.html&quot;&gt;Neige à Genève en février 1985&lt;/a&gt;
+         &lt;/h5&gt;
+			&lt;span&gt;12/08/2016&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-right&quot;&gt;
+			&lt;a href=&quot;./detail.html&quot;&gt;
+				&lt;img alt=&quot;Neige à Genève en février 1985&quot; class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/groups/icon/2010/05/820f0440a4480383_JPG_104x104_crop_q85.jpg&quot;&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media activity-item&quot;&gt;
+		&lt;div class=&quot;media-left media-middle&quot;&gt;
+			&lt;a href=&quot;./profile-person.html&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Ian&quot; class=&quot;media-object&quot; /&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h5 class=&quot;media-heading&quot;&gt;
+           &lt;a href=&quot;./profile-person.html&quot;&gt;Ian&lt;/a&gt;
+           a mis à jour
+           &lt;a href=&quot;./detail.html&quot;&gt;Le travail de la scripte sur le tournage de La nasse&lt;/a&gt;
+         &lt;/h5&gt;
+			&lt;span&gt;11/08/2016&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-right&quot;&gt;
+			&lt;a href=&quot;./detail.html&quot;&gt;
+				&lt;img alt=&quot;Le travail de la scripte sur le tournage de La nasse&quot; class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3.amazonaws.com/photos/2015/05/fb972b441b66950f.jpg&quot;&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media activity-item&quot;&gt;
+		&lt;div class=&quot;media-left media-middle&quot;&gt;
+			&lt;a href=&quot;./profile-person.html&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2009/10/c030407f8dc6d950_gif_168x168_crop_q85.jpg&quot; alt=&quot;Jean-Paul&quot; class=&quot;media-object&quot; /&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h5 class=&quot;media-heading&quot;&gt;
+           &lt;a href=&quot;./profile-person.html&quot;&gt;Jean-Paul&lt;/a&gt;
+           a mis à jour
+           &lt;a href=&quot;./detail.html&quot;&gt;Camping&lt;/a&gt;
+         &lt;/h5&gt;
+			&lt;span&gt;11/08/2016&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-right&quot;&gt;
+			&lt;a href=&quot;./detail.html&quot;&gt;
+				&lt;img alt=&quot;Camping&quot; class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2013/08/415da01234f12de6_jpg_200x200_upscale_q85.jpg&quot;&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media activity-item&quot;&gt;
+		&lt;div class=&quot;media-left media-middle&quot;&gt;
+			&lt;a href=&quot;./profile-person.html&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2011/01/ee68c10788b054e_JPG_168x168_crop_q85.jpg&quot; alt=&quot;Pierre-Marie&quot; class=&quot;media-object&quot; /&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h5 class=&quot;media-heading&quot;&gt;
+           &lt;a href=&quot;./profile-person.html&quot;&gt;Pierre-Marie&lt;/a&gt;
+           a aimé
+           &lt;a href=&quot;./detail.html&quot;&gt;Mon premier mort&lt;/a&gt;
+         &lt;/h5&gt;
+			&lt;span&gt;11/08/2016&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-right&quot;&gt;
+			&lt;a href=&quot;./detail.html&quot;&gt;
+				&lt;div class=&quot;no-thumbnail&quot;&gt;
+					&lt;span class=&quot;media-icon icons icons-microphone&quot;&gt;&lt;/span&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media activity-item&quot;&gt;
+		&lt;div class=&quot;media-left media-middle&quot;&gt;
+			&lt;a href=&quot;./profile-person.html&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Sylvie&quot; class=&quot;media-object&quot; /&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h5 class=&quot;media-heading&quot;&gt;
+           &lt;a href=&quot;./profile-person.html&quot;&gt;Sylvie&lt;/a&gt;
+           a commenté
+           &lt;a href=&quot;./detail.html&quot;&gt;Lausanne - Destruction des Halles aux locomotives CFF&lt;/a&gt;
+         &lt;/h5&gt;
+			&lt;span&gt;10/08/2016&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-right&quot;&gt;
+			&lt;a href=&quot;./detail.html&quot;&gt;
+				&lt;img alt=&quot;Lausanne - Destruction des Halles aux locomotives CFF&quot; class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/videos/thumbnails/c1085b39e3bd7bea5c6ba9b5514250b3.mp4_jpg_200x150_crop_upscale_q85.jpg&quot;&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media activity-item&quot;&gt;
+		&lt;div class=&quot;media-left media-middle&quot;&gt;
+			&lt;a href=&quot;./profile-person.html&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/06/233ffcf194155eba_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Sylvie&quot; class=&quot;media-object&quot; /&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h5 class=&quot;media-heading&quot;&gt;
+           &lt;a href=&quot;./profile-person.html&quot;&gt;Sylvie&lt;/a&gt;
+           a ajouté
+           &lt;a href=&quot;./detail.html&quot;&gt;Franz Lochmatter, guide de montagne&lt;/a&gt;
+         &lt;/h5&gt;
+			&lt;span&gt;09/08/2016&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-right&quot;&gt;
+			&lt;a href=&quot;./detail.html&quot;&gt;
+				&lt;div class=&quot;no-thumbnail&quot;&gt;
+					&lt;span class=&quot;media-icon icons icons-newspaper&quot;&gt;&lt;/span&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media activity-item&quot;&gt;
+		&lt;div class=&quot;media-left media-middle&quot;&gt;
+			&lt;a href=&quot;./profile-person.html&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/02/db0e46886d7e7925_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Patrick&quot; class=&quot;media-object&quot; /&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h5 class=&quot;media-heading&quot;&gt;
+           &lt;a href=&quot;./profile-person.html&quot;&gt;Patrick&lt;/a&gt;
+           a aimé
+           &lt;a href=&quot;./detail.html&quot;&gt;Le cochon&lt;/a&gt;
+         &lt;/h5&gt;
+			&lt;span&gt;08/08/2016&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-right&quot;&gt;
+			&lt;a href=&quot;./detail.html&quot;&gt;
+				&lt;img alt=&quot;Le cochon&quot; class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/08/74c6f904a6f7ee49_jpg_530x530_q85.jpg&quot;&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media activity-item&quot;&gt;
+		&lt;div class=&quot;media-left media-middle&quot;&gt;
+			&lt;a href=&quot;./profile-person.html&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/04/d628c65d25915cfe_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Albin&quot; class=&quot;media-object&quot; /&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h5 class=&quot;media-heading&quot;&gt;
+           &lt;a href=&quot;./profile-person.html&quot;&gt;Albin&lt;/a&gt;
+           a mis à jour
+           &lt;a href=&quot;./detail.html&quot;&gt;Viège, les vitraux de l&amp;#x27;église Saint-Martin&lt;/a&gt;
+         &lt;/h5&gt;
+			&lt;span&gt;06/08/2016&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-right&quot;&gt;
+			&lt;a href=&quot;./detail.html&quot;&gt;
+				&lt;img alt=&quot;Viège, les vitraux de l&amp;#x27;église Saint-Martin&quot; class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/08/868ff48e4270efa8_jpg_200x200_upscale_q85.jpg&quot;&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media activity-item&quot;&gt;
+		&lt;div class=&quot;media-left media-middle&quot;&gt;
+			&lt;a href=&quot;./profile-person.html&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/04/d628c65d25915cfe_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Albin&quot; class=&quot;media-object&quot; /&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h5 class=&quot;media-heading&quot;&gt;
+           &lt;a href=&quot;./profile-person.html&quot;&gt;Albin&lt;/a&gt;
+           a mis à jour
+           &lt;a href=&quot;./detail.html&quot;&gt;Moiry, la vache&lt;/a&gt;
+         &lt;/h5&gt;
+			&lt;span&gt;06/08/2016&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-right&quot;&gt;
+			&lt;a href=&quot;./detail.html&quot;&gt;
+				&lt;img alt=&quot;Moiry, la vache&quot; class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/08/69ddea8af394b203_jpg_200x200_upscale_q85.jpg&quot;&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media activity-item&quot;&gt;
+		&lt;div class=&quot;media-left media-middle&quot;&gt;
+			&lt;a href=&quot;./profile-person.html&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2016/04/d628c65d25915cfe_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Albin&quot; class=&quot;media-object&quot; /&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h5 class=&quot;media-heading&quot;&gt;
+           &lt;a href=&quot;./profile-person.html&quot;&gt;Albin&lt;/a&gt;
+           a commenté
+           &lt;a href=&quot;./detail.html&quot;&gt;Les Haudères et la Dent Blanche&lt;/a&gt;
+         &lt;/h5&gt;
+			&lt;span&gt;06/08/2016&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-right&quot;&gt;
+			&lt;a href=&quot;./detail.html&quot;&gt;
+				&lt;img alt=&quot;Les Haudères et la Dent Blanche&quot; class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/photos/2016/08/c07da7912f483371_jpg_530x530_q85.jpg&quot;&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;media activity-item&quot;&gt;
+		&lt;div class=&quot;media-left media-middle&quot;&gt;
+			&lt;a href=&quot;./profile-person.html&quot;&gt;
+				&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2010/04/526ab5e9a6e5c748_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Daniel&quot; class=&quot;media-object&quot; /&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h5 class=&quot;media-heading&quot;&gt;
+           &lt;a href=&quot;./profile-person.html&quot;&gt;Daniel&lt;/a&gt;
+           a ajouté
+           &lt;a href=&quot;./detail.html&quot;&gt;Franz Lochmatter, guide de montagne&lt;/a&gt;
+         &lt;/h5&gt;
+			&lt;span&gt;03/08/2016&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-right&quot;&gt;
+			&lt;a href=&quot;./detail.html&quot;&gt;
+				&lt;div class=&quot;no-thumbnail&quot;&gt;
+					&lt;span class=&quot;media-icon icons icons-newspaper&quot;&gt;&lt;/span&gt;
+				&lt;/div&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-xs-6 col-xs-offset-3&quot;&gt;
+			&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;btn btn-block btn-default&quot;&gt;Voir plus ...&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="container-wide">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -375,6 +931,487 @@
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class=&quot;container-wide&quot;&gt;
 	&lt;h1&gt;I&#x27;m inside a damned wide container !&lt;/h1&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="conversation-item">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Conversation Item</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.6.7</h5>
+<h5>Usage : <code>{{&gt; conversation-item }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>new</strong> - true</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<div class="row">
+	<div class="col-md-offset-2 col-md-8">
+		<div class="bordered bg-concrete list-group-head">
+			<div class="row">
+				<div class="col-xs-1">
+					<a class="list-item-flex-center chevron-link" href="./inbox.html">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+				</div>
+				<div class="col-xs-11">
+					<div class="list-item-flex-center">
+						<h4 class="text-center">
+                  Marc Friederich
+                </h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bordered">
+			<div class="media message-bubble message-bubble-left">
+				<div class="media-left">
+					<img class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg" alt="...">
+				</div>
+				<div class="media-body">
+					Bonjour, Depuis la dernière mise à jour du système de mon Mac OS X 10.11.5 il y a quelques jours, je ne peux plus charger de photos sur notrehistoire.ch avec le navigateur Safari, un message m&#x27;indique qu&#x27;Adobe Flash est nécessaire. Je sais qu&#x27;Apple
+					et d&#x27;autres éditeurs de logiciels abandonnent la technologie Flash, ancienne et peu sûre en matière de virus. Est-ce que notrehistoire.ch a prévu d&#x27;adapter prochainement son site pour se passer de Flash ?
+					<br/>
+					<small class="text-muted">22/03/2016</small>
+				</div>
+			</div>
+			<div class="media message-bubble message-bubble-right">
+				<div class="media-body">
+					Oui nous préparons une nouvelle version de notrehistoire.ch et le problème de flash est connu. Cependant vous pouvez activer Flash dans Safari.
+					<br/>
+					<small class="text-muted">22/03/2016</small>
+				</div>
+				<div class="media-right">
+					<img class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg" alt="...">
+				</div>
+			</div>
+			<div class="media message-bubble message-bubble-left">
+				<div class="media-left">
+					<img class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg" alt="...">
+				</div>
+				<div class="media-body">
+					Le problème est connu, mais récurant. Maintenant il est impossible de charger Flash sur un téléphone ou une tablette Android (Google).
+					<br/>
+					<small class="text-muted">22/03/2016</small>
+				</div>
+			</div>
+			<div class="media message-bubble message-bubble-right">
+				<div class="media-body">
+					Certaines autres également ne fonctionnent pas ou plus après une mise à jour de leurs OS. Cela deviens donc urgent de changer et d’adopter un autre protocole.
+					<br/>
+					<small class="text-muted">22/03/2016</small>
+				</div>
+				<div class="media-right">
+					<img class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg" alt="...">
+				</div>
+			</div>
+		</div>
+		<div class="bordered bg-concrete">
+			<form>
+				<div class="form-group">
+					<label for="message">Votre message</label>
+					<textarea class="form-control" name="message" rows="8" cols="40"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary pull-right">Envoyer</button>
+				<div class="clearfix">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-offset-2 col-md-8&quot;&gt;
+		&lt;div class=&quot;bordered bg-concrete list-group-head&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col-xs-1&quot;&gt;
+					&lt;a class=&quot;list-item-flex-center chevron-link&quot; href=&quot;./inbox.html&quot;&gt;
+						&lt;span class=&quot;glyphicon glyphicon-chevron-left&quot;&gt;&lt;/span&gt;
+					&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-xs-11&quot;&gt;
+					&lt;div class=&quot;list-item-flex-center&quot;&gt;
+						&lt;h4 class=&quot;text-center&quot;&gt;
+                  Marc Friederich
+                &lt;/h4&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;bordered&quot;&gt;
+			&lt;div class=&quot;media message-bubble message-bubble-left&quot;&gt;
+				&lt;div class=&quot;media-left&quot;&gt;
+					&lt;img class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg&quot; alt=&quot;...&quot;&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;media-body&quot;&gt;
+					Bonjour, Depuis la dernière mise à jour du système de mon Mac OS X 10.11.5 il y a quelques jours, je ne peux plus charger de photos sur notrehistoire.ch avec le navigateur Safari, un message m&amp;#x27;indique qu&amp;#x27;Adobe Flash est nécessaire. Je sais qu&amp;#x27;Apple
+					et d&amp;#x27;autres éditeurs de logiciels abandonnent la technologie Flash, ancienne et peu sûre en matière de virus. Est-ce que notrehistoire.ch a prévu d&amp;#x27;adapter prochainement son site pour se passer de Flash ?
+					&lt;br/&gt;
+					&lt;small class=&quot;text-muted&quot;&gt;22/03/2016&lt;/small&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;media message-bubble message-bubble-right&quot;&gt;
+				&lt;div class=&quot;media-body&quot;&gt;
+					Oui nous préparons une nouvelle version de notrehistoire.ch et le problème de flash est connu. Cependant vous pouvez activer Flash dans Safari.
+					&lt;br/&gt;
+					&lt;small class=&quot;text-muted&quot;&gt;22/03/2016&lt;/small&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;media-right&quot;&gt;
+					&lt;img class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg&quot; alt=&quot;...&quot;&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;media message-bubble message-bubble-left&quot;&gt;
+				&lt;div class=&quot;media-left&quot;&gt;
+					&lt;img class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg&quot; alt=&quot;...&quot;&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;media-body&quot;&gt;
+					Le problème est connu, mais récurant. Maintenant il est impossible de charger Flash sur un téléphone ou une tablette Android (Google).
+					&lt;br/&gt;
+					&lt;small class=&quot;text-muted&quot;&gt;22/03/2016&lt;/small&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;media message-bubble message-bubble-right&quot;&gt;
+				&lt;div class=&quot;media-body&quot;&gt;
+					Certaines autres également ne fonctionnent pas ou plus après une mise à jour de leurs OS. Cela deviens donc urgent de changer et d’adopter un autre protocole.
+					&lt;br/&gt;
+					&lt;small class=&quot;text-muted&quot;&gt;22/03/2016&lt;/small&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;media-right&quot;&gt;
+					&lt;img class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg&quot; alt=&quot;...&quot;&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;bordered bg-concrete&quot;&gt;
+			&lt;form&gt;
+				&lt;div class=&quot;form-group&quot;&gt;
+					&lt;label for=&quot;message&quot;&gt;Votre message&lt;/label&gt;
+					&lt;textarea class=&quot;form-control&quot; name=&quot;message&quot; rows=&quot;8&quot; cols=&quot;40&quot;&gt;&lt;/textarea&gt;
+				&lt;/div&gt;
+				&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary pull-right&quot;&gt;Envoyer&lt;/button&gt;
+				&lt;div class=&quot;clearfix&quot;&gt;
+				&lt;/div&gt;
+			&lt;/form&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="conversations-list">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Conversations List</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.6.7</h5>
+<h5>Usage : <code>{{&gt; conversations-list }}</code></h5>
+<h5>Options :</h5>
+<pre><code>- empty : true
+</code></pre>
+
+</div>
+<div class="f-item-preview">
+	<div>
+	<div class="bg-concrete list-group-head">
+		<div class="row">
+			<div class="col-xs-1">
+				<div class="list-item-flex-center">
+					<input type="checkbox" name="name" value="">
+				</div>
+			</div>
+			<div class="col-xs-11">
+				<div class="list-item-flex-center list-item-flex-right">
+					<a href="./inbox-new.html" class="btn btn-primary pull-right btn-xs">Rédiger un nouveau message</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="list-conversation">
+		<a href="inbox-conversation.html" class="conversation-item">
+			<div class="row">
+				<div class="col-xs-1">
+					<div class="list-item-flex-center">
+						<input type="checkbox" name="name" value="">
+					</div>
+				</div>
+				<div class="col-xs-9">
+					<div class="media">
+						<div class="media-left">
+							<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg" alt="Marc" class="media-object" />
+						</div>
+						<div class="media-body">
+							<b>Marc</b> – <small>12/08/2016</small>
+							<h5 class="media-heading">
+                  Salut, comment vas-tu depuis le temps ? ...
+                </h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="list-item-flex-right list-item-flex-center">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="inbox-conversation.html" class="conversation-item">
+			<div class="row">
+				<div class="col-xs-1">
+					<div class="list-item-flex-center">
+						<input type="checkbox" name="name" value="">
+					</div>
+				</div>
+				<div class="col-xs-9">
+					<div class="media">
+						<div class="media-left">
+							<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg" alt="Ian" class="media-object" />
+						</div>
+						<div class="media-body">
+							<b>Ian</b> – <small>11/08/2016</small>
+							<h5 class="media-heading">
+                  Cette photo n&#x27;a rien à voir avec la Suisse ...
+                </h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="list-item-flex-right list-item-flex-center">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="inbox-conversation.html" class="conversation-item">
+			<div class="row">
+				<div class="col-xs-1">
+					<div class="list-item-flex-center">
+						<input type="checkbox" name="name" value="">
+					</div>
+				</div>
+				<div class="col-xs-9">
+					<div class="media">
+						<div class="media-left">
+							<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2009/10/c030407f8dc6d950_gif_168x168_crop_q85.jpg" alt="Jean-Paul" class="media-object" />
+						</div>
+						<div class="media-body">
+							<b>Jean-Paul</b> – <small>11/08/2016</small>
+							<h5 class="media-heading">
+                  Cette nouvelle plate-forme, quelle classe ! ...
+                </h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="list-item-flex-right list-item-flex-center">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</div>
+				</div>
+			</div>
+		</a>
+		<a href="inbox-conversation.html" class="conversation-item">
+			<div class="row">
+				<div class="col-xs-1">
+					<div class="list-item-flex-center">
+						<input type="checkbox" name="name" value="">
+					</div>
+				</div>
+				<div class="col-xs-9">
+					<div class="media">
+						<div class="media-left">
+							<img src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2011/01/ee68c10788b054e_JPG_168x168_crop_q85.jpg" alt="Pierre-Marie" class="media-object" />
+						</div>
+						<div class="media-body">
+							<b>Pierre-Marie</b> – <small>11/08/2016</small>
+							<h5 class="media-heading">
+                  J&#x27;adore le logo ! ...
+                </h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="list-item-flex-right list-item-flex-center">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</div>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="spacer spacer-sm"></div>
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-3">
+			<button type="button" name="button" class="btn btn-block btn-default">Voir plus ...</button>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;div class=&quot;bg-concrete list-group-head&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-xs-1&quot;&gt;
+				&lt;div class=&quot;list-item-flex-center&quot;&gt;
+					&lt;input type=&quot;checkbox&quot; name=&quot;name&quot; value=&quot;&quot;&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;col-xs-11&quot;&gt;
+				&lt;div class=&quot;list-item-flex-center list-item-flex-right&quot;&gt;
+					&lt;a href=&quot;./inbox-new.html&quot; class=&quot;btn btn-primary pull-right btn-xs&quot;&gt;Rédiger un nouveau message&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;list-conversation&quot;&gt;
+		&lt;a href=&quot;inbox-conversation.html&quot; class=&quot;conversation-item&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col-xs-1&quot;&gt;
+					&lt;div class=&quot;list-item-flex-center&quot;&gt;
+						&lt;input type=&quot;checkbox&quot; name=&quot;name&quot; value=&quot;&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-xs-9&quot;&gt;
+					&lt;div class=&quot;media&quot;&gt;
+						&lt;div class=&quot;media-left&quot;&gt;
+							&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Marc&quot; class=&quot;media-object&quot; /&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;media-body&quot;&gt;
+							&lt;b&gt;Marc&lt;/b&gt; – &lt;small&gt;12/08/2016&lt;/small&gt;
+							&lt;h5 class=&quot;media-heading&quot;&gt;
+                  Salut, comment vas-tu depuis le temps ? ...
+                &lt;/h5&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-xs-2&quot;&gt;
+					&lt;div class=&quot;list-item-flex-right list-item-flex-center&quot;&gt;
+						&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
+		&lt;a href=&quot;inbox-conversation.html&quot; class=&quot;conversation-item&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col-xs-1&quot;&gt;
+					&lt;div class=&quot;list-item-flex-center&quot;&gt;
+						&lt;input type=&quot;checkbox&quot; name=&quot;name&quot; value=&quot;&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-xs-9&quot;&gt;
+					&lt;div class=&quot;media&quot;&gt;
+						&lt;div class=&quot;media-left&quot;&gt;
+							&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg&quot; alt=&quot;Ian&quot; class=&quot;media-object&quot; /&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;media-body&quot;&gt;
+							&lt;b&gt;Ian&lt;/b&gt; – &lt;small&gt;11/08/2016&lt;/small&gt;
+							&lt;h5 class=&quot;media-heading&quot;&gt;
+                  Cette photo n&amp;#x27;a rien à voir avec la Suisse ...
+                &lt;/h5&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-xs-2&quot;&gt;
+					&lt;div class=&quot;list-item-flex-right list-item-flex-center&quot;&gt;
+						&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
+		&lt;a href=&quot;inbox-conversation.html&quot; class=&quot;conversation-item&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col-xs-1&quot;&gt;
+					&lt;div class=&quot;list-item-flex-center&quot;&gt;
+						&lt;input type=&quot;checkbox&quot; name=&quot;name&quot; value=&quot;&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-xs-9&quot;&gt;
+					&lt;div class=&quot;media&quot;&gt;
+						&lt;div class=&quot;media-left&quot;&gt;
+							&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2009/10/c030407f8dc6d950_gif_168x168_crop_q85.jpg&quot; alt=&quot;Jean-Paul&quot; class=&quot;media-object&quot; /&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;media-body&quot;&gt;
+							&lt;b&gt;Jean-Paul&lt;/b&gt; – &lt;small&gt;11/08/2016&lt;/small&gt;
+							&lt;h5 class=&quot;media-heading&quot;&gt;
+                  Cette nouvelle plate-forme, quelle classe ! ...
+                &lt;/h5&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-xs-2&quot;&gt;
+					&lt;div class=&quot;list-item-flex-right list-item-flex-center&quot;&gt;
+						&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
+		&lt;a href=&quot;inbox-conversation.html&quot; class=&quot;conversation-item&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col-xs-1&quot;&gt;
+					&lt;div class=&quot;list-item-flex-center&quot;&gt;
+						&lt;input type=&quot;checkbox&quot; name=&quot;name&quot; value=&quot;&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-xs-9&quot;&gt;
+					&lt;div class=&quot;media&quot;&gt;
+						&lt;div class=&quot;media-left&quot;&gt;
+							&lt;img src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2011/01/ee68c10788b054e_JPG_168x168_crop_q85.jpg&quot; alt=&quot;Pierre-Marie&quot; class=&quot;media-object&quot; /&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;media-body&quot;&gt;
+							&lt;b&gt;Pierre-Marie&lt;/b&gt; – &lt;small&gt;11/08/2016&lt;/small&gt;
+							&lt;h5 class=&quot;media-heading&quot;&gt;
+                  J&amp;#x27;adore le logo ! ...
+                &lt;/h5&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-xs-2&quot;&gt;
+					&lt;div class=&quot;list-item-flex-right list-item-flex-center&quot;&gt;
+						&lt;span class=&quot;glyphicon glyphicon-chevron-right&quot;&gt;&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-xs-6 col-xs-offset-3&quot;&gt;
+			&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;btn btn-block btn-default&quot;&gt;Voir plus ...&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -830,6 +1867,357 @@
 		&lt;/ul&gt;
 	&lt;/div&gt; &lt;a href=&quot;creation-collection-recherche.html&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Enregistrer la recherche&lt;/a&gt;
 	&lt;p&gt;&lt;small class=&quot;text-clear text-sans&quot;&gt;&lt;em&gt;Il vous est possible d&#x27;enregistrer cette recherche et d&#x27;en faire une collection.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="forum-conversation-item">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Forum Conversation Item</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.6.7</h5>
+<h5>Usage : <code>{{&gt; conversation-item }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>new</strong> - true</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<div class="row">
+	<div class="col-md-offset-2 col-md-8">
+		<div class="bordered bg-concrete list-group-head">
+			<div class="row">
+				<div class="col-xs-1">
+					<a class="list-item-flex-center chevron-link" href="./forum.html">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+				</div>
+				<div class="col-xs-11">
+					<h4 class="text-center">
+                  Chargement de photos et Adobe Flash
+                </h4>
+				</div>
+			</div>
+		</div>
+		<div class="bordered">
+			<div class="media message-bubble">
+				<div class="media-left">
+					<img class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg" alt="...">
+				</div>
+				<div class="media-body">
+					Bonjour,Depuis la dernière mise à jour du système de mon Mac OS X 10.11.5 il y a quelques jours, je ne peux plus charger de photos sur notrehistoire.ch avec le navigateur Safari, un message m&#x27;indique qu&#x27;Adobe Flash est nécessaire. Je sais qu&#x27;Apple
+					et d&#x27;autres éditeurs de logiciels abandonnent la technologie Flash, ancienne et peu sûre en matière de virus.Est-ce que notrehistoire.ch a prévu d&#x27;adapter prochainement son site pour se passer de Flash ?J&#x27;ai contourné le problème en
+					recourant à Firefox avec module Flash uniquement pour charger les photos et continue d&#x27;utiliser Safari pour surfer.
+					<br/>
+					<small class="text-muted">Écrit par <a href="./profile-person.html">Robert</a>, le 22/03/2016</small>
+				</div>
+			</div>
+			<div class="media message-bubble">
+				<div class="media-body">
+					Bonjour,Oui nous préparons une nouvelle version de notrehistoire.ch et le problème de flash est connu. Cependant vous pouvez activer Flash dans Safari.- https://helpx.adobe.com/fr/flash-player/kb/enabling-flash-player-safari.htmlBien à vous
+					<br/>
+					<small class="text-muted">Écrit par <a href="./profile-person.html">Notre Histoire</a>, le 22/03/2016</small>
+				</div>
+				<div class="media-right">
+					<img class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg" alt="...">
+				</div>
+			</div>
+			<div class="media message-bubble">
+				<div class="media-body">
+					Le problème est connu, mais récurant. Maintenant il est impossible de charger Flash sur un téléphone ou une tablette Android (Google). Résultat:notrehistoire.ch ne fonctionne pas sur les tablettes et les téléphones les plus vendus au monde !et qui sont
+					dominante sur le marché. Certaines autres également ne fonctionnent pas ou plus après une mise à jour de leurs OS. Cela deviens donc urgent de changer et d’adopter un autre protocole. Meilleures salutations à tous.
+					<br/>
+					<small class="text-muted">Écrit par <a href="./profile-person.html">Jean-Paul</a>, le 22/03/2016</small>
+				</div>
+				<div class="media-right">
+					<img class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg" alt="...">
+				</div>
+			</div>
+			<div class="media message-bubble">
+				<div class="media-body">
+					Bonjour, concernant le souci de lecture des vidéos sous Android, c&#x27;est peut-être lié à l&#x27;indisponibilité temporaire des vidéos en début de semaine, résolu maintenant. Je serai intéressé de savoir si la lecture sous Android pose toujours problème.Bien
+					à vous.Ian.
+					<br/>
+					<small class="text-muted">Écrit par <a href="./profile-person.html">Ian</a>, le 22/03/2016</small>
+				</div>
+				<div class="media-right">
+					<img class="media-object" src="http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg" alt="...">
+				</div>
+			</div>
+		</div>
+		<div class="bordered bg-concrete">
+			<form>
+				<div class="form-group">
+					<label for="message">Votre message</label>
+					<textarea class="form-control" name="message" rows="8" cols="40"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary pull-right">Envoyer</button>
+				<div class="clearfix">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-md-offset-2 col-md-8&quot;&gt;
+		&lt;div class=&quot;bordered bg-concrete list-group-head&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col-xs-1&quot;&gt;
+					&lt;a class=&quot;list-item-flex-center chevron-link&quot; href=&quot;./forum.html&quot;&gt;
+						&lt;span class=&quot;glyphicon glyphicon-chevron-left&quot;&gt;&lt;/span&gt;
+					&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-xs-11&quot;&gt;
+					&lt;h4 class=&quot;text-center&quot;&gt;
+                  Chargement de photos et Adobe Flash
+                &lt;/h4&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;bordered&quot;&gt;
+			&lt;div class=&quot;media message-bubble&quot;&gt;
+				&lt;div class=&quot;media-left&quot;&gt;
+					&lt;img class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg&quot; alt=&quot;...&quot;&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;media-body&quot;&gt;
+					Bonjour,Depuis la dernière mise à jour du système de mon Mac OS X 10.11.5 il y a quelques jours, je ne peux plus charger de photos sur notrehistoire.ch avec le navigateur Safari, un message m&amp;#x27;indique qu&amp;#x27;Adobe Flash est nécessaire. Je sais qu&amp;#x27;Apple
+					et d&amp;#x27;autres éditeurs de logiciels abandonnent la technologie Flash, ancienne et peu sûre en matière de virus.Est-ce que notrehistoire.ch a prévu d&amp;#x27;adapter prochainement son site pour se passer de Flash ?J&amp;#x27;ai contourné le problème en
+					recourant à Firefox avec module Flash uniquement pour charger les photos et continue d&amp;#x27;utiliser Safari pour surfer.
+					&lt;br/&gt;
+					&lt;small class=&quot;text-muted&quot;&gt;Écrit par &lt;a href=&quot;./profile-person.html&quot;&gt;Robert&lt;/a&gt;, le 22/03/2016&lt;/small&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;media message-bubble&quot;&gt;
+				&lt;div class=&quot;media-body&quot;&gt;
+					Bonjour,Oui nous préparons une nouvelle version de notrehistoire.ch et le problème de flash est connu. Cependant vous pouvez activer Flash dans Safari.- https://helpx.adobe.com/fr/flash-player/kb/enabling-flash-player-safari.htmlBien à vous
+					&lt;br/&gt;
+					&lt;small class=&quot;text-muted&quot;&gt;Écrit par &lt;a href=&quot;./profile-person.html&quot;&gt;Notre Histoire&lt;/a&gt;, le 22/03/2016&lt;/small&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;media-right&quot;&gt;
+					&lt;img class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg&quot; alt=&quot;...&quot;&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;media message-bubble&quot;&gt;
+				&lt;div class=&quot;media-body&quot;&gt;
+					Le problème est connu, mais récurant. Maintenant il est impossible de charger Flash sur un téléphone ou une tablette Android (Google). Résultat:notrehistoire.ch ne fonctionne pas sur les tablettes et les téléphones les plus vendus au monde !et qui sont
+					dominante sur le marché. Certaines autres également ne fonctionnent pas ou plus après une mise à jour de leurs OS. Cela deviens donc urgent de changer et d’adopter un autre protocole. Meilleures salutations à tous.
+					&lt;br/&gt;
+					&lt;small class=&quot;text-muted&quot;&gt;Écrit par &lt;a href=&quot;./profile-person.html&quot;&gt;Jean-Paul&lt;/a&gt;, le 22/03/2016&lt;/small&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;media-right&quot;&gt;
+					&lt;img class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg&quot; alt=&quot;...&quot;&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;media message-bubble&quot;&gt;
+				&lt;div class=&quot;media-body&quot;&gt;
+					Bonjour, concernant le souci de lecture des vidéos sous Android, c&amp;#x27;est peut-être lié à l&amp;#x27;indisponibilité temporaire des vidéos en début de semaine, résolu maintenant. Je serai intéressé de savoir si la lecture sous Android pose toujours problème.Bien
+					à vous.Ian.
+					&lt;br/&gt;
+					&lt;small class=&quot;text-muted&quot;&gt;Écrit par &lt;a href=&quot;./profile-person.html&quot;&gt;Ian&lt;/a&gt;, le 22/03/2016&lt;/small&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;media-right&quot;&gt;
+					&lt;img class=&quot;media-object&quot; src=&quot;http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg&quot; alt=&quot;...&quot;&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;bordered bg-concrete&quot;&gt;
+			&lt;form&gt;
+				&lt;div class=&quot;form-group&quot;&gt;
+					&lt;label for=&quot;message&quot;&gt;Votre message&lt;/label&gt;
+					&lt;textarea class=&quot;form-control&quot; name=&quot;message&quot; rows=&quot;8&quot; cols=&quot;40&quot;&gt;&lt;/textarea&gt;
+				&lt;/div&gt;
+				&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary pull-right&quot;&gt;Envoyer&lt;/button&gt;
+				&lt;div class=&quot;clearfix&quot;&gt;
+				&lt;/div&gt;
+			&lt;/form&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="forum-conversations-list">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Forum Conversations List</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Introduced : 0.6.7</h5>
+<h5>Usage : <code>{{&gt; conversations-list }}</code></h5>
+<h5>Options :</h5>
+<pre><code>- empty : true
+</code></pre>
+
+</div>
+<div class="f-item-preview">
+	<div>
+	<div class="bg-concrete list-group-head">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="list-item-flex-center list-item-flex-right">
+					<a href="./forum-new.html" class="btn btn-primary pull-right btn-xs">Créer un nouveau sujet</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="list-conversation">
+		<table class="table table-striped">
+			<tr>
+				<td>
+					<a href="./forum-conversation.html"><h4>Chargement de photos et Adobe Flash</h4></a>
+					<b>Roberto</b> – <small>09/06/2016</small> - <small>Questions pratiques</small>
+				</td>
+				<td class="text-right">
+					<small>3 réponses</small>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="./forum-conversation.html"><h4>La Séparation des Races de C.-F. Ramuzh</h4></a>
+					<b>Michel</b> – <small>01/04/2016</small> - <small>Juste un message</small>
+				</td>
+				<td class="text-right">
+					<small>aucune réponse</small>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="./forum-conversation.html"><h4>Fin des écoles ménagères en Suisse romande</h4></a>
+					<b>Lise</b> – <small>24/03/2016</small> - <small>Echange d&#x27;informations et contenu</small>
+				</td>
+				<td class="text-right">
+					<small>aucune réponse</small>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="./forum-conversation.html"><h4>Papeterie ou librairie à Lausanne</h4></a>
+					<b>Florence</b> – <small>14/03/2016</small> - <small>Echange d&#x27;informations et contenu</small>
+				</td>
+				<td class="text-right">
+					<small>3 réponses</small>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a href="./forum-conversation.html"><h4>Exposition nationale suisse - Genève 1896</h4></a>
+					<b>Alison</b> – <small>22/02/2016</small> - <small>Echange d&#x27;informations et contenu</small>
+				</td>
+				<td class="text-right">
+					<small>3 réponses</small>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="spacer spacer-sm"></div>
+	<div class="row">
+		<div class="col-xs-6 col-xs-offset-3">
+			<button type="button" name="button" class="btn btn-block btn-default">Voir plus ...</button>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div&gt;
+	&lt;div class=&quot;bg-concrete list-group-head&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-xs-12&quot;&gt;
+				&lt;div class=&quot;list-item-flex-center list-item-flex-right&quot;&gt;
+					&lt;a href=&quot;./forum-new.html&quot; class=&quot;btn btn-primary pull-right btn-xs&quot;&gt;Créer un nouveau sujet&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;list-conversation&quot;&gt;
+		&lt;table class=&quot;table table-striped&quot;&gt;
+			&lt;tr&gt;
+				&lt;td&gt;
+					&lt;a href=&quot;./forum-conversation.html&quot;&gt;&lt;h4&gt;Chargement de photos et Adobe Flash&lt;/h4&gt;&lt;/a&gt;
+					&lt;b&gt;Roberto&lt;/b&gt; – &lt;small&gt;09/06/2016&lt;/small&gt; - &lt;small&gt;Questions pratiques&lt;/small&gt;
+				&lt;/td&gt;
+				&lt;td class=&quot;text-right&quot;&gt;
+					&lt;small&gt;3 réponses&lt;/small&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;
+					&lt;a href=&quot;./forum-conversation.html&quot;&gt;&lt;h4&gt;La Séparation des Races de C.-F. Ramuzh&lt;/h4&gt;&lt;/a&gt;
+					&lt;b&gt;Michel&lt;/b&gt; – &lt;small&gt;01/04/2016&lt;/small&gt; - &lt;small&gt;Juste un message&lt;/small&gt;
+				&lt;/td&gt;
+				&lt;td class=&quot;text-right&quot;&gt;
+					&lt;small&gt;aucune réponse&lt;/small&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;
+					&lt;a href=&quot;./forum-conversation.html&quot;&gt;&lt;h4&gt;Fin des écoles ménagères en Suisse romande&lt;/h4&gt;&lt;/a&gt;
+					&lt;b&gt;Lise&lt;/b&gt; – &lt;small&gt;24/03/2016&lt;/small&gt; - &lt;small&gt;Echange d&amp;#x27;informations et contenu&lt;/small&gt;
+				&lt;/td&gt;
+				&lt;td class=&quot;text-right&quot;&gt;
+					&lt;small&gt;aucune réponse&lt;/small&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;
+					&lt;a href=&quot;./forum-conversation.html&quot;&gt;&lt;h4&gt;Papeterie ou librairie à Lausanne&lt;/h4&gt;&lt;/a&gt;
+					&lt;b&gt;Florence&lt;/b&gt; – &lt;small&gt;14/03/2016&lt;/small&gt; - &lt;small&gt;Echange d&amp;#x27;informations et contenu&lt;/small&gt;
+				&lt;/td&gt;
+				&lt;td class=&quot;text-right&quot;&gt;
+					&lt;small&gt;3 réponses&lt;/small&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;
+					&lt;a href=&quot;./forum-conversation.html&quot;&gt;&lt;h4&gt;Exposition nationale suisse - Genève 1896&lt;/h4&gt;&lt;/a&gt;
+					&lt;b&gt;Alison&lt;/b&gt; – &lt;small&gt;22/02/2016&lt;/small&gt; - &lt;small&gt;Echange d&amp;#x27;informations et contenu&lt;/small&gt;
+				&lt;/td&gt;
+				&lt;td class=&quot;text-right&quot;&gt;
+					&lt;small&gt;3 réponses&lt;/small&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/table&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-xs-6 col-xs-offset-3&quot;&gt;
+			&lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;btn btn-block btn-default&quot;&gt;Voir plus ...&lt;/button&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -3706,7 +5094,7 @@
         Aide
         <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
       </a></li>
-			<li role="presentation"><a href="#">
+			<li role="presentation"><a href="./forum.html">
         Forum
         <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
       </a></li>
@@ -3770,7 +5158,7 @@
         Aide
         &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
       &lt;/a&gt;&lt;/li&gt;
-			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;./forum.html&quot;&gt;
         Forum
         &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
       &lt;/a&gt;&lt;/li&gt;
@@ -3868,11 +5256,15 @@
         Afficher mon profil
         <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
       </a></li>
-			<li role="presentation"><a href="#">
+			<li role="presentation"><a href="./inbox.html">
+        Mes messages
+        <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
+      </a></li>
+			<li role="presentation"><a href="./profile-person.html">
         Mes médias
         <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
       </a></li>
-			<li role="presentation"><a href="#">
+			<li role="presentation"><a href="./activites.html">
         Mes activités
         <span class="pull-right"><span class="chevron chevron-right chevron-thin"></span></span>
       </a></li>
@@ -3912,11 +5304,15 @@
         Afficher mon profil
         &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
       &lt;/a&gt;&lt;/li&gt;
-			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;./inbox.html&quot;&gt;
+        Mes messages
+        &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
+      &lt;/a&gt;&lt;/li&gt;
+			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;./profile-person.html&quot;&gt;
         Mes médias
         &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
       &lt;/a&gt;&lt;/li&gt;
-			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;
+			&lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;./activites.html&quot;&gt;
         Mes activités
         &lt;span class=&quot;pull-right&quot;&gt;&lt;span class=&quot;chevron chevron-right chevron-thin&quot;&gt;&lt;/span&gt;&lt;/span&gt;
       &lt;/a&gt;&lt;/li&gt;
