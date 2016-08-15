@@ -1,0 +1,11 @@
+---
+notes: |
+  ##### Introduced : 0.3.0
+  ##### Updated : -
+  ##### Usage : `{{> no-thumbnail }}`
+  ##### Options :
+  - **type** - String
+---
+<div class="no-thumbnail">
+  <span class="media-icon icons icons-{{#ifarticle activityobject.type}}newspaper{{/ifarticle}}{{#ifaudio activityobject.type}}microphone{{/ifaudio}}{{#ifvideo activityobject.type}}video{{/ifvideo}}{{#ifphoto activityobject.type}}camera{{/ifphoto}}"></span>
+</div>

@@ -1,0 +1,21 @@
+---
+notes: |
+  ##### Introduced : 0.6.7
+  ##### Updated :
+  ##### Usage : `{{> conversation }}`
+  ##### Options :
+  - **activityobject** Object
+    username
+    avatar
+    message-intro
+    date
+---
+        <tr>
+          <td>
+            <a href="./forum-conversation.html"><h4>{{forum-conversationobject.subject}}</h4></a>
+            <b>{{forum-conversationobject.username}}</b> – <small>{{forum-conversationobject.date}}</small> - <small>{{forum-conversationobject.category}}</small>
+          </td>
+          <td class="text-right">
+            <small>{{forum-conversationobject.response}}</small>
+          </td>
+        </tr>

@@ -1,0 +1,30 @@
+[
+  {
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg",
+    "message": "Bonjour,Depuis la dernière mise à jour du système de mon Mac OS X 10.11.5 il y a quelques jours, je ne peux plus charger de photos sur notrehistoire.ch avec le navigateur Safari, un message m'indique qu'Adobe Flash est nécessaire. Je sais qu'Apple et d'autres éditeurs de logiciels abandonnent la technologie Flash, ancienne et peu sûre en matière de virus.Est-ce que notrehistoire.ch a prévu d'adapter prochainement son site pour se passer de Flash ?J'ai contourné le problème en recourant à Firefox avec module Flash uniquement pour charger les photos et continue d'utiliser Safari pour surfer.",
+    "date": "22/03/2016",
+    "name": "Robert",
+    "left": "true"
+  },
+  {
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg",
+    "message" : "Bonjour,Oui nous préparons une nouvelle version de notrehistoire.ch et le problème de flash est connu. Cependant vous pouvez activer Flash dans Safari.- https://helpx.adobe.com/fr/flash-player/kb/enabling-flash-player-safari.htmlBien à vous",
+    "date": "22/03/2016",
+    "name": "Notre Histoire",
+    "left": ""
+  },
+  {
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg",
+    "message" : "Le problème est connu, mais récurant. Maintenant il est impossible de charger Flash sur un téléphone ou une tablette Android (Google). Résultat:notrehistoire.ch ne fonctionne pas sur les tablettes et les téléphones les plus vendus au monde !et qui sont dominante sur le marché. Certaines autres également ne fonctionnent pas ou plus après une mise à jour de leurs OS. Cela deviens donc urgent de changer et d’adopter un autre protocole. Meilleures salutations à tous.",
+    "date": "22/03/2016",
+    "name": "Jean-Paul",
+    "left": ""
+  },
+  {
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg",
+    "message" : "Bonjour, concernant le souci de lecture des vidéos sous Android, c'est peut-être lié à l'indisponibilité temporaire des vidéos en début de semaine, résolu maintenant. Je serai intéressé de savoir si la lecture sous Android pose toujours problème.Bien à vous.Ian.",
+    "date": "22/03/2016",
+    "name": "Ian",
+    "left": ""
+  }
+]

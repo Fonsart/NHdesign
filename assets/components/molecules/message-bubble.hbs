@@ -1,0 +1,30 @@
+---
+notes: |
+  ##### Usage : `{{> message-bubble }}`
+  ##### Options :
+  - **conversationobject** - Object
+  - **left** - true
+  - **message** - string
+  - **avatar** - url
+  - **date** - string
+---
+
+<div class="media message-bubble {{#if conversationobject.left}}message-bubble-left{{^}}message-bubble-right{{/if}}">
+  {{#if conversationobject.left}}
+    <div class="media-left">
+      <img class="media-object" src="{{ conversationobject.avatar }}" alt="...">
+    </div>
+  {{^}}
+  {{/if}}
+  <div class="media-body">
+    {{ conversationobject.message }}
+    <br/>
+    <small class="text-muted">{{ conversationobject.date }}</small>
+  </div>
+  {{#if conversationobject.left}}
+  {{^}}
+    <div class="media-right">
+      <img class="media-object" src="{{ conversationobject.avatar }}" alt="...">
+    </div>
+  {{/if}}
+</div>

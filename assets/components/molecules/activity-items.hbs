@@ -1,0 +1,38 @@
+---
+notes: |
+  ##### Introduced : 0.6.7
+  ##### Updated :
+  ##### Usage : `{{> activity-items }}`
+  ##### Options :
+  - **activityobject** Object
+    - username
+    - avatar
+    - verb
+    - date
+    - media-title
+    - media-type
+---
+<div class="media activity-item">
+ <div class="media-left media-middle">
+   <a href="./profile-person.html">
+     <img src="{{activityobject.avatar}}" alt="{{activityobject.username}}" class="media-object" />
+   </a>
+ </div>
+ <div class="media-body">
+   <h5 class="media-heading">
+     <a href="./profile-person.html">{{activityobject.username}}</a>
+     {{activityobject.verb}}
+     <a href="./detail.html">{{activityobject.media-title}}</a>
+   </h5>
+   <span>{{activityobject.date}}</span>
+ </div>
+ <div class="media-right">
+   <a href="./detail.html">
+     {{#if activityobject.media-url}}
+     <img alt="{{activityobject.media-title}}" class="media-object"  src="{{activityobject.media-url}}">
+     {{^}}
+     {{> no-thumbnail }}
+     {{/if}}
+   </a>
+ </div>
+</div>

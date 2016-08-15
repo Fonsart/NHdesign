@@ -1,0 +1,29 @@
+{{> navbar }}
+
+{{> panel-left }}
+{{> panel-right }}
+{{> overlay }}
+
+<div class="spacer spacer-xs"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1 class="text-center">Forum</h1>
+      <div class="spacer spacer-xs"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-1 col-md-2">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">Tous les sujets</a></li>
+        <li><a href="#">Echange d'informations et contenu</a></li>
+        <li><a href="#">Juste un message</a></li>
+        <li><a href="#">Questions pratiques</a></li>
+      </ul>
+    </div>
+    <div class="col-md-8">
+      {{> forum-conversations-list }}
+    </div>
+   </div>
+</div>

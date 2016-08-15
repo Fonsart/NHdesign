@@ -1,0 +1,26 @@
+[
+  {
+    "username" : "Marc",
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg",
+    "message-intro": "Salut, comment vas-tu depuis le temps ?",
+    "date": "12/08/2016",
+  },
+  {
+    "username" : "Ian",
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg",
+    "message-intro" : "Cette photo n'a rien à voir avec la Suisse",
+    "date" : "11/08/2016",
+  },
+  {
+    "username" : "Jean-Paul",
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2009/10/c030407f8dc6d950_gif_168x168_crop_q85.jpg",
+    "message-intro" : "Cette nouvelle plate-forme, quelle classe !",
+    "date" : "11/08/2016",
+  },
+  {
+    "username" : "Pierre-Marie",
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2011/01/ee68c10788b054e_JPG_168x168_crop_q85.jpg",
+    "message-intro" : "J'adore le logo !",
+    "date" : "11/08/2016",
+  }
+]

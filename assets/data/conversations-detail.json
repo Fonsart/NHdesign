@@ -1,0 +1,26 @@
+[
+  {
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg",
+    "message": "Bonjour, Depuis la dernière mise à jour du système de mon Mac OS X 10.11.5 il y a quelques jours, je ne peux plus charger de photos sur notrehistoire.ch avec le navigateur Safari, un message m'indique qu'Adobe Flash est nécessaire. Je sais qu'Apple et d'autres éditeurs de logiciels abandonnent la technologie Flash, ancienne et peu sûre en matière de virus. Est-ce que notrehistoire.ch a prévu d'adapter prochainement son site pour se passer de Flash ?",
+    "date": "22/03/2016",
+    "left": "true"
+  },
+  {
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg",
+    "message" : "Oui nous préparons une nouvelle version de notrehistoire.ch et le problème de flash est connu. Cependant vous pouvez activer Flash dans Safari.",
+    "date": "22/03/2016",
+    "left" : ""
+  },
+  {
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2015/11/a3a15c215d3c0693_jpg_168x168_crop_q85.jpg",
+    "message" : "Le problème est connu, mais récurant. Maintenant il est impossible de charger Flash sur un téléphone ou une tablette Android (Google).",
+    "date": "22/03/2016",
+    "left" : "true"
+  },
+  {
+    "avatar" : "http://notrehistoire.ch.s3-eu-west-1.amazonaws.com/users/avatar/2014/08/18684df9b99b6c12_jpg_168x168_crop_q85.jpg",
+    "message" : "Certaines autres également ne fonctionnent pas ou plus après une mise à jour de leurs OS. Cela deviens donc urgent de changer et d’adopter un autre protocole. ",
+    "date": "22/03/2016",
+    "left" : ""
+  }
+]
