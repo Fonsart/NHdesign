@@ -9,6 +9,7 @@
   border: 2px solid $quill-gray;
   box-shadow: none !important;
   font-family: $font-family-sans-serif;
+
   &:focus {
     outline: none !important;
     box-shadow: none !important;
@@ -16,6 +17,9 @@
   &:focus + .help-block {
     opacity: 1;
     left: 0px;
+  }
+  &[type="checkbox"] {
+    width: auto;
   }
   &[type="file"] {
     border: none;
